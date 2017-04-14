@@ -1,0 +1,15 @@
+$(function () {
+    $('.zximg .fl-l').hover(function () {
+        var imgSrc = $(this).children(":first").attr('src');
+        var tt = imgSrc.substr(16, 1);
+        var newSrc = '770-' + tt;
+        var ss = imgSrc.replace(tt, newSrc);
+        $('.sst').eq(0).css('backgroundImage','url(./' + ss +' )');
+    });
+    var timer;
+    timer = setInterval(function () {
+        var tt;
+        tt=0;
+        tt++;
+    }, 2000);
+'url('')',这个不需要单引号双引号交叉着写；

@@ -1,0 +1,1 @@
+input以及textarea都是采用val获取值的，在改变的时候触发动态的可以采用oninput事件

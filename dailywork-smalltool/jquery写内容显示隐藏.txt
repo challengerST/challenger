@@ -1,0 +1,4 @@
+$('.self_design_tool').find('div').click(function(){
+        var tnum=$(this).attr('name');
+        $('.sq').hide().eq(tnum).show();
+    })

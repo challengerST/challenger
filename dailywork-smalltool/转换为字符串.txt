@@ -1,0 +1,5 @@
+
+//服务器返回数据转为字符串
+function split_data(data) {
+    return data.split(",")
+}

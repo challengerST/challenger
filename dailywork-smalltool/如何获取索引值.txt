@@ -1,0 +1,3 @@
+$('.fashion').mouseover(function(){
+        console.log($('.fashion').index(this));
+    })

@@ -1,0 +1,56 @@
+js
+window.onload = function () {
+    var wnum=document.getElementsByClassName('w-num')[0];
+    var text = document.getElementsByTagName('textarea')[0];
+    var Wdnum = document.getElementById('wd-num');
+    var num = 0;
+    text.onfocus = function () {
+        Wdnum.innerHTML = num - 140;
+        change();
+        text.oninput = text.onpropertychange = change;
+    }
+    //判断输入字符多少
+    function change() {
+        //var mark = document.getElementsByTagName('em')[0];
+        var tValue = text.value;
+        num = Math.ceil(getLength(tValue));
+
+        if (num < 140) {
+            Wdnum.innerHTML = 140 - num;
+            Wdnum.style.color = 'green';
+        } else {
+            wnum.innerHTML = '已超出<i class="wd-num" style="color:red">' + (num - 140) + '</i> 个字';
+        }
+
+        //if (text.value == '' || num > 140) {
+        //    btn.className = 'con-go';
+        //} else {
+        //    btn.className = 'con-go active';
+        //}
+    }
+
+    //正则：用于区分中文为两个字节
+    function getLength(str) {
+        return String(str).replace(/[^\x00-\xff]/g, 'aa').length;
+    }
+}
+
+html
+<textarea max-length="140">控制字符长度
+<div class="fl-r personal-share">
+        <div>
+            <span class="b-circle"></span> <span class="column-head">晒一晒你的新衣服</span><span class="dot"></span>
+        </div>
+        <div>
+            <div class="clearfix" style=" position:relative;margin:9px 0;">
+                <textarea class="fl-l fabu-con" placeholder="我要分享" name="" id="wd"  autocomplete="off"></textarea>
+                <span class="w-num">您还可以写 <i class="wd-num" id="wd-num">140</i> 个字</span>
+                <span class="hengxian"></span>
+                <span class="shuxian"></span>
+                <div class="share-items fl-r clearfix"><span id="picture"
+                                                             class="fl-l"><i></i><span>图片</span></span><span id="link"
+                                                                                                             class="fl-r"><i></i><span>链接</span></span><span
+                        id="music" class="fl-l"><i></i><span>音乐</span></span><span id="video" class="fl-r"><i></i><span>视频</span></span>
+                </div>
+            </div>
+        </div>

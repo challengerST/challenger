@@ -1,0 +1,4 @@
+//正则：用于区分中文为两个字节
+    function getLength(str) {
+        return String(str).replace(/[^\x00-\xff]/g, 'aa').length;
+    }

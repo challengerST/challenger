@@ -1,0 +1,1 @@
+$(this).find('a[name])or.find('a[name=selfdeign]')

@@ -1,0 +1,16 @@
+.fabu-con{
+    width:819px;
+    height:132px;
+    margin: 0px;
+    padding: 0px;
+    border-style: none;
+    border-width: 0px;
+    font-size: 14px;
+    word-wrap: break-word;
+    line-height: 18px;
+    overflow: hidden;
+    outline: none;
+    border-top:1px solid #e6e6e6;
+    border-bottom:1px solid #e6e6e6;
+    border-left:1px solid #e6e6e6;
+}

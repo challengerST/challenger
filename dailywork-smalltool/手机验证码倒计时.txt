@@ -1,0 +1,24 @@
+手机120秒倒计时：
+<div><p>短信验证码</p><input class="lg-length" type="text" placeholder="短信验证码">
+                        <button onclick="countdown()" id="getPhoneCode" class="btn-phonecode" type="button">获取验证码
+                        </button>
+                    </div>
+function countdown() {
+    var btn_getcode = $("#getPhoneCode");
+    var time = 120;
+    var timer;
+    btn_getcode.html(time + 's后重新获取').addClass('btn-code-disable');
+    timer = setInterval(function () {
+        time--;
+        btn_getcode.html(time + 's后重新获取');
+        if (time == 0) {
+            clearInterval(timer);
+            btn_getcode.html('获取验证码').removeClass('btn-code-disable');
+            $('#getPhoneCode').removeAttr('disabled');
+
+            //btn_getcode.bind('click.phonecode', get);
+        }
+    }, 1000);
+    //取消点击事件
+    //btn_getcode.off('click.phonecode');
+}

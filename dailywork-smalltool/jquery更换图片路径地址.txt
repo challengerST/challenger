@@ -1,0 +1,15 @@
+ //var fir = $(this).find('.img-box').find('img').attr('src').indexOf('.');
+        //var lastIndex = $(this).find('.img-box').find('img').attr('src').lastIndexOf('/');
+        //console.log($(this).find('.img-box').find('img').attr('src'));
+        //console.log(lastIndex);
+        //console.log(fir);
+        //function getstr(obj, firstindex, lastindex) {
+        //    return $(obj).find('.img-box').find('img').attr('src').substring(firstindex, lastindex);
+        //}
+        //var oldsrc = getstr(this, fir, lastIndex);
+        //console.log(oldsrc);
+        //var str=/g/g;
+        //var box=oldsrc.replace(str,'r');
+        //var newsrc='img/selfdesign/ico'+box+'.png';
+        //console.log(newsrc);
+        //$(this).find('.img-box').find('img').attr('src',newsrc);
