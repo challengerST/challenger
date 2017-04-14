@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery选择器</title>
+    <script src="../ajax/jquery.min.js"></script>
+    <script>
+        function $(){
+            alert(1);
+        }
+    </script>
+</head>
+<body>
+<div>
+    <p style="color:#ff3250;font-size:16px;">
+        如何解决页面引入大量的框架引起的jquery的$符与其他的框架的冲突问题
+        <br>
+        1:使用$();
+        <br>
+        2:使用jQuery();
+    </p>
+    <p>
+        <a href="javascript:void(0)">1</a>
+        <a href="javascript:void(0)">2</a>
+        <a href="javascript:void(0)">3</a>
+    </p>
+</div>
+<script>
+    jQuery('a').click(function(){
+        alert(jQuery(this).index('a'))
+    });
+//    alert($);
+//    alert(jQuery);
+    $('a:even').click(function(){
+        alert(1)
+    })
+</script>
+</body>
+</html>

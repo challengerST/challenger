@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script src="../ajax/jquery.min.js"></script>
+</head>
+<body>
+<div class="language">
+    <a href="javascript:void(0)">linux</a>
+    <a href="javascript:void(0)">php</a>
+    <a href="javascript:void(0)">java</a>
+</div>
+</body>
+<script>
+    var str1 = '{ "name": "cxh", "sex": "man" }';
+//    var obj=eval('('+str1+')');
+
+    var obj=JSON.parse(str1);
+    console.log(obj.name);
+    //     data可以和attr一样设置属性设置的时候并不会改变原先的元素的属性
+</script>
+</html>

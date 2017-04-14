@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>offset</title>
+</head>
+<script src="../ajax/jquery.min.js"></script>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    div {
+        height: 256px;
+        float: left;
+        border: 1px solid #e6e6e6;
+        box-shadow: 0px 0px 5px 5px #ccc;
+        margin-right: 40px;
+        width: 196px;
+        position:relative;
+        overflow:hidden;
+    }
+    .top{
+        position:absolute;
+        top:0;
+        left:0;
+        display:none;
+    }
+</style>
+<body>
+<div class="top">
+    <img src="2.jpg" alt="">
+</div>
+<div class="sop" style="">
+    <img src="1.jpg" alt="">
+</div>
+<div class="sop" style="">
+    <img src="1.jpg" alt="">
+</div>
+<div class="sop" style="">
+    <img src="1.jpg" alt="">
+</div>
+<div class="sop" style="">
+    <img src="1.jpg" alt="">
+</div>
+<script>
+    $('.sop').mouseenter(function () {
+        w = $(this).position().left;
+        t = $(this).position().top;
+//        alert(w + '-' + t);
+        $('.top').show().css({'left':w+'px','top':t+266+'px'});
+    })
+</script>
+</body>
+</html>

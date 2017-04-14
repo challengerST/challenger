@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script src="../ajax/jquery.min.js"></script>
+</head>
+<body>
+<div class="language">
+    <a href="javascript:void(0)">linux</a>
+    <a href="javascript:void(0)">php</a>
+    <a href="javascript:void(0)">java</a>
+</div>
+<div>
+    <a href="javascript:void(0)">oso</a>
+    <p>linux is very much!!linux is very much!!linux is very much!!linux is very much!!
+        linux is very much!!linux is very much!!linux is very much!!linux is very much!!
+        linux is very much!!linux is very much!!linux is very much!!linux is very much!!linux is very much!!
+    </p>
+    <p style="display:none">php is very much!!linux is very much!!linux is very much!!linux is very much!!
+        linux is very much!!linux is very much!!linux is very much!!linux is very much!!
+        linux is very much!!linux is very much!!linux is very much!!linux is very much!!linux is very much!!
+    </p>
+    <p style="display:none">java is very much!!linux is very much!!linux is very much!!linux is very much!!
+        linux is very much!!linux is very much!!linux is very much!!linux is very much!!
+        linux is very much!!linux is very much!!linux is very much!!linux is very much!!linux is very much!!
+    </p>
+</div>
+</body>
+<script>
+    $('.language a').click($('a'),function(){
+        console.log($(this).index('a'));
+        $('p').eq($(this).index('a')).show().siblings().hide();
+    });
+//     data可以和attr一样设置属性设置的时候并不会改变原先的元素的属性
+</script>
+</html>

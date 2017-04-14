@@ -1,0 +1,24 @@
+ function $(){
+        var obj=new Object();
+        obj.username="user123";
+        obj.usersex="user2356";
+        obj.say=function(){
+            alert('my name is:'+this.username);
+            return this;
+        };
+        obj.run=function(){
+            alert('my name is:'+this.usersex);
+        };
+        return obj;
+    }
+   $().say().run();
+
+对象在使用链式的时候需要前面的对象也得返回对象才行；
+所以得在say（）函数里面加上return this;才可以；
+
+js对象转换成jq对象,直接使用$();
+var imgobj=document.getElementById('imgid');
+    $(imgobj).click(function(){
+        alert(1);
+    });
+jq对象转换成js对象,直接使用加个下标[0]就可以直接获得DOM对象

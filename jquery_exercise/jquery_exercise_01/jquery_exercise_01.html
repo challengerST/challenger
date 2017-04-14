@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery练习第一天</title>
+</head>
+<script src="../ajax/jquery.min.js"></script>
+<body>
+<img src="1.jpg" alt="">
+<script>
+    var i=0;
+    $('img').click(function(){
+        console.log(i);
+        if(i%2==0){
+            console.log(i);
+            this.src="2.jpg"
+        }else{
+            console.log(i);
+            this.src="1.jpg"
+        }
+        i++;
+    })
+</script>
+</body>
+</html>

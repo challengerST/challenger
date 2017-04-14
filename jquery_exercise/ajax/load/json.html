@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>加载页</title>
+</head>
+<body>
+<div class="iframe">
+    <div class="title"></div>
+    <div class="content">
+        <div id="Tip"></div>
+    </div>
+</div>
+<script src="../jquery.min.js"></script>
+<script>
+    var data = {
+        member: [{
+            grade: "一年级",
+            students: {
+                name: ['王小毛1', '王小宝1']
+            }
+        },{
+        grade:"二年级",
+            students: {
+                name: ['王小毛2', '王小宝2', '王小毛2']
+        }
+    },{
+        grade:"三年级",
+            students: {
+                name: ['王小毛3', '王小宝3', '王小毛3']
+        }
+    }]
+    };
+    console.log(data);
+    var objmember=data.member;
+    console.log(objmember);
+    var strHTML_0='';
+    $.each(objmember,function(index){
+        console.log(index);
+        strHTML_0+='<a href="javascript:void(0)" onclick="lnk_click('+index+')">'+objmember[index].grade+'</a>';
+
+    });
+    $('.title').html('优秀学生:'+strHTML_0);
+    function lnk_click(index){
+        var objstudent=data.member[index].students.name;
+        console.log(index);
+        console.log(data.member);
+        console.log(data.member[index].students.name);
+        var strHTML_1='';
+        $.each(objstudent,function(index){
+            console.log(objstudent);
+            console.log(index);
+            console.log(objstudent[index]);
+            strHTML_1+=objstudent[index];
+        });
+        $('.content').html(strHTML_1);
+    }
+
+
+</script>
+</body>
+</html>

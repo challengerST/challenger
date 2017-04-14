@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>on事件</title>
+</head>
+<body>
+<p>Click me!</p>
+<button class="clickme">
+clickme
+</button>
+<button class="on">oko</button>
+<script src="../ajax/jquery.min.js"></script>
+<script>
+//    $('.clickme').bind('click',function(){
+//        alert('bind');
+//        $('body').append('<button class="clickme">clickme2</button>')
+//    })
+//1.9之后不再支持live属性
+    $('.clickme').live('click',function(){
+        alert('live');
+        $('body').append('<button class="clickme">clickme2</button>')
+    });
+$("p").live("click", function(){
+    $(this).after("<p>Another paragraph!</p>");
+});
+    $('.on').on('click',{'foo':'bar'},function(event){
+        alert(event.data.foo);
+    })
+</script>
+</body>
+</html>

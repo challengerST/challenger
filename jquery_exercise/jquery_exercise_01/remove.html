@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>remove</title>
+    <script src="../ajax/jquery.min.js"></script>
+</head>
+<body>
+<p>111111</p>
+<p>22222222</p>
+<p>33333333333</p>
+<p>4444444444444</p>
+<p>55555555555555</p>
+<select name="" id="">
+    <option value="">1111</option>
+    <option value="">2222</option>
+    <option value="">3333</option>
+    <option value="">4444</option>
+</select>
+<button>ok</button>
+<select class="s2">
+</select>
+<script>
+    $('p').click(function(){
+//        var obj=$(this).remove();
+//        $('body').append(obj);
+        var obj=$(this).detach();
+        $('body').append(obj);
+    });
+    $('button').click(function(){
+        $('select option:selected').clone().appendTo('.s2');
+    });
+//    $.each( { name: "John", lang: "JS" }, function(i, n){
+//        alert( i+':'+n );
+//    });
+</script>
+</body>
+</html>

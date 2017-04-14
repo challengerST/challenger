@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>file文档处理</title>
+    <script src="../ajax/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    <img src="1.jpg" alt="">
+</div>
+<script>
+//    为处理图片可能暂时加载不出来的问题获取出来的宽高是00；
+ $('img').click(function(){
+     var w=$(this).width();
+     var h=$(this).height();
+     alert(w+'|'+h);
+ })
+//不支持
+//$('img').load(function(){
+//    var w=$(this).width();
+//    var h=$(this).height();
+//    alert(w+'|'+h);
+//})
+</script>
+</body>
+</html>

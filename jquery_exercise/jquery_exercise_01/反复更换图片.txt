@@ -1,0 +1,18 @@
+<img src='a.png' alt=''>
+
+var i=0;
+$('img').click(function(){
+if(i%2 ==0){
+this.src="b.png"
+}else{
+this.src="a.png"
+}
+i++;
+
+$('img').toggle(function(){
+this.src='a.png';
+},function(){
+this.src='b.png';
+}
+)
+})

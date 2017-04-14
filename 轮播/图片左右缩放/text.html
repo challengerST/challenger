@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>start</title>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+<div style="position:relative;width:160px;height:100px;folat:left;overflow:hidden;">
+    <div class="trunRight" style="position:absolute;width:200px;height:100px;left:-100px;">
+        <img src="red.png" alt="" class="Theblock" style="display:none">
+        <!--<div class="Theblock" style="background-color:red;width:100px;height:100px; display:none"></div>-->
+    </div>
+</div>
+<div>
+    <input class="moveRight" type="button" value="moveRight" />
+    <input class="moveLeft" type="button" value="moveLeft" />
+
+</div>
+<script>
+    $('.moveRight').click(function () {
+        // alert(1);
+        $('.trunRight').delay(500).animate({
+            left: "0px"
+        }, 2000);
+        $('.Theblock').delay(500).fadeIn(1000);
+    });
+    $('.moveLeft').click(function () {
+        // alert(1);
+        $('.trunRight').delay(500).animate({
+            left: "-160px"
+        }, 500);
+        $('.Theblock').delay(500).fadeOut(1000);
+    });
+</script>
+</body>
+</html>

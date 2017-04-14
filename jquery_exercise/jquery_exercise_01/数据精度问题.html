@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>京东左侧导航栏</title>
+</head>
+  <script src="../ajax/jquery.min.js"></script>
+<body>
+  <div class="box">
+    <input type="text"></div>
+  <div id="show"></div>
+  <script>
+<div>
+  <p></p>
+</div>
+//采用闭包将函数抱起来
+var ytFunction={};
+(function(){
+ytFunction.sprintf=function(){var e=/%%|%(\d+\$)?([-+'#0 ]*)(\*\d+\$|\*|\d+)?(?:\.(\*\d+\$|\*|\d+))?([scboxXuideEfFgG])/g,r=arguments,t=0,n=r[t++],a=function(e,r,t,n){t||(t=" ");var a=e.length>=r?"":new Array(1+r-e.length>>>0).join(t);return n?e+a:a+e},c=function(e,r,t,n,c,i){var s=n-e.length;return s>0&&(e=t||!c?a(e,n,i,t):[e.slice(0,r.length),a("",s,"0",!0),e.slice(r.length)].join("")),e},i=function(e,r,t,n,i,s,o){var u=e>>>0;return t=t&&u&&{2:"0b",8:"0",16:"0x"}[r]||"",e=t+a(u.toString(r),s||0,"0",!1),c(e,t,n,i,o)},s=function(e,r,t,n,a,i){return null!==n&&void 0!==n&&(e=e.slice(0,n)),c(e,"",r,t,a,i)},o=function(e,n,o,u,f,d){var h,l,g,b,p;if("%%"===e)return"%";var v,x=!1,w="",E=!1,F=!1,k=" ",m=o.length;for(v=0;m>v;v++)switch(o.charAt(v)){case" ":w=" ";break;case"+":w="+";break;case"-":x=!0;break;case"'":k=o.charAt(v+1);break;case"0":E=!0,k="0";break;case"#":F=!0}if(u=u?"*"===u?+r[t++]:"*"===u.charAt(0)?+r[u.slice(1,-1)]:+u:0,0>u&&(u=-u,x=!0),!isFinite(u))throw new Error("sprintf: (minimum-)width must be finite");switch(f=f?"*"===f?+r[t++]:"*"===f.charAt(0)?+r[f.slice(1,-1)]:+f:"fFeE".indexOf(d)>-1?6:"d"===d?0:void 0,p=n?r[n.slice(0,-1)]:r[t++],d){case"s":return s(p+"",x,u,f,E,k);case"c":return s(String.fromCharCode(+p),x,u,f,E);case"b":return i(p,2,F,x,u,f,E);case"o":return i(p,8,F,x,u,f,E);case"x":return i(p,16,F,x,u,f,E);case"X":return i(p,16,F,x,u,f,E).toUpperCase();case"u":return i(p,10,F,x,u,f,E);case"i":case"d":return h=+p||0,h=Math.round(h-h%1),l=0>h?"-":w,p=l+a(String(Math.abs(h)),f,"0",!1),c(p,l,x,u,E);case"e":case"E":case"f":case"F":case"g":case"G":return h=+p,l=0>h?"-":w,g=["toExponential","toFixed","toPrecision"]["efg".indexOf(d.toLowerCase())],b=["toString","toUpperCase"]["eEfFgG".indexOf(d)%2],p=l+Math.abs(h)[g](f),c(p,l,x,u,E)[b]();default:return e}};return n.replace(e,o)}
+})();
+//采用闭包将函数抱起来
+</script>
+  <script>
+$('.box').find('input').blur(function(){
+  var num=$('.box').find('input').val();
+  var b=ytFunction.sprintf('%.3f',num*0.1);
+  // 取整
+  var d=ytFunction.sprintf('%.3d',num*0.1);
+  //取整
+  $('#show').html(b);
+})
+</script>
+</body>
+</html>

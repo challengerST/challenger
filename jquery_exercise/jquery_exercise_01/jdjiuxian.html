@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东左侧导航栏</title>
+    <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+      .box{
+        width:1200px;
+        margin:0 auto;
+        position:relative;
+      }
+      .option li{
+        color:#00f;
+        list-style: none;
+        width:150px;
+        text-align:center;
+        height:40px;
+        line-height:40px;
+        background:#f00;
+      }
+      .right{
+        color:#f00;
+        height:400px;
+        background:#00f;
+        width:1050px;
+        position:absolute;
+        top:0;
+        left:150px;
+        display:none;
+      }
+
+    </style>
+</head>
+<script src="../ajax/jquery.min.js"></script>
+<body>
+<div class="box">
+<ul class="option">
+  <li>
+  <span>家电</span>
+  <div class="right" style="display:block">
+  <h3>家电</h3>
+  <p>家具家具家具家具家具</p>
+  </div>
+  </li>
+  <li>
+    <span>家具</span>
+    <div class="right">
+    <h3>家具</h3>
+    <p>家具家具家具家具家具家具家具</p>
+  </div>
+  </li>
+  <li>
+    <span>衣服</span>
+    <div class="right">
+    <h3>衣服</h3>
+    <p>衣服衣服衣服衣服衣服衣服衣服衣服</p>
+  </div>
+  </li>
+  <li>
+    <span>生鲜</span>
+    <div class="right">
+    <h3>生鲜</h3>
+    <p>生鲜生鲜生鲜生鲜生鲜生鲜生鲜</p>
+  </div>
+  </li>
+</ul>
+</div>
+<script>
+  $('.option').find('li').mouseenter(function(){
+    $(this).css({'color':'#f00','background':'#00f'}).siblings().css({'background':'#f00','color':'#00f'});
+     $(this).find('.right').show();
+     $('.right').not($(this).find('.right')).hide();
+  })
+</script>
+</body>
+</html>

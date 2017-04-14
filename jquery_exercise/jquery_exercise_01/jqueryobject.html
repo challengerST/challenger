@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery对象核心方法</title>
+</head>
+<script src="../ajax/jquery.min.js"></script>
+<body>
+<h1>bbbbbb</h1>
+<h1>aaaaaaaaa</h1>
+<h1>aaaaaaaaa</h1>
+<h1>aaaaaaaaa</h1>
+<button id="imgid">
+    <span>数据</span>
+</button>
+<script>
+    $('h1').each(function(i){
+        console.log(i);
+        $(this).attr({'num':i+1});
+        console.log($(this).attr('num'));
+//        console.log($(this).index('h1'));
+    });
+    $('h1').click(function(){
+        alert(1);
+        $(this).html($(this).attr('num'));
+    });
+    var imgobj = document.getElementById('imgid');
+    console.log($('h1')[1].outerHTML);
+    var tt=$('h1')[1].outerHTML;
+    var ts=$('h1').get(0).outerHTML;
+    $(imgobj).click(function () {
+        console.log(tt);
+        console.log(ts);
+    });
+
+</script>
+<script>
+    function $() {
+        var obj = new Object();
+        obj.username = "user123";
+        obj.usersex = "user2356";
+        obj.say = function () {
+//            alert('my name is:' + this.username);
+            return this;
+        };
+        obj.run = function () {
+//            alert('my name is:' + this.usersex);
+        };
+        return obj;
+    }
+    $().say().run();
+    //    var imgobj=document.getElementById('imgid');
+    //    $(imgobj).click(function(){
+    //        alert(1);
+    //    });
+    $('h1').each(function (i) {
+        $(this).attr('num', i + 1);
+        console.log(i);
+    });
+    $('h1').click(function () {
+        $(this).html($(this).attr('num'));
+    });
+>>>>>>> refs/remotes/origin/master
+</script>
+<!--<script>-->
+    <!--function $() {-->
+        <!--var obj = new Object();-->
+        <!--obj.username = "user123";-->
+        <!--obj.usersex = "user2356";-->
+        <!--obj.say = function () {-->
+            <!--alert('my name is:' + this.username);-->
+            <!--return this;-->
+        <!--};-->
+        <!--obj.run = function () {-->
+            <!--alert('my name is:' + this.usersex);-->
+        <!--};-->
+        <!--return obj;-->
+    <!--}-->
+    <!--$().say().run();-->
+<!--</script>-->
+<!--对象和那个each好像是不可以同时使用不知道为什么-->
+
+</body>
+</html>

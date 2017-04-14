@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单验证</title>
+    <script src="../ajax/jquery.min.js"></script>
+</head>
+<body>
+<form action="rep.php" method="get">
+    <div>
+        <input type="text" name="username" class="auth">
+        <span style="color:#00f">字符长度不可以小于6位</span>
+    </div>
+    <div>
+        <input type="text" name="password" class="auth">
+        <span style="color:#00f">密码换成那个度不可以小于8位</span>
+    </div>
+    <div>
+        <input type="text" name="respassword" class="auth">
+        <span style="color:#00f">应该与上面的密码一致</span>
+    </div>
+    <div>
+        <input type="submit" value="ok">
+    </div>
+</form>
+</body>
+<script>
+    $('span').hide();
+    $('input[name=username]').blur(function () {
+        if ($(this).val().length < 6) {
+            $(this).next().show();
+            $(this).data({'num': 0});
+        } else {
+            $(this).next().hide();
+            $(this).data({'num': 1});
+
+//            alert($(this).data('num'));
+        }
+    });
+    $('input[name=password]').blur(function () {
+        if ($(this).val().length < 8) {
+            $(this).data('num', 0);
+            $(this).next().show();
+        } else {
+            $(this).data({'num': 1});
+            $(this).next().hide();
+        }
+    });
+    $('input[name=respassword]').blur(function () {
+        var vla1=$('input[name=password]').val();
+        var vla2=$(this).val();
+        if (vla2 == '') {
+//            alert('此处不可以为空');
+            $(this).data({'num': 0});
+//            alert($(this).data('num'));
+            return false;
+        }
+        if (vla1 != vla2) {
+            $(this).next().show();
+            $(this).data({'num': 1});
+
+        } else {
+            $(this).next().hide();
+            $(this).data({'num': 1});
+//            alert($(this).data('num'));
+        }
+    });
+    $('form').submit(function () {
+        $('.auth').blur();
+        var i = 0;
+        $('.auth').each(function(){
+            i += $(this).data('num');
+        });
+        console.log(i);
+        if(i!=3){
+            return false;
+        }else{
+            alert('sucess');
+        }
+        //禁止默认跳转事件
+    })
+</script>
+</html>
