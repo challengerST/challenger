@@ -6,7 +6,7 @@
     <meta name="keywords" content="designer,DESIGNER,设计师，设计"/>
     <!-- Set render engine for 360 browser -->
     <meta name="renderer" content="webkit">
-    <titl als-iteme>ipik</titl als-iteme>
+    <title>ipik</title>
     <link rel="stylesheet" href="css/common/clear.css"/>
     <link rel="stylesheet" href="css/common/common.css"/>
     <link rel="stylesheet" href="css/index/firstpage.css"/>
@@ -45,7 +45,7 @@
                 <img src="img/index/shop.png" alt="">
                 <span class="font-fu">购物车</span></a></li>
             <!--<li class="fl-l teleSr" style="display:none">-->
-                <!--<input type="text">-->
+            <!--<input type="text">-->
             <!--</li>-->
             <li class="clearfix search" id="searchoption">
                 <input class="fl-l" type="search">
@@ -59,7 +59,7 @@
     <div class="login-box" id="login-box">
         <form>
             <div class="close-cancle" id="close">
-                <img src="img/common/cancle-img_03.png" alt=""/>
+                <a href="javascript:void(0)"><img src="img/common/cancle-img_03.png" alt=""/></a>
             </div>
             <div class="clearfix">
                 <span class="sign-in red-line" id="login">登录</span> <span class="shu-line jubu-edit"></span> <span
@@ -86,7 +86,7 @@
                                                                                     class="rightnow-login"
                                                                                     value="立即登录"/>
                     </div>
-                    <div class="titl als-iteme-line"><i class="titl als-iteme-line-left"></i><span class="fenqu">使用合作账号登陆</span><i
+                    <div class="logintitl als-iteme-line"><i class="titl als-iteme-line-left"></i><span class="fenqu">使用合作账号登陆</span><i
                             class="titl als-iteme-line-left"></i></div>
                 </div>
                 <div class="society"><a href=""><img src="img/society/wechat.png" alt=""></a> <a href=""><img
@@ -293,12 +293,10 @@
         </div>
     </div>
 </div>
-
-
 <div style="position:relative;height:650px;">
     <div class="designer main-content clearfix">
-        <div class="titl als-iteme-line">
-            <i class="titl als-iteme-line-left"></i><span class="fenqu">设计师</span><i class="titl als-iteme-line-left"></i>
+        <div class="titl als-iteme-line clearfix">
+            <i class="titl als-iteme-line-left fl-l"></i><span class="fenqu">设计师</span><i class="titl als-iteme-line-left fl-r"></i>
         </div>
 
         <div class="content als-container" id="demo3">
@@ -460,9 +458,9 @@
         <ul>
             <li style="background:url(img/index/shiyijian/shiyijian.jpg) no-repeat center">
                 <div class="shiyijian main-content">
-                    <div class="titl als-iteme-line">
-                        <i class="titl als-iteme-line-left"></i><span class="fenqu white-word">3D试衣间</span><i
-                            class="titl als-iteme-line-left"></i>
+                    <div class="titl als-iteme-line clearfix">
+                        <i class="titl als-iteme-line-left fl-l"></i><span class="fenqu white-word">3D试衣间</span><i
+                            class="titl als-iteme-line-left fl-r"></i>
                         <p class="shiyijian-bigword">再也不用来回跑试衣间了...</p>
                         <p class="shiyijian-kuang"><a href="">马上试衣服 > </a></p>
                     </div>
@@ -472,9 +470,9 @@
         </ul>
     </div>
     <div class="main-content">
-        <div class="titl als-iteme-line popzixun">
-            <i class="titl als-iteme-line-left"></i><a href="zixun.html"><span class="fenqu">潮流资讯</span></a><i
-                class="titl als-iteme-line-left"></i>
+        <div class="titl als-iteme-line popzixun clearfix">
+            <i class="titl als-iteme-line-left fl-l"></i><a href="zixun.html"><span class="fenqu">潮流资讯</span></a><i
+                class="titl als-iteme-line-left fl-r"></i>
         </div>
 
         <ul class="zhuanlan-file" id="column-file">
@@ -587,7 +585,6 @@
 <script src="js/common/common.js"></script>
 <script src="js/index/firstpage.js"></script>
 <script src="js/index/information.js"></script>
-<script src="js/common/login.js"></script>
 <script src="js/common/layout.js"></script>
 <script src="assets/js/amazeui.min.js"></script>
 <script>
@@ -679,7 +676,6 @@
             console.log(3);
         }
     }
-
     })
 </script>
 </body>

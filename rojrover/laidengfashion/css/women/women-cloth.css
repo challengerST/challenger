@@ -1,3 +1,6 @@
+*{
+    font-size:14px;
+}
 /*权重问题*/
 .poster-img img {
     width: 100%;
@@ -256,7 +259,7 @@
 }
 
 .collecte {
-    margin: 0 13px;
+    margin: 0 12px;
 }
 
 .banner-list-other .active > a {

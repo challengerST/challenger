@@ -188,8 +188,6 @@ body {
     padding: 8px 16px 4px 4px;
     box-sizing: border-box;
     cursor: pointer;
-    width:40px;
-    height:40px;
 }
 
 .sign-in,
@@ -1462,4 +1460,34 @@ body {
     animation-timing-function: steps(28);
     background-position: right;
 }
+/*//登录*/
+#searchoption i {
+    width: 16px;
+    height: 20px;
+    margin-left: -34px;
+    margin-top:4px;
+    background: url('../../img/common/serach.png') no-repeat center;
+}
 
+input[type=search] {
+    border: solid 1px #e6e6e6;
+    height: 28px;
+    padding: 4px 12px;
+    width: 55px;
+    margin-left: 10px;
+}
+input[type=search]:focus {
+    border: solid 1px #ff3250;
+    height: 28px;
+    padding: 4px 12px;
+}
+/*登录表单表头*/
+.logintitl.als-iteme-line{
+    margin:20px 0;
+}
+.logintitl.als-iteme-line i{
+    width:100px;
+    height:1px;
+    background:#e6e6e6;
+    margin-top:20px;
+}

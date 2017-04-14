@@ -20,35 +20,126 @@
     <script src="js/detail/share/share.js"></script>
     <script src="js/detail/focus.js"></script>
     <script src="js/common/layout.js"></script>
+    <!--抛物线-->
+    <script src="js/detail/jquery.fly.min.js"></script>
+    <!--[if lte IE 9]>
+    <script src="js/detail/requestAnimationFrame.js"></script>
+    <![endif]-->
 </head>
 <body>
 <div style="background:#fff">
     <div class="big-box down-border background-fff">
         <div class="banner-list main-content clearfix">
             <div class="fl-l logo">
-                <a href="javascript:;"><img src="img/common/logo.png" alt=""></a>
+                <a href="javascript:;"><img class="animated infinite swing" src="img/common/logo.png" alt=""></a>
             </div>
             <ol class="first-page-list-left fl-l">
                 <li id="firstpage" class="tab"><a href="index.html"><span>首页</span></a></li>
                 <li id="womenpage" class="tab"><a href="women-cloth.html"><span>女装</span></a></li>
                 <li id="manpage" class="tab"><a href="women-cloth.html"><span>男装</span></a></li>
-                <li id="childrenpage" class="tab"><a href="women-cloth.html"
-                                                     onclick="alert('is building!')"><span>童装</span></a></li>
+                <li id="childrenpage" class="tab"><a href="women-cloth.html" onclick="alert('is building!')"><span>童装</span></a>
+                </li>
                 <li id="clothpage" class="tab"><a href="chengy.html" onclick=""><span>成衣系列</span></a>
                 </li>
-                <li id="private-order" class="tab"><a href="selfdesign.html"><span>私人定制</span></a>
-                </li>
+                <li id="private-order" class="tab"><a href="selfdesign.html"><span>私人定制</span></a></li>
                 <li id="fashion-information" class="tab"><a
                         href="zixun.html"><span>潮流资讯</span></a></li>
             </ol>
             <ul class="first-page-list-right fl-r" id="lgs">
-                <li class="login" id="sign-in"><span>登录</span></li>
-                <li class="shopcar"><a href="purchase-car.html"><i
-                        style="background: url(img/sprit-img.png) no-repeat -7px -11px;"></i>
-                    <span>购物车</span></a></li>
-                <li class="search" onclick="javascript:alert('efforts are being made to build');"><img
-                        src="img/common/serach.png"></li>
+                <li class="login" id="sign-in"><span class="font-fu">登录</span></li>
+                <li class="shopcar"><a href="purchase-car.html">
+                    <img src="img/index/shop.png" alt="">
+                    <span class="font-fu">购物车</span></a></li>
+                <!--<li class="fl-l teleSr" style="display:none">-->
+                <!--<input type="text">-->
+                <!--</li>-->
+                <li class="clearfix search" id="searchoption">
+                    <input class="fl-l" type="search">
+                    <i class="fl-l"></i>
+                </li>
             </ul>
+        </div>
+    </div>
+    <div style="display:none">
+        <div class="lay-out" id="lay-out"></div>
+        <div class="login-box" id="login-box">
+            <form>
+                <div class="close-cancle" id="close">
+                    <a href="javascript:void(0)"><img src="img/common/cancle-img_03.png" alt=""/></a>
+                </div>
+                <div class="clearfix">
+                    <span class="sign-in red-line" id="login">登录</span> <span class="shu-line jubu-edit"></span> <span
+                        class="sign-up" id="sign-Up">注册账号</span>
+                </div>
+                <div id="ncg1" style="display:block">
+                    <div style="text-align:center;">
+                        <div class="vertify">
+                            <h1>用户名</h1>
+                            <input id="username" class="font-te" type="text" placeholder="昵称/手机号"/>
+                            <p class="errors">
+                                <i class="caveat"></i><span style="font-size:14px;">请输入正确的格式</span>
+                            </p>
+                            <h1>密码</h1><input id="setpassword" class="font-te" type="password" placeholder="请输入密码">
+                            <p class="errors"><i class="caveat"></i><span
+                                    style="font-size:14px;">请输入正确的密码</span>
+                            </p>
+                        </div>
+                        <div class="clearfix" style="margin-top:10px;width:320px;display:inline-block;"><span
+                                style="float:left;font-size:14px;"> <input type="checkbox" checked="checked"
+                                                                           class="fuxuankuang"
+                                                                           id="rmme"/>记住我 </span> <span
+                                style="float:right;font-size:14px;">忘记密码 </span> <input id="submit" type="button"
+                                                                                        class="rightnow-login"
+                                                                                        value="立即登录"/>
+                        </div>
+                        <div class="logintitl als-iteme-line"><i class="titl als-iteme-line-left"></i><span class="fenqu">使用合作账号登陆</span><i
+                                class="titl als-iteme-line-left"></i></div>
+                    </div>
+                    <div class="society"><a href=""><img src="img/society/wechat.png" alt=""></a> <a href=""><img
+                            src="img/society/tencent.png" alt=""></a> <a href=""><img
+                            src="img/society/room.png" alt=""></a><a href=""><img
+                            src="img/society/weibo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="register" id="ncg2" style="display:none">
+                    <div style="text-align:center;">
+                        <div>
+                            <p>手机号</p>
+                            <input id="form-phone" name="lphone" class="lg-length" type="text" placeholder="手机号码"
+                                   autocomplete="off" maxlength="11" default="完后验证后，你可以通过登录该手机登录和找回密码">
+                            <div class="errors">
+                                <i class="caveat"></i><span class="font-fu">请输入正确的邮箱或者手机号</span>
+                            </div>
+                        </div>
+                        <div><p>验证码</p>
+                            <div class="clearfix" style="display:inline-block">
+                                <input id="code_input" class="lg-length fl-l" type="text" placeholder="验证码">
+                                <div id="v_container" class="fl-l"></div>
+                            </div>
+                            <div class="errors">
+                                <i class="caveat"></i><span class="font-fu">验证失败</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>密码</p>
+                            <input name="lpassword" class="lg-length" type="text" placeholder="6-18位">
+                            <div class="errors">
+                                <i class="caveat"></i><span class="font-fu">请输入6-18密码</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>确认密码</p>
+                            <input id="r2" class="lg-length" type="text" placeholder="前后输入一致">
+                            <div class="errors">
+                                <i class="caveat"></i><span class="font-fu">请确保前后输入一致</span>
+                            </div>
+                        </div>
+                        <div>
+                            <input class="submit signin" type="button" value="立即注册">
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
     <div class="main-content">
@@ -97,7 +188,7 @@
             <span class="active">
                 <i class="try"></i>去试衣
             </span>
-            <span>
+            <span id="addcar">
                 <a href="purchase-car.html"><i class="purchase"></i></a>加入购物车
             </span>
             </div>
@@ -355,41 +446,28 @@
 </script>
 <script type="text/javascript">
     $(function(){
-        var bool = new Parabola({
-            el: "#boll",
-            offset: [500, 100],
-            curvature: 0.005,
-            duration: 2000,
-            callback:function(){
-                alert("王晨龙是够")
-            },
-            stepCallback:function(x,y){
-                console.log(x,y);
-                $("<div>").appendTo("body").css({
-                    "position": "absolute",
-                    "top": this.elOriginalTop + y,
-                    "left":this.elOriginalLeft + x,
-                    "background-color":"rgba(0,0,0,0)",
-                    "width":"5px",
-                    "height":"5px",
-                    "border-radius": "5px"
-                });
-            }
-        });
-//        $("#reset").click(function () {
-//            bool.reset()
-//        });
-//        $("#run").click(function () {
-//            bool.start();
-//        });
-//        $("#stop").click(function () {
-//            bool.stop();
-//        });
-        $("#setOptions").click(function () {
-            bool.setOptions({
-                targetEl: $("#target"),
-                curvature: 0.001,
-                duration: 1000
+        var offset = $("#end").offset();
+        $("#addcar").click(function(event){
+            var addcar = $(this);
+            var img = addcar.parent().parent().find('.kucun-img-cloth').find('.active').attr('src'); // 获取当前点击图片链接
+            console.log(img);
+            var flyer = $('<img class="flyer" src="'+img+'">'); // 抛物体对象
+            flyer.fly({
+                start: {
+                    left: event.clientX, // 抛物体起点横坐标
+                    top: event.clientY // 抛物体起点纵坐标
+                },
+                end: {
+                    left: offset.left+10, // 抛物体终点横坐标
+                    top: offset.top+10, // 抛物体终点纵坐标
+                    width: 0, // 抛物体宽度
+                    height: 0 // 抛物体高度
+                },
+                onEnd: function(){
+//                    $("#msg").show().animate({width: '250px'}, 200).fadeOut(1000); // 成功加入购物车动画效果
+//                    addcar.css("cursor","default").removeClass('orange').unbind('click'); // 删除加入购物车按钮点击事件
+                    this.destory(); // 销毁抛物体
+                }
             });
         });
     });

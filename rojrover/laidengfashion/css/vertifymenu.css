@@ -235,4 +235,50 @@
 .defaup .mry {
     margin-left: 6px;
 }
+/*//收货地址*/
+.verMenu_largebox .verMenu_location {
+    position: relative;
+    padding: 20px;
+    margin-right: 24px;
+    margin-top: 18px;
+    width: 370px;
+    height: 188px;
+    background: url(../img/selfdesign/border.png) no-repeat center;
+}
+.verMenu_largebox .verMenu_location .verMenu_dividline {
+    margin: 14px 0;
+    height: 1px;
+    background: #e6e6e6;
+}
+.verMenu_largebox .verMenu_location input {
+    width: 100px;
+}
+.verMenu_largebox .verMenu_location .setasDefault {
+    width: 42px;
+    height: 42px;
+    background: url(../img/selfdesign/completed.png) no-repeat center;
+    position: absolute;
+    top: -1px;
+    right: 0px;
+    display: none;
+}
+.verMenu_largebox .verMenu_location.active .setasDefault{
+    display: block;
+}
+.verMenu_largebox .verMenu_location .cd-edit {
+    margin-top: 58px;
+}
+.verMenu_largebox .verMenu_location .verMenu_adress input {
+    width: 100%;
+}
+.verMenu_largebox .verMenu_location p{
+    text-align:left;
+}
 
+.verMenu_add{
+    margin-top:20px;
+}
+#tp{
+    vertical-align:-5px;
+    margin-right:8px;
+}

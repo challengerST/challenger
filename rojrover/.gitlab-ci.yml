@@ -1,5 +1,7 @@
-test:app:
+rojrover-frontend:
   stage: test
+  tags:
+    - frontend
   script:
     - rsync -avz laidengfashion /var/www/
   # when: manual

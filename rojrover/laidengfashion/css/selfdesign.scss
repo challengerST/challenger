@@ -1010,16 +1010,17 @@ textarea::-ms-input-placeholder {
   }
 }
 .mydesign_comment {
-  margin: 50px 0 70px;
+  margin: 40px 0;
   & .fl-l {
     width: 468px;
   }
 }
-.mydesign_pro {
-  margin:50px 0;
-  width: 468px;
-  & .mydesign_material {
-    margin: 0 44px;
+.mydesignRequire,.designerRequire{
+  .mydesign_comment {
+    margin: 40px 0;
+    & .fl-l {
+      width:936px;
+    }
   }
 }
 .mydesign_imgbar{
@@ -1043,8 +1044,7 @@ textarea::-ms-input-placeholder {
     @extend %b1se6;
   }
 }
-
-.mydesignRequire, .mydesignPlate, .mydesignDesign {
+ .mydesignPlate, .mydesignDesign,.mydesignRequire,.designerPlate,.designerDesign,.designerRequire {
   & .mydesign_title {
     margin: 34px 0;
     & .titleline {
@@ -1058,23 +1058,31 @@ textarea::-ms-input-placeholder {
     margin-top: -12px;
   }
 }
-.mydesignPlate{
-  & img{
-    margin-bottom:120px;
+.designerRequire .mydesign_proInfo{
+  margin-top:24px;
+  & .fl-l{
+    margin-right:44px;
   }
 }
 .mydesignDesign .mydesign .mydesign_title .titleline {
   width: 536px;
 }
-
-.mydesignSketch, .mydesignDesign {
-  & .mydesign_imgbar {
+.mydesignPlate,.mydesignDesign,.mydesignRequire,.designerPlate,.designerDesign,.designerRequire{
+  & .mydesign_imgbar,.designer_imgbar{
+    width:1400px;
     & .fl-l {
       margin-bottom: 120px;
+      margin-right:120px;
     }
   }
 }
-
+.mydesignRequire .mydesign_imgbar .mydesign_proInfo .fl-l{
+  margin-right:0px;
+  margin-bottom:0;
+  &.mydesign_material{
+  margin:0 55px;
+  }
+}
 .selfClothDesignSize_info, .selfClothDesignSize_detailinfo {
   @extend %tal;
   & span {
@@ -1109,7 +1117,6 @@ textarea::-ms-input-placeholder {
     border: none;
   }
 }
-
 .editpay {
   padding-left: 290px;
   margin-bottom: 40px;
@@ -1139,5 +1146,121 @@ textarea::-ms-input-placeholder {
   }
    .rightIndex{
     margin-left:1132px;
+  }
+}
+/* designer learnmore */
+.designer.my_design{
+  & .learnMore{
+    width:382px;
+    height:52px;
+    line-height:52px;
+    @extend %b1se6;
+    border-color:$ooo;
+    @extend %tac;
+    margin:0 auto;
+    margin-top:80px;
+    &:hover{
+      border-color:$ff3250;
+      background:$ff3250;
+      & span{
+        color:$fff;
+      }
+    }
+  }
+}
+/* progress bar*/
+.designer_progressbar{
+  @extend %tac;
+  margin-bottom: 40px;
+  & div{
+    width: 92px;
+    height: 40px;
+    line-height: 40px;
+    color: $fff;
+    font-size: 16px;
+    background:$e6e6e6;
+    &.active{
+      background:$ff3250;
+    }
+  }
+}
+
+/* designer custom need */
+/* designer sketch */
+/* light-shadow */
+.designerDesign .designer_imgbar{
+  & .fl-l{
+    position:relative;
+    &:hover{
+      .light_shadow{
+        display:block;
+      }
+    }
+  & .light_shadow{
+    @extend %tac;
+    padding-top:130px;
+    width:320px;
+    height:320px;
+    line-height:28px;
+    background:rgba(0,0,0,.7);
+    position:absolute;
+    top:0;
+    left:0;
+    @extend %dpn;
+  }
+  }
+}
+/* designer tip */
+.designer_tip{
+  margin-bottom:80px;
+}
+/* controler buttons*/
+.designer_controller{
+  position:relative;
+  & span{
+    width:46px;
+    height:1px;
+    background:$e6e6e6;
+  }
+  & span.active{
+    background:$ff3250;
+  }
+  & .fl-l{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-82px;
+    transform:translate(-50%);
+  }
+}
+.designer_price{
+  @extend %tac;
+  margin-top:-30px;
+  margin-bottom:30px;
+}
+.designer_buttons{
+  margin-bottom:120px;
+  @extend %tac;
+  & span{
+    width:120px;
+    height:40px;
+    line-height:40px;
+    margin:0 15px;
+    @extend %b1se6;
+    @extend %tac;
+    &:hover{
+      background:$ff3250;
+      color:$fff;
+      //border:none;
+    }
+  }
+  & span.unactive{
+    width:120px;
+    height:40px;
+    line-height:40px;
+    background:$e6e6e6;
+    @extend %tac;
+    color:$fff;
+    margin-left:30px;
   }
 }

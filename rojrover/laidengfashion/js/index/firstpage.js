@@ -66,7 +66,21 @@ play1();
         }
     }
 
-
+    var column = document.getElementById('column');
+    var columnFile = document.getElementById('column-file');
+    var Lis = columnFile.getElementsByTagName('li');
+    var file = document.getElementsByClassName('cfilename');
+    for (var i = 0; i < Lis.length; i++) {
+        Lis[i].index = i;
+        file[i].onmouseover = function () {
+            for (var j = 0; j < Lis.length; j++) {
+                file[j].classList.remove('white-red');
+            }
+            this.classList.add('white-red');
+            sdL.html(this.firstChild.nodeValue);
+            console.log(this.firstChild.nodeValue);
+        }
+    }
 
 
 //    var wrap2 = document.getElementById('wrap2'),

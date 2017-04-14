@@ -1,7 +1,7 @@
-.selfrequires_groups span, .selfrequires_clarify .img-box, .selfrequires_opertion span, .NumList_controller, .spar .btc, .ptop, .mydesign .files, .selfClothDesignSize_detailinfo span {
+.selfrequires_groups span, .selfrequires_clarify .img-box, .selfrequires_opertion span, .NumList_controller, .spar .btc, .ptop, .mydesign .files, .selfClothDesignSize_detailinfo span, .designer.my_design .learnMore, .designer_buttons span {
   border: 1px solid #e6e6e6; }
 
-.selfrequires_groups span, .selfrequires_clarify .img-box, .selfrequires_clarify .selfrequires_clarify_description, .selfrequires_opertion span, .selfClothDesign_colorList div, .selfClothDesign_colorList .word, .selfClothDesign_materialsList span, .spar .btc, .mydesign_progressbar, .mydesign_imgbar .selfbrand, .mydesign .files, .selfClothDesignSize_info span, .selfClothDesignSize_detailinfo span {
+.selfrequires_groups span, .selfrequires_clarify .img-box, .selfrequires_clarify .selfrequires_clarify_description, .selfrequires_opertion span, .selfClothDesign_colorList div, .selfClothDesign_colorList .word, .selfClothDesign_materialsList span, .spar .btc, .mydesign_progressbar, .mydesign_imgbar .selfbrand, .mydesign .files, .selfClothDesignSize_info span, .selfClothDesignSize_detailinfo span, .designer.my_design .learnMore, .designer_progressbar, .designerDesign .designer_imgbar .fl-l .light_shadow, .designer_price, .designer_buttons, .designer_buttons span, .designer_buttons span.unactive {
   text-align: center; }
 
 .self_design_tool div, .self_design_tool span, .selfrequires_nav_main, .preview .fl-l p, .selfClothDesign_colorList, .selfClothDesign_materialsList, .NumList_material, .NumList_color, .NumList_size, .selfDesigned_largebox .selfDesigned_location p, .spar > div, .sst, .mydesign, .selfClothDesignSize_info, .selfClothDesignSize_detailinfo {
@@ -16,7 +16,7 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-.self_design_tool em, .prepaid .img-box .prepaid_layerout, .selfClothDesign_colorList .word {
+.self_design_tool em, .prepaid .img-box .prepaid_layerout, .selfClothDesign_colorList .word, .designerDesign .designer_imgbar .fl-l .light_shadow {
   display: none; }
 
 .self_design_tool .active em, .prepaid .img-box:hover .prepaid_layerout {
@@ -688,15 +688,14 @@ textarea::-ms-input-placeholder {
     margin-right: 110px; }
 
 .mydesign_comment {
-  margin: 50px 0 70px; }
+  margin: 40px 0; }
   .mydesign_comment .fl-l {
     width: 468px; }
 
-.mydesign_pro {
-  margin: 50px 0;
-  width: 468px; }
-  .mydesign_pro .mydesign_material {
-    margin: 0 44px; }
+.mydesignRequire .mydesign_comment, .designerRequire .mydesign_comment {
+  margin: 40px 0; }
+  .mydesignRequire .mydesign_comment .fl-l, .designerRequire .mydesign_comment .fl-l {
+    width: 936px; }
 
 .mydesign_imgbar .selfdesignCloth img {
   width: 410px;
@@ -712,24 +711,35 @@ textarea::-ms-input-placeholder {
     height: 32px;
     line-height: 32px; }
 
-.mydesignRequire .mydesign_title, .mydesignPlate .mydesign_title, .mydesignDesign .mydesign_title {
+.mydesignPlate .mydesign_title, .mydesignDesign .mydesign_title, .mydesignRequire .mydesign_title, .designerPlate .mydesign_title, .designerDesign .mydesign_title, .designerRequire .mydesign_title {
   margin: 34px 0; }
-  .mydesignRequire .mydesign_title .titleline, .mydesignPlate .mydesign_title .titleline, .mydesignDesign .mydesign_title .titleline {
+  .mydesignPlate .mydesign_title .titleline, .mydesignDesign .mydesign_title .titleline, .mydesignRequire .mydesign_title .titleline, .designerPlate .mydesign_title .titleline, .designerDesign .mydesign_title .titleline, .designerRequire .mydesign_title .titleline {
     height: 1px;
     background: #e6e6e6;
     width: 546px; }
-.mydesignRequire .title, .mydesignPlate .title, .mydesignDesign .title {
+.mydesignPlate .title, .mydesignDesign .title, .mydesignRequire .title, .designerPlate .title, .designerDesign .title, .designerRequire .title {
   margin: 0 18px;
   margin-top: -12px; }
 
-.mydesignPlate img {
-  margin-bottom: 120px; }
+.designerRequire .mydesign_proInfo {
+  margin-top: 24px; }
+  .designerRequire .mydesign_proInfo .fl-l {
+    margin-right: 44px; }
 
 .mydesignDesign .mydesign .mydesign_title .titleline {
   width: 536px; }
 
-.mydesignSketch .mydesign_imgbar .fl-l, .mydesignDesign .mydesign_imgbar .fl-l {
-  margin-bottom: 120px; }
+.mydesignPlate .mydesign_imgbar, .mydesignPlate .designer_imgbar, .mydesignDesign .mydesign_imgbar, .mydesignDesign .designer_imgbar, .mydesignRequire .mydesign_imgbar, .mydesignRequire .designer_imgbar, .designerPlate .mydesign_imgbar, .designerPlate .designer_imgbar, .designerDesign .mydesign_imgbar, .designerDesign .designer_imgbar, .designerRequire .mydesign_imgbar, .designerRequire .designer_imgbar {
+  width: 1400px; }
+  .mydesignPlate .mydesign_imgbar .fl-l, .mydesignPlate .designer_imgbar .fl-l, .mydesignDesign .mydesign_imgbar .fl-l, .mydesignDesign .designer_imgbar .fl-l, .mydesignRequire .mydesign_imgbar .fl-l, .mydesignRequire .designer_imgbar .fl-l, .designerPlate .mydesign_imgbar .fl-l, .designerPlate .designer_imgbar .fl-l, .designerDesign .mydesign_imgbar .fl-l, .designerDesign .designer_imgbar .fl-l, .designerRequire .mydesign_imgbar .fl-l, .designerRequire .designer_imgbar .fl-l {
+    margin-bottom: 120px;
+    margin-right: 120px; }
+
+.mydesignRequire .mydesign_imgbar .mydesign_proInfo .fl-l {
+  margin-right: 0px;
+  margin-bottom: 0; }
+  .mydesignRequire .mydesign_imgbar .mydesign_proInfo .fl-l.mydesign_material {
+    margin: 0 55px; }
 
 .selfClothDesignSize_info span, .selfClothDesignSize_detailinfo span {
   width: 70px;
@@ -777,5 +787,91 @@ textarea::-ms-input-placeholder {
     color: rgba(235, 72, 86, 0.7); }
   .indexcontent_even .rightIndex, .indexcontent_odd .rightIndex {
     margin-left: 1132px; }
+
+/* designer learnmore */
+.designer.my_design .learnMore {
+  width: 382px;
+  height: 52px;
+  line-height: 52px;
+  border-color: #000;
+  margin: 0 auto;
+  margin-top: 80px; }
+  .designer.my_design .learnMore:hover {
+    border-color: #ff3250;
+    background: #ff3250; }
+    .designer.my_design .learnMore:hover span {
+      color: #fff; }
+
+/* progress bar*/
+.designer_progressbar {
+  margin-bottom: 40px; }
+  .designer_progressbar div {
+    width: 92px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: #e6e6e6; }
+    .designer_progressbar div.active {
+      background: #ff3250; }
+
+/* designer custom need */
+/* designer sketch */
+/* light-shadow */
+.designerDesign .designer_imgbar .fl-l {
+  position: relative; }
+  .designerDesign .designer_imgbar .fl-l:hover .light_shadow {
+    display: block; }
+  .designerDesign .designer_imgbar .fl-l .light_shadow {
+    padding-top: 130px;
+    width: 320px;
+    height: 320px;
+    line-height: 28px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+/* designer tip */
+.designer_tip {
+  margin-bottom: 80px; }
+
+/* controler buttons*/
+.designer_controller {
+  position: relative; }
+  .designer_controller span {
+    width: 46px;
+    height: 1px;
+    background: #e6e6e6; }
+  .designer_controller span.active {
+    background: #ff3250; }
+  .designer_controller .fl-l {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -82px;
+    transform: translate(-50%); }
+
+.designer_price {
+  margin-top: -30px;
+  margin-bottom: 30px; }
+
+.designer_buttons {
+  margin-bottom: 120px; }
+  .designer_buttons span {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 15px; }
+    .designer_buttons span:hover {
+      background: #ff3250;
+      color: #fff; }
+  .designer_buttons span.unactive {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background: #e6e6e6;
+    color: #fff;
+    margin-left: 30px; }
 
 /*# sourceMappingURL=selfdesign.css.map */

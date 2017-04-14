@@ -43,7 +43,6 @@ $(function () {
                 $(this).parent().parent().parent().fadeOut('fast');
             });
         }
-
         build();
         $('#tp-box').fadeOut('slow');
         $('#lay-out').fadeOut('slow');
@@ -52,16 +51,36 @@ $(function () {
     $('.selfClothDesign_area').find('a').click(function () {
         $('.my_design').show().prev().hide();
     });
-    var mydesign = function (obj) {
-        $('.my_design').show().prev().hide();
-        $(obj).parent().removeClass('unactive').prev().addClass('unactive');
+    function myDesign(obj) {
+        $('.selfDesign_empty').hide();
+        $('.my_design').fadeIn().prev().hide();
+        $('.designer').hide();
+        $(obj).parent().removeClass('unactive').siblings().addClass('unactive');
     };
+    //我的订制
     $('#selfdesign_morder').click(function () {
-        mydesign(this);
+        myDesign(this);
     });
+    //私人定制
+    function selfDesign(obj){
+        $('.selfDesign_empty').hide();
+        $('.self_design').fadeIn().next().hide();
+        $('.designer').hide();
+        $(obj).parent().removeClass('unactive').siblings().addClass('unactive');
+    }
     $('#selfdesign_porder').click(function () {
-        $('.self_design').show().next().hide();
-        $(this).parent().removeClass('unactive').next().addClass('unactive');
+        selfDesign(this);
+    });
+    //设计师定制
+    function designerDesign(obj){
+        $('.selfDesign_empty').hide();
+        $('.self_design').hide();
+        $('.my_design').hide();
+        $('#designer').find('.designer').fadeIn();
+        $(obj).parent().removeClass('unactive').siblings().addClass('unactive');
+    }
+    $('#selfdesign_designer').click(function () {
+        designerDesign(this);
     });
     $('.mydesIgN').click(function () {
         $('.mydesign_index').show().nextAll().hide();
@@ -69,7 +88,6 @@ $(function () {
     function aractive(obj) {
         $(obj).addClass('active').siblings().removeClass('active');
     }
-
     $('.self_design_tool div').click(function () {
         aractive(this);
     });
@@ -148,7 +166,6 @@ $(function () {
         }
         control();
     }
-
     $('.selfClothDesignSize_detailinfo').find('.selfClothDesignSize_info').click(function () {
         colmaterial();
     });
@@ -235,7 +252,70 @@ $(function () {
         $(this).parent().parent().parent().hide();
         $(this).parent().parent().parent().next().fadeIn();
         $('#selfdesign_porder').trigger('click');
+    });
+//设计师定制部分
+    design();
+    function design(){
+        var interval,index,i=0;
+        //设计师定制
+        var length=$('.designer_controller').find('a').length;
+        console.log(length);
+        function designNext(){
+
+        }
+        console.log(length);
+        //启动页面加载定时器
+        function designShow(){
+            console.log();
+            $('.designer_controller').find('span').eq(i).addClass('active').parent().siblings().find('span').removeClass('active');
+            $('.designerDesign').find('.designer_imgbar').eq(i).fadeIn(2000).siblings().hide();
+            i++;
+            if(i>length-1){
+                i=0;
+            }
+        }
+        interval=setInterval(designShow,4000);
+        //移入时停止
+        $('.designerDesign').find('.designer_imgbar').find('.fl-l').on({
+            mouseenter:function(){
+                clearInterval(interval);
+            },
+            mouseleave:function(){
+                interval=setInterval(designShow,4000);
+            }
+        });
+        //鼠标悬浮到控制器的时候停掉计时器
+        $('.designer_controller').find('a').on({
+            mouseenter:function() {
+                clearInterval(interval);
+               index = $(this).index();
+                $(this).find('span').addClass('active').parent().siblings().find('span').removeClass('active');
+                $('.designerDesign').find('.designer_imgbar').eq(index).fadeIn().siblings().hide();
+            },
+            mouseleave:function(){
+                index = $(this).index();
+                i=index;
+                interval=setInterval(designShow,4000);
+            }
+        });
+    }
+//设计师定制模块的提交事件
+    function designerSubmit(){
+        var i=$('#designerSubmit').next().find('i').html();
+        $('#designerSubmit').click(function(){
+            i < 1 ? 0 : i--;
+            $(this).next().find('i').html(i);
+            if(i==0){
+                $(this).parent().next().find('span').removeClass('')
+            }
+        })
+    }
+    designerSubmit();
+    //了解详情
+    $('.learnMore').click(function(){
+        $('.designerRequire').fadeIn().siblings().hide();
     })
+
 
 
 

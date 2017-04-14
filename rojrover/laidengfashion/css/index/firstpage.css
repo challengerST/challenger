@@ -252,6 +252,19 @@
     font-size: 14px;
     padding: 14px;
 }
+/*更改输入框颜色*/
+.indexSerach input::-webkit-input-placeholder { /* WebKit browsers */
+    color:#fff;
+}
+.indexSerach input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#fff;
+}
+.indexSerach input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#fff;
+}
+.indexSerach input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#fff;
+}
 
 .indexSerach span {
     width: 70px;
@@ -1021,48 +1034,13 @@
     height: 100%;
 }
 
-/*.teleSr.active input{*/
-/*animated*/
-/*}*/
-/*.teleSr.active input {*/
-/*height: 28px;*/
-/*line-height: 28px;*/
-/*border: 1px solid #ff3250;*/
-/*border-right: none;*/
-/*padding: 6px;*/
-/*background: rgba(255, 255, 255, .2);*/
-/*margin-right: -12px;*/
-/*animation: hide 3s linear;*/
-/*}*/
-
-/*@keyframes hide {*/
-/*0% {*/
-/*width: 0px;*/
-/*}*/
-/*100% {*/
-/*width: 300px;*/
-/*}*/
-/*}*/
-
-/*teleinput*/
-#searchoption i {
-    width: 16px;
-    height: 20px;
-    margin-left: -34px;
-    margin-top:4px;
-    background: url('../../img/common/serach.png') no-repeat center;
+/*表头的题目*/
+.titl.als-iteme-line{
+    margin:20px 0;
 }
-
-input[type=search] {
-    border: solid 1px #e6e6e6;
-    height: 28px;
-    padding: 4px 12px;
-    width: 55px;
-    margin-left: 10px;
-}
-
-input[type=search]:focus {
-    border: solid 1px #ff3250;
-    height: 28px;
-    padding: 4px 12px;
+.titl.als-iteme-line i{
+    width:500px;
+    height:1px;
+    background:#e6e6e6;
+    margin-top:20px;
 }
