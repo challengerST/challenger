@@ -1,0 +1,472 @@
+title = "p-center"
+url = "/p-center"
+layout = "p-center"
+description = "个人中心"
+is_hidden = 0
+==
+<link rel="stylesheet" href="{{ 'assets/raw/css/fenxiang.css'|theme }}"/>
+<link rel="stylesheet" href="{{ 'assets/raw/css/personal-center.css'|theme }}"/>
+<body style="background:#fff;">
+<div class="big-box down-border background-fff">
+    <div class="banner-list main-content clearfix">
+        <div class="fl-l logo">
+            <a href="javascript:;"><img src="{{ 'assets/img/common/logo.png'|theme }}" alt=""></a>
+        </div>
+        <ol class="first-page-list-left fl-l">
+            <li id="firstpage" class="tab"><a href="Home"><span>首页</span></a></li>
+            <li id="womenpage" class="tab"><a href="wmc"><span>女装</span></a></li>
+            <li id="manpage" class="tab"><a href="wmc"><span>男装</span></a></li>
+            <li id="childrenpage" class="tab"><a href="" onclick="alert('is building!')"><span>童装</span></a></li>
+            <li id="clothpage" class="tab"><a href="" onclick="javascript:alert('is building!')"><span>成衣系列</span></a></li>
+            <li id="private-order" class="tab"><a href="" onclick="javascript:alert('is building!')"><span>私人定制</span></a></li>
+            <li id="fashion-information" class="tab"><a href="zixun"><span>潮流资讯</span></a></li>
+        </ol>
+        <ul class="first-page-list-right fl-r" id="lgs">
+            <li class="login" id="sign-in"><span>登录</span></li>
+            <li class="shopcar"><a href="pcar"><i style="background: url({{ 'assets/img/sprit-img.png'|theme }}) no-repeat -7px -11px;"></i>
+                <span>购物车</span></a></li>
+            <li class="search" onclick="javascript:alert('efforts are being made to build');"><img
+                    src="{{ 'assets/img/common/serach.png'|theme }}"></li>
+        </ul>
+    </div>
+</div>
+<div class="main-content clearfix">
+    <div class="fl-l personal-exhabition">
+        <div class="personal-head">
+            <div class="head"><img src="{{ 'assets/img/personal-room/6.jpg'|theme }}" alt=""></div>
+            <div class="personal"><span id="user-name">韩璐鹿</span> <i></i></div>
+            <div class="share"><a href="" onclick="alert('is building!');"><span class="work"><i>26</i>作品</span></a><span class="shu-line"></span><a
+                    href="personal-room.html"><span class="fan"><i>88</i>粉丝</span></a><span
+                    class="shu-line"></span><a href="personal-room.html"><span class="notice"><i>66</i>关注</span></a></div>
+        </div>
+        <ul class="items-updates" id="items-updates">
+            <li class="update">
+                <div class="updates st nav" name="0"><i></i><span>好友动态</span></div>
+            </li>
+            <li class="line"></li>
+            <li class="spacing">
+                <div class="my-size st"><i></i><span>我的尺码</span></div>
+            </li>
+            <li class="spacing">
+                <div class="my-data st" name="4"><i></i><span>我的资料</span></div>
+            </li>
+            <li class="spacing">
+                <div class="cloth-favorite st"><i></i><span>服装喜好</span></div>
+            </li>
+            <li class="line spacing"></li>
+            <li class="spacing">
+                <div class="news st"><i></i><span>消息</span></div>
+            </li>
+            <li class="spacing">
+                <div class="collecttion st"><i></i><span>收藏夹</span></div>
+            </li>
+            <li class="spacing">
+                <div class="my-orders st" name="1"><i></i><span>我的订单</span></div>
+            </li>
+            <li class="spacing">
+                <div class="style-contrast st"><i></i><span>款式对比</span></div>
+            </li>
+            <li class="spacing">
+                <div class="browse-history st" name="3"><i></i><span>浏览历史</span></div>
+            </li>
+            <li class="line spacing"></li>
+            <li class="spacing">
+                <div class="edit-items st"><i></i><span>上传商品</span></div>
+            </li>
+            <li class="spacing">
+                <div class="edit-items st" name="2"><i></i><span>商品管理</span></div>
+            </li>
+            <li class="spacing down">
+                <div class="delete-items st"><i></i><span>订单管理</span></div>
+            </li>
+        </ul>
+    </div>
+    <div class="fl-r personal-share cd" style="display:block;">
+        <div>
+            <span class="b-circle"></span> <span class="column-head">晒一晒你的新衣服</span><span class="dot"></span>
+        </div>
+        <div>
+            <div class="clearfix" style=" position:relative;margin:9px 0;">
+                <textarea class="fl-l fabu-con" placeholder="我要分享" name="" id="wd" autocomplete="off"></textarea>
+                <span class="w-num">您还可以写 <i class="wd-num" id="wd-num">140</i> 个字</span>
+                <span class="hengxian"></span>
+                <span class="shuxian"></span>
+                <div class="share-items fl-r clearfix">
+                    <input type="file" name="" id="" style="display:none">
+                    <span id="picture" class="fl-l"><i></i><span>图片</span></span><span id="link" class="fl-r"><i></i><span>链接</span></span><span id="music" class="fl-l"><i></i><span>音乐</span></span><span id="video" class="fl-r"><i></i><span>视频</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix" id="share-p"><span class="fabu-but fl-r">分享</span></div>
+        <div id="friend-updates" class="show twice">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">好友动态</span><span class="four dot"></span>
+            </div>
+            <div class="box">
+                <a id="close" class="close" href="javascript:;" onclick="delete(this)">×</a>
+                <div class="clearfix" style="line-height:50px;">
+                    <img class="small-head fl-l" src="{{ 'assets/img/personal-room/6.jpg'|theme }}" alt=""/>
+                    <span class="user fl-l host">韩露</span><span class="share host fl-l">分享<i class="music"></i>音乐</span>
+                    <span class="clock fl-r" id="time">time</span>
+                </div>
+
+                <div class="content">
+                    <div class="main">
+                        <p class="txt">
+                            <!--<span class="user">小Y：</span>-->
+                            英国艺术家 Jane Perkins 能利用很多不起眼的东西进行创作，甚至是垃圾。首饰、纽扣、玩具等等都可以作为他创作的工具并创作出惟妙惟肖的画作，丝毫不逊色于色彩丰富的颜料。
+                        </p>
+                        <div class="share-img">
+                            <img src="{{ 'assets/img/personal-room/nvz.jpg'|theme }}" alt="">
+                            <img src="{{ 'assets/img/personal-room/nvz.jpg'|theme }}" alt="">
+                            <img src="{{ 'assets/img/personal-room/nvz.jpg'|theme }}" alt="">
+                            <img src="{{ 'assets/img/personal-room/nvz.jpg'|theme }}" alt="">
+                        </div>
+                        <div class="ppd">
+                            <span class="forward"><i></i>转发</span>
+                            <span class="shu-line"></span>
+                            <span class="comment"><i></i>评论</span>
+                            <span class="shu-line"></span>
+                            <span class="pointpraise"><i></i>点赞</span>
+                        </div>
+                    </div>
+                    <div class="praises-total" total="0" style="display: none;"></div>
+                    <div class="comment-list">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="my-size" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">我的尺码</span><span class="four dot"></span>
+            </div>
+        </div>
+        <div id="my-data" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">我的资料</span><span class="four dot"></span>
+            </div>
+        </div>
+        <div id="favorite-cloth" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">喜爱款式</span><span class="four dot"></span>
+            </div>
+        </div>
+        <div id="news" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">消息</span><span class="two dot"></span>
+            </div>
+        </div>
+        <div id="collection" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">收藏</span><span class="two dot"></span>
+            </div>
+        </div>
+        <div id="items" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">我的订单</span><span class="four dot"></span>
+            </div>
+        </div>
+        <div id="style-contrast" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">款式对比</span><span class="four dot"></span>
+            </div>
+        </div>
+        <div id="browse-history" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">浏览历史</span><span class="four dot"></span>
+            </div>
+        </div>
+        <div id="edit-product" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">编辑商品</span><span class="four dot"></span>
+            </div>
+        </div>
+        <div id="delete-product" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">删除商品</span><span class="four dot"></span>
+            </div>
+        </div>
+    </div>
+    <div class="fl-r menu cd" style="display:none;">
+        <div class="product">
+            <table id="cartTable">
+                <thead>
+                <tr class="t-tf">
+                    <th class="col-info">全部订单</th>
+                    <th class="col-price">待付款</th>
+                    <th class="col-num">待设计</th>
+                    <th class="col-total">待生产</th>
+                    <th class="col-oper">待收货</th>
+                    <th class="col-oper">已完成</th>
+                    <th class="col-oper">已取消</th>
+                </tr>
+                </thead>
+                </table>
+            <table class="t-x t-b">
+                <tr class="t-ts au">
+                    <th class="col-info">商品信息</th>
+                    <th class="col-price">单价</th>
+                    <th class="col-num">数量</th>
+                    <th class="col-total">合计</th>
+                    <th class="col-total">实付金额</th>
+                    <th class="col-oper">操作</th>
+                </tr>
+            </table>
+            <div class="t-box">
+                <div class="tt" style=""><span>2017/1/6 15.23</span></div>
+                <table class="t-x">
+                    <tbody>
+                    <tr class="">
+                        <td class="goods col-info clearfix"><div class="fl-l"><a href="" class="cloth"><img src="{{ 'assets/img/sweat-cloth.jpg'|theme }}" alt=""></a></div><div class="fl-l pd">
+                            <a href=""><p>高领针织毛衣</p><p class="b-c">驼色/M(160)</p></a></div></td>
+                        <td class="price col-price">499</td>
+                        <td class="count col-num">*1</td>
+                        <td class="subtotal">499</td>
+                        <td class="do">已完成</td>
+                        <td class="operation col-oper">
+                            <div>
+                                <p><a href="">查看详情</a></p>
+                                <p><a href="">删除订单</a></p>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>;
+    </div>
+    <div class="fl-r pm cd" style="display:none;">
+        <div class="product">
+            <div class="clearfix pm-t">
+                <div class="fl-l pm-z"><a href=""><span>在出售的商品</span></a></div>
+                <div class="fl-l pm-c"><a href=""><span>仓库中的商品</span></a></div>
+                <div class="fl-r f-p"><a href=""><img class="add" src="{{ 'assets/img/personal-center/pm/1.png'|theme }}"><span>发布商品</span></a></div>
+            </div>
+            <table class="t-x t-b">
+                <tr class="t-ts au">
+                    <th class="pm-p">商品图</th>
+                    <th class="col-price">单价</th>
+                    <th class="pm-k">库存</th>
+                    <th class="col-total">总销量</th>
+                    <th class="col-total">上架时间</th>
+                    <th class="col-oper">操作</th>
+                </tr>
+            </table>
+            <div class="t-box">
+                <div class="tt" style=""><span>2017/1/6 15.23</span></div>
+                <table class="t-x">
+                    <tbody>
+                    <tr class="">
+                        <td class="goods col-info clearfix"><div class="fl-l"><a href="" class="cloth"><img src="{{ 'assets/img/sweat-cloth.jpg'|theme }}" alt=""></a></div><div class="fl-l pd">
+                            <a href=""><p>高领针织毛衣</p></a></div></td>
+                        <td class="price col-price">499</td>
+                        <td class="count col-num">40</td>
+                        <td class="pm-x">0</td>
+                        <td class="do">2016-1-7 12.06</td>
+                        <td class="pm-op col-oper">
+                            <div>
+                                <p><a href="">编辑商品</a></p>
+                                <p><a href="">下架</a></p>
+                                <p><a href="">删除</a></p>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>;
+    </div>
+    <div class="fl-r brh cd" style="display:none;">
+        <div class="product">
+            <div class="clearfix pm-t">
+                <div class="fl-l pm-z"><a href=""><span>全部</span></a></div>
+                <div class="fl-l pm-c"><a href=""><span>女装</span></a></div>
+                <div class="fl-l pm-c"><a href=""><span>男装</span></a></div>
+                <div class="fl-l pm-c"><a href=""><span>童装</span></a></div>
+                <div class="fl-r brh-m"><a href=""><span>管理</span></a></div>
+                <!--<div class="fl-l pm-c"><a href=""><span>仓库中的商品</span></a></div>-->
+                <!--<div class="fl-r f-p"><a href=""><img class="add" src="{{ 'assets/img/personal-center/pm/1.png'|theme }}"><span>发布商品</span></a></div>-->
+            </div>
+            <div class="brh-p">
+                <div class="brh-b">
+                    <div class="img-box">
+                        <img src="{{ 'assets/img/personal-center/brh/img1.jpg'|theme }}" alt="">
+                    </div>
+                    <div>
+                        <p>商品类名</p>
+                        <p>价格</p>
+                    </div>
+                </div>
+                <div class="brh-b">
+                    <div class="img-box">
+                        <img src="{{ 'assets/img/personal-center/brh/img4.jpg'|theme }}" alt="">
+                    </div>
+                    <div>
+                        <p>商品类名</p>
+                        <p>价格</p>
+                    </div>
+                </div>
+                <div class="brh-b">
+                    <div class="img-box">
+                        <img src="{{ 'assets/img/personal-center/brh/img5.jpg'|theme }}" alt="">
+                    </div>
+                    <div>
+                        <p>商品类名</p>
+                        <p>价格</p>
+                    </div>
+                </div>
+                <div class="brh-b">
+                    <div class="img-box">
+                        <img src="{{ 'assets/img/personal-center/brh/img6.jpg'|theme }}" alt="">
+                    </div>
+                    <div>
+                        <p>商品类名</p>
+                        <p>价格</p>
+                    </div>
+                </div>
+                <div class="brh-b">
+                    <div class="img-box">
+                        <img src="{{ 'assets/img/personal-center/brh/img1.jpg'|theme }}" alt="">
+                    </div>
+                    <div>
+                        <p>商品类名</p>
+                        <p>价格</p>
+                    </div>
+                </div>
+                <div class="brh-b">
+                    <div class="img-box">
+                        <img src="{{ 'assets/img/personal-center/brh/img1.jpg'|theme }}" alt="">
+                    </div>
+                    <div>
+                        <p>商品类名</p>
+                        <p>价格</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>;
+    </div>
+    <div class="fl-r md cd" style="display:none;">
+        <div class="product">
+
+                <div class="clearfix p-center">
+                    <div class="fl-l" ><span class="dd" id="e-head" cc="3">修改头像</span></div>
+                    <div class="fl-l"><span id="e-data" cc="2">基本资料</span></div>
+                    <div class="fl-l"><span id="c-pl" cc="0">收货地址</span></div>
+                    <div class="fl-l"><span id="e-pwd" cc="1">修改密码</span></div>
+                </div>
+                <div class="column cs" id="p-clu" style="display:none">
+                    <div class="big-box-con">
+                        <div class="big-child">
+                            <P class="lon clearfix"><input class="name fl-l" placeholder="username"> <input class="phoneNum fl-l" placeholder="phonenum"><a
+                                    href="" class="fl-r"><span style="color:#ff3250;">默认地址</span></a></P>
+                            <P class="clearfix"><input class="sheng fl-l" placeholder="province"><input placeholder="city" class="shi fl-l"> <input class="qu clearfix" placeholder="area"> <input class="location clearfix" placeholder="location"></P>
+                        </div>
+                    </div>
+                    <div class="big-box-con">
+                        <div class="big-child">
+                            <P class="lon clearfix"><input class="name fl-l" placeholder="username"> <input class="phoneNum fl-l" placeholder="phonenum"><a
+                                    href="" class="fl-r"><span style="color:#ff3250;">设为默认</span></a></P>
+                            <P class="clearfix"><input class="sheng fl-l" placeholder="province"><input placeholder="city" class="shi fl-l"> <input class="qu clearfix" placeholder="area"> <input class="location clearfix" placeholder="location"></P>
+                            <p class="cd-edit clearfix"><span class="fl-l">修改</span><img class="ww fl-r" src="{{ 'assets/img/personal-center/pm/3.png'|theme }}" alt=""></p>
+                        </div>
+                    </div>
+                    <div class="big-box-con el">
+                        <div class="big-child ed">
+                            <a href="javascript:void(0);"><img id="tp" onclick="stp()" class="bw" src="{{ 'assets/img/personal-center/pm/2.png'|theme }}" alt=""><span>添加地址</span></a>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="ep cs" style="display:none">
+                <div class="mt tm op">原密码: <input type="password" placeholder="原来的密码"></div>
+                <div class="mt op">新密码: <input type="password" placeholder="6-18位"></div>
+                <div class="mt sp">确认密码: <input type="password" placeholder="再输一次确保一致哦"></div>
+                <div class="cure"><input type="button" value="保存" id="cure"></div>
+            </div>
+            <div class="dt cs" style="display:none">
+                <div class="md">昵称: <span class='nickname'>韩露露</span> </div>
+                <div class="md">性别:
+                    <div  class="sex" style="display:inline-block">
+                        <div class="checkboxFour">
+                            <input type="checkbox" value="1" name="sex">
+                            <label for="checkboxFourInput"></label>
+                        </div> <span>男</span>
+                    </div>
+                    <div class="checkboxFour">
+                        <input type="checkbox" value="1" name="sex">
+                        <label for="checkboxFourInput"></label>
+                    </div> <span>女</span>
+                </div>
+                <div class="md">住址：</div>
+                <div class="cure"><input type="button" value="保存"></div>
+            </div>
+            <div class="container cs" style="display:block">
+                <div class="new-contentarea tc"> <a href="javascript:void(0)" class="upload-img">
+                    <label for="upload-file"><img src="{{ 'assets/img/personal-center/lp.png'|theme }}" alt="">确认上传</label>
+                </a>
+                    <input type="file" class="" name="upload-file" id="upload-file" />
+                    <span style="margin-left:12px;color:#686868;font-size:13px;">支持 png/jpg 格式上传</span>
+                </div>
+                <div class="imageBox">
+                    <div class="thumbBox"></div>
+                    <div class="spinner" style="display: none">Loading...</div>
+                </div>
+                <div class="action">
+                    <!-- <input type="file" id="file" style=" width: 200px">-->
+                    <input type="button" class="Btnsty_peyton" value="确认上传">
+                    <input type="button" id="btnCrop"  class="Btnsty_peyton" value="取消">
+                    <!--<input type="button" id="btnZoomIn" class="Btnsty_peyton" value="+"  >-->
+                    <!--<input type="button" id="btnZoomOut" class="Btnsty_peyton" value="-" >-->
+                </div>
+                <div class="cropped"></div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="{{ 'assets/raw/js/personal-center/cropbox.js'|theme }}"></script>
+<script type="text/javascript">
+    $(window).load(function () {
+        var options =
+        {
+            thumbBox: '.thumbBox',
+            spinner: '.spinner',
+            imgSrc: 'images/avatar.jpg'
+        }
+        var cropper = $('.imageBox').cropbox(options);
+        $('#upload-file').on('change', function () {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                options.imgSrc = e.target.result;
+                cropper = $('.imageBox').cropbox(options);
+            }
+            reader.readAsDataURL(this.files[0]);
+            this.files = [];
+        })
+        $('#btnCrop').on('click', function () {
+            var img = cropper.getDataURL();
+            $('.cropped').html('');
+            $('.cropped').append('<img src="' + img + '" align="absmiddle" style="width:64px;margin-top:4px;border-radius:64px;box-shadow:0px 0px 12px #7E7E7E;" ><p>64px*64px</p>');
+            $('.cropped').append('<img src="' + img + '" align="absmiddle" style="width:128px;margin-top:4px;border-radius:128px;box-shadow:0px 0px 12px #7E7E7E;"><p>128px*128px</p>');
+            $('.cropped').append('<img src="' + img + '" align="absmiddle" style="width:180px;margin-top:4px;border-radius:180px;box-shadow:0px 0px 12px #7E7E7E;"><p>180px*180px</p>');
+        })
+        $('#btnZoomIn').on('click', function () {
+            cropper.zoomIn();
+        })
+        $('#btnZoomOut').on('click', function () {
+            cropper.zoomOut();
+        })
+    });
+</script>
+<!--<script src="{{ 'assets/raw/js/personal-center/personal-center.js'|theme }}"></script>-->
+<script src="{{ 'assets/raw/js/personal-center/catenav.js'|theme }}"></script>
+<script src="{{ 'assets/raw/js/personal-center/comment.js'|theme }}"></script>
+<script src="{{ 'assets/raw/js/personal-center/publish.js'|theme }}"></script>
+<script src="{{ 'assets/raw/js/personal-center/share.js'|theme }}"></script>
+<script src="{{ 'assets/raw/js/personal-center/adress.js'|theme }}"></script>
+<script src="{{ 'assets/raw/js/personal-center/tp.js'|theme }}"></script>

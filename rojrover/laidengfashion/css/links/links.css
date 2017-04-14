@@ -1,0 +1,71 @@
+section {
+  position: relative;
+  z-index: 1;
+  /* needed for setting pseudo-element z-index */
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+  section a {
+    position: relative;
+    display: inline-block;
+    outline: none;
+    color: #404d5b;
+    vertical-align: bottom;
+    text-decoration: none;
+    white-space: nowrap; }
+    section a::before, section a::after {
+      pointer-events: none;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-font-smoothing: antialiased;
+      font-smoothing: antialiased; }
+
+.link-textfall {
+  color: #fff; }
+  .link-textfall a {
+    color: #FF3250;
+    font-weight: 400;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    -webkit-perspective: 1000px;
+    perspective: 1000px; }
+    .link-textfall a:hover {
+      color: #ff3250; }
+    .link-textfall a::before, .link-textfall a::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: attr(data-dummy);
+      opacity: 0;
+      -webkit-transition: -webkit-transform 0.3s, opacity 0.3s, color 0.3s;
+      transition: transform 0.3s, opacity 0.3s, color 0.3s;
+      pointer-events: none; }
+
+.link-textfall a::before {
+  color: #ff3250;
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+  -webkit-transform: translateY(-100%) translateZ(100px) rotateX(30deg) rotateZ(-10deg);
+  transform: translateY(-100%) translateZ(100px) rotateX(30deg) rotateZ(-10deg); }
+
+.link-textfall a::after {
+  color: #ff3250;
+  -webkit-transform: translateY(-100%) translateZ(100px) rotateX(-30deg) rotateZ(10deg);
+  transform: translateY(-100%) translateZ(100px) rotateX(-30deg) rotateZ(10deg); }
+
+.link-textfall a:hover::before,
+.link-textfall a:hover::after {
+  color: transparent;
+  opacity: 1;
+  -webkit-transform: translateY(0) translateZ(0) rotateX(0) rotateZ(0);
+  transform: translateY(0) translateZ(0) rotateX(0) rotateZ(0); }
+
+.link-textfall a:hover::before {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s; }
+
+.link-textfall a:hover::after {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s; }
+
+/*# sourceMappingURL=links.css.map */

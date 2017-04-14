@@ -1,0 +1,10 @@
+title = "login-check"
+url = "/login-check"
+layout = "default"
+is_hidden = 0
+==
+{% if user %}
+    <p>Hello {{ user.name }}</p>
+{% else %}
+    <p>Nobody is logged in</p>
+{% endif %}

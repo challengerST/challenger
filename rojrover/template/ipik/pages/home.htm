@@ -1,0 +1,439 @@
+title = "Home"
+url = "/"
+layout = "default"
+is_hidden = 0
+
+[account]
+paramCode = "code"
+
+[resetPassword]
+paramCode = "code"
+
+[session]
+security = "all"
+==
+<link rel="stylesheet" href="{{ 'assets/raw/css/index/firstpage.css'|theme }}"/>
+
+<div class="big-box down-border background-fff">
+    <div class="banner-list main-content clearfix">
+        <div class="fl-l logo">
+            <a href="javascript:;"><img src="{{ 'assets/img/common/logo.png'|theme }}" alt=""></a>
+        </div>
+        <ol class="first-page-list-left fl-l">
+            <li id="firstpage" class="tab"><a href="Home"><span>首页</span></a></li>
+            <li id="womenpage" class="tab"><a href="wmc"><span>女装</span></a></li>
+            <li id="manpage" class="tab"><a href="wmc"><span>男装</span></a></li>
+            <li id="childrenpage" class="tab"><a href="" onclick="alert('is building!')"><span>童装</span></a></li>
+            <li id="clothpage" class="tab"><a href="" onclick="javascript:alert('is building!')"><span>成衣系列</span></a>
+            </li>
+            <li id="private-order" class="tab"><a href=""
+                                                  onclick="javascript:alert('is building!')"><span>私人定制</span></a></li>
+            <li id="fashion-information" class="tab"><a href="zixun"><span>潮流资讯</span></a></li>
+        </ol>
+        <ul class="first-page-list-right fl-r clearfix" id="lgs">
+            <li class="login fl-l" id="sign-in">
+                <span>登录</span>
+            </li>
+            <li class="fl-l" style="display:none">
+                <div class="logNed">
+                    <div>
+                        <img src="{{ 'assets/img/dpc/1.jpg'|theme }}" alt="" id="hdImg">
+                        <img src="{{ 'assets/img/common/downarrow.png'|theme }}" alt="" class="downarrow">
+                    </div>
+                    <div class="logNed-img">
+                        <div><a href="p-room"><span>个人空间</span></a></div>
+                        <div><a href="p-center"><span>好友动态</span></a></div>
+                        <div><a href="p-center"><span>我的订单</span></a></div>
+                        <div><a href="p-center"><span>收藏夹</span></a></div>
+                        <div><a href=""><span>退出</span></a></div>
+                    </div>
+                </div>
+            </li>
+            <li class="shopcar fl-l"><a href="pcar"><i
+                    style="background: url({{ 'assets/img/sprit-img.png'|theme }}) no-repeat -7px -11px;"></i>
+                <span>购物车</span></a></li>
+            <li class="search fl-l" onclick="javascript:alert('efforts are being made to build');"><img
+                    src="{{ 'assets/img/common/serach.png'|theme }}"></li>
+        </ul>
+    </div>
+</div>
+<div id="loRe" style="display:none;">
+    <div class="lay-out" id="lay-out"></div>
+    <div class="login-box" id="login-box">
+        {% partial "login" %}
+    </div>
+</div>
+<div id="wrap" class="">
+    <ul class="big-img clearfix" id="pic1">
+        <li class="fl-l item" id="wows1_0"></li>
+        <li class="fl-l item" id="wows1_1"></li>
+        <li class="fl-l item" id="wows1_2"></li>
+        <li class="fl-l item" id="wows1_3"></li>
+    </ul>
+    <div class="prev-btn1">
+        <div class="prev1" id="prev1"></div>
+    </div>
+    <div class="next-btn1">
+        <div class="next1" id="next1"></div>
+    </div>
+    <div class="main-content" id="search-content">
+        <div class="word-decoration">
+            <h1>同设计师一起探讨时尚</h1>
+            <div class="clearfix">
+                <input type="text" class="designer-seR fl-l">
+                <span class="bo fl-l" onclick="javascript:alert('is building!')"><i class="isearch"></i></span>
+            </div>
+        </div>
+        <ol class="flat mt" id="list">
+            <li class="active"></li>
+            <li class=""></li>
+            <li class=""></li>
+            <li class=""></li>
+        </ol>
+    </div>
+
+    <div class="main-content bot clearfix">
+        <div class="fl-l tt clearfix">
+            <div class="tubiao-1 fl-l"><i></i></div>
+            <div class="fl-l pinpai">
+                <p class="f-24">设计师自创品牌</p>
+                <p class="r-yi font-th">快告诉设计师你想要什么</p>
+            </div>
+        </div>
+        <div class="fl-l tt clearfix ss">
+            <div class="tubiao-2 fl-l"><i></i></div>
+            <div class="fl-l pinpai">
+                <p class="f-24">设计师自创品牌</p>
+                <p class="r-yi font-th">快告诉设计师你想要什么</p>
+            </div>
+        </div>
+        <div class="fl-r tt st clearfix">
+            <div class="tubiao-3 fl-l"><i></i></div>
+            <div class="fl-l pinpai">
+                <p class="f-24">设计师自创品牌</p>
+                <p class="r-yi font-th">快告诉设计师你想要什么</p>
+            </div>
+        </div>
+    </div>
+    <div class="shadow">
+    </div>
+</div>
+<!--</div>-->
+<div class="scene main-content clearfix">
+    <div class="meet fl-l">
+        <img src="{{ 'assets/img/scene/1.png'|theme }}" alt="">
+        <div class="smaboreder">
+
+        </div>
+        <div class="sence-bottom">
+            <img src="{{ 'assets/img/scene/meet.png'|theme }}" alt="">
+            <span>聚会</span>
+        </div>
+    </div>
+    <div class="business fl-l">
+        <img src="{{ 'assets/img/scene/2.png'|theme }}" alt="">
+        <div class="smaboreder">
+
+        </div>
+        <div class="sence-bottom">
+            <img src="{{ 'assets/img/scene/business.png'|theme }}" alt="">
+            <span>商务</span>
+        </div>
+    </div>
+    <div class="leisure fl-l">
+        <img src="{{ 'assets/img/scene/3.png'|theme }}" alt="">
+        <div class="smaboreder">
+
+        </div>
+        <div class="sence-bottom">
+            <img src="{{ 'assets/img/scene/leisure.png'|theme }}" alt="">
+            <span>休闲</span>
+        </div>
+    </div>
+    <div class="sport fl-l">
+        <img src="{{ 'assets/img/scene/4.png'|theme }}" alt="">
+        <div class="smaboreder">
+
+        </div>
+        <div class="sence-bottom">
+            <img src="{{ 'assets/img/scene/sports.png'|theme }}" alt="">
+            <span>运动</span>
+        </div>
+    </div>
+    <div class="travel fl-l">
+        <img src="{{ 'assets/img/scene/5.png'|theme }}" alt="">
+        <div class="smaboreder">
+
+        </div>
+        <div class="sence-bottom">
+            <img src="{{ 'assets/img/scene/travel.png'|theme }}" alt="">
+            <span>旅行</span>
+        </div>
+    </div>
+    <div class="banquet fl-l">
+        <img src="{{ 'assets/img/scene/6.png'|theme }}" alt="">
+        <div class="smaboreder">
+
+        </div>
+        <div class="sence-bottom">
+            <img src="{{ 'assets/img/scene/panic.png'|theme }}" alt="">
+            <span>宴会</span>
+        </div>
+    </div>
+</div>
+
+
+<div style="position:relative;height:650px;">
+    <div class="designer main-content clearfix">
+        <div class="title-line">
+            <i class="title-line-left"></i><span class="fenqu">设计师</span><i class="title-line-left"></i>
+        </div>
+
+        <div class="content" id="wrap2">
+            <div id="rm_wrap">
+                <ul class="clearfix fscoll" id="pic2">
+                    <li class="tl">
+                        <img src="{{ 'assets/img/index/designer/1.jpg'|theme }}" alt="">
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <img src="{{ 'assets/img/index/designer/1.jpg'|theme }}" alt="">
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <img src="{{ 'assets/img/index/designer/1.jpg'|theme }}" alt="">
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <img src="{{ 'assets/img/index/designer/1.jpg'|theme }}" alt="">
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <img src="{{ 'assets/img/index/designer/2.jpg'|theme }}" alt="">
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <img src="{{ 'assets/img/index/designer/2.jpg'|theme }}" alt="">
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <img src="{{ 'assets/img/index/designer/2.jpg'|theme }}" alt="">
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <img src="{{ 'assets/img/index/designer/2.jpg'|theme }}" alt="">
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <img src="{{ 'assets/img/index/designer/3.jpg'|theme }}" alt="">
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <img src="{{ 'assets/img/index/designer/3.jpg'|theme }}" alt="">
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <img src="{{ 'assets/img/index/designer/3.jpg'|theme }}" alt="">
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <img src="{{ 'assets/img/index/designer/3.jpg'|theme }}" alt="">
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="prev-btn2">
+                <div class="prev2" id="prev2"><img src="{{ 'assets/img/index/top/prev.png'|theme }}" alt=""></div>
+            </div>
+            <div class="next-btn2">
+                <div class="next2" id="next2"><img src="{{ 'assets/img/index/top/next.png'|theme }}" alt=""></div>
+            </div>
+            <!--左右箭头-->
+            <!--<div class="rm_nav">-->
+            <!--<a id="rm_next" href="#" class="rm_next"></a>-->
+            <!--<a id="rm_prev" href="#" class="rm_prev"></a>-->
+            <!--</div>-->
+            <ol class="flat" id="list2">
+                <li class="active"></li>
+                <li class=""></li>
+                <li class=""></li>
+            </ol>
+        </div>
+    </div>
+    <div class="shiyijian-log">
+        <ul>
+            <li style="background:url({{ 'assets/img/index/shiyijian/shiyijian.jpg'|theme }}) no-repeat center">
+                <div class="shiyijian main-content">
+                    <div class="title-line">
+                        <i class="title-line-left"></i><span class="fenqu white-word">3D试衣间</span><i
+                            class="title-line-left"></i>
+                        <p class="shiyijian-bigword">再也不用来回跑试衣间了...</p>
+                        <p class="shiyijian-kuang"><a href="">马上试衣服 > </a></p>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="title-line">
+            <i class="title-line-left"></i><a href="zixun.html"><span class="fenqu">潮流资讯</span></a><i
+                class="title-line-left"></i>
+        </div>
+
+        <ul class="zhuanlan-file" id="column-file">
+            <li id="column" class="white-red">KOL专栏</li>
+            <li id="fashion-inf" class="zuoyou">時尚资讯</li>
+            <li id="trend-forecase">趋势预测</li>
+        </ul>
+        <div class="mr-twe clearfix">
+            <div class="fl-l" style="width:762px;height:392px;">
+                <div class="main" id="main">
+                    <ul id="pic3" class="clearfix">
+                        <li class="fl-l" id="list-img1"></li>
+                        <li class="fl-l" id="list-img2"></li>
+                        <li class="fl-l" id="list-img3"></li>
+                        <li class="fl-l" id="list-img4"></li>
+                    </ul>
+                    <div class="grey-background">
+                        <div>
+                            <p>欧美街头最美50件毛衣</p>
+                            <h1>今年冬天流行款式全部介绍给你~</h1>
+                        </div>
+                        <!--<ol class="flat" id="list3">-->
+                        <!--<li class="active"></li>-->
+                        <!--<li class=""></li>-->
+                        <!--<li class=""></li>-->
+                        <!--<li class=""></li>-->
+                        <!--</ol>-->
+                    </div>
+                </div>
+            </div>
+            <ul class="zhuanlan-fenqu">
+
+                <li class="shaoda"><p class="shaoda-li">KOL专栏</p>
+                    <p class="font-fourteen">不聊Gigi聊她妹 大话贝拉式时髦</p>
+                    <p class="xuxian padding-top-two"
+                       style="background: url(img/line-bottom.png) no-repeat center;"></p>
+                </li>
+                <li><span class="font-fourteen">不聊Gigi聊她妹 大话贝拉式时髦</span>
+                    <p class="xuxian" style="background: url(img/line-bottom.png) no-repeat center;"></p>
+                </li>
+                <li><span class="font-fourteen">不聊Gigi聊她妹 大话贝拉式时髦</span>
+                    <p class="xuxian" style="background: url(img/line-bottom.png) no-repeat center;"></p>
+                </li>
+                <li><span class="font-fourteen">不聊Gigi聊她妹 大话贝拉式时髦</span>
+                    <p class="xuxian" style="background: url(img/line-bottom.png) no-repeat center;"></p>
+                </li>
+                <li><span class="font-fourteen">不聊Gigi聊她妹 大话贝拉式时髦</span>
+                    <p class="xuxian" style="background: url(img/line-bottom.png) no-repeat center;"></p>
+                </li>
+                <li><span class="font-fourteen">不聊Gigi聊她妹 大话贝拉式时髦</span>
+                    <p class="xuxian" style="background: url(img/line-bottom.png) no-repeat center;"></p>
+                </li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <script src="{{ 'assets/raw/js/index/firstpage.js'|theme }}"></script>
+    <script src="{{ 'assets/raw/js/index/information.js'|theme }}"></script>
+    <script>
+        //底部轮播
+        var main = document.querySelector('#main');
+        var pic3 = document.querySelector('#pic3');
+        var width3 = main.offsetWidth;
+        // console.log(width3);
+        var lis3 = pic3.querySelectorAll('li');
+        // console.log(lis3);
+        var index3 = 0;
+        setInterval(function () {
+            // console.log(index3);
+            index3++;
+            index3 = index3 >= lis3.length ? 0 : index3;
+            pic3.style.left = -index3 * width3 + 'px';
+        }, 4000);
+    </script>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <link rel="stylesheet" href="css/common/clear.css"/>
+    <link rel="stylesheet" href="css/common/common.css"/>
+    <link rel="stylesheet" href="css/purchase.css"/>
+</head>
+<body>
+<div class="big-box down-border background-fff">
+    <div class="banner-list main-content clearfix">
+        <div class="fl-l logo">
+            <a href="javascript:;"><img src="img/common/logo.png" alt=""></a>
+        </div>
+        <ol class="first-page-list-left fl-l">
+            <li id="firstpage" class="tab"><a href="index.html"><span>首页</span></a></li>
+            <li id="womenpage" class="tab"><a href="women-cloth.html"><span>女装</span></a></li>
+            <li id="manpage" class="tab"><a href="women-cloth.html"><span>男装</span></a></li>
+            <li id="childrenpage" class="tab"><a href="women-cloth.html" onclick="alert('is building!')"><span>童装</span></a></li>
+            <li id="clothpage" class="tab"><a href="chengy.html" onclick=""><span>成衣系列</span></a>
+            </li>
+            <li id="private-order" class="tab"><a href=""
+                                                  onclick="javascript:alert('is building!')"><span>私人定制</span></a></li>
+            <li id="fashion-information" class="tab"><a
+                    href="zixun.html"><span>潮流资讯</span></a></li>
+        </ol>
+        <ul class="first-page-list-right fl-r" id="lgs">
+            <li class="login" id="sign-in"><span>登录</span></li>
+            <li class="shopcar"><a href="purchase-car.html"><i style="background: url(img/sprit-img.png) no-repeat -7px -11px;"></i>
+                <span>购物车</span></a></li>
+            <li class="search" onclick="javascript:alert('efforts are being made to build');"><img
+                    src="img/common/serach.png"></li>
+        </ul>
+    </div>
+</div>
+<div class="min-height">
+    <div class="main-content headert">
+        <span class="header-title">购物车</span>
+    </div>
+    <div class="main-content product header shopping">
+        <table id="cartTable">
+            <thead>
+            <tr class="">
+                <th class="col-all">
+                    <lable><input name="checkall" type="checkbox" class="check-all check font-fu"><span>全选</span></lable>
+                </th>
+                <th class="col-info font-fu">商品信息</th>
+                <th class="col-price font-fu pcar">单价</th>
+                <th class="col-num font-fu">数量</th>
+                <th class="col-total font-fu">合计</th>
+                <th class="col-oper tc font-fu">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="">
+                <td class="checkbox col-all"><input class="check-one check" type="checkbox"></td>
+                <td class="returnpage goods col-info clearfix">
+                    <div class="fl-l">
+                        <a href="" class="cloth"><img src="img/sweat-cloth.jpg" alt=""></a>
+                    </div>
+                    <div class="fl-l pd">
+                        <a href=""><p class="font-fu tal">高领针织毛衣</p>
+                            <p class="b-c font-fu tal">驼色 / M(160)</p></a>
+                    </div>
+                </td>
+                <td class="price col-price pcar">499</td>
+                <td class="count col-num">
+                    <div class="total-count clearfix">
+                        <span class="reduce" style="display:none">-</span>
+                        <input class="count-input font-tw" type="text" value="1">
+                        <span class="add">+</span>
+                    </div>
+
+                </td>
+                <td class="subtotal col-total font-fu">499</td>
+                <td class="operation col-oper tc"><span class="delete font-fu">删除</span></td>
+            </tr>
+            <tr class="">
+                <td class="checkbox col-all"><input class="check-one check" type="checkbox"></td>
+                <td class="returnpage goods col-info clearfix">
+                    <div class="fl-l">
+                        <a href="" class="cloth"><img src="img/sweat-cloth.jpg" alt=""></a>
+                    </div>
+                    <div class="fl-l pd">
+                        <a href=""><p class="font-fu tal">高领针织毛衣</p>
+                            <p class="b-c font-fu tal">驼色 / M(160)</p></a>
+                    </div>
+                </td>
+                <td class="price col-price font-tw pcar">499</td>
+                <td class="count col-num">
+                    <div class="total-count clearfix">
+                        <span class="reduce font-tw" style="display:none">-</span>
+                        <input class="count-input font-fu" type="text" value="1">
+                        <span class="add font-tw">+</span>
+                    </div>
+
+                </td>
+                <td class="subtotal col-total font-fu">499</td>
+                <td class="operation col-oper tc"><span class="delete font-fu">删除</span></td>
+            </tr>
+            <tr class="">
+                <td class="checkbox col-all"><input class="check-one check font-tw" type="checkbox"></td>
+                <td class="returnpage goods col-info clearfix">
+                    <div class="fl-l">
+                        <a href="" class="cloth"><img src="img/sweat-cloth.jpg" alt=""></a>
+                    </div>
+                    <div class="fl-l pd">
+                        <a href=""><p class="font-fu tal">高领针织毛衣</p>
+                            <p class="b-c font-fu tal">驼色 / M(160)</p></a>
+                    </div>
+                </td>
+                <td class="price col-price font-fu pcar">499</td>
+                <td class="count col-num">
+                    <div class="total-count clearfix">
+                        <span class="reduce font-tw" style="display:none">-</span>
+                        <input class="count-input font-tw" type="text" value="1">
+                        <span class="add font-tw">+</span>
+                    </div>
+
+                </td>
+                <td class="subtotal col-total font-fu">499</td>
+                <td class="operation col-oper tc"><span class="delete font-fu">删除</span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>;
+    <div class="shopnone main-content" style="display:none">
+        <p><img src="img/shopcar.png" alt=""></p>
+        <p class="shopcar-im font-tw">购物车空空如也 ~ </p>
+        <p class="browse"><a href="javascript:;" class="font-tw">去逛逛</a></p>
+    </div>
+    <div class="main-content">
+
+        <div class="foot clearfix mrt" id="foot">
+            <lable class="fl-l select-all font-fu"><input type="checkbox" name="checkall" class="check-all check font-fu"><span>全选</span></lable>
+        <span class="fl-l chose font-fu" id="selected">已选 <span id="newcount" class="newcount font-fu">0</span>/<span id="totalcount" class="totalcount font-fu">3</span></span>
+            <a class="fl-l delete-more font-fu" id="deleteAll" href="javascript:;">批量删除</a>
+            <div class="fl-r closing"><a href="vertifymenu.html" class="font-fu">结算</a></div>
+            <div class="fl-r total font-fu">合计: ￥<span id="priceTotal" class="font-fu">0.00</span></div>
+            <div class="selected-view font-fu" id="selectedView" style=" ">
+                <div class="selectedviewList" id="selectedviewList">
+                </div>
+                <span class="arrow"></span>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="contact_box">
+        <ul>
+            <li class="contact_weixin">
+                <div class="contact_weixin-logo"></div>
+            </li>
+            <li class="contact_idea"></li>
+            <li class="contact_app">
+                <div class="contact_app-logo"></div>
+            </li>
+        </ul>
+    </div>
+<div class="bottom-base">
+    <div class="main-content bottom-base-area">
+        <p class="callme">
+            <a href="">關於我們</a><span class="shu-line"></span><a href="">服務條款</a><span class="shu-line"></span><a
+                href="">用戶服務協議</a><span class="shu-line"></span><a href="">廣告服務</a><span class="shu-line"></span><a
+                href="">客服中心</a><span class="shu-line"></span><a href="" style="border:none; ">網站導航</a>
+        </p>
+        <p>
+            Copyright Rojrover 2014 all rights reserved 粤ICP备05013919号
+        </p>
+        <p>
+            莱姿公司 版权所有
+        </p>
+
+    </div>
+</div>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/common/common.js"></script>
+<script src="js/purchasecar.js"></script>
+<script src="js/common/layout.js"></script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="一个可以让您找到一件只属于您的设计师平台"/>
+    <meta name="keywords" content="designer,DESIGNER,设计师，设计"/>
+    <title>详情页</title>
+    <link rel="stylesheet" href="css/common/clear.css"/>
+    <link rel="stylesheet" href="css/common/common.css"/>
+    <link rel="stylesheet" href="css/longline.css"/>
+    <link rel="stylesheet" href="css/detail/combie.css"/>
+    <link rel="stylesheet" href="css/detail/focus.css"/>
+    <link rel="stylesheet" href="css/detail/details-page.css"/>
+    <link rel="stylesheet" href="css/detail/share.css">
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <!-- 引入sns.js -->
+    <script src="http://apps.bdimg.com/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/detail/share/jquery.qrcode.min.js"></script>
+    <script src="js/detail/share/share.js"></script>
+    <script src="js/detail/focus.js"></script>
+    <script src="js/common/layout.js"></script>
+</head>
+<body>
+<div style="background:#fff">
+    <div class="big-box down-border background-fff">
+        <div class="banner-list main-content clearfix">
+            <div class="fl-l logo">
+                <a href="javascript:;"><img src="img/common/logo.png" alt=""></a>
+            </div>
+            <ol class="first-page-list-left fl-l">
+                <li id="firstpage" class="tab"><a href="index.html"><span>首页</span></a></li>
+                <li id="womenpage" class="tab"><a href="women-cloth.html"><span>女装</span></a></li>
+                <li id="manpage" class="tab"><a href="women-cloth.html"><span>男装</span></a></li>
+                <li id="childrenpage" class="tab"><a href="women-cloth.html"
+                                                     onclick="alert('is building!')"><span>童装</span></a></li>
+                <li id="clothpage" class="tab"><a href="chengy.html" onclick=""><span>成衣系列</span></a>
+                </li>
+                <li id="private-order" class="tab"><a href="selfdesign.html"><span>私人定制</span></a>
+                </li>
+                <li id="fashion-information" class="tab"><a
+                        href="zixun.html"><span>潮流资讯</span></a></li>
+            </ol>
+            <ul class="first-page-list-right fl-r" id="lgs">
+                <li class="login" id="sign-in"><span>登录</span></li>
+                <li class="shopcar"><a href="purchase-car.html"><i
+                        style="background: url(img/sprit-img.png) no-repeat -7px -11px;"></i>
+                    <span>购物车</span></a></li>
+                <li class="search" onclick="javascript:alert('efforts are being made to build');"><img
+                        src="img/common/serach.png"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="navgiation detail-exhaibition-explore">
+            <a href="women-cloth.html" class="font-fu"><i class="designer-home"></i>设计师首页</a> <i
+                class="grey-arrow"> </i> <a href="designer-personal-cloth.html" class="font-fu"><span
+                class="design-name">韩璐鹿</span></a> <i class="grey-arrow"> </i> <a class="active font-fu"
+                                                                                  href="">所有款式</a>
+        </div>
+    </div>
+    <div class="main-content clearfix">
+        <div>
+            <ul class="detail-exhaibition" id="imgs">
+                <li><img src="img/detail/top/p1.png" alt=""></li>
+                <li><img src="img/detail/top/p2.png" alt=""></li>
+                <li><img src="img/detail/top/p3.png" alt=""></li>
+                <li><img src="img/detail/top/p4.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="bigimg-exhabition">
+            <div id="small">
+                    <img src="img/detail/top/p1.png" id="simg" width="100%" alt="">
+                <div id="move"></div>
+            </div>
+        </div>
+        <div id="big">
+            <img src="img/detail/top/p1.png" id="bimg" alt="">
+        </div>
+        <div class="product-detail">
+            <div class="title">女士外套牛皮短款机车风女士长袖皮衣</div>
+            <div class="money title"><span>money</span></div>
+            <div class="ziti-margin font-fu">
+                <span>颜色</span> : <span>黑色</span>
+            </div>
+            <div class="kucun-img-cloth clearfix">
+                <img class="active fl-l" src="img/detail/top/p1.png" alt="">
+                <img src="img/detail/top/p1.png" alt="" class="fl-l">
+            </div>
+            <div class="ziti-margin font-fu">
+                <span>尺码</span> : <span>155</span>
+            </div>
+            <div class="kucun-size-cloth">
+                <span class="active font-fu">155</span><span class="font-fu">155</span>
+            </div>
+            <div class="try-purchase">
+            <span class="active">
+                <i class="try"></i>去试衣
+            </span>
+            <span>
+                <a href="purchase-car.html"><i class="purchase"></i></a>加入购物车
+            </span>
+            </div>
+            <div class="cloth-decoration-column font-fu">
+                <span class="left-page active">设计师</span>
+                <span class="lala">描述</span>
+                <span class="lala">成分和保养</span>
+                <span class="lala">尺码</span>
+            </div>
+            <div class="cloth-designer-decoration">
+                <ul class="designer-home-decoration font-fu">
+                    <li>设计师：韩露露</li>
+                    <li>品牌：Cavalli Class</li>
+                    <li>系列：2017春季</li>
+                    <li>主题：魔鬼主题</li>
+                    <li class="huanhang font-fu">
+                        设计灵感：
+                        <p class="font-fu">
+                            魔鬼设计概念除了延续主线RobertoCavalli的野性不羁以及Just Cavalli的狂野俏皮
+                            外，更融入了优雅华丽的元素，成熟系的风格令Cavalli Class的客人范围和穿着的场合
+                            更广。魔鬼设计概念除了延续主线RobertoCavalli的野性不羁以及Just Cavalli的狂野俏皮
+                            外，更融入了优雅华丽的元素，成熟系的风格令Cavalli Class的客人范围和穿着的场合
+                            更广。
+                        </p>
+
+                    </li>
+
+                </ul>
+            </div>
+            <div class="share-column clearfix">
+                <div class="fl-l sz">
+                    <a class="clearfix" href="javascript:void(0);">
+                        <i class="fl-l"></i>
+                        <span class="fl-l font-fu">收藏此商品</span>
+                    </a>
+                </div>
+                <div class="fl-r sns-share clearfix">
+                    <span class="font-th">分享到 :</span>
+                    <a class="wechat"><i class="icon iconfont icon-wechat"></i></a>
+                    <a class="weibo"><i class="icon iconfont icon-weibo"></i></a>
+                    <a class="qq"><i class="icon iconfont icon-qq"></i></a>
+                    <a class="qzone"><i class="icon iconfont icon-qzone"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content" style="margin-top:20px;margin-bottom:60px;">
+        <div class="ppXq">
+            <div class="ppXq-dg">
+                <div class="ppXq-box">
+                    <div class="ppXq-cb clearfix" style="height:220px;border:1px solid #e6e6e6;">
+                        <div class="fl-l ppLogo">
+                            <img src="img/detail/pp-logo.png" alt="" style="width:150px;height:24px;">
+                        </div>
+                        <div class="fl-r ppCon">
+                            <h1 class="brand">ROJROVER莱姿</h1>
+                            <p class="font-fu">
+                                这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍
+                                这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍
+                                这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍
+                                这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍
+                                这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍这里是品牌介绍
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="con-pad clearfix">
+                    <span class="b-circle fl-l"></span>
+                    <span class="common-title fl-l">商品参数</span>
+                    <span class="hor-line fl-r"></span>
+                </div>
+                <div class="ppXq-box">
+                    <div class="spc-small">
+                        <div class="spc-big clearfix">
+                            <span class="fl-l">衣长 : 适中</span><span class="fl-l">衣长适中</span><span
+                                class="fl-l">衣长适中</span><span class="fl-l">衣长适中</span><span class="fl-l">衣长 : 适中</span>
+                            <span class="fl-l">衣长 : 适中</span><span class="fl-l">衣长适中</span><span
+                                class="fl-l">衣长适中</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="con-pad clearfix">
+                    <span class="b-circle fl-l"></span>
+                    <span class="common-title fl-l">尺码表 <span class="font-tw">( 单位cm )</span></span>
+                    <span class="hor-line fl-r sizedt"></span>
+                </div>
+                <div class="ppXq-box">
+                    <div class="sizeDe top">
+                        <span>尺码</span>
+                        <span>肩宽</span>
+                        <span>胸围</span>
+                        <span>衣长</span>
+                        <span>袖长</span>
+                    </div>
+                    <div class="sizeDe">
+                        <span>L</span>
+                        <span>45</span>
+                        <span>112</span>
+                        <span>69</span>
+                        <span>63</span>
+                    </div>
+                    <div class="sizeDe even">
+                        <span>L</span>
+                        <span>45</span>
+                        <span>112</span>
+                        <span>69</span>
+                        <span>63</span>
+                    </div>
+                    <div class="sizeDe even">
+                        <span>L</span>
+                        <span>45</span>
+                        <span>112</span>
+                        <span>69</span>
+                        <span>63</span>
+                    </div>
+                    <div class="sizeDe even">
+                        <span>L</span>
+                        <span>45</span>
+                        <span>112</span>
+                        <span>69</span>
+                        <span>63</span>
+                    </div>
+                </div>
+                <div class="con-pad clearfix">
+                    <span class="b-circle fl-l"></span>
+                    <span class="common-title fl-l">商品详情图</span>
+                    <span class="hor-line ppdetail fl-r"></span>
+                </div>
+                <div class="aN-box">
+                    <div class="scEig">
+                        <div>
+                            <p class="font-fu">场景图</p>
+                            <img src=img/detail/suiyi.jpg alt="">
+                        </div>
+                    </div>
+                    <div class="bFig clearfix">
+                        <p class="font-fu">正反面图</p>
+                        <div id="fr" class="fl-l">
+                            <img src="img/detail/top/p1.png" alt="">
+                        </div>
+                        <div id="ba" class="fl-l">
+                            <img src="img/detail/top/p1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="deTp">
+                        <p class="font-fu">细节图</p>
+                        <div id="deTp">
+                            <img src="img/detail/top/p3.png" alt="">
+                            <img src="img/detail/top/p4.png" alt="">
+                            <img src="img/detail/top/p5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="eSin">
+                        <div class="long-title">
+                            <i class="long-line"></i><span class="small font-fu">设计师同系列搭配</span><i
+                                class="long-line"></i>
+                        </div>
+                        <div class="ss">
+                            <a href="" style="display:block;" class="img-box">
+                                <img src="img/detail/dapei/img1.jpg" alt="">
+                            </a>
+                            <p class="font-fu"><a href=""><span>纯棉净色T恤</span></a></p>
+                            <p class="font-fu"><a href=""><span>money</span></a></p>
+                        </div>
+                        <div class="ss">
+                            <a href="" style="display:block;" class="img-box">
+                                <img src="img/detail/dapei/img1.jpg" alt="">
+                            </a>
+                            <p class="font-fu"><a href=""><span>纯棉净色T恤</span></a></p>
+                            <p class="font-fu"><a href=""><span>money</span></a></p>
+                        </div>
+                        <div class="ss">
+                            <a href="" style="display:block;" class="img-box">
+                                <img src="img/detail/dapei/img1.jpg" alt="">
+                            </a>
+                            <p class="font-fu"><a href=""><span>纯棉净色T恤</span></a></p>
+                            <p class="font-fu"><a href=""><span>money</span></a></p>
+                        </div>
+                        <div class="save">
+                            <span class="font-fu" style="padding-right:24px;">资讯搭配师</span>
+                        </div>
+                    </div>
+                    <div class="oth">
+                        <div class="long-title">
+                            <i class="short-line"></i><span class="small font-fu">其他搭配</span><i class="short-line"></i>
+                        </div>
+                        <div class="clearfix ttcloth">
+                            <div class="st font-fu fl-l">
+                                <div class="img-box">
+                                    <a href=""><img src="img/detail/dapei/img1.jpg" alt=""></a>
+                                </div>
+                                <p class="font-fu">纯棉净色T恤</p>
+                                <p class="font-fu">money</p>
+                            </div>
+                            <div class="st font-fu fl-l">
+                                <div class="img-box">
+                                    <a href=""><img src="img/detail/dapei/img2.jpg" alt=""></a>
+                                </div>
+                                <p class=font-fu"">纯棉净色T恤</p>
+                                <p class="font-fu">money</p>
+                            </div>
+                            <div class="st font-fu fl-l">
+                                <div class="img-box">
+                                    <a href=""><img src="img/detail/dapei/img3.jpg" alt=""></a>
+                                </div>
+                                <p class="font-fu">纯棉净色T恤</p>
+                                <p class="font-fu">money</p>
+                            </div>
+                            <div class="st font-fu fl-l">
+                                <div class="img-box">
+                                    <a href=""><img src="img/detail/dapei/img3.jpg" alt=""></a>
+                                </div>
+                                <p class="font-fu">纯棉净色T恤</p>
+                                <p class="font-fu">money</p>
+                            </div>
+                        </div>
+                        <div class="save">
+                            <span class="font-fu" style="padding-right:24px;">资讯搭配师</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="bottom-base">
+        <div class="main-content bottom-base-area">
+            <p class="callme">
+                <a href="">關於我們</a><span class="shu-line"></span><a href="">服務條款</a><span class="shu-line"></span><a
+                    href="">用戶服務協議</a><span class="shu-line"></span><a href="">廣告服務</a><span class="shu-line"></span><a
+                    href="">客服中心</a><span class="shu-line"></span><a href="" style="border:none; ">網站導航</a>
+            </p>
+            <p>
+                Copyright Rojrover 2014 all rights reserved 粤ICP备05013919号
+            </p>
+            <p>
+                莱姿公司 版权所有
+            </p>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        var $config = {
+            url: 'http://www.qianduandu.com', // 网址，默认使用 window.location.href
+            site: '', // 来源（QQ空间会用到）, 默认读取head标签：<meta name="site" content="http://overtrue" />
+            title: '这个是tittle', // 标题，默认读取 document.title
+            description: '这个事描述', // 描述, 默认读取head标签：<meta name="description" content="PHP弱类型的实现原理分析" />
+            iamge: 'http://bbs.xiaoniu.com/data/attachment/image/paipai/7a51976182_flow.jpg', // 图片, 默认取网页中第一个img标签
+            target: '_blank' //打开方式
+        };
+        $('.sns-share').share($config);
+    });
+</script>
+<script type="text/javascript">
+    $(function(){
+        var bool = new Parabola({
+            el: "#boll",
+            offset: [500, 100],
+            curvature: 0.005,
+            duration: 2000,
+            callback:function(){
+                alert("王晨龙是够")
+            },
+            stepCallback:function(x,y){
+                console.log(x,y);
+                $("<div>").appendTo("body").css({
+                    "position": "absolute",
+                    "top": this.elOriginalTop + y,
+                    "left":this.elOriginalLeft + x,
+                    "background-color":"rgba(0,0,0,0)",
+                    "width":"5px",
+                    "height":"5px",
+                    "border-radius": "5px"
+                });
+            }
+        });
+//        $("#reset").click(function () {
+//            bool.reset()
+//        });
+//        $("#run").click(function () {
+//            bool.start();
+//        });
+//        $("#stop").click(function () {
+//            bool.stop();
+//        });
+        $("#setOptions").click(function () {
+            bool.setOptions({
+                targetEl: $("#target"),
+                curvature: 0.001,
+                duration: 1000
+            });
+        });
+    });
+</script>
+</body>
+</html>

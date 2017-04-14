@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+@import "less/z";
+@import "bl";
+
+.common-longline{
+  .d-ib();
+  border-top:@b1 solid #b2b2b2;
+  vertical-align:@4p;
+}
+.shortline{
+  .common-longline;
+  width:388px;
+}
+.longline{
+  width:90*@4p;
+  .common-longline;
+}
+.longtitle{
+  margin-bottom:8*@4p;
+  & .large{
+    margin:0 10*@4p;
+  }
+  &.small{
+    margin:0 6*@4p;
+  }
+}

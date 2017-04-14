@@ -1,0 +1,745 @@
+.selfrequires_groups span, .selfrequires_clarify .img-box, .selfrequires_opertion span, .NumList_controller, .spar .btc, .ptop, .mydesign .files, .selfClothDesignSize_detailinfo span {
+  border: 1px solid #e6e6e6; }
+
+.selfrequires_groups span, .selfrequires_clarify .img-box, .selfrequires_clarify .selfrequires_clarify_description, .selfrequires_opertion span, .selfClothDesign_colorList div, .selfClothDesign_colorList .word, .selfClothDesign_materialsList span, .spar .btc, .mydesign_progressbar, .mydesign .files, .selfClothDesignSize_info span, .selfClothDesignSize_detailinfo span {
+  text-align: center; }
+
+.self_design_tool div, .self_design_tool span, .selfrequires_nav_main, .preview .fl-l p, .selfClothDesign_colorList, .selfClothDesign_materialsList, .NumList_material, .NumList_color, .NumList_size, .selfDesigned_largebox .selfDesigned_location p, .spar > div, .sst, .mydesign, .selfClothDesignSize_info, .selfClothDesignSize_detailinfo {
+  text-align: left; }
+
+.preview {
+  text-align: right; }
+
+.selfClothDesign_colorList .word {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.self_design_tool em, .prepaid .img-box .prepaid_layerout, .selfClothDesign_colorList .word {
+  display: none; }
+
+.self_design_tool .active em, .prepaid .img-box:hover .prepaid_layerout {
+  display: block; }
+
+.selfDesigned_box {
+  overflow: hidden; }
+
+.preview .fl-l p, .preview .fl-l span, .NumList_controller, .addcolor_material, .selfDesigned_largebox .selfDesigned_location {
+  cursor: pointer; }
+
+.colorList_fb1d1d .value, .colorList_fb901d .value, .colorList_fbcf1d .value, .colorList_aafb1d .value, .colorList_1dfbaf .value, .colorList_1d66fb .value, .colorList_a51dfb .value {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; }
+
+.colorList_fb1d1d .value, .colorList_fb901d .value, .colorList_fbcf1d .value, .colorList_aafb1d .value, .colorList_1dfbaf .value, .colorList_1d66fb .value, .colorList_a51dfb .value {
+  width: 24px;
+  height: 24px; }
+
+.selfDesign_option {
+  width: 824px;
+  overflow: hidden; }
+
+.selfClothDesign_colorList, .selfClothDesign_materialsList {
+  padding-top: 48px;
+  padding-bottom: 18px; }
+
+* {
+  font-size: 14px; }
+
+.main-content.self_design {
+  min-height: 800px; }
+
+.self_design_function .save {
+  padding-top: 30px;
+  padding-bottom: 20px; }
+
+.save .sd_fourword {
+  padding-right: 32px; }
+.save .sd_twoword {
+  padding-right: 44px; }
+
+.self_design_tool div {
+  padding-left: 10px; }
+.self_design_tool i {
+  width: 32px;
+  height: 42px;
+  vertical-align: -4px;
+  margin-right: 12px; }
+.self_design_tool span {
+  width: 316px;
+  height: 116px;
+  line-height: 116px;
+  background: #e9e9e9;
+  color: #9b9b9b;
+  margin-bottom: 10px;
+  padding-left: 26px; }
+.self_design_tool .active {
+  padding-left: 0; }
+  .self_design_tool .active span {
+    width: 336px;
+    height: 124px;
+    line-height: 124px;
+    background: #ff3250;
+    color: #fff;
+    margin-bottom: 6px;
+    padding-left: 36px; }
+.self_design_tool em {
+  margin-top: 40px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #ff3250; }
+
+.custom_reqiures i {
+  background: url(../img/selfdesign/ico/1g.png) no-repeat center; }
+.custom_reqiures.active i {
+  background: url(../img/selfdesign/ico/1.png) no-repeat center; }
+
+.design_skecth i {
+  background: url(../img/selfdesign/ico/2.png) no-repeat center; }
+.design_skecth.active i {
+  background: url(../img/selfdesign/ico/2w.png) no-repeat center; }
+
+.cloth_plate i {
+  background: url(../img/selfdesign/ico/3.png) no-repeat center; }
+.cloth_plate.active i {
+  background: url(../img/selfdesign/ico/3w.png) no-repeat center; }
+
+.designed i {
+  background: url(../img/selfdesign/ico/4.png) no-repeat center; }
+.designed.active i {
+  background: url(../img/selfdesign/ico/4w.png) no-repeat center; }
+
+.save.unactive span {
+  background: #fff;
+  color: #000; }
+
+.self_requires {
+  margin-left: 20px; }
+  .self_requires * {
+    color: #525252; }
+
+.selfrequires_nav_layer {
+  width: 824px;
+  margin-top: 20px;
+  margin-bottom: 10px; }
+  .selfrequires_nav_layer .long-line {
+    width: 40%;
+    height: 1px;
+    background: #d3d3d3;
+    margin-top: 12px; }
+  .selfrequires_nav_layer span {
+    margin-left: 30px;
+    color: #525252; }
+
+.selfrequires_nav_main {
+  padding-left: 10px; }
+  .selfrequires_nav_main div {
+    margin-bottom: 6px; }
+
+.selfrequires_groups span {
+  width: 74px;
+  height: 34px;
+  line-height: 34px;
+  margin-right: 8px; }
+  .selfrequires_groups span.active {
+    border-color: #ff3250;
+    color: #ff3250; }
+
+.selfrequires_clarify {
+  margin-top: -6px; }
+  .selfrequires_clarify .img-box {
+    width: 76px;
+    height: 76px;
+    margin-right: 20px; }
+    .selfrequires_clarify .img-box img {
+      vertical-align: middle;
+      padding-top: 12px; }
+  .selfrequires_clarify .selfrequires_clarify_description {
+    width: 76px; }
+  .selfrequires_clarify .selfrequires_clarify_column span {
+    color: #d9d9d9; }
+  .selfrequires_clarify .selfrequires_clarify_column .active span {
+    color: #ff3250; }
+  .selfrequires_clarify .selfrequires_clarify_column .active .img-box {
+    border-color: #ff3250; }
+
+.selfrequires_description textarea {
+  width: 762px;
+  height: 134px;
+  border: 1px solid #d9d9d9;
+  padding: 14px 20px; }
+
+textarea::-webkit-input-placeholder {
+  color: #000; }
+
+textarea:-moz-input-placeholder {
+  color: #000; }
+
+textarea::-moz-input-placeholder {
+  color: #000; }
+
+textarea::-ms-input-placeholder {
+  color: #000; }
+
+.selfrequires_opertion {
+  padding-left: 39px;
+  margin-top: -8px; }
+  .selfrequires_opertion span {
+    width: 76px;
+    height: 56px;
+    margin-right: 20px;
+    line-height: 56px; }
+
+.self_sketch .selfrequires_nav_layer span, .selfClothPlate .selfrequires_nav_layer span, .selfDesigned .selfrequires_nav_layer span {
+  margin-left: 38px; }
+
+.prepaid {
+  padding-top: 30px; }
+  .prepaid .img-box {
+    padding-top: 20px;
+    margin-bottom: 30px;
+    position: relative; }
+    .prepaid .img-box .layerout {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4); }
+    .prepaid .img-box p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff; }
+  .prepaid .save {
+    padding-top: 16px; }
+    .prepaid .save span {
+      padding-right: 28px; }
+
+.preview {
+  width: 824px;
+  overflow: hidden;
+  padding-top: 28px; }
+  .preview .preview_box {
+    width: 1200px; }
+    .preview .preview_box textarea {
+      width: 322px;
+      margin-top: 4px;
+      height: 80px;
+      font-size: 14px;
+      color: #525252;
+      margin-bottom: 20px;
+      resize: none; }
+  .preview .fl-l {
+    width: 322px;
+    margin-right: 180px;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .preview .fl-l p {
+      color: #525252;
+      margin-bottom: 16px;
+      margin-top: 8px;
+      line-height: 1.6; }
+    .preview .fl-l span {
+      color: #525252; }
+
+.selfClothDesign {
+  width: 824px; }
+
+.selfClothPlate .save {
+  margin-right: 10px;
+  padding-top: 26px;
+  padding-bottom: 4px; }
+
+.selfClothDesign_area {
+  padding-top: 154px;
+  line-height: 2; }
+  .selfClothDesign_area img {
+    margin-bottom: 10px; }
+
+.selfDesign_option {
+  width: 1000px; }
+  .selfDesign_option .long_sline {
+    width: 768px;
+    margin-left: 20px;
+    height: 1px;
+    background: #d3d3d3;
+    margin-top: 12px; }
+
+.colorList_fb1d1d .value {
+  background: #fb1d1d; }
+
+.colorList_fb901d .value {
+  background: #fb901d; }
+
+.colorList_fbcf1d .value {
+  background: #fbcf1d; }
+
+.colorList_aafb1d .value {
+  background: #aafb1d; }
+
+.colorList_1dfbaf .value {
+  background: #1dfbaf; }
+
+.colorList_1d66fb .value {
+  background: #1d66fb; }
+
+.colorList_a51dfb .value {
+  background: #a51dfb; }
+
+.selfClothDesign_colorList div {
+  width: 80px;
+  height: 26px;
+  line-height: 26px;
+  margin-right: 46px;
+  margin-bottom: 30px;
+  position: relative; }
+.selfClothDesign_colorList .word {
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%; }
+.selfClothDesign_colorList .active .value {
+  display: none; }
+.selfClothDesign_colorList .active .word {
+  display: block; }
+
+.selfClothDesign_materialsList {
+  width: 1000px; }
+  .selfClothDesign_materialsList span {
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    margin-right: 66px;
+    margin-bottom: 30px; }
+    .selfClothDesign_materialsList span.active {
+      background: #ff3250;
+      color: #fff; }
+
+.selfClothDesign_NumList {
+  width: 1000px;
+  margin-bottom: 30px; }
+  .selfClothDesign_NumList .fl-l {
+    margin-right: 40px; }
+  .selfClothDesign_NumList .NumList_pay {
+    padding-top: 6px; }
+  .selfClothDesign_NumList .close_medu {
+    color: #525252; }
+
+.NumList_pay.save {
+  padding: 0; }
+  .NumList_pay.save span {
+    padding-right: 28px; }
+
+.NumList_material, .NumList_color, .NumList_size {
+  width: 80px; }
+
+.NumList_count {
+  width: 180px; }
+
+.NumList_controller {
+  width: 78px; }
+
+.NumList_color, .NumList_material, .NumList_controller, .NumList_size {
+  height: 26px;
+  line-height: 26px;
+  margin-top: 4px; }
+
+.NumList_controller {
+  line-height: 23px; }
+  .NumList_controller .reduce {
+    width: 10px;
+    height: 3px;
+    background: url(../img/selfdesign/reduce.png) no-repeat center;
+    vertical-align: 5px; }
+  .NumList_controller .plus {
+    width: 14px;
+    height: 14px;
+    background: url(../img/selfdesign/plus.png) no-repeat center;
+    vertical-align: -1px; }
+
+.Tx {
+  background: url(../img/selfdesign/ico/tg.png) no-repeat center; }
+
+.Ds {
+  background: url(../img/selfdesign/ico/dg.png) no-repeat center; }
+
+.Sw {
+  background: url(../img/selfdesign/ico/sg.png) no-repeat center; }
+
+.Cd {
+  background: url(../img/selfdesign/ico/cdg.png) no-repeat center; }
+
+.Vd {
+  background: url(../img/selfdesign/ico/vg.png) no-repeat center; }
+
+.active
+.Tx {
+  background: url(../img/selfdesign/ico/tr.png) no-repeat center; }
+.active
+.Ds {
+  background: url(../img/selfdesign/ico/dr.png) no-repeat center; }
+.active
+.Sw {
+  background: url(../img/selfdesign/ico/sr.png) no-repeat center; }
+.active
+.Cd {
+  background: url(../img/selfdesign/ico/cdr.png) no-repeat center; }
+.active
+.Vd {
+  background: url(../img/selfdesign/ico/vr.png) no-repeat center; }
+
+.addcolor_material {
+  width: 824px;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+  .addcolor_material:hover a {
+    color: #ff3250; }
+
+.selfClothPlate .preview_box .fl-l {
+  margin-right: 178px;
+  margin-bottom: 38px;
+  margin-top: 0; }
+
+.selfDesigned_box {
+  width: 824px; }
+
+.selfDesigned_largebox {
+  width: 1200px; }
+  .selfDesigned_largebox .selfDesigned_location {
+    position: relative;
+    padding: 20px;
+    margin-right: 86px;
+    margin-top: 18px;
+    width: 370px;
+    height: 188px;
+    background: url(../img/selfdesign/border.png) no-repeat center; }
+    .selfDesigned_largebox .selfDesigned_location .setasDefault {
+      width: 42px;
+      height: 42px;
+      background: url(../img/selfdesign/completed.png) no-repeat center;
+      position: absolute;
+      top: -1px;
+      right: 0px;
+      display: none; }
+    .selfDesigned_largebox .selfDesigned_location .selfDesigned_adress input {
+      width: 100%; }
+    .selfDesigned_largebox .selfDesigned_location input {
+      width: 100px; }
+    .selfDesigned_largebox .selfDesigned_location .selfDesigned_dividline {
+      margin: 14px 0;
+      height: 1px;
+      background: #e6e6e6; }
+    .selfDesigned_largebox .selfDesigned_location .cd-edit {
+      margin-top: 58px; }
+
+.selfDesigned_add {
+  margin-top: 88px; }
+  .selfDesigned_add img {
+    vertical-align: -5px;
+    margin-right: 6px; }
+
+.spar {
+  margin-top: 30px;
+  box-sizing: border-box;
+  padding: 0 40px; }
+  .spar .btc {
+    width: 118px;
+    height: 38px;
+    font-size: 16px;
+    line-height: 38px;
+    margin-right: 10px; }
+  .spar .active {
+    height: 40px;
+    border: none;
+    width: 120px;
+    line-height: 40px;
+    background: #ff3250;
+    color: #fff; }
+
+#tp-box {
+  width: 732px;
+  height: 430px;
+  background: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; }
+  #tp-box .close-cancle {
+    padding-top: 0px; }
+
+.ptop {
+  height: 60px;
+  line-height: 60px;
+  box-sizing: border-box;
+  padding-left: 18px; }
+
+.selet > div {
+  width: 175px;
+  height: 42px;
+  line-height: 38px;
+  font-size: 18px;
+  border: 1px solid #e6e6e6;
+  display: inline-block;
+  padding-left: 10px;
+  box-sizing: border-box;
+  margin-left: 9px; }
+.selet > div > span {
+  display: inline-block;
+  height: 23px;
+  width: 100px; }
+
+.contact.mt {
+  padding-left: 13px;
+  box-sizing: border-box; }
+
+.mt {
+  margin-top: 14px;
+  margin-bottom: 16px; }
+
+.mt.tm {
+  margin-top: 54px; }
+
+.ln, .lp {
+  width: 200px;
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  padding-left: 10px; }
+
+.ln {
+  margin-left: 12px;
+  margin-right: 18px; }
+
+.lp {
+  margin-left: 12px; }
+
+.pro, .city, .area {
+  position: absolute;
+  list-style: none;
+  z-index: 100;
+  background: white;
+  width: 148px;
+  display: none; }
+
+.pro {
+  top: -160px;
+  left: 160px; }
+
+.city {
+  top: 10px;
+  left: 336px; }
+
+.area {
+  top: -120px;
+  left: 510px; }
+
+.pro > li, .city > li, .area > li {
+  text-align: center;
+  margin-top: 2px; }
+
+.pro > li:hover, .city > li:hover, .area > li:hover {
+  color: red; }
+
+.dp {
+  width: 490px;
+  height: 42px;
+  border: 1px solid #e6e6e6;
+  margin-left: 12px;
+  box-sizing: border-box;
+  padding-left: 10px; }
+
+#tp-box input {
+  font-size: 12px; }
+
+.defaup {
+  box-sizing: border-box;
+  padding-left: 65px;
+  margin-top: -5px; }
+
+.checkboxFive label {
+  top: 2px;
+  left: 0; }
+
+.checkboxFive label, .Cone label, .Ctw label, .Cth label, .Cfo label, .Cfi label, .Csi label, .Cse label, .Cei label {
+  cursor: pointer;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #e6e6e6;
+  border: 1px solid #e6e6e6;
+  border-radius: 1px; }
+
+.defaup .checkboxFive {
+  width: 100%; }
+
+.checkboxFive label:after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: transparent;
+  top: 2px;
+  left: 2px;
+  border: 2px solid #FF3250;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.checkboxFive input[type=checkbox]:checked + label:after {
+  opacity: 1; }
+
+.checkboxFive {
+  box-sizing: border-box;
+  margin-left: 1px;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  display: inline-block;
+  /* margin: 20px 90px; */
+  vertical-align: -2px;
+  margin-right: 6px; }
+
+.mydesign_progressbar {
+  margin-bottom: 40px; }
+  .mydesign_progressbar div {
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px; }
+    .mydesign_progressbar div:hover {
+      -webkit-box-shadow: 3px 3px 10px rgba(192, 0, 29, 0.2);
+      -moz-box-shadow: 3px 3px 10px rgba(192, 0, 29, 0.2);
+      box-shadow: 3px 3px 10px rgba(192, 0, 29, 0.2); }
+  .mydesign_progressbar .mydesign_requires {
+    background: url(../img/selfdesign/completed/selfrequires_normal.svg) no-repeat center; }
+  .mydesign_progressbar .mydesign_sketch {
+    background: url(../img/selfdesign/completed/selfsektch_normal.svg) no-repeat center; }
+  .mydesign_progressbar .mydesign_plate {
+    background: url(../img/selfdesign/completed/selfcloth_normal.svg) no-repeat center; }
+  .mydesign_progressbar .mydesign_completed {
+    position: relative;
+    background: url(../img/selfdesign/completed/selfplate_normal.svg) no-repeat center; }
+  .mydesign_progressbar .mydesign_distribution {
+    position: relative;
+    background: url(../img/selfdesign/completed/selfdesigned_normal.svg) no-repeat center; }
+
+.mydesign_completed .mydesign_greyword, .mydesign_distribution .mydesign_greyword {
+  position: absolute;
+  top: -126px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  width: 216px;
+  height: 90px; }
+  .mydesign_completed .mydesign_greyword p, .mydesign_distribution .mydesign_greyword p {
+    color: #fff;
+    line-height: 30px; }
+.mydesign_completed .mydesign_arrow, .mydesign_distribution .mydesign_arrow {
+  position: absolute;
+  top: -36px;
+  right: 22px;
+  width: 0;
+  height: 0;
+  border-top: 22px solid rgba(0, 0, 0, 0.7);
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent; }
+
+.mydesign_completed .mydesign_greyword {
+  padding: 14px 34px; }
+
+.mydesign_distribution .mydesign_greyword {
+  padding: 14px 16px; }
+
+.mydesign_comment {
+  margin: 50px 0; }
+  .mydesign_comment .fl-l {
+    width: 936px; }
+
+.mydesign_pro {
+  margin-bottom: 56px;
+  width: 1400px; }
+  .mydesign_pro .mydesign_material {
+    margin: 0 44px; }
+  .mydesign_pro .mydesign_proInfo {
+    margin-right: 146px; }
+
+.mydesign_imgbar {
+  width: 1400px;
+  margin-bottom: 120px; }
+  .mydesign_imgbar img {
+    width: 320px;
+    height: 320px;
+    margin-right: 120px; }
+
+.mydesign .files {
+  width: 60px;
+  height: 32px;
+  line-height: 32px; }
+
+.mydesignRequire .mydesign_title, .mydesignPlate .mydesign_title, .mydesignDesign .mydesign_title {
+  margin: 34px 0; }
+  .mydesignRequire .mydesign_title .titleline, .mydesignPlate .mydesign_title .titleline, .mydesignDesign .mydesign_title .titleline {
+    height: 1px;
+    background: #e6e6e6;
+    width: 546px; }
+.mydesignRequire .title, .mydesignPlate .title, .mydesignDesign .title {
+  margin: 0 18px;
+  margin-top: -12px; }
+
+.mydesignPlate img {
+  margin-bottom: 120px; }
+
+.mydesignDesign .mydesign .mydesign_title .titleline {
+  width: 536px; }
+
+.mydesignSketch .mydesign_imgbar .fl-l, .mydesignDesign .mydesign_imgbar .fl-l {
+  margin-bottom: 120px; }
+
+.selfClothDesignSize_info span, .selfClothDesignSize_detailinfo span {
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 20px; }
+
+.selfClothDesignSize_info {
+  padding-left: 50px; }
+
+.sizeCharacter {
+  padding-top: 30px;
+  margin-bottom: 6px; }
+
+.selfClothDesignSize_detailinfo span {
+  margin-bottom: 20px; }
+
+.selfClothDesignSize_detailinfo .selfClothDesignSize_info.active span {
+  background: #ff3250;
+  color: #fff;
+  border: none; }
+
+.editpay {
+  padding-left: 290px;
+  margin-bottom: 40px; }
+  .editpay p {
+    padding-left: 14px; }
+
+.editsketch {
+  margin-bottom: 20px; }
+  .editsketch p {
+    margin-top: 6px; }
+
+/*# sourceMappingURL=selfdesign.css.map */

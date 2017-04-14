@@ -1,0 +1,16 @@
+description = "个人中心"
+==
+<!DOCTYPE html>
+<html>
+<head>
+{% partial "header" %}
+</head>
+<body>
+{% page %}
+{% partial "footer" %}
+<!-- Scripts -->
+<script src="{{ 'assets/compiled/js/all.js'|theme }}"></script>
+{% framework extras %}
+{% scripts %}
+</body>
+</html>

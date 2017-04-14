@@ -1,0 +1,133 @@
+/*add  1/6 */
+.sheng,.shi,.qu,.location{
+    width:22%;
+}
+.phoneNum,.name{
+    width:44%;
+}
+.big-child input{
+    color:#000;
+}
+
+.trangle {
+    width: 0px;
+    height: 0px;
+    border-left: 11px solid #686868;
+    border-top: 11px solid rgba(0, 0, 0, 0);
+    border-bottom: 11px solid rgba(0, 0, 0, 0);
+    margin-right: 10px;
+}
+
+.column {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 1120px;
+}
+
+.main-content.sst {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 28px;
+}
+
+.large-word {
+    font-size: 18px;
+}
+
+.big-box-con {
+    margin-top: 20px;
+    text-align: center;
+    width: 300px;
+    height: 188px;
+    background: url(../../img/border.jpg) no-repeat center;
+}
+
+.big-child {
+    width: 266px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.lon {
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+    display: inline-block;
+    padding-bottom: 16px;
+    margin-bottom: 8px;
+}
+
+.big-child {
+    padding: 18px;
+}
+
+.edit-position {
+    margin-top: 60px;
+}
+
+.edit-position span {
+    color: #ff3250;
+}
+
+.edit {
+    padding-top: 20px;
+}
+
+.edit i {
+    width: 24px;
+    height: 24px;
+    background: url(../../img/sprit-img.png) no-repeat 0px 0px;
+}
+
+.alipay, .wechat {
+    width: 238px;
+    height: 60px;
+    border: 1px solid #e6e6e6;
+    padding: 10px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.wechat {
+    margin-left: 10px;
+}
+
+.col-info.jiakuan {
+    width: 520px;
+}
+
+.tt {
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-top: 10px;
+}
+
+.footer p {
+    text-align: right;
+    line-height: 1.5;
+}
+
+.main-content.sst.pp {
+    text-align: right;
+}
+.main-content.sst.ty{
+    margin-top:12px;
+}
+.total {
+    display: inline-block;
+    width: 40px;
+}
+
+.tt {
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+}
+.closing.active{
+    background:#ff3250;
+    color:#fff;
+}

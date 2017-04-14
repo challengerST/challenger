@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>component</title>
+</head>
+<body>
+<div id="app-7">
+    <ol>
+        <todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
+    </ol>
+</div>
+<div id="example">
+    <p>compute reserve:"{{ reserve }}"</p>
+    <p v-bind:title="denow">nnnnnnnn</p>
+    <p style="display:none">{{ message }}</p>
+    <input type="text" v-model="message">
+    <!--<input type="text" v-model="{{ reserve }}">-->
+</div>
+<div>
+    <p id="demo">{{ fullName }}</p>
+</div>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script>
+    Vue.component('todo-item', {
+        props: ['todo'],
+        template: '<li>{{ todo.text }}</li>'
+    });
+    var app7 = new Vue({
+        el: '#app-7',
+        data: {
+            groceryList: [
+                {text: '123'},
+                {text: '456'},
+                {text: '789'}
+            ]
+        }
+    });
+    var vm = new Vue({
+        el: '#example',
+        data: {
+            message: 'hello'
+        },
+        computed: {
+            reserve: function () {
+                return this.message.split('').reverse().join('')
+            },
+            denow: function () {
+                return Date.now();
+            }
+        }
+    });
+    var vm2 = new Vue({
+        el: '#demo',
+        data: {
+            firstName: '',
+            lastName: ''
+        },
+//        computed: {
+//            fullName: function () {
+//                return this.firstName + '' + this.lastName
+//            }
+//        }
+        computed: {
+            fullName: {
+                // getter
+                get: function () {
+                    return this.firstName + ' ' + this.lastName
+                },
+                // setter
+                set: function (newValue) {
+                    var names = newValue.split(' ');
+                    this.firstName = names[0];
+                    this.lastName = names[names.length - 1]
+                }
+            }
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+@charset "utf-8";
+@media screen and (max-width: $tablet) {
+  .post-cover {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .nav-desktop {
+    display: none;
+  }
+  .nav-toggle {
+    display: block;
+  }
+}

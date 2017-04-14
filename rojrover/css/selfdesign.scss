@@ -1,0 +1,1101 @@
+//varaibles
+$n24: 24px;
+$ff3250: #ff3250;
+$e6e6e6: #e6e6e6;
+$fff: #fff;
+$ooo: #000;
+$e5: #525252;
+//mixin
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+//%
+%b1se6 {
+  border: 1px solid #e6e6e6;
+}
+
+%tac {
+  text-align: center;
+}
+
+%tal {
+  text-align: left;
+}
+
+%tar {
+  text-align: right;
+}
+
+%pa50 {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+%dpn {
+  display: none;
+}
+
+%dpk {
+  display: block;
+}
+
+%of {
+  overflow: hidden;
+}
+
+%cpu {
+  cursor: pointer;
+}
+
+%border50 {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+%wh24 {
+  width: $n24;
+  height: $n24;
+}
+
+%h824 {
+  width: 824px;
+  overflow: hidden;
+}
+
+%pad200 {
+  padding-top: 48px;
+  padding-bottom: 18px;
+}
+
+* {
+  font-size: 14px;
+}
+
+.main-content.self_design {
+  min-height: 800px;
+}
+
+.self_design_function .save {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.save .sd_ {
+  &fourword {
+    padding-right: 32px;
+  }
+  &twoword {
+    padding-right: 44px;
+  }
+}
+
+.self_design_tool {
+  & div {
+    @extend %tal;
+    padding-left: 10px;
+  }
+  & i {
+    width: 32px;
+    height: 42px;
+    vertical-align: -4px;
+    margin-right: 12px;
+  }
+  & span {
+    width: 316px;
+    height: 116px;
+    line-height: 116px;
+    background: #e9e9e9;
+    color: #9b9b9b;
+    margin-bottom: 10px;
+    @extend %tal;
+    padding-left: 26px;
+  }
+  & .active {
+    padding-left: 0;
+    & span {
+      width: 336px;
+      height: 124px;
+      line-height: 124px;
+      background: $ff3250;
+      color: $fff;
+      margin-bottom: 6px;
+      padding-left: 36px;
+    }
+    & em {
+      @extend %dpk;
+    }
+  }
+  & em {
+    margin-top: 40px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid rgba(0, 0, 0, 0);
+    border-bottom: 20px solid rgba(0, 0, 0, 0);
+    border-left: 20px solid rgba(255, 50, 80, 1);
+    @extend %dpn;
+  }
+}
+
+.custom_reqiures {
+  & i {
+    background: url(../img/selfdesign/ico/1g.png) no-repeat center;
+  }
+  &.active i {
+    background: url(../img/selfdesign/ico/1.png) no-repeat center;
+  }
+}
+
+.design_skecth {
+  & i {
+    background: url(../img/selfdesign/ico/2.png) no-repeat center;
+  }
+  &.active i {
+    background: url(../img/selfdesign/ico/2w.png) no-repeat center;
+  }
+}
+
+.cloth_plate {
+  & i {
+    background: url(../img/selfdesign/ico/3.png) no-repeat center;
+  }
+  &.active i {
+    background: url(../img/selfdesign/ico/3w.png) no-repeat center;
+  }
+}
+
+.designed {
+  & i {
+    background: url(../img/selfdesign/ico/4.png) no-repeat center;
+  }
+  &.active i {
+    background: url(../img/selfdesign/ico/4w.png) no-repeat center;
+  }
+}
+
+.save {
+  &.unactive span {
+    background: $fff;
+    color: $ooo;
+  }
+}
+
+.self_requires {
+  margin-left: 20px;
+  & * {
+    color: #525252;
+  }
+}
+
+.selfrequires_nav_layer {
+  width: 824px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  & .long-line {
+    width: 40%;
+    height: 1px;
+    background: #d3d3d3;
+    margin-top: 12px;
+  }
+  & span {
+    margin-left: 30px;
+    color: #525252;
+  }
+}
+
+.selfrequires_nav_main {
+  @extend %tal;
+  padding-left: 10px;
+  & div {
+    margin-bottom: 6px;
+  }
+}
+
+.selfrequires_groups {
+  & span {
+    @extend %tac;
+    width: 74px;
+    height: 34px;
+    @extend %b1se6;
+    line-height: 34px;
+    margin-right: 8px;
+    &.active {
+      border-color: $ff3250;
+      color: $ff3250;
+    }
+  }
+}
+
+.selfrequires_clarify {
+  margin-top: -6px;
+  & .img-box {
+    width: 76px;
+    height: 76px;
+    @extend %tac;
+    @extend %b1se6;
+    margin-right: 20px;
+    & img {
+      vertical-align: middle;
+      padding-top: 12px;
+    }
+  }
+  & .selfrequires_clarify_description {
+    width: 76px;
+    @extend %tac;
+  }
+  & .selfrequires_clarify_column span {
+    color: #d9d9d9;
+  }
+  & .selfrequires_clarify_column .active {
+    & span {
+      color: #ff3250;
+    }
+    & .img-box {
+      border-color: $ff3250;
+    }
+  }
+
+}
+
+.selfrequires_description textarea {
+  width: 762px;
+  height: 134px;
+  border: 1px solid #d9d9d9;
+  padding: 14px 20px;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #000;
+}
+
+textarea:-moz-input-placeholder {
+  color: #000;
+}
+
+//mozilla firfox 4 to 18
+textarea::-moz-input-placeholder {
+  color: #000;
+}
+
+//mozilla firfox 19+
+textarea::-ms-input-placeholder {
+  color: #000;
+}
+
+.selfrequires_opertion {
+  padding-left: 39px;
+  margin-top: -8px;
+  & span {
+    width: 76px;
+    height: 56px;
+    @extend %b1se6;
+    margin-right: 20px;
+    line-height: 56px;
+    @extend %tac;
+  }
+}
+
+.self_sketch, .selfClothPlate, .selfDesigned {
+  & .selfrequires_nav_layer {
+    & span {
+      margin-left: 38px;
+    }
+  }
+}
+
+.prepaid {
+  padding-top: 30px;
+  & .img-box {
+    padding-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    & .prepaid_layerout {
+      @extend %dpn;
+    }
+    & .layerout {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;;
+      height: 100%;
+      background: rgba(0, 0, 0, .4);
+    }
+    & p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $fff;
+    }
+    &:hover .prepaid_layerout {
+      @extend %dpk;
+    }
+  }
+  & .save {
+    padding-top: 16px;
+    & span {
+      padding-right: 28px;
+    }
+  }
+}
+
+.preview {
+  width: 824px;
+  overflow: hidden;
+  padding-top: 28px;
+  @extend %tar;
+  & .preview_box {
+    width: 1200px;
+    & textarea {
+      width: 322px;
+      margin-top: 4px;
+      height: 80px;
+      font-size: 14px;
+      color: #525252;
+      margin-bottom: 20px;
+      resize: none
+    }
+  }
+  & .fl-l {
+    width: 322px;
+    margin-right: 180px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    & p {
+      @extend %tal;
+      color: $e5;
+      margin-bottom: 16px;
+      margin-top: 8px;
+      line-height: 1.6;
+      @extend %cpu;
+    }
+    & span {
+      color: $e5;
+      @extend %cpu;
+    }
+  }
+}
+
+.selfClothDesign {
+  width: 824px;
+}
+
+.selfClothPlate {
+  & .save {
+    margin-right: 10px;
+    padding-top: 26px;
+    padding-bottom: 4px;
+  }
+}
+
+.selfClothDesign_area {
+  padding-top: 154px;
+  line-height: 2;
+  & img {
+    margin-bottom: 10px;
+  }
+}
+
+.selfDesign_option {
+  width: 1000px;
+  & .long_sline {
+    width: 768px;
+    margin-left: 20px;
+    height: 1px;
+    background: #d3d3d3;
+    margin-top: 12px;
+  }
+}
+
+.colorList_fb1d1d {
+  & .value {
+    @extend %border50;
+    background: #fb1d1d;
+    @extend %wh24;
+  }
+}
+
+.colorList_fb901d {
+  & .value {
+    @extend %border50;
+    background: #fb901d;
+    @extend %wh24;
+  }
+}
+
+.colorList_fbcf1d {
+  & .value {
+    @extend %border50;
+    background: #fbcf1d;
+    @extend %wh24;
+  }
+}
+
+.colorList_aafb1d {
+  & .value {
+    @extend %border50;
+    background: #aafb1d;
+    @extend %wh24;
+  }
+}
+
+.colorList_1dfbaf {
+  & .value {
+    @extend %border50;
+    background: #1dfbaf;
+    @extend %wh24;
+  }
+}
+
+.colorList_1d66fb {
+  & .value {
+    @extend %border50;
+    background: #1d66fb;
+    @extend %wh24;
+  }
+}
+
+.colorList_a51dfb {
+  & .value {
+    @extend %border50;
+    background: #a51dfb;
+    @extend %wh24;
+  }
+}
+
+.selfDesign_option {
+  @extend %h824;
+}
+
+.selfClothDesign_colorList {
+  @extend %pad200;
+  @extend %tal;
+  div {
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    @extend %tac;
+    margin-right: 46px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  & .word {
+    width: 80px;
+    @extend %tac;
+    @extend %dpn;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @extend %pa50;
+  }
+  & .active {
+    & .value {
+      display: none;
+    }
+    & .word {
+      display: block;
+    }
+  }
+}
+
+.selfClothDesign_materialsList {
+  @extend %pad200;
+  width: 1000px;
+  @extend %tal;
+  & span {
+    width: 80px;
+    @extend %tac;
+    height: 26px;
+    line-height: 26px;
+    margin-right: 66px;
+    margin-bottom: 30px;
+    &.active {
+      background: $ff3250;
+      color: $fff;
+    }
+  }
+}
+
+.selfClothDesign_num {
+}
+
+.selfClothDesign_NumList {
+  width: 1000px;
+  margin-bottom: 30px;
+  & .fl-l {
+    margin-right:40px;
+  }
+  & .NumList_pay {
+    padding-top: 6px;
+  }
+  & .close_medu {
+    color: #525252;
+  }
+}
+
+.NumList_pay.save {
+  padding: 0;
+  & span {
+    padding-right: 28px;
+  }
+}
+
+.NumList_material, .NumList_color, .NumList_size {
+  @extend %tal;
+  width: 80px;
+}
+.NumList_count{
+  width:180px;
+}
+.NumList_controller {
+  width: 78px;
+  @extend %b1se6;
+  @extend %cpu;
+}
+
+.NumList_color, .NumList_material, .NumList_controller, .NumList_size {
+  height: 26px;
+  line-height: 26px;
+  margin-top: 4px;
+}
+
+.NumList_controller {
+  line-height: 23px;
+  & .reduce {
+    width: 10px;
+    height: 3px;
+    background: url(../img/selfdesign/reduce.png) no-repeat center;
+    vertical-align: 5px;
+  }
+  & .plus {
+    width: 14px;
+    height: 14px;
+    background: url(../img/selfdesign/plus.png) no-repeat center;
+    vertical-align: -1px;
+  }
+}
+
+.Tx {
+  background: url(../img/selfdesign/ico/tg.png) no-repeat center;
+}
+
+.Ds {
+  background: url(../img/selfdesign/ico/dg.png) no-repeat center;
+}
+
+.Sw {
+  background: url(../img/selfdesign/ico/sg.png) no-repeat center;
+}
+
+.Cd {
+  background: url(../img/selfdesign/ico/cdg.png) no-repeat center;
+}
+
+.Vd {
+  background: url(../img/selfdesign/ico/vg.png) no-repeat center;
+}
+
+.active {
+  &
+  .Tx {
+    background: url(../img/selfdesign/ico/tr.png) no-repeat center;
+  }
+
+  &
+  .Ds {
+    background: url(../img/selfdesign/ico/dr.png) no-repeat center;
+  }
+
+  &
+  .Sw {
+    background: url(../img/selfdesign/ico/sr.png) no-repeat center;
+  }
+
+  &
+  .Cd {
+    background: url(../img/selfdesign/ico/cdr.png) no-repeat center;
+  }
+
+  &
+  .Vd {
+    background: url(../img/selfdesign/ico/vr.png) no-repeat center;
+  }
+
+}
+
+.addcolor_material {
+  width: 824px;
+  @extend %cpu;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  &:hover a {
+    color: $ff3250;
+  }
+}
+
+.selfClothPlate {
+  & .preview_box .fl-l {
+    margin-right: 178px;
+    margin-bottom: 38px;
+    margin-top: 0;
+  }
+}
+
+.selfDesigned_box {
+  width: 824px;
+  @extend %of;
+}
+
+.selfDesigned_largebox {
+  width: 1200px;
+  & .selfDesigned_location {
+    position: relative;
+    padding: 20px;
+    margin-right: 86px;
+    margin-top: 18px;
+    width: 370px;
+    height: 188px;
+    @extend %cpu;
+    background: url(../img/selfdesign/border.png) no-repeat center;
+    & .setasDefault {
+      width: 42px;
+      height: 42px;
+      background: url(../img/selfdesign/completed.png) no-repeat center;
+      position: absolute;
+      top: -1px;
+      right: 0px;
+      display: none;
+    }
+    & .selfDesigned_adress input {
+      width: 100%;
+    }
+    & input {
+      width: 100px;
+    }
+    & p {
+      @extend %tal;
+    }
+    & .selfDesigned_dividline {
+      margin: 14px 0;
+      height: 1px;
+      background: $e6e6e6;
+    }
+    & .cd-edit {
+      margin-top: 58px;
+    }
+  }
+}
+
+.selfDesigned_add {
+  margin-top: 88px;
+  & img {
+    vertical-align: -5px;
+    margin-right: 6px;
+  }
+}
+
+.spar {
+  margin-top: 30px;
+  box-sizing: border-box;
+  padding: 0 40px;
+  & > div {
+    @extend %tal;
+  }
+  & span {
+
+  }
+  & .btc {
+    @extend %tac;
+    width: 118px;
+    height: 38px;
+    @extend %b1se6;
+    font-size: 16px;
+    line-height: 38px;
+    margin-right: 10px;
+  }
+  & .active {
+    height: 40px;
+    border: none;
+    width: 120px;
+    line-height: 40px;
+    background: $ff3250;
+    color: $fff;
+  }
+}
+
+#tp-box {
+  width: 732px;
+  height: 430px;
+  background: $fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  & .close-cancle {
+    padding-top: 0px;
+  }
+}
+
+.ptop {
+  height: 60px;
+  line-height: 60px;
+  @extend %b1se6;
+  box-sizing: border-box;
+  padding-left: 18px;
+}
+
+.selet {
+  & > div {
+    width: 175px;
+    height: 42px;
+    line-height: 38px;
+    font-size: 18px;
+    border: 1px solid #e6e6e6;
+    display: inline-block;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-left: 9px;
+  }
+  & > div > span {
+    display: inline-block;
+    height: 23px;
+    width: 100px;
+  }
+}
+
+.contact.mt {
+  padding-left: 13px;
+  box-sizing: border-box;
+}
+
+.mt {
+  margin-top: 14px;
+  margin-bottom: 16px;
+}
+
+.mt.tm {
+  margin-top: 54px;
+}
+
+.ln, .lp {
+  width: 200px;
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.ln {
+  margin-left: 12px;
+  margin-right: 18px;
+}
+
+.lp {
+  margin-left: 12px;
+}
+
+.pro, .city, .area {
+  position: absolute;
+  list-style: none;
+  z-index: 100;
+  background: white;
+  width: 148px;
+  display: none;
+}
+
+.pro {
+  top: -160px;
+  left: 160px;
+}
+
+.city {
+  top: 10px;
+  left: 336px;
+}
+
+.area {
+  top: -120px;
+  left: 510px;
+}
+
+.pro > li, .city > li, .area > li {
+  text-align: center;
+  margin-top: 2px;
+}
+
+.pro > li:hover, .city > li:hover, .area > li:hover {
+  color: red;
+}
+
+.dp {
+  width: 490px;
+  height: 42px;
+  border: 1px solid #e6e6e6;
+  margin-left: 12px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+#tp-box input {
+  font-size: 12px;
+}
+
+.defaup {
+  box-sizing: border-box;
+  padding-left: 65px;
+  margin-top: -5px;
+}
+
+.checkboxFive label {
+  top: 2px;
+  left: 0;
+}
+
+.checkboxFive label, .Cone label, .Ctw label, .Cth label, .Cfo label, .Cfi label, .Csi label, .Cse label, .Cei label {
+  cursor: pointer;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #e6e6e6;
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+}
+
+.defaup .checkboxFive {
+  width: 100%;
+}
+
+.checkboxFive label:after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: transparent;
+  top: 2px;
+  left: 2px;
+  border: 2px solid #FF3250;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.checkboxFive input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+.checkboxFive {
+  box-sizing: border-box;
+  margin-left: 1px;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  display: inline-block;
+  /* margin: 20px 90px; */
+  vertical-align: -2px;
+  margin-right: 6px;
+}
+
+.sst {
+  @extend %tal;
+}
+
+.mydesign_progressbar {
+  @extend %tac;
+  margin-bottom: 40px;
+  & div {
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    color: $fff;
+    font-size: 16px;
+    &:hover {
+      -webkit-box-shadow: 3px 3px 10px rgba(192, 0, 29, 0.2);
+      -moz-box-shadow: 3px 3px 10px rgba(192, 0, 29, 0.2);
+      box-shadow: 3px 3px 10px rgba(192, 0, 29, 0.2);
+    }
+  }
+  & .mydesign_requires {
+    background: url(../img/selfdesign/completed/selfrequires_normal.svg) no-repeat center;
+  }
+  & .mydesign_sketch {
+    background: url(../img/selfdesign/completed/selfsektch_normal.svg) no-repeat center;
+  }
+  & .mydesign_plate {
+    background: url(../img/selfdesign/completed/selfcloth_normal.svg) no-repeat center;
+  }
+  & .mydesign_completed {
+    position: relative;
+    background: url(../img/selfdesign/completed/selfplate_normal.svg) no-repeat center;
+  }
+  & .mydesign_distribution {
+    position: relative;
+    background: url(../img/selfdesign/completed/selfdesigned_normal.svg) no-repeat center;
+  }
+}
+
+.mydesign_completed,.mydesign_distribution{
+  & .mydesign_greyword {
+    position: absolute;
+    top:-126px;
+    left: 20px;
+    background: rgba(0, 0, 0, .7);
+    width:216px;
+    height:90px;
+    & p{
+      color:$fff;
+      line-height:30px;
+    }
+  }
+  & .mydesign_arrow {
+    position: absolute;
+    top:-36px;
+    right:22px;
+    width:0;
+    height:0;
+    border-top:22px solid rgba(0,0,0,.7);
+    border-left:12px solid rgba(0,0,0,0);
+    border-right:12px solid rgba(0,0,0,0);
+  }
+}
+.mydesign_completed .mydesign_greyword{
+  padding:14px 34px;
+}
+.mydesign_distribution .mydesign_greyword{
+  padding:14px 16px;
+}
+.mydesign {
+  @extend %tal;
+}
+
+.mydesign_comment {
+  margin: 50px 0;
+  & .fl-l {
+    width: 936px;
+  }
+}
+
+.mydesign_pro {
+  margin-bottom: 56px;
+  width: 1400px;
+  & .mydesign_material {
+    margin: 0 44px;
+  }
+  & .mydesign_proInfo {
+    margin-right: 146px;
+  }
+}
+
+.mydesign_imgbar {
+  width: 1400px;
+  margin-bottom: 120px;
+  & img {
+    width: 320px;
+    height: 320px;
+    margin-right: 120px;
+  }
+}
+
+.mydesign {
+  & .files {
+    width: 60px;
+    height: 32px;
+    line-height: 32px;
+    @extend %tac;
+    @extend %b1se6;
+  }
+}
+
+.mydesignRequire, .mydesignPlate, .mydesignDesign {
+  & .mydesign_title {
+    margin: 34px 0;
+    & .titleline {
+      height: 1px;
+      background: #e6e6e6;
+      width: 546px;
+    }
+  }
+  & .title {
+    margin: 0 18px;
+    margin-top: -12px;
+  }
+}
+.mydesignPlate{
+  & img{
+    margin-bottom:120px;
+  }
+}
+.mydesignDesign .mydesign .mydesign_title .titleline {
+  width: 536px;
+}
+
+.mydesignSketch, .mydesignDesign {
+  & .mydesign_imgbar {
+    & .fl-l {
+      margin-bottom: 120px;
+    }
+  }
+}
+
+.selfClothDesignSize_info, .selfClothDesignSize_detailinfo {
+  @extend %tal;
+  & span {
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 20px;
+    @extend %tac;
+  }
+}
+
+.selfClothDesignSize_info {
+  padding-left: 50px;
+}
+
+.sizeCharacter {
+  padding-top: 30px;
+  margin-bottom: 6px;
+}
+
+.selfClothDesignSize_detailinfo {
+  & span {
+    @extend %b1se6;
+    margin-bottom: 20px;
+  }
+}
+
+.selfClothDesignSize_detailinfo .selfClothDesignSize_info {
+  &.active span {
+    background: $ff3250;
+    color: $fff;
+    border: none;
+  }
+}
+
+.editpay {
+  padding-left: 290px;
+  margin-bottom: 40px;
+  & p {
+    padding-left: 14px;
+  }
+}
+.editsketch{
+  margin-bottom:20px;
+  & p{
+    margin-top:6px;
+  }
+}

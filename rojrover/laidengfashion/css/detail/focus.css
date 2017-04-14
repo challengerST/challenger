@@ -1,0 +1,23 @@
+
+#move{
+    width:10px;
+    height:10px;
+    /*background-color:red;*/
+    position:absolute;
+    left:100px;
+    top:100px;
+    display:none;
+}
+#big{
+    width:400px;
+    height:400px;
+    position:absolute;
+    left:942px;
+    top:186px;
+    overflow:hidden;
+    display:none;
+
+}
+#bimg{
+    position:absolute;
+}

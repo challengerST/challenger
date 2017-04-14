@@ -1,0 +1,118 @@
+title = "pcar"
+url = "/pcar"
+layout = "pcar"
+description = "购物车"
+is_hidden = 0
+==
+<link rel="stylesheet" href="{{ 'assets/raw/css/purchase.css'|theme }}"/>
+<div class="big-box down-border background-fff">
+    <div class="banner-list main-content clearfix">
+        <div class="fl-l logo">
+            <a href="javascript:;"><img src="{{ 'assets/img/common/logo.png'|theme }}" alt=""></a>
+        </div>
+        <ol class="first-page-list-left fl-l">
+            <li id="firstpage" class="tab"><a href="Home"><span>首页</span></a></li>
+            <li id="womenpage" class="tab"><a href="wmc"><span>女装</span></a></li>
+            <li id="manpage" class="tab"><a href="wmc"><span>男装</span></a></li>
+            <li id="childrenpage" class="tab"><a href="" onclick="alert('is building!')"><span>童装</span></a></li>
+            <li id="clothpage" class="tab"><a href="" onclick="javascript:alert('is building!')"><span>成衣系列</span></a></li>
+            <li id="private-order" class="tab"><a href="" onclick="javascript:alert('is building!')"><span>私人定制</span></a></li>
+            <li id="fashion-information" class="tab"><a href="zixun"><span>潮流资讯</span></a></li>
+        </ol>
+        <ul class="first-page-list-right fl-r" id="lgs">
+            <li class="login" id="sign-in"><span>登录</span></li>
+            <li class="shopcar"><a href="pcar"><i style="background: url({{ 'assets/img/sprit-img.png'|theme }}) no-repeat -7px -11px;"></i>
+                <span>购物车</span></a></li>
+            <li class="search" onclick="javascript:alert('efforts are being made to build');"><img
+                    src="{{ 'assets/img/common/serach.png'|theme }}"></li>
+        </ul>
+    </div>
+</div>
+<div class="main-content headert">
+    <span class="header-title">购物车</span>
+</div>
+<div class="main-content product header shopping">
+    <table id="cartTable">
+        <thead>
+        <tr class="">
+            <th class="col-all">
+                <lable><input type="checkbox" class="check-all check">全选</lable>
+            </th>
+            <th class="col-info">商品信息</th>
+            <th class="col-price">单价</th>
+            <th class="col-num">数量</th>
+            <th class="col-total">合计</th>
+            <th class="col-oper">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="">
+            <td class="checkbox col-all"><input class="check-one check" type="checkbox"></td>
+            <td class="goods col-info"><img src="{{ 'assets/img/sweat-cloth.jpg'|theme }}" alt=""><span></span></td>
+            <td class="price col-price">499</td>
+            <td class="count col-num">
+                <div class="total-count clearfix">
+                    <span class="reduce"></span>
+                    <input class="count-input" type="text" value="1">
+                    <span class="add">+</span>
+                </div>
+
+            </td>
+            <td class="subtotal col-total">499</td>
+            <td class="operation col-oper"><span class="delete">删除</span></td>
+        </tr>
+        <tr class="">
+            <td class="checkbox col-all"><input class="check-one check" type="checkbox"></td>
+            <td class="goods col-info"><img src="{{ 'assets/img/sweat-cloth.jpg'|theme }}" alt=""><span></span></td>
+            <td class="price col-price">499</td>
+            <td class="count col-num">
+                <div class="total-count clearfix">
+                    <span class="reduce"></span>
+                    <input class="count-input" type="text" value="1">
+                    <span class="add">+</span>
+                </div>
+
+            </td>
+            <td class="subtotal col-total">499</td>
+            <td class="operation col-oper"><span class="delete">删除</span></td>
+        </tr>
+        <tr class="">
+            <td class="checkbox col-all"><input class="check-one check" type="checkbox"></td>
+            <td class="goods col-info"><img src="{{ 'assets/img/sweat-cloth.jpg'|theme }}" alt=""><span></span></td>
+            <td class="price col-price">499</td>
+            <td class="count col-num">
+                <div class="total-count clearfix">
+                    <span class="reduce"></span>
+                    <input class="count-input" type="text" value="1">
+                    <span class="add">+</span>
+                </div>
+
+            </td>
+            <td class="subtotal col-total">499</td>
+            <td class="operation col-oper"><span class="delete">删除</span></td>
+        </tr>
+        </tbody>
+    </table>
+</div>;
+<div class="shopnone main-content" style="display:none">
+    <p><img src="{{ 'assets/img/shopcar.png'|theme }}" alt=""></p>
+    <p class="shopcar-im">购物车空空如也 ~ </p>
+    <p class="browse"><a href="javascript:;">去逛逛</a></p>
+</div>
+<div class="main-content">
+
+    <div class="foot clearfix mrt" id="foot">
+        <lable class="fl-l select-all"><input type="checkbox" class="check-all check">全选</lable>
+        <span class="fl-l chose" id="selected">已选 <span id="newcount" class="newcount">0</span>/<span id="totalcount"
+                                                                                                      class="totalcount">3</span></span>
+        <a class="fl-l delete-more" id="deleteAll" href="javascript:;">批量删除</a>
+        <div class="fl-r closing"><a href="vertifymenu.html">结算</a></div>
+        <div class="fl-r total">合计: ￥<span id="priceTotal">0.00</span></div>
+        <div class="selected-view" id="selectedView" style=" ">
+            <div class="selectedviewList" id="selectedviewList">
+            </div>
+            <span class="arrow"></span>
+        </div>
+    </div>
+</div>
+<script src="{{ 'assets/js/purchasecar.js'|theme }}"></script>

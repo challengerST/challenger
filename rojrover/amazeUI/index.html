@@ -1,0 +1,177 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>Hello Amaze UI</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<p>
+    Hello Amaze UI.
+</p>
+<div class="am-panel-group" id="accordion">
+    <div class="am-panel am-panel-default">
+        <div class="am-panel-hd">
+            <h4 class="am-panel-title" data-am-collapse="{parent: '#accordion', target: '#do-not-say-1'}">
+                ...
+            </h4>
+        </div>
+        <div id="do-not-say-1" class="am-panel-collapse am-collapse am-in">
+            <div class="am-panel-bd">
+                ...
+            </div>
+        </div>
+    </div>
+    <div class="am-panel am-panel-default">
+        <div class="am-panel-hd">
+            <h4 class="am-panel-title" data-am-collapse="{parent: '#accordion', target: '#do-not-say-2'}">
+                ...
+            </h4>
+        </div>
+        <div id="do-not-say-2" class="am-panel-collapse am-collapse">
+            <div class="am-panel-bd">
+                ...
+            </div>
+        </div>
+    </div>
+    <div class="am-panel am-panel-default">
+        <div class="am-panel-hd">
+            <h4 class="am-panel-title" data-am-collapse="{parent: '#accordion', target: '#do-not-say-3'}">...</h4>
+        </div>
+        <div id="do-not-say-3" class="am-panel-collapse am-collapse">
+            <div class="am-panel-bd">
+                ...
+            </div>
+        </div>
+    </div>
+</div>
+<!--在这里编写你的代码-->
+<form class="am-form" data-am-validator>
+    <div class="am-form-group">
+        <h3>装备<sup class="am-text-danger">*</sup> （至少 2 项，至多 4 项）</h3>
+        <label class="am-checkbox">
+            <input type="checkbox" name="cbx" value="ip" data-am-ucheck required minchecked="2" maxchecked="4"> iPhone
+        </label>
+        <label class="am-checkbox">
+            <input type="checkbox" name="cbx" value="im" data-am-ucheck> iMac
+        </label>
+        <label class="am-checkbox">
+            <input type="checkbox" name="cbx" value="mbp" data-am-ucheck> Macbook Pro
+        </label>
+        <label class="am-checkbox">
+            <input type="checkbox" name="cbx" value="sf" data-am-ucheck> 苏菲·麻索
+        </label>
+        <label class="am-checkbox">
+            <input type="checkbox" name="cbx" value="sur" data-am-ucheck> Surface
+        </label>
+        <label class="am-checkbox">
+            <input type="checkbox" name="cbx" value="rb" data-am-ucheck> Razer Blade
+        </label>
+    </div>
+
+    <div class="am-form-group">
+        <h3>性别 <sup class="am-text-danger">*</sup></h3>
+        <label class="am-radio">
+            <input type="radio" name="radio10" value="male" data-am-ucheck required> 男
+        </label>
+        <label class="am-radio">
+            <input type="radio" name="radio10" value="female" data-am-ucheck> 女
+        </label>
+        <label class="am-radio">
+            <input type="radio" name="radio10" value="pig" data-am-ucheck> 人妖
+        </label>
+        </div>
+        <div><button type="submit" class="am-btn am-btn-primary">提交</button></div>
+</form>
+<form action="" class="am-form" id="doc-vld-msg">
+    <fieldset>
+        <legend>显示验证提示信息</legend>
+        <div class="am-form-group">
+            <label for="doc-vld-name-2-1">用户名：</label>
+            <input type="text" id="doc-vld-name-2-1" minlength="3" placeholder="输入用户名（至少 3 个字符）" required/>
+        </div>
+
+        <div class="am-form-group">
+            <label for="doc-vld-pwd-1">密码：</label>
+            <input type="password" id="doc-vld-pwd-1" placeholder="6 位数字的银行卡密码" pattern="^\d{6}$" required/>
+        </div>
+
+        <div class="am-form-group">
+            <label for="doc-vld-pwd-2">确认密码：</label>
+            <input type="password" id="doc-vld-pwd-2" placeholder="请与上面输入的值一致" data-equal-to="#doc-vld-pwd-1" required/>
+        </div>
+
+
+
+
+
+
+
+
+        <button class="am-btn am-btn-secondary" type="submit">提交</button>
+    </fieldset>
+</form>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+<script>
+    $(function() {
+        $('#doc-vld-msg').validator({
+            onValid: function(validity) {
+                $(validity.field).closest('.am-form-group').find('.am-alert').hide();
+            },
+
+            onInValid: function(validity) {
+                var $field = $(validity.field);
+                var $group = $field.closest('.am-form-group');
+                var $alert = $group.find('.am-alert');
+                // 使用自定义的提示信息 或 插件内置的提示信息
+                var msg = $field.data('validationMessage') || this.getValidationMessage(validity);
+
+                if (!$alert.length) {
+                    $alert = $('<div class="am-alert am-alert-danger"></div>').hide().
+                    appendTo($group);
+                }
+
+                $alert.html(msg).show();
+            }
+        });
+    });
+</script>
+</body>
+</html>

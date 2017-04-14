@@ -1,0 +1,125 @@
+.banner-box li,.banner-list-other li{
+    float:left;
+}
+.designer-personal{
+    width:916px;
+}
+.designer-personal a{
+    display:block;
+
+}
+.flex-bloe{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+}
+.designer-detail-decoration{
+    width:262px;
+    height:132px;
+}
+.float-left{
+    float:left;
+}
+.float-right{
+    float:right;
+}
+.designer-detail-decoration img{
+    width:100%;
+    height:100%;
+}
+.designer-detail-decoration h1{
+    text-align:left;
+    font-size:18px;
+    padding:10px 0;
+}
+.designer-detail-decoration p{
+    font-size:14px;
+    text-align:left;
+}
+.back-white{
+    box-sizing:border-box;
+    background:#fff;
+    padding:24px 0 0 30px;
+}
+.designer-decoration{
+    width:900px;
+}
+.xuankuang span{
+    width:98px;
+    line-height:34px;
+    height:34px;
+    border:1px solid #e6e6e6;
+    display:inline-block;
+}
+/*.xuankuang span:hover{*/
+    /*background:#ff3250;*/
+    /*color:#fff;*/
+/*}*/
+.xuankuang .active{
+    background:#ff3250;
+    color:#fff;
+}
+.name-content .name{
+    font-size:30px;
+    color:#ff3250;
+}
+.name-content{
+    display:inline-block;
+    vertical-align:32px;
+}
+.name-content-detail i{
+    width:10px;
+    height:14px;
+    display:inline-block;
+    margin:0px 4px 0px 18px;
+    background:url(../img/huiyuan-level.png) no-repeat -2px 0px;
+}
+.designer-decoration-head{
+    display:inline-block;
+    width:130px;
+    height:130px;
+    overflow:hidden;
+    border-radius:50%;
+    background:#e6e6e6;
+}
+.designer-decoration-information{
+
+
+}
+.xuankuang{margin-top:26px;}
+.xuankuang span{
+    margin-left:10px;
+    font-size:13px;
+}
+.xuankuang span:hover{
+    background:#FF3250;
+    color:#fff;
+}
+.designer-detail-daily i{
+    display:block;
+}
+.designer-detail-daily span{}
+.word-decoration{
+    text-align:left;
+    font-size:14px;
+    text-indent:2em;
+    padding-top:40px;
+    padding-bottom:20px;
+    border-bottom:1px dotted #d8d3d3;
+}
+.work,.fan,.notice,.position{
+    font-size:14px;
+}
+.designer-detail-daily .shu-line{
+    margin:0 21px 0 31px;
+}
+.name-content-detail{
+    text-align:left;
+    padding-bottom:10px;
+}
+.name-content{
+    margin-left:10px;
+}
+.toucher:hover img {
+    transform: scale(1.1);
+}

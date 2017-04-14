@@ -1,0 +1,1907 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>i pik</title>
+    <meta name="keywords" content="设计师">
+    <meta name="description" content="设计师">
+    <link rel="stylesheet" href="css/common/clear.css"/>
+    <link rel="stylesheet" href="css/common/common.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="assets/css/app.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/fenxiang.css"/>
+    <link rel="stylesheet" href="css/personal-center.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="css/assets/css/app.css">
+    <link type="text/css" rel="stylesheet" href="http://static.duoshuo.com/styles/embed.default.css?9b2a46a0.css">
+    <link rel="stylesheet" href="css/assets/css/amazeui.cropimgbox.min.css">
+
+</head>
+<body style="background:#fff;">
+<div class="big-box down-border background-fff">
+    <div class="banner-list main-content clearfix">
+        <div class="fl-l logo">
+            <a href="javascript:;"><img src="img/common/logo.png" alt=""></a>
+        </div>
+        <ol class="first-page-list-left fl-l">
+            <li id="firstpage" class="tab"><a href="index.html"><span>首页</span></a></li>
+            <li id="womenpage" class="tab"><a href="women-cloth.html"><span>女装</span></a></li>
+            <li id="manpage" class="tab"><a href="women-cloth.html"><span>男装</span></a></li>
+            <li id="childrenpage" class="tab"><a href="women-cloth.html" onclick="alert('is building!')"><span>童装</span></a>
+            </li>
+            <li id="clothpage" class="tab"><a href="chengy.html" onclick=""><span>成衣系列</span></a>
+            </li>
+            <li id="private-order" class="tab"><a href=""
+                                                  onclick="javascript:alert('is building!')"><span>私人定制</span></a></li>
+            <li id="fashion-information" class="tab"><a
+                    href="zixun.html"><span>潮流资讯</span></a></li>
+        </ol>
+        <ul class="first-page-list-right fl-r" id="lgs">
+            <li class="login" id="sign-in"><span>登录</span></li>
+            <li class="shopcar"><a href="purchase-car.html"><i
+                    style="background: url(img/sprit-img.png) no-repeat -7px -11px;"></i>
+                <span>购物车</span></a></li>
+            <li class="search" onclick="javascript:alert('efforts are being made to build');"><img
+                    src="img/common/serach.png"></li>
+        </ul>
+    </div>
+</div>
+<div class="main-content clearfix">
+    <div class="fl-l personal-exhabition">
+        <div class="personal-head">
+            <div class="head"><a href="personal-room.html"><img src="img/personal-room/6.jpg" alt=""></a></div>
+            <div class="personal"><a href="personal-room.html"><span id="user-name">韩璐鹿</span></a><i></i></div>
+            <div class="share"><a href="javascript:void(0)" onclick="alert('is building!');"><span
+                    class="work"><i>26</i>作品</span></a><span class="shu-line"></span><a
+                    href="personal-room.html"><span class="fan"><i>88</i>粉丝</span></a><span
+                    class="shu-line"></span><a href="personal-room.html"><span class="notice"><i>66</i>关注</span></a>
+            </div>
+        </div>
+        <ul class="items-updates" id="items-updates">
+            <li class="update">
+                <div class="updates st nav" name="0"><i></i><span>好友动态</span></div>
+            </li>
+            <li class="line"></li>
+            <li class="spacing">
+                <div class="my-size st"><i></i><span>我的尺码</span></div>
+            </li>
+            <li class="spacing">
+                <div class="my-data st" name="4"><i></i><span>我的资料</span></div>
+            </li>
+            <li class="spacing">
+                <div class="cloth-favorite st"><i></i><span>服装喜好</span></div>
+            </li>
+            <li class="line spacing"></li>
+            <li class="spacing">
+                <div class="news st"><i></i><span>消息</span></div>
+            </li>
+            <li class="spacing">
+                <div class="collecttion st" name="7"><i></i><span>收藏夹</span></div>
+            </li>
+            <li class="spacing">
+                <div class="my-orders st" name="1"><i></i><span>我的订单</span></div>
+            </li>
+            <li class="spacing">
+                <div class="browse-history st" name="3"><i></i><span>浏览历史</span></div>
+            </li>
+            <li class="line spacing"></li>
+            <li class="spacing">
+                <div class="edit-items st" name="5"><i></i><span>上传商品</span></div>
+            </li>
+            <li class="spacing">
+                <div class="promanage st" name="2"><i></i><span>商品管理</span></div>
+            </li>
+            <li class="spacing">
+                <div class="menucon st" name="1"><i></i><span>订单管理</span></div>
+            </li>
+            <li class="spacing down">
+                <div class="mybrand st" name="6"><i></i><span>我的品牌</span></div>
+            </li>
+        </ul>
+    </div>
+    <div class="fl-r personal-share cd" style="display:none;">
+        <div>
+            <span class="b-circle"></span> <span class="column-head">晒一晒你的新衣服</span><span class="dot"></span>
+        </div>
+        <div>
+            <div class="clearfix" style=" position:relative;margin:9px 0;">
+                <textarea class="fl-l fabu-con" placeholder="我要分享" name="" id="wd" autocomplete="off"></textarea>
+                <span class="w-num">您还可以写 <i class="wd-num" id="wd-num">140</i> 个字</span>
+                <span class="hengxian"></span>
+                <span class="shuxian"></span>
+                <div class="share-items fl-r clearfix">
+                    <input type="file" name="" id="" style="display:none">
+                    <span id="picture" class="fl-l"><i></i><span>图片</span></span><span id="link"
+                                                                                       class="fl-r"><i></i><span>链接</span></span><span
+                        id="music" class="fl-l"><i></i><span>音乐</span></span><span id="video" class="fl-r"><i></i><span>视频</span></span>
+                </div>
+            </div>
+        </div>
+        <div data-am-widget="duoshuo" class="am-duoshuo am-duoshuo-default" data-ds-short-name="amazeui">
+            <div class="ds-thread">
+            </div>
+        </div>
+        <div class="clearfix" id="share-p"><span class="fabu-but fl-r">分享</span></div>
+        <div id="friend-updates" class="show twice">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">好友动态</span><span class="four dot"></span>
+            </div>
+            <div class="box">
+                <a id="closed" class="close" href="javascript:;" onclick="delete(this)">×</a>
+                <div class="clearfix" style="line-height:50px;">
+                    <img class="small-head fl-l" src="img/personal-room/6.jpg" alt=""/>
+                    <span class="user fl-l host">韩露</span><span class="share host fl-l">分享<i class="music"></i>音乐</span>
+                    <span class="clock fl-r" id="time">time</span>
+                </div>
+
+                <div class="content">
+                    <div class="main">
+                        <p class="txt">
+                            <!--<span class="user">小Y：</span>-->
+                            英国艺术家 Jane Perkins 能利用很多不起眼的东西进行创作，甚至是垃圾。首饰、纽扣、玩具等等都可以作为他创作的工具并创作出惟妙惟肖的画作，丝毫不逊色于色彩丰富的颜料。
+                        </p>
+                        <div class="share-img">
+                            <img src="img/personal-room/nvz.jpg" alt="">
+                            <img src="img/personal-room/nvz.jpg" alt="">
+                            <img src="img/personal-room/nvz.jpg" alt="">
+                            <img src="img/personal-room/nvz.jpg" alt="">
+                        </div>
+                        <div class="ppd ds-comment-body ds-comment-footer ds-comment-actions">
+                            <a class="forward ds-post-repost"><span class="ds-icon ds-icon-like"></span>转发</a>
+                            <span class="shu-line"></span>
+                            <a class="comment ds-post-reply"><span class="ds-icon ds-icon-reply"></span>评论</a>
+                            <span class="shu-line"></span>
+                            <a class="pointpraise ds-post-likes"><span class="ds-icon ds-icon-like"></span>点赞</a>
+                        </div>
+                    </div>
+                    <div class="praises-total" total="0" style="display: none;"></div>
+                    <div class="comment-list">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="my-size" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">我的尺码</span><span class="four dot"></span>
+            </div>
+        </div>
+        <div id="my-data" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">我的资料</span><span class="four dot"></span>
+            </div>
+        </div>
+        <div id="favorite-cloth" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">喜爱款式</span><span class="four dot"></span>
+            </div>
+        </div>
+        <div id="news" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">消息</span><span class="two dot"></span>
+            </div>
+        </div>
+        <div id="collection" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">收藏</span><span class="two dot"></span>
+            </div>
+        </div>
+        <div id="items" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">我的订单</span><span class="four dot"></span>
+            </div>
+        </div>
+        <div id="style-contrast" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">款式对比</span><span class="four dot"></span>
+            </div>
+        </div>
+        <div id="browse-history" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">浏览历史</span><span class="four dot"></span>
+            </div>
+        </div>
+        <div id="edit-product" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">编辑商品</span><span class="four dot"></span>
+            </div>
+        </div>
+        <div id="delete-product" class="show">
+            <div>
+                <span class="b-circle"></span> <span class="column-head">删除商品</span><span class="four dot"></span>
+            </div>
+        </div>
+    </div>
+    <div class="fl-r menu cd" style="display:none;">
+        <div class="product">
+            <table id="cartTable">
+                <thead>
+                <tr class="t-tf">
+                    <!--<th class="col-info">全部订单</th>-->
+                    <!--<th class="col-price">待付款</th>-->
+                    <!--<th class="col-num">待设计</th>-->
+                    <!--<th class="col-total">待生产</th>-->
+                    <!--<th class="col-oper">待收货</th>-->
+                    <!--<th class="col-oper">已完成</th>-->
+                    <!--<th class="col-oper">已取消</th>-->
+                    <th class="">全部订单</th>
+                    <th class="">待付款</th>
+                    <th class="">待设计</th>
+                    <th class="">待生产</th>
+                    <th class="">待收货</th>
+                    <th class="">已完成</th>
+                    <th class="">已取消</th>
+                </tr>
+                </thead>
+            </table>
+            <table class="t-x t-b">
+                <tr class="t-ts au">
+                    <th class="col-info">商品信息</th>
+                    <th class="col-price">单价</th>
+                    <th class="col-num">数量</th>
+                    <th class="col-total">合计</th>
+                    <th class="col-status">状态</th>
+                    <th class="col-oper">操作</th>
+                </tr>
+            </table>
+            <div class="t-box">
+                <div class="tt clearfix down-solide6" style=""><span class="fl-l">2017/1/6 15.23</span></div>
+                <table class="t-x">
+                    <tbody>
+                    <tr class="">
+                        <td class="goods clearfix">
+                            <div class="fl-l"><a href="javascript:void(0)" class="cloth"><img src="img/sweat-cloth.jpg"
+                                                                                              alt=""></a></div>
+                            <div class="fl-l pd">
+                                <a href="javascript:void(0)"><p>高领针织毛衣</p>
+                                    <p class="b-c">驼色/M(160)</p></a></div>
+                        </td>
+                        <td class="price">499</td>
+                        <td class="count">*1</td>
+                        <td class="subtotal">499</td>
+                        <td class="do">
+                            <div><span>已完成</span></div>
+                            <div><a href="return.html"><span class="red-font">退货</span></a></div>
+                        </td>
+                        <td class="operation">
+                            <div>
+                                <p><a href="menudetail.html">查看详情</a></p>
+                                <p><a href="javascript:void(0)">删除订单</a></p>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="t-box">
+                <div class="tt clearfix down-solide6" style=""><span class="fl-l">2017/1/6 15.23</span></div>
+                <table class="t-x">
+                    <tbody>
+                    <tr class="">
+                        <td class="goods clearfix">
+                            <div class="fl-l"><a href="menudetail.html" class="cloth"><img src="img/sweat-cloth.jpg"
+                                                                                           alt=""></a></div>
+                            <div class="fl-l pd">
+                                <a href="menudetail.html"><p>高领针织毛衣</p>
+                                    <p class="b-c">驼色/M(160)</p></a></div>
+                        </td>
+                        <td class="price">499</td>
+                        <td class="count">*1</td>
+                        <td class="subtotal">499</td>
+                        <td class="do">已完成</td>
+                        <td class="operation">
+                            <div>
+                                <p><a href="javascript:void(0)">查看详情</a></p>
+                                <p><a href="javascript:void(0)">删除订单</a></p>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="t-box">
+                <div class="tt clearfix down-solide6" style=""><span class="fl-l">2017/1/6 15.23</span></div>
+                <table class="t-x">
+                    <tbody>
+                    <tr class="">
+                        <td class="goods clearfix">
+                            <div class="fl-l"><a href="javascript:void(0)" class="cloth"><img src="img/sweat-cloth.jpg"
+                                                                                              alt=""></a></div>
+                            <div class="fl-l pd">
+                                <a href="javascript:void(0)"><p>高领针织毛衣</p>
+                                    <p class="b-c">驼色/M(160)</p></a></div>
+                        </td>
+                        <td class="price">499</td>
+                        <td class="count">*1</td>
+                        <td class="subtotal">499</td>
+                        <td class="do">
+                            <div><span>已完成</span></div>
+                            <div><a href="return.html"><span class="red-font">退货</span></a></div>
+                        </td>
+                        <td class="operation">
+                            <div>
+                                <p><a href="menudetail.html">查看详情</a></p>
+                                <p><a href="javascript:void(0)">删除订单</a></p>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="t-box">
+                <div class="tt clearfix down-solide6" style=""><span class="fl-l">2017/1/6 15.23</span></div>
+                <table class="t-x">
+                    <tbody>
+                    <tr class="">
+                        <td class="goods clearfix">
+                            <div class="fl-l"><a href="javascript:void(0)" class="cloth"><img src="img/sweat-cloth.jpg"
+                                                                                              alt=""></a></div>
+                            <div class="fl-l pd">
+                                <a href="javascript:void(0)"><p>高领针织毛衣</p>
+                                    <p class="b-c">驼色/M(160)</p></a></div>
+                        </td>
+                        <td class="price">499</td>
+                        <td class="count">*1</td>
+                        <td class="subtotal">499</td>
+                        <td class="do">
+                            <div><span>已完成</span></div>
+                            <div><a href="return.html"><span class="red-font">退货</span></a></div>
+                        </td>
+                        <td class="operation">
+                            <div>
+                                <p><a href="menudetail.html">查看详情</a></p>
+                                <p><a href="javascript:void(0)">删除订单</a></p>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="t-box">
+                <div class="tt clearfix down-solide6" style=""><span class="fl-l">2017/1/6 15.23</span></div>
+                <table class="t-x">
+                    <tbody>
+                    <tr class="">
+                        <td class="goods clearfix">
+                            <div class="fl-l"><a href="javascript:void(0)" class="cloth"><img src="img/sweat-cloth.jpg"
+                                                                                              alt=""></a></div>
+                            <div class="fl-l pd">
+                                <a href="javascript:void(0)"><p>高领针织毛衣</p>
+                                    <p class="b-c">驼色/M(160)</p></a></div>
+                        </td>
+                        <td class="price">499</td>
+                        <td class="count">*1</td>
+                        <td class="subtotal">499</td>
+                        <td class="do">
+                            <div><span>已完成</span></div>
+                            <div><a href="return.html"><span class="red-font">退货</span></a></div>
+                        </td>
+                        <td class="operation">
+                            <div>
+                                <p><a href="menudetail.html">查看详情</a></p>
+                                <p><a href="javascript:void(0)">删除订单</a></p>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="fl-r pm cd" style="display:none;">
+        <div class="product">
+            <div class="clearfix pm-t">
+                <div class="fl-l pm-z"><a href="javascript:void(0)"><span>在出售的商品</span></a></div>
+                <div class="fl-l pm-c"><a href="javascript:void(0)"><span>仓库中的商品</span></a></div>
+                <div class="fl-r f-p"><a href="javascript:void(0)"><img class="add"
+                                                                        src="img/personal-center/pm/1.png"><span>发布商品</span></a>
+                </div>
+            </div>
+            <table class="t-x t-b">
+                <tr class="t-ts au">
+                    <th class="pm-p">商品图</th>
+                    <th class="col-price">单价</th>
+                    <th class="pm-k">库存</th>
+                    <th class="col-total">总销量</th>
+                    <th class="col-total">上架时间</th>
+                    <th class="col-oper">操作</th>
+                </tr>
+            </table>
+            <div class="t-box">
+                <table class="t-x">
+                    <tbody>
+                    <tr class="">
+                        <td class="goods col-info clearfix">
+                            <div class="fl-l img-mr"><a href="menudetail.html" class="cloth"><img
+                                    src="img/sweat-cloth.jpg" alt=""></a></div>
+                            <div class="fl-l pd">
+                                <a href="menudetail.html"><p>高领针织毛衣</p>
+                                </a>
+                            </div>
+                        </td>
+                        <td class="price col-price">499</td>
+                        <td class="count col-num">40</td>
+                        <td class="pm-x">0</td>
+                        <td class="do">2016-1-7 12.06</td>
+                        <td class="pm-op col-oper clearfix">
+                            <div class="fl-r">
+                                <p class="tc"><a href="javascript:void(0)">编辑商品</a></p>
+                                <p class="tc"><a href="javascript:void(0)">下架</a></p>
+                                <p class="tc"><a href="javascript:void(0)">删除</a></p>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="t-box">
+                <table class="t-x">
+                    <tbody>
+                    <tr class="">
+                        <td class="goods col-info clearfix">
+                            <div class="fl-l img-mr"><a href="menudetail.html" class="cloth"><img
+                                    src="img/sweat-cloth.jpg" alt=""></a></div>
+                            <div class="fl-l pd">
+                                <a href="menudetail.html)"><p>高领针织毛衣</p>
+                                </a>
+                            </div>
+                        </td>
+                        <td class="price col-price">499</td>
+                        <td class="count col-num">40</td>
+                        <td class="pm-x">0</td>
+                        <td class="do">2016-1-7 12.06</td>
+                        <td class="pm-op col-oper clearfix">
+                            <div class="fl-r">
+                                <p class="tc"><a href="javascript:void(0)">编辑商品</a></p>
+                                <p class="tc"><a href="javascript:void(0)">下架</a></p>
+                                <p class="tc"><a href="javascript:void(0)">删除</a></p>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="t-box">
+                <table class="t-x">
+                    <tbody>
+                    <tr class="">
+                        <td class="goods col-info clearfix">
+                            <div class="fl-l img-mr"><a href="menudetail.html" class="cloth"><img
+                                    src="img/sweat-cloth.jpg" alt=""></a></div>
+                            <div class="fl-l pd">
+                                <a href="menudetail.html"><p>高领针织毛衣</p>
+                                </a>
+                            </div>
+                        </td>
+                        <td class="price col-price">499</td>
+                        <td class="count col-num">40</td>
+                        <td class="pm-x">0</td>
+                        <td class="do">2016-1-7 12.06</td>
+                        <td class="pm-op col-oper clearfix">
+                            <div class="fl-r">
+                                <p class="tc"><a href="javascript:void(0)">编辑商品</a></p>
+                                <p class="tc"><a href="javascript:void(0)">下架</a></p>
+                                <p class="tc"><a href="javascript:void(0)">删除</a></p>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="t-box">
+                <table class="t-x">
+                    <tbody>
+                    <tr class="">
+                        <td class="goods col-info clearfix">
+                            <div class="fl-l img-mr"><a href="menudetail.html" class="cloth"><img
+                                    src="img/sweat-cloth.jpg" alt=""></a></div>
+                            <div class="fl-l pd">
+                                <a href="menudetail.html"><p>高领针织毛衣</p>
+                                </a>
+                            </div>
+                        </td>
+                        <td class="price col-price">499</td>
+                        <td class="count col-num">40</td>
+                        <td class="pm-x">0</td>
+                        <td class="do">2016-1-7 12.06</td>
+                        <td class="pm-op col-oper clearfix">
+                            <div class="fl-r">
+                                <p class="tc"><a href="javascript:void(0)">编辑商品</a></p>
+                                <p class="tc"><a href="javascript:void(0)">下架</a></p>
+                                <p class="tc"><a href="javascript:void(0)">删除</a></p>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="t-box">
+                <table class="t-x">
+                    <tbody>
+                    <tr class="">
+                        <td class="goods col-info clearfix">
+                            <div class="fl-l img-mr"><a href="menudetail.html" class="cloth"><img
+                                    src="img/sweat-cloth.jpg" alt=""></a></div>
+                            <div class="fl-l pd">
+                                <a href="menudetail.html"><p>高领针织毛衣</p>
+                                </a>
+                            </div>
+                        </td>
+                        <td class="price col-price">499</td>
+                        <td class="count col-num">40</td>
+                        <td class="pm-x">0</td>
+                        <td class="do">2016-1-7 12.06</td>
+                        <td class="pm-op col-oper clearfix">
+                            <div class="fl-r">
+                                <p class="tc"><a href="javascript:void(0)">编辑商品</a></p>
+                                <p class="tc"><a href="javascript:void(0)">下架</a></p>
+                                <p class="tc"><a href="javascript:void(0)">删除</a></p>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="fl-r brh cd" style="display:none;">
+        <div class="product">
+            <div class="clearfix pm-t">
+                <div class="fl-l pm-z"><a href="javascript:void(0)"><span>全部</span></a></div>
+                <div class="fl-l pm-c"><a href="javascript:void(0)"><span>女装</span></a></div>
+                <div class="fl-l pm-c"><a href="javascript:void(0)"><span>男装</span></a></div>
+                <div class="fl-l pm-c"><a href="javascript:void(0)"><span>童装</span></a></div>
+                <div class="fl-r brh-m brhoperate" id="brhoperate"><a href="javascript:void(0)"><span>管理</span></a>
+                </div>
+                <div class="fl-r clearfix brhopedls" id="brhopedls" style="display:none;">
+                    <div class="fl-l mrt-10">
+                        <div class="checkboxFive">
+                            <input type="checkbox" value="1" id="c0" name="">
+                            <label for="c0"></label>
+                        </div>
+                        <span>全选</span>
+                    </div>
+                    <div class="fl-l mrl-12 mrt-10"><span>已选 <i class="red-font" id="chosednum">0</i>/<i class=""
+                                                                                                         id="totalnum">10</i> </span>
+                    </div>
+                    <div class="brh-m fl-l mrl-12 delchose"><a href="javascript:void(0)"><img
+                            src="img/personal-center/deleteg.png" alt=""> <span>删除</span></a></div>
+                    <div class="brh-m fl-l mrl-12 brhcancle" id="brhcancle"><a href="javascript:void(0)"><span>取消</span></a>
+                    </div>
+                </div>
+                <!--<div class="fl-l pm-c"><a href="javascript:void(0)"><span>仓库中的商品</span></a></div>-->
+                <!--<div class="fl-r f-p"><a href="javascript:void(0)"><img class="add" src="img/personal-center/pm/1.png"><span>发布商品</span></a></div>-->
+            </div>
+            <div class="brh-p">
+                <div class="clearfix">
+                    <div class="brh-b fl-l">
+                        <div class="img-box">
+                            <img src="img/personal-center/brh/img1.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>商品类名</p>
+                            <p>价格</p>
+                        </div>
+                    </div>
+                    <div class="brh-b fl-l">
+                        <div class="img-box">
+                            <img src="img/personal-center/brh/img4.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>商品类名</p>
+                            <p>价格</p>
+                        </div>
+                    </div>
+                    <div class="brh-b fl-l">
+                        <div class="img-box">
+                            <img src="img/personal-center/brh/img5.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>商品类名</p>
+                            <p>价格</p>
+                        </div>
+                    </div>
+                    <div class="brh-b fl-l">
+                        <div class="img-box">
+                            <img src="img/personal-center/brh/img6.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>商品类名</p>
+                            <p>价格</p>
+                        </div>
+                    </div>
+                    <div class="brh-b fl-l">
+                        <div class="img-box">
+                            <img src="img/personal-center/brh/img1.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>商品类名</p>
+                            <p>价格</p>
+                        </div>
+                    </div>
+                    <div class="brh-b fl-l">
+                        <div class="img-box">
+                            <img src="img/personal-center/brh/img1.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>商品类名</p>
+                            <p>价格</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fl-r md cd" style="display:none;">
+        <div class="product">
+
+            <div class="clearfix p-center">
+                <div class="fl-l"><span class="dd" id="e-head" cc="3">修改头像</span></div>
+                <div class="fl-l"><span id="e-data" cc="2">基本资料</span></div>
+                <div class="fl-l"><span id="c-pl" cc="0">收货地址</span></div>
+                <div class="fl-l"><span id="e-pwd" cc="1">修改密码</span></div>
+            </div>
+            <div class="column cs" id="p-clu" style="display:none">
+                <div class="columninfo clearfix">
+                    <div class="big-box-con fl-l">
+                        <div class="big-child">
+                            <P class="lon clearfix"><input class="name fl-l" placeholder="username"> <input
+                                    class="phoneNum fl-l" placeholder="phonenum"><a
+                                    href="javascript:void(0)" class="fl-r"><span style="color:#ff3250;">默认地址</span></a>
+                            </P>
+                            <P class="clearfix"><input class="sheng fl-l" placeholder="province"><input
+                                    placeholder="city"
+                                    class="shi fl-l">
+                                <input class="qu clearfix" placeholder="area"> <input class="location clearfix"
+                                                                                      placeholder="location"></P>
+                        </div>
+                    </div>
+                    <div class="big-box-con fl-l">
+                        <div class="big-child">
+                            <P class="lon clearfix"><input class="name fl-l" placeholder="username"> <input
+                                    class="phoneNum fl-l" placeholder="phonenum"><a
+                                    href="javascript:void(0)" class="fl-r"><span style="color:#ff3250;">设为默认</span></a>
+                            </P>
+                            <P class="clearfix"><input class="sheng fl-l" placeholder="province"><input
+                                    placeholder="city"
+                                    class="shi fl-l">
+                                <input class="qu clearfix" placeholder="area"> <input class="location clearfix"
+                                                                                      placeholder="location"></P>
+                            <p class="cd-edit clearfix"><span class="fl-l">修改</span><img class="ww fl-r"
+                                                                                         src="img/personal-center/pm/3.png"
+                                                                                         alt=""></p>
+                        </div>
+                    </div>
+                    <div class="big-box-con el fl-l">
+                        <div class="big-child ed">
+                            <a href="javascript:void(0);"><img id="tp" onclick="stp()" class="bw"
+                                                               src="img/personal-center/pm/2.png"
+                                                               alt=""><span>添加地址</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ep cs" style="display:none">
+                <form action="am-form" id="doc-vld-msg" style="padding:28px;">
+                    <div class="am-form-group" style="margin-left:14px;">
+                        <label for="doc-vld-name-2-1">用户名：</label>
+                        <input type="text" id="doc-vld-name-2-1" minlength="3" placeholder="输入用户名（至少 3 个字符）" required/>
+                    </div>
+
+                    <div class="am-form-group" style="margin-left:28px;">
+                        <label for="doc-vld-pwd-1">密码：</label>
+                        <input type="password" id="doc-vld-pwd-1" placeholder="6 位数字的密码" pattern="^\d{6}$" required/>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label for="doc-vld-pwd-2">确认密码：</label>
+                        <input type="password" id="doc-vld-pwd-2" placeholder="请与上面输入的值一致"
+                               data-equal-to="#doc-vld-pwd-1" required/>
+                    </div>
+                    <button class="am-btn am-btn-secondary" type="submit">提交</button>
+                </form>
+                <!--<div class="mt tm op">原密码 : <input type="password" placeholder="原来的密码"></div>-->
+                <!--<div class="mt op">新密码 : <input type="password" placeholder="6-18位"></div>-->
+                <!--<div class="mt sp">确认密码 : <input type="password" placeholder="再输一次确保一致哦"></div>-->
+                <!--<div class="cure"><input type="button" value="保存" id="cure"></div>-->
+            </div>
+            <div class="dt cs" style="display:none">
+                <form class="am-form" data-am-validator>
+                    <div class="md">昵称 : <span class='nickname'>韩露露</span></div>
+                    <div class="am-form-group clearfix">
+                        <h3 style="display:inline-block" class="fl-l">性别 : </h3>
+                        <label class="am-radio-inline fl-l" style="margin-left:8px;">
+                            <input type="radio" name="radio10" value="male" data-am-ucheck required> 男
+                        </label>
+                        <label class="am-radio-inline fl-l">
+                            <input type="radio" name="radio10" value="female" data-am-ucheck> 女
+                        </label>
+                        <label class="am-radio-inline fl-l">
+                            <input type="radio" name="radio10" value="pig" data-am-ucheck>其他
+                        </label>
+                    </div>
+                    <div class="up-detail directe">
+                        <div class="specify arrow-box cloStyle clearfix"><span class="fl-l">住址 : </span>
+                            <div class="fl-l pvince"><input type="text" class="pro-name" placeholder="省份"><i
+                                    class="ba-arrow"></i></div>
+                            <div class="fl-l citynce"><input type="text" class="pro-name" placeholder="城市"><i
+                                    class="ba-arrow"></i></div>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="am-btn am-btn-primary">提交</button>
+                    </div>
+                </form>
+            </div>
+            <div class="cropimgbox clearfix cs" id="updateHeader">
+                <div class="cropimgbox-action">
+                    <!--<div class="am-btn-group am-btn-group-xs">-->
+                    <!--<button type="button" id="btnZoomIn" class="am-btn am-btn-default am-btn-xs am-text-secondary">-->
+                    <!--<span class="am-icon-plus"></span> 放大-->
+                    <!--</button>-->
+                    <!--<button type="button" id="btnZoomOut" class="am-btn am-btn-default am-btn-xs am-text-secondary">-->
+                    <!--<span class="am-icon-minus"></span> 缩小-->
+                    <!--</button>-->
+                    <!--</div>-->
+                    <div class="cropimgbox-contentarea">
+                        <a href="javascript:void(0)" class="cropimgbox-upload-img">
+                            <label for="cropimgbox-upload-file">选择图片...</label>
+                        </a>
+                        <input type="file" class="" name="cropimgbox-upload-file" id="upload-file"/>
+                    </div>
+                    <span>支持png/jpg格式上传</span>
+                </div>
+                <div class="cropimgbox-imageBox fl-r">
+                    <div class="cropimgbox-thumbBox"></div>
+                    <div class="cropimgbox-spinner" style="display: none"></div>
+                </div>
+                <div class="save botm clearfix">
+                    <span class="fl-l">确定上传</span>
+                    <a class="fl-l">取消</a>
+                </div>
+                <div class="cropimgbox-cropped fl-l"></div>
+                <div class="fl-l separateline"></div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="fl-r up-prd cd" style="display:block;">
+        <div class="product">
+            <div class="down-solide6 save tal">
+                <span class="fff-font">上传商品</span>
+            </div>
+            <div class="baddstyle">
+                <p>请先添加商品系列才能上传商品</p>
+                <p class="save">
+                    <span><img src="img/personal-center/pm/1.png" alt="" class="addstyle">添加系列</span>
+                </p>
+            </div>
+            <div style="display:none" id="stylan" class="commit">
+                <div class="lay-out" id="lay-out"></div>
+                <div id="login-box">
+                    <form>
+                        <div class="clearfix down-solide6 laytpading">
+                            <div class="fl-l">
+                                <span class="font-fu">修改系列名称</span>
+                            </div>
+                            <div class="fl-r close-cancle" id="close">
+                                <img src="img/common/cancle-img_03.png" alt="">
+                            </div>
+                        </div>
+                        <div class="clearfix updstyle">
+                            <div class="fl-l">
+                                <span class="mrt-9 font-fu">系列名称 : </span>
+                            </div>
+                            <div class="fl-l">
+                                <input type="text" class="font-fu inpadding solid-e6">
+                            </div>
+                        </div>
+                        <div class="save">
+                            <span>保存</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="con-pad ads">
+                <div class="clearfix adsheader">
+                    <span class="b-circle fl-l"></span>
+                    <span class="font-eg fl-l">17年春夏系列</span>
+                    <img class="mrl-8 fl-l" src="img/personal-center/edit.png" alt="">
+                    <span class="hor-line fl-r"></span>
+                </div>
+                <div class="fastyle">
+                    <div class="themebox">
+                        <div class="">
+                            <img src="img/personal-center/adstyle/1.png" alt="">
+                            <p class="mrt-9 font-fu">中国色彩主题</p>
+                            <p class="save">
+                                <span class="mrt-14 font-fu">上传商品</span>
+                            </p>
+                        </div>
+                        <div class="">
+                            <img src="img/personal-center/adstyle/1.png" alt="">
+                            <p class="mrt-9 font-fu">中国色彩主题</p>
+                            <p class="save">
+                                <span class="mrt-14 font-fu">上传商品</span>
+                            </p>
+                        </div>
+                        <div class="addtheme bg-f7">
+                            <p class="adjunction">
+                                <i class="" id="addthe"></i>
+                                <span class="font-eg">添加新主题</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="down-dote6"></div>
+                <div class="addstyone">
+                    <p class="save">
+                        <span><img src="img/personal-center/pm/1.png" alt="" class="addstyle">添加系列</span>
+                    </p>
+                </div>
+
+            </div>
+            <div style="display:none;" id="themename">
+                <div class="lay-out" id="lay-out"></div>
+                <div id="login-box">
+                    <form>
+                        <div class="clearfix down-solide6 laytpading">
+                            <div class="fl-l">
+                                <span class="font-fu">添加主题名称</span>
+                            </div>
+                            <div class="fl-r close-cancle">
+                                <img src="img/common/cancle-img_03.png" alt="">
+                            </div>
+                        </div>
+                        <div class="clearfix updstyle mr-32">
+                            <div class="fl-l">
+                                <span class="mrt-9 font-fu">主题名称 : </span>
+                            </div>
+                            <div class="fl-l">
+                                <input type="text" class="font-fu inpadding solid-e6" placeholder="请输入主题名称，最多12个字">
+                            </div>
+                        </div>
+                        <div class="clearfix updstyle tmeintro mrt-9">
+                            <div class="fl-l">
+                                <span class="mrt-9 font-fu">主题介绍 : </span>
+                            </div>
+                            <div class="fl-l">
+                                <textarea class="pro-decoration" placeholder="一段话介绍主题思路以及灵感来源..."></textarea>
+                            </div>
+                        </div>
+                        <div class="clearfix updstyle bralogo">
+                            <span class="fl-l font-fu">logo图片 : </span>
+                            <div class="iMg fl-l">
+                                <img src="img/personal-center/addImg.png" alt="">
+                            </div>
+                            <span class="ff8-font fl-l">*图片尺寸为250*250px</span>
+                        </div>
+                        <div class="save">
+                            <span>保存</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="product" style="display:block">
+            <div class="clearfix pm-t">
+                <div class="fl-l pm-s"><a href="javascript:void(0)"><span>2017年春夏</span></a></div>
+                <div class="fl-l pm-s"><a href="javascript:void(0)"><span>系列</span></a></div>
+                <div class="fl-l"><i class="grey-arrow"></i></div>
+                <div class="fl-l"><a href="javascript:void(0)"><span>中国色彩</span></a></div>
+                <div class="fl-l pm-s"><a href="javascript:void(0)"><span>主题</span></a></div>
+                <div class="fl-l"><i class="grey-arrow"></i></div>
+                <div class="fl-l"><a href="javascript:void(0)"><span>系列</span></a></div>
+            </div>
+            <div class="up-detail">
+                <div class="basic-inf mr-top">
+                    <div class="con-pad"><span class="b-circle"></span><span class="common-title">商品信息</span><span
+                            class="hor-line"></span>
+                    </div>
+                    <div class=""><span><i style="color:#ff3250;">*</i>商品名称</span><input type="text" class="pro-name"
+                                                                                         placeholder="请输入符合商品描述的标题，最多20个字符">
+                    </div>
+                    <div class="on-clarify"><span><i style="color:#ff3250;">*</i>所属分类</span>
+                        <!--<div class="arrow-box xilie mrLe"><i class="ba-arrow"></i><input type="text"-->
+                        <!--placeholder="请选择所属系列">-->
+                        <!--</div>-->
+                        <!--<div class="arrow-box theme"><i class="ba-arrow"></i><input type="text" placeholder="请选择所属主题">-->
+                        <!--</div>-->
+                        <select multiple data-am-selected>
+                            <optgroup label="水果">
+                                <option value="a">Apple</option>
+                                <option value="b">Banana</option>
+                                <option value="o">Orange</option>
+                                <option value="m">Mango</option>
+                            </optgroup>
+                            <optgroup label="装备">
+                                <option value="phone">iPhone</option>
+                                <option value="im">iMac</option>
+                                <option value="mbp">Macbook Pro</option>
+                            </optgroup>
+                        </select>
+                        <select multiple data-am-selected>
+                            <optgroup label="水果">
+                                <option value="a">Apple</option>
+                                <option value="b">Banana</option>
+                                <option value="o">Orange</option>
+                                <option value="m">Mango</option>
+                            </optgroup>
+                            <optgroup label="装备">
+                                <option value="phone">iPhone</option>
+                                <option value="im">iMac</option>
+                                <option value="mbp">Macbook Pro</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="p-price mr-two"><span><i style="color:#ff3250;">*</i>价格</span><input type="text"
+                                                                                                     placeholder="请输入合理的价格"
+                                                                                                     style="padding-left:20px;">
+                        <div class="cm">￥</div>
+                    </div>
+                    <div class="co-clarify"><span><i style="color:#ff3250;">*</i>颜色分类</span><input type="text"
+                                                                                                   placeholder="请输入颜色名称"><a
+                            href="javascript:void(0);"><img class="add" src="img/personal-center/add.png" alt=""><span>添加</span></a>
+                    </div>
+                </div>
+                <div class="proDec mr-top">
+                    <div class="con-pad"><span class="b-circle"></span><span class="common-title">商品描述</span><span
+                            class="hor-line"></span></div>
+                    <div class="clearfix"><span class="fl-l"><i style="color:#ff3250;">*</i>商品描述</span><textarea
+                            type="text" class="pro-decoration fl-l" placeholder="一段话来描述商品，设计思路，灵感，特点等"></textarea></div>
+                    <div class="on-clarify"><span><i style="color:#ff3250;">*</i>所属栏目</span>
+                        <select multiple="" data-am-selected="" style="display: none;">
+                            <optgroup label="水果">
+                                <option value="a">Apple</option>
+                                <option value="b">Banana</option>
+                                <option value="o">Orange</option>
+                                <option value="m">Mango</option>
+                            </optgroup>
+                            <optgroup label="装备">
+                                <option value="phone">iPhone</option>
+                                <option value="im">iMac</option>
+                                <option value="mbp">Macbook Pro</option>
+                            </optgroup>
+                        </select>
+                        <select multiple="" data-am-selected="" style="display: none;">
+                            <optgroup label="水果">
+                                <option value="a">Apple</option>
+                                <option value="b">Banana</option>
+                                <option value="o">Orange</option>
+                                <option value="m">Mango</option>
+                            </optgroup>
+                            <optgroup label="装备">
+                                <option value="phone">iPhone</option>
+                                <option value="im">iMac</option>
+                                <option value="mbp">Macbook Pro</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div class="co-clarify clearfix">
+                    <div class="fl-l"><span><i style="color:#ff3250;">*</i>场景分类</span></div>
+                    <div class="scEne fl-l">
+                        <div class="scEne-clumn meet">
+                            <div class="co-clarify-cc">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 聚会
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc ft-three">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 同学会
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc ft-three">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 同事会
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc ft-three">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 下午茶
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc ft-fu">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 家庭聚会
+                                </label>
+                            </div>
+                        </div>
+                        <div class="scEne-clumn business">
+                            <div class="co-clarify-cc">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 商务
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 上班
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 开会
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 洽谈
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 面试
+                                </label>
+                            </div>
+                        </div>
+                        <div class="scEne-clumn leisure">
+                            <div class="co-clarify-cc">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 运动
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 逛街
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc ft-three">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 走亲戚
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 娱乐
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 画展
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc ft-three">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 博物馆
+                                </label>
+                            </div>
+                        </div>
+                        <div class="scEne-clumn sport">
+                            <div class="co-clarify-cc">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 休闲
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc ft-three">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 高尔夫
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc ft-three">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 保龄球
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 马术
+                                </label>
+                            </div>
+                        </div>
+                        <div class="scEne-clumn travel">
+                            <div class="co-clarify-cc">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 旅行
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 海边
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 登山
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc ft-fu">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 城市旅游
+                                </label>
+                            </div>
+                        </div>
+                        <div class="scEne-clumn panic">
+                            <div class="co-clarify-cc">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 宴会
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc ft-three">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 晚礼服
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck> 旗袍
+                                </label>
+                            </div>
+                            <div class="co-clarify-cc">
+                                <label class="am-checkbox am-secondary">
+                                    <input type="checkbox" value="" data-am-ucheck disabled> 礼服
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="specify mr-top">
+                <div class="con-pad"><span class="b-circle"></span><span class="common-title">规格参数</span><span
+                        class="hor-line"></span></div>
+                <div style="padding-left:20px;">
+                    <div class="mr-two clearfix">
+                        <div class="arrow-box cloStyle fl-l"><span><i style="color:#ff3250;">*</i>风格</span>
+                            <!--<input type="text"-->
+                            <!--class="pro-name"-->
+                            <!--placeholder="请输入风格">-->
+                            <!--<i class="ba-arrow"></i>-->
+                            <select data-am-selected="{searchBox: 1}">
+                                <option value="a">春</option>
+                                <option value="b">夏</option>
+                                <option value="o">秋</option>
+                                <option value="m">冬</option>
+                                <option value="phone">iPhone</option>
+                                <option value="im">iMac</option>
+                                <option value="mbp">Macbook Pro</option>
+                            </select>
+                        </div>
+                        <div class="fl-l mr-tw">
+                            <span class="">材质</span><input type="text" placeholder="例 '一字肩' '圆领'">
+                        </div>
+                        <div class="fl-l mr-tw">
+                            <span class="">款式</span><input type="text" placeholder="例 '一字肩' '圆领'">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="arrow-box yearList fl-l">
+                            <span><i style="color:#ff3250;">*</i>上市年份</span>
+                            <input
+                                    type="text"
+                                    placeholder="请选择上市年份" class="am-form-field" data-am-datepicker readonly required/>
+                        </div>
+                        <div class="fl-l mr-tw">
+                            <span class="">领型</span><input type="text" placeholder="例 '一字肩' '圆领'">
+                        </div>
+                        <div class="fl-l mr-tw">
+                            <span class="">袖型</span><input type="text" placeholder="例 '一字肩' '圆领'">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="arrow-box forPeople fl-l"><span><i
+                                style="color:#ff3250;">*</i>适用人群</span>
+                            <!--<input-->
+                            <!--type="text"-->
+                            <!--placeholder="请输入颜色名称">-->
+                            <select data-am-selected="{searchBox: 1}">
+                                <option value="a">儿童</option>
+                                <option value="b">青年</option>
+                                <option value="o">中年</option>
+                            </select>
+                        </div>
+                        <div class="fl-l">
+                            <span class="mr-f">适合季节</span><input type="text" placeholder="例 '春季' '秋季'">
+                        </div>
+                        <div class="fl-l">
+                            <span class="mr-th"><i style="color:#ff3250;">*</i>品牌</span><input type="text" placeholder="例 '一字肩' '圆领'">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="sizeDet mr-top">
+                <div class="con-pad"><span class="b-circle"></span><span class="common-title">尺码详情</span><span
+                        class="hor-line"></span></div>
+                <div style="text-align:center;margin-top:-10px;margin-bottom:12px;"><span>尺码信息（单位厘米）</span></div>
+                <div class="sizeSpe">
+                    <div class="chBox clearfix">
+                        <div class="fl-l">
+                            <label class="am-checkbox-inline">
+                                <input type="checkbox"  value="" data-am-ucheck>
+                            </label>
+                        </div>
+                        <div class="fl-l">
+                            <label class="am-checkbox-inline">
+                                <input type="checkbox"  value="" data-am-ucheck>
+                            </label>
+                        </div>
+                        <div class="fl-l">
+                            <label class="am-checkbox-inline">
+                                <input type="checkbox"  value="" data-am-ucheck>
+                            </label>
+                        </div>
+                        <div class="fl-l">
+                            <label class="am-checkbox-inline">
+                                <input type="checkbox"  value="" data-am-ucheck>
+                            </label>
+                        </div>
+                        <div class="fl-l">
+                            <label class="am-checkbox-inline">
+                                <input type="checkbox"  value="" data-am-ucheck>
+                            </label>
+                        </div>
+                        <div class="fl-l">
+                            <label class="am-checkbox-inline">
+                                <input type="checkbox"  value="" data-am-ucheck>
+                            </label>
+                        </div>
+                        <div class="fl-l">
+                            <label class="am-checkbox-inline">
+                                <input type="checkbox"  value="" data-am-ucheck>
+                            </label>
+                        </div>
+                        <div class="fl-l">
+                            <label class="am-checkbox-inline">
+                                <input type="checkbox"  value="" data-am-ucheck>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="deSpe">
+                        <div class="detailSe clearfix">
+                            <input type="text" placeholder="尺码">
+                            <input type="text" placeholder="肩宽">
+                            <input type="text" placeholder="胸围">
+                            <input type="text" placeholder="衣长">
+                            <input type="text" placeholder="袖长">
+                            <input type="text" disabled>
+                            <input type="text" disabled>
+                            <input type="text" disabled>
+                        </div>
+                        <div class="detailSe clearfix">
+                            <input type="text" placeholder="S">
+                            <input type="text" placeholder="39">
+                            <input type="text" placeholder="100">
+                            <input type="text" placeholder="60">
+                            <input type="text" placeholder="58">
+                            <input type="text" disabled>
+                            <input type="text" disabled>
+                            <input type="text" disabled>
+                        </div>
+                        <div class="detailSeL clearfix">
+                            <input type="text" placeholder="M">
+                            <input type="text" placeholder="40">
+                            <input type="text" placeholder="104">
+                            <input type="text" placeholder="61">
+                            <input type="text" placeholder="60">
+                            <input type="text" disabled>
+                            <input type="text" disabled>
+                            <input type="text" disabled>
+                            <div class="clBlu fl-l">
+                                <img src="img/personal-center/deleter.png" class="deLe"><span>删除</span>
+                            </div>
+                        </div>
+                        <div class="detailSeL clearfix">
+                            <input type="text" placeholder="L">
+                            <input type="text" placeholder="41">
+                            <input type="text" placeholder="110">
+                            <input type="text" placeholder="62">
+                            <input type="text" placeholder="62">
+                            <input type="text" disabled>
+                            <input type="text" disabled>
+                            <input type="text" disabled>
+                            <div class="clBlu fl-l">
+                                <img src="img/personal-center/deleter.png" class="deLe"><span>删除</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="addClu"><img src="img/personal-center/add.png" class="add" alt=""><span>添加一行</span>
+                    </div>
+                </div>
+                <div class="bbOx">
+                    <div class="bbOx-de"><i>*</i> <span>点击编辑相应数字</span></div>
+                    <div class="bbOx-de"><i>*</i> <span>行 : 点击"添加一行"可添加一行;</span></div>
+                    <div class="bbOx-de"><i>*</i> <span>列 : 勾选或取消勾选可设置列数（最高8列）</span></div>
+                </div>
+            </div>
+            <div class="picDe mr-top">
+                <div class="con-pad"><span class="b-circle"></span><span class="common-title">图片详情</span><span
+                        class="hor-line"></span></div>
+                <div class="pIc clearfix">
+                    <div class="fl-l pIcd">
+                        <i style="color:#ff3250;">*</i> <span>主图</span>
+                    </div>
+                    <div class="fl-l imgBox">
+                        <div class="mainImg">
+                            <div class="mainImg-big clearfix">
+                                <div class="iMg fl-l">
+                                    <img src="img/personal-center/addImg.png" alt="">
+                                </div>
+                                <div class="iMg fl-l">
+                                    <img src="img/personal-center/addImg.png" alt="">
+                                </div>
+                                <div class="iMg fl-l">
+                                    <img src="img/personal-center/addImg.png" alt="">
+                                </div>
+                                <div class="iMg fl-l">
+                                    <img src="img/personal-center/addImg.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mmRt">
+                            <i style="color:#ff8e26;">*</i><span style="color:#ff8e26;">至少上传一张图片</span>
+                        </div>
+                        <div class="">
+                            <i style="color:#ff8e26;">*</i><span
+                                style="color:#ff8e26;">要求服装图片白底，图片清晰，图片尺寸为800*800px</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pIc clearfix pIc-f">
+                    <div class="fl-l pIcd">
+                        <i style="color:#ff3250;">*</i> <span>正反面图</span>
+                    </div>
+                    <div class="fl-l imgBox">
+                        <div class="bFro">
+                            <span>正面</span>
+                            <span style="margin-left:28px;">反面</span>
+                        </div>
+                        <div class="mainImg">
+                            <div class="mainImg-big clearfix">
+                                <div class="iMg fl-l">
+                                    <img src="img/personal-center/addImg.png" alt="">
+                                </div>
+                                <div class="iMg fl-l">
+                                    <img src="img/personal-center/addImg.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mmRt">
+                            <i style="color:#ff8e26;">*</i><span
+                                style="color:#ff8e26;">要求服装图片白底，图片清晰，图片尺寸为450*450px</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pIc clearfix pIc-t">
+                    <div class="fl-l pIcd">
+                        <i style="color:#ff3250;">*</i> <span>细节图</span>
+                    </div>
+                    <div class="fl-l imgBox">
+                        <div class="mainImg">
+                            <div class="mainImg-big clearfix">
+                                <div class="iMg fl-l">
+                                    <img src="img/personal-center/addImg.png" alt="">
+                                </div>
+                                <div class="iMg fl-l">
+                                    <img src="img/personal-center/addImg.png" alt="">
+                                </div>
+                                <div class="iMg fl-l">
+                                    <img src="img/personal-center/addImg.png" alt="">
+                                </div>
+                                <div class="iMg fl-l">
+                                    <img src="img/personal-center/addImg.png" alt="">
+                                </div>
+                                <div class="iMg fl-l">
+                                    <img src="img/personal-center/addImg.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mmRt">
+                            <i style="color:#ff8e26;">*</i><span style="color:#ff8e26;">至少3张细节图</span>
+                        </div>
+                        <div class="">
+                            <i style="color:#ff8e26;">*</i><span
+                                style="color:#ff8e26;font-size:14px;">要求服装图片白底，图片清晰，图片尺寸为250*250px</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pIc clearfix pIc-t">
+                    <div class="fl-l pIcd-f">
+                        <i style="color:#ff3250;">*</i> <span>场景图</span>
+                    </div>
+                    <div class="fl-l imgBox">
+                        <div class="mainImg">
+                            <div class="mainImg-big clearfix">
+                                <div class="iMg fl-l">
+                                    <img src="img/personal-center/addImg.png" alt="">
+                                </div>
+                                <div class="addPN">
+                                    <span>添加张数</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mmRt">
+                            <i style="color:#ff8e26;">*</i><span style="color:#ff8e26;">至少1张场景图</span>
+                        </div>
+                        <div class="">
+                            <i style="color:#ff8e26;">*</i><span
+                                style="color:#ff8e26;">场景拍摄图，图片宽为 750*900 px之间,高度不限</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pIc clearfix">
+                    <div class="fl-l pIcd">
+                        <i style="color:#ff3250;">*</i> <span>海报</span>
+                    </div>
+                    <div class="fl-l imgBox">
+                        <div class="mainImg">
+                            <div class="mainImg-big clearfix">
+                                <div class="iMg fl-l">
+                                    <img src="img/personal-center/addImg.png" alt="">
+                                </div>
+                                <div class="addPN">
+                                    <span>添加张数</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mmRt">
+                            <i style="color:#ff8e26;">*</i><span style="color:#ff8e26;">品牌服装的相关海报设计图，图片宽为 750*900 px之间,高度不限</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="save">
+                    <span>保存到仓库</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fl-r brand cd" style="display:none;">
+    <div class="product">
+        <div class="down-solide6 save tal">
+            <span class="fff-font font-fu">品牌信息</span>
+        </div>
+        <div class="branddetail tal">
+            <div class="brandname">
+                <span class="font-fu">品牌名称 : </span> <span class="font-fu brandname">rojrover莱姿</span>
+            </div>
+            <div class="clearfix bralogo">
+                <span class="fl-l font-fu">logo图片 : </span>
+                <div class="fl-l logo-brand">
+                    <img src="img/personal-center/adstyle/logoheader.jpg" alt="">
+                </div>
+                <div class="save fl-l">
+                    <span class="font-fu"><img src="img/personal-center/lp.png" alt="">本地上传</span>
+                </div>
+                <span class="ff8-font fl-l font-fu">* 图片尺寸为250*250px</span>
+            </div>
+            <div class="clearfix braintro">
+                <span class="fl-l font-fu">品牌介绍 : </span>
+                <div class="fl-l">
+                    <textarea class="pro-decoration font-fu" placeholder="一段话介绍设计师或者品牌"></textarea>
+                </div>
+            </div>
+            <div class="save">
+                <span>保存</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fl-r bwhist cd" style="display:none;">
+    <div class="product">
+        <div class="clearfix pm-t bwheader">
+            <div class="fl-l">
+                <a href="javascript:void(0)" class="save">
+                    <span class="font-fu">浏览历史</span>
+                </a>
+            </div>
+            <div class="fl-r brh-m brhoperate"><a href="javascript:void(0)"><span class="font-fu">管理</span></a>
+            </div>
+            <div class="fl-r clearfix brhopedls" id="brhopedls" style="display:none;">
+                <div class="fl-l mrt-10">
+                    <div class="checkboxFive">
+                        <input type="checkbox" value="1" id="c0" name="">
+                        <label for="c0"></label>
+                    </div>
+                    <span>全选</span>
+                </div>
+                <div class="fl-l mrl-12 mrt-10"><span>已选 <i class="red-font" id="chosednum">0</i>/<i class=""
+                                                                                                     id="totalnum">10</i> </span>
+                </div>
+                <div class="brh-m fl-l mrl-12 delchose"><a href="javascript:void(0)"><img
+                        src="img/personal-center/deleteg.png" alt=""> <span>删除</span></a></div>
+                <div class="brh-m fl-l mrl-12 brhcancle" id="brhcancle"><a href="javascript:void(0)"><span>取消</span></a>
+                </div>
+            </div>
+            <!--<div class="fl-l pm-c"><a href="javascript:void(0)"><span>仓库中的商品</span></a></div>-->
+            <!--<div class="fl-r f-p"><a href="javascript:void(0)"><img class="add" src="img/personal-center/pm/1.png"><span>发布商品</span></a></div>-->
+        </div>
+        <div class="con-pad ads">
+            <div class="clearfix bwpro">
+                <span class="b-circle fl-l mrt-9"></span>
+                <div class="fl-l">
+                    <span class="font-eg">2017.1.14</span> <span class="font-fu">共<i id="countnum"
+                                                                                     class="font-fu">33</i>件宝贝</span>
+                </div>
+                <span class="hor-line fl-r"></span>
+            </div>
+            <div class="bwprolist">
+                <div class="clearfix">
+                    <div class="fl-l">
+                        <div class="iMg">
+                            <img src="img/personal-center/brh/1.jpg" alt="">
+                        </div>
+                        <p class="font-fu">纯棉净色 <span>T恤</span></p>
+                        <p class="mrb-10">money</p>
+                        <p>
+                        <div class="checkboxFive">
+                            <input type="checkbox" value="1" id="c0" name="">
+                            <label for="c0"></label>
+                        </div>
+                        <span>加入对比</span>
+                        </p>
+                    </div>
+                    <div class="fl-l">
+                        <div class="iMg">
+                            <img src="img/personal-center/brh/1.jpg" alt="">
+                        </div>
+                        <p class="font-fu">纯棉净色 <span>T恤</span></p>
+                        <p class="mrb-10">money</p>
+                        <p>
+                        <div class="checkboxFive">
+                            <input type="checkbox" value="1" id="c0" name="">
+                            <label for="c0"></label>
+                        </div>
+                        <span>加入对比</span>
+                        </p>
+                    </div>
+                    <div class="fl-l">
+                        <div class="iMg">
+                            <img src="img/personal-center/brh/1.jpg" alt="">
+                        </div>
+                        <p class="font-fu">纯棉净色 <span>T恤</span></p>
+                        <p class="mrb-10">money</p>
+                        <p>
+                        <div class="checkboxFive">
+                            <input type="checkbox" value="1" id="c0" name="">
+                            <label for="c0"></label>
+                        </div>
+                        <span>加入对比</span>
+                        </p>
+                    </div>
+                    <div class="fl-l">
+                        <div class="iMg">
+                            <img src="img/personal-center/brh/1.jpg" alt="">
+                        </div>
+                        <p class="font-fu">纯棉净色 <span>T恤</span></p>
+                        <p class="mrb-10">money</p>
+                        <p>
+                        <div class="checkboxFive">
+                            <input type="checkbox" value="1" id="c0" name="">
+                            <label for="c0"></label>
+                        </div>
+                        <span>加入对比</span>
+                        </p>
+                    </div>
+                    <div class="fl-l">
+                        <div class="iMg">
+                            <img src="img/personal-center/brh/1.jpg" alt="">
+                        </div>
+                        <p class="font-fu">纯棉净色 <span>T恤</span></p>
+                        <p class="mrb-10">money</p>
+                        <p>
+                        <div class="checkboxFive">
+                            <input type="checkbox" value="1" id="c0" name="">
+                            <label for="c0"></label>
+                        </div>
+                        <span>加入对比</span>
+                        </p>
+                    </div>
+                    <div class="fl-l">
+                        <div class="iMg">
+                            <img src="img/personal-center/brh/1.jpg" alt="">
+                        </div>
+                        <p class="font-fu">纯棉净色 <span>T恤</span></p>
+                        <p class="mrb-10">money</p>
+                        <p>
+                        <div class="checkboxFive">
+                            <input type="checkbox" value="1" id="c0" name="">
+                            <label for="c0"></label>
+                        </div>
+                        <span>加入对比</span>
+                        </p>
+                    </div>
+                    <div class="fl-l">
+                        <div class="iMg">
+                            <img src="img/personal-center/brh/1.jpg" alt="">
+                        </div>
+                        <p class="font-fu">纯棉净色 <span>T恤</span></p>
+                        <p class="mrb-10">money</p>
+                        <p>
+                        <div class="checkboxFive">
+                            <input type="checkbox" value="1" id="c0" name="">
+                            <label for="c0"></label>
+                        </div>
+                        <span>加入对比</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix clearcon bg-ff">
+                <div class="fl-l">
+                    <div class="smallImg">
+                        <img src="img/personal-center/brh/1.jpg" alt="">
+                    </div>
+                    <!--table cancle-->
+                    <div class="c-chose">
+                        <span>取消选择</span>
+                    </div>
+                    <!--table cancle end-->
+                </div>
+                <div class="fl-l">
+                    <div class="smallImg">
+                        <img src="img/personal-center/brh/1.jpg" alt="">
+                    </div>
+                    <!--table cancle-->
+                    <div class="c-chose">
+                        <span>取消选择</span>
+                    </div>
+                    <!--table cancle end-->
+                </div>
+                <div class="fl-l">
+                    <div class="smallImg">
+                        <img src="img/personal-center/brh/1.jpg" alt="">
+                    </div>
+                    <!--table cancle-->
+                    <div class="c-chose">
+                        <span>取消选择</span>
+                    </div>
+                    <!--table cancle end-->
+                </div>
+                <div class="fl-l">
+                    <img src="img/bwhist.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/bwhist.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/bwhist.jpg" alt="">
+                </div>
+                <div class="fl-r">
+                    <p class="red-font font-fu">清除对比栏</p>
+                    <div class="save font-sx">
+                        <span class="" id="conclear">对比（<i class="fff-font">3</i>）</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display:none" id="stylecons">
+            <div class="lay-out" id="lay-out"></div>
+            <div id="login-box" class="stylecon">
+                <form>
+                    <div class="clearfix down-solide6 laytpading">
+                        <div class="fl-l">
+                            <span class="font-fu">款式对比</span>
+                        </div>
+                        <div class="fl-r close-cancle" id="con-close">
+                            <img src="img/common/cancle-img_03.png" alt="">
+                        </div>
+                    </div>
+                    <div class="t-box stcimglist down-solide6">
+                        <table class="t-x">
+                            <tbody>
+                            <tr class="styconimg">
+                                <td class="tar"><span class="d8-font">款式</span></td>
+                                <td>
+                                    <div class="iMg">
+                                        <img src="img/personal-center/brh/1.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="iMg">
+                                        <img src="img/personal-center/brh/1.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="iMg">
+                                        <img src="img/personal-center/brh/1.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="iMg block-box">
+                                        <!--<img src="img/bwhist.jpg" alt="">-->
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="iMg block-box">
+                                        <!--<img src="img/bwhist.jpg" alt="">-->
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="iMg block-box">
+                                        <!--<img src="img/bwhist.jpg" alt="">-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tar"><span class="d8-font">品牌</span></td>
+                                <td><span>品牌</span></td>
+                                <td><span>品牌</span></td>
+                                <td><span>品牌</span></td>
+                                <td><span>品牌</span></td>
+                                <td><span>品牌</span></td>
+                                <td><span>品牌</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tar"><span class="d8-font">价格</span></td>
+                                <td><span>价格</span></td>
+                                <td><span>价格</span></td>
+                                <td><span>价格</span></td>
+                                <td><span>价格</span></td>
+                                <td><span>价格</span></td>
+                                <td><span>价格</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tar"><span class="d8-font">场景分类</span></td>
+                                <td><span>场景分类</span></td>
+                                <td><span>场景分类</span></td>
+                                <td><span>场景分类</span></td>
+                                <td><span>场景分类</span></td>
+                                <td><span>场景分类</span></td>
+                                <td><span>场景分类</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tar"><span class="d8-font">风格</span></td>
+                                <td><span>风格</span></td>
+                                <td><span>风格</span></td>
+                                <td><span>风格</span></td>
+                                <td><span>风格</span></td>
+                                <td><span>风格</span></td>
+                                <td><span>风格</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tar"><span class="d8-font">材质</span></td>
+                                <td><span>材质</span></td>
+                                <td><span>材质</span></td>
+                                <td><span>材质</span></td>
+                                <td><span>材质</span></td>
+                                <td><span>材质</span></td>
+                                <td><span>材质</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tar"><span class="d8-font">上市年份</span></td>
+                                <td><span>上市年份</span></td>
+                                <td><span>上市年份</span></td>
+                                <td><span>上市年份</span></td>
+                                <td><span>上市年份</span></td>
+                                <td><span>上市年份</span></td>
+                                <td><span>上市年份</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="sycpur">
+                        <div class="clearfix">
+                            <div class="save fl-l">
+                                <span><a href="purchase-car.html">去购买</a></span>
+                            </div>
+                            <div class="save fl-l">
+                                <span><a href="purchase-car.html">去购买</a></span>
+                            </div>
+                            <div class="save fl-l">
+                                <span><a href="purchase-car.html">去购买</a></span>
+                            </div>
+                            <div class="save fl-l">
+                                <span><a href="purchase-car.html">去购买</a></span>
+                            </div>
+                            <div class="save fl-l">
+                                <span><a href="purchase-car.html">去购买</a></span>
+                            </div>
+                            <div class="save fl-l">
+                                <span><a href="purchase-car.html">去购买</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="bottom-base">
+    <div class="main-content bottom-base-area">
+        <p class="callme">
+            <a href="javascript:void(0)">關於我們</a><span class="shu-line"></span><a
+                href="javascript:void(0)">服務條款</a><span class="shu-line"></span><a
+                href="javascript:void(0)">用戶服務協議</a><span class="shu-line"></span><a
+                href="javascript:void(0)">廣告服務</a><span class="shu-line"></span><a
+                href="javascript:void(0)">客服中心</a><span class="shu-line"></span><a href="javascript:void(0)"
+                                                                                   style="border:none; ">網站導航</a>
+        </p>
+        <p>
+            Copyright Rojrover 2014 all rights reserved 粤ICP备05013919号
+        </p>
+        <p>
+            莱姿公司 版权所有
+        </p>
+    </div>
+</div>
+<script src="js/common/common.js"></script>
+<script src="js/jquery-1.7.1.min.js"></script>
+<!--<script src="js/personal-center/personal-center.js"></script>-->
+<script src="js/personal-center/catenav.js"></script>
+<script src="js/personal-center/comment.js"></script>
+<script src="js/personal-center/publish.js"></script>
+<script src="js/personal-center/share.js"></script>
+<script src="js/personal-center/adress.js"></script>
+<script src="js/personal-center/tp.js"></script>
+<script src="js/personal-center/personal-center.js"></script>
+<script src="js/common/layout.js"></script>
+<script src="js/personal-center/updata.js"></script>
+<script src="css/assets/js/amazeui.min.js"></script>
+<!--<script src="assets/js/amazeui.ie8polyfill.min.js"></script>-->
+<script src="css/assets/js/cropimgbox.min.js"></script>
+<script>
+    $(function () {
+        (function ($) {
+            $(function () {
+                var options =
+                {
+                    thumbBox: '.cropimgbox-thumbBox',
+                    spinner: '.cropimgbox-spinner',
+                    imgSrc: ''
+                }
+                var cropper = $('.cropimgbox-imageBox').cropimgbox(options);
+                var img = "";
+
+                $(document).on('change', '#upload-file', function () {
+                            var reader = new FileReader();
+                            reader.onload = function (e) {
+                                options.imgSrc = e.target.result;
+                                cropper = $('.cropimgbox-imageBox').cropimgbox(options);
+                                getImg();
+                            }
+                            reader.readAsDataURL(this.files[0]);
+                            this.files.length = 0;
+                        })
+                        .on('mouseup', '.cropimgbox-imageBox', function () {
+                            getImg();
+                        })
+                        .on('click', '#btnZoomIn', function () {
+                            cropper.zoomIn();
+                            cropper.getBlob
+                        })
+                        .on('click', '#btnZoomOut', function () {
+                            cropper.zoomOut();
+                        });
+
+                function getImg() {
+                    cropper.getDataURL(function (imgs) {
+                        $('.cropimgbox-cropped').html('');
+                        $('.cropimgbox-cropped').append('<img src="' + imgs[0] + '" align="absmiddle" style="width:160px;margin-top:4px;margin-bottom:4px;border:1px solid #e6e6e6"><p>160*160</p>');
+                        $('.cropimgbox-cropped').append('<img src="' + imgs[0] + '" align="absmiddle" style="width:100px;margin-top:4px;margin-bottom:4px;border:1px solid #e6e6e6"><p>100*100</p>');
+                    });
+                }
+            })
+        })(jQuery);
+    });
+</script>
+<script>
+    $(function () {
+        $('#doc-vld-msg').validator({
+            onValid: function (validity) {
+                $(validity.field).closest('.am-form-group').find('.am-alert').hide();
+            },
+
+            onInValid: function (validity) {
+                var $field = $(validity.field);
+                var $group = $field.closest('.am-form-group');
+                var $alert = $group.find('.am-alert');
+                // 使用自定义的提示信息 或 插件内置的提示信息
+                var msg = $field.data('validationMessage') || this.getValidationMessage(validity);
+
+                if (!$alert.length) {
+                    $alert = $('<div class="am-alert am-alert-danger"></div>').hide().appendTo($group);
+                }
+
+                $alert.html(msg).show();
+            }
+        });
+    });
+</script>
+<!--<script type="text/javascript" src="js/personal-center/mydata.js"></script>-->
+</body>
+</html>

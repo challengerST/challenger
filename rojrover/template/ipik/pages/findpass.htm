@@ -1,0 +1,39 @@
+title = "findPass"
+url = "/findpass"
+layout = "findPass"
+description = "找回密码"
+is_hidden = 0
+
+[account]
+paramCode = "code"
+
+[resetPassword]
+paramCode = "code"
+
+[session]
+security = "all"
+==
+<div class="big-box down-border background-fff">
+    <div class="banner-list main-content clearfix">
+        <div class="fl-l logo">
+            <a href="javascript:;"><img src="{{ 'assets/img/common/logo.png'|theme }}" alt=""></a>
+        </div>
+        <ol class="first-page-list-left fl-l">
+            <li id="firstpage" class="tab"><a href="Home"><span>首页</span></a></li>
+            <li id="womenpage" class="tab"><a href="wmc"><span>女装</span></a></li>
+            <li id="manpage" class="tab"><a href="wmc"><span>男装</span></a></li>
+            <li id="childrenpage" class="tab"><a href="" onclick="alert('is building!')"><span>童装</span></a></li>
+            <li id="clothpage" class="tab"><a href="" onclick="javascript:alert('is building!')"><span>成衣系列</span></a></li>
+            <li id="private-order" class="tab"><a href="" onclick="javascript:alert('is building!')"><span>私人定制</span></a></li>
+            <li id="fashion-information" class="tab"><a href="zixun"><span>潮流资讯</span></a></li>
+        </ol>
+        <ul class="first-page-list-right fl-r" id="lgs">
+            <li class="login" id="sign-in"><span>登录</span></li>
+            <li class="shopcar"><a href="pcar"><i style="background: url({{ 'assets/img/sprit-img.png'|theme }}) no-repeat -7px -11px;"></i>
+                <span>购物车</span></a></li>
+            <li class="search" onclick="javascript:alert('efforts are being made to build');"><img
+                    src="{{ 'assets/img/common/serach.png'|theme }}"></li>
+        </ul>
+    </div>
+</div>
+{% partial 'findPass' %}

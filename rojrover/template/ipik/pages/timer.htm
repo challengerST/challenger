@@ -1,0 +1,19 @@
+title = "Timer"
+url = "/timer"
+layout = "default"
+is_hidden = 0
+==
+function onTimer() {
+  return "".time();
+}
+==
+<script>
+function time() {
+  $(this).request('onTimer', {
+     success: function(data) {
+        console.log(data);
+     }
+  });
+}
+</script>
+<button onclick="javascript:time();">time</button>

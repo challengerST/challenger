@@ -1,0 +1,6 @@
+test:app:
+  stage: test
+  script:
+    - rsync -avz laidengfashion /var/www/
+  # when: manual
+

@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <link rel="stylesheet" href="css/common/clear.css"/>
+    <link rel="stylesheet" href="css/common/common.css"/>
+    <link rel="stylesheet" href="css/assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/selfdesign.css">
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/common/layout.js"></script>
+    <!--<script src="js/vue.min.js"></script>-->
+    <script src="css/assets/js/amazeui.min.js"></script>
+    <script src="js/selfDesign.js"></script>
+</head>
+<body>
+<div class="big-box down-border background-fff">
+    <div class="banner-list main-content clearfix">
+        <div class="fl-l logo">
+            <a href="javascript:;"><img src="img/common/logo.png" alt=""></a>
+        </div>
+        <ol class="first-page-list-left fl-l">
+            <li id="firstpage" class="tab"><a href="index.html"><span>首页</span></a></li>
+            <li id="womenpage" class="tab"><a href="women-cloth.html"><span>女装</span></a></li>
+            <li id="manpage" class="tab"><a href="women-cloth.html"><span>男装</span></a></li>
+            <li id="childrenpage" class="tab"><a href="women-cloth.html" onclick="alert('is building!')"><span>童装</span></a>
+            </li>
+            <li id="clothpage" class="tab"><a href="chengy.html" onclick=""><span>成衣系列</span></a>
+            </li>
+            <li id="private-order" class="tab"><a href=""
+                                                  onclick="javascript:alert('is building!')"><span>私人定制</span></a></li>
+            <li id="fashion-information" class="tab"><a
+                    href="zixun.html"><span>潮流资讯</span></a></li>
+        </ol>
+        <ul class="first-page-list-right fl-r" id="lgs">
+            <li class="login" id="sign-in"><span>登录</span></li>
+            <li class="shopcar"><a href="purchase-car.html"><i
+                    style="background: url(img/sprit-img.png) no-repeat -7px -11px;"></i>
+                <span>购物车</span></a></li>
+            <li class="search" onclick="javascript:alert('efforts are being made to build');"><img
+                    src="img/common/serach.png"></li>
+        </ul>
+    </div>
+</div>
+<div class="main-content">
+    <p class="self_design_function">
+        <a href="javascript:void(0)" class="save unactive">
+            <span class="sd_fourword" id="selfdesign_porder">私人订制</span>
+        </a>
+        <a href="javascript:void(0)" class="save unactive">
+            <span class="sd_fourword" id="selfdesign_morder">我的定制</span>
+        </a>
+        <a href="javascript:void(0)" class="save">
+            <span class="sd_fiveword" id="selfdesign_designer">设计师定制</span>
+        </a>
+    </p>
+</div>
+<div class="min-height selfDesign_empty main-content" style="display:block">
+    <div class="selfClothDesign_area">
+        <img src="img/selfdesign/logo.jpg" alt="">
+        <p class="font-sx">亲爱的，我的定制空空如也</p>
+        <p class="font-sx">赶紧去<a href="javascript:void(0)" name="selfdesign" class="red-font font-sx">私人定制</a>定制吧</p>
+    </div>
+</div>
+<div class="main-content self_design" style="display:none">
+    <div class="fl-l self_design_tool">
+        <div class="custom_reqiures active clearfix" name="0">
+            <span class="font-24 fl-l"><i></i>定制需求</span>
+            <em class="fl-l"></em>
+        </div>
+        <div class="design_skecth clearfix" name="1">
+            <span class="font-24 fl-l"><i></i>设计草图</span>
+            <em class="fl-l"></em>
+        </div>
+        <!--<div class="cloth_design clearfix" name="2">-->
+        <!--<span class="font-24 fl-l"><i></i>服装设计图</span>-->
+        <!--<em class="fl-l"></em>-->
+        <!--</div>-->
+        <div class="cloth_plate clearfix" name="2">
+            <span class="font-24 fl-l"><i></i>样衣打板</span>
+            <em class="fl-l"></em>
+        </div>
+        <div class="designed clearfix" name="3">
+            <span class="font-24 fl-l"><i></i>完成定制</span>
+            <em class="fl-l"></em>
+        </div>
+    </div>
+    <div class="fl-r self_requires sq" style="display:block">
+        <div class="selfrequires_nav_layer clearfix">
+            <div class="long-line fl-l"></div>
+            <span class="fl-l font-sx">填写定制需求</span>
+            <div class="long-line fl-r"></div>
+        </div>
+        <div class="selfrequires_nav_main clearfix mr-32">
+            <div class="clearfix selfrequires_groups">
+                <div class="fl-l mrt-8 mrr-10">人群</div>
+                <div class="fl-l">
+                    <span class="active">女装</span>
+                    <span>男装</span>
+                    <span>童装</span>
+                </div>
+            </div>
+            <div class="clearfix selfrequires_brand">
+                <div class="fl-l mrt-8 mrr-10">品牌</div>
+                <div class="fl-l">
+                    <select data-am-selected="{searchBox: 1}">
+                        <option value="a">ipik</option>
+                        <option value="b">channel</option>
+                        <option value="o">gucci</option>
+                        <option value="m">冬</option>
+                        <option value="phone">iPhone</option>
+                        <option value="im">iMac</option>
+                        <option value="mbp">Macbook Pro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="clearfix selfrequires_clarify">
+                <div class="fl-l mrr-10 mrt-26">分类</div>
+                <div class="clearfix fl-l selfrequires_clarify_column">
+                    <div class="fl-l">
+                        <div class="Tx img-box"></div>
+                        <div class="selfrequires_clarify_description"><span>短袖</span></div>
+                    </div>
+                    <div class="fl-l">
+                        <div class="Ds img-box"></div>
+                        <div class="selfrequires_clarify_description"><span>连衣裙</span></div>
+                    </div>
+                    <div class="fl-l">
+                        <div class="Sw img-box"></div>
+                        <div class="selfrequires_clarify_description"><span>卫衣</span></div>
+                    </div>
+                    <div class="fl-l">
+                        <div class="Cd img-box"></div>
+                        <div class="selfrequires_clarify_description"><span>圆领裙</span></div>
+                    </div>
+                    <div class="fl-l">
+                        <div class="Vd img-box"></div>
+                        <div class="selfrequires_clarify_description"><span>深V裙</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="selfrequires_description clearfix">
+                <span class="fl-l mrr-10 mrt-60">描述</span>
+                <div class="fl-l clearfix">
+                    <div class=""><textarea name="" id="" cols="30" rows="10"
+                                            placeholder="描述一下你想定制的衣服（场合，季节，感觉，风格等）"></textarea></div>
+                </div>
+            </div>
+            <div class="selfrequires_opertion">
+                <span class="font-sx" id="selfrequires_audio">录音</span>
+                <span class="font-sx" id="selfrequires_picture">图片</span>
+            </div>
+            <div class="tc mrt-26">
+                <a href="" class="save"><span class="sd_twoword">提交</span></a>
+            </div>
+        </div>
+
+    </div>
+    <!--<div class="fl-r self_sketch sq" style="display:none">-->
+    <!--<div class="selfrequires_nav_layer clearfix">-->
+    <!--<div class="long-line fl-l"></div>-->
+    <!--<span class="fl-l font-sx">设计草图</span>-->
+    <!--<div class="long-line fl-r"></div>-->
+    <!--</div>-->
+    <!--<div class="clearfix prepaid" style="display:block">-->
+    <!--<div class="fl-l">-->
+    <!--<div class="img-box">-->
+    <!--<a href="javascript:void(0)"><img src="img/selfdesign/scimg1.jpg" alt=""></a>-->
+    <!--<div class="prepaid_layerout">-->
+    <!--<div class="layerout">-->
+    <!--</div>-->
+    <!--<p class="font-24">支付定金查看</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div>-->
+    <!--<span class="font-24 red-font">￥499</span>-->
+    <!--</div>-->
+    <!--<div class="save">-->
+    <!--<a href="javascript:void(0)"><span class="font-fu">支付定金</span></a>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="fl-r">-->
+    <!--<div class="img-box">-->
+    <!--<a href="javascript:void(0)"><img src="img/selfdesign/scimg1.jpg" alt=""></a>-->
+    <!--<div class="prepaid_layerout">-->
+    <!--<div class="layerout">-->
+    <!--</div>-->
+    <!--<p class="font-24">支付定金查看</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div>-->
+    <!--<span class="font-24 red-font">￥499</span>-->
+    <!--</div>-->
+    <!--<div class="save">-->
+    <!--<a href="javascript:void(0)"><span class="font-fu">支付定金</span></a>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="clearfix preview" style="display:none;">-->
+    <!--<div class="preview_box">-->
+    <!--<div class="fl-l">-->
+    <!--<img src="img/selfdesign/scimg_1.jpg" alt="">-->
+    <!--<textarea name="" cols="30" rows="10" placeholder="请输入您的意见和想法..."></textarea>-->
+    <!--<div>-->
+    <!--<span class="font-fu">修改</span>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="fl-l">-->
+    <!--<img src="img/selfdesign/scimg_1.jpg" alt="">-->
+    <!--<textarea name="" cols="30" rows="10" placeholder="请输入您的意见和想法..."></textarea>-->
+    <!--<div>-->
+    <!--<span class="font-fu">修改</span>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="fl-l">-->
+    <!--<img src="img/selfdesign/scimg_1.jpg" alt="">-->
+    <!--<textarea name="" cols="30" rows="10" placeholder="请输入您的意见和想法..."></textarea>-->
+    <!--<div>-->
+    <!--<span class="font-fu">修改</span>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="fl-l">-->
+    <!--<img src="img/selfdesign/scimg_1.jpg" alt="">-->
+    <!--<textarea name="" cols="30" rows="10" placeholder="请输入您的意见和想法..."></textarea>-->
+    <!--<div>-->
+    <!--<span class="font-fu">修改</span>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <div class="fl-r selfClothDesign sq" style="display:none">
+        <div class="selfrequires_nav_layer clearfix">
+            <div class="long-line fl-l"></div>
+            <span class="fl-l font-sx">设计草图</span>
+            <div class="long-line fl-r"></div>
+        </div>
+        <div class="clearfix prepaid" style="display:block">
+            <div class="fl-l">
+                <div class="img-box">
+                    <a href="javascript:void(0)"><img src="img/selfdesign/scimg1.jpg" alt=""></a>
+                    <div class="prepaid_layerout">
+                        <div class="layerout">
+                        </div>
+                        <p class="font-24">支付定金查看</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="font-24 red-font">￥499</span>
+                </div>
+                <div class="save">
+                    <a href="javascript:void(0)"><span class="font-fu">支付定金</span></a>
+                </div>
+            </div>
+            <div class="fl-r">
+                <div class="img-box">
+                    <a href="javascript:void(0)"><img src="img/selfdesign/scimg1.jpg" alt=""></a>
+                    <div class="prepaid_layerout">
+                        <div class="layerout">
+                        </div>
+                        <p class="font-24">支付定金查看</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="font-24 red-font">￥499</span>
+                </div>
+                <div class="save">
+                    <a href="javascript:void(0)"><span class="font-fu">支付定金</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="" style="display:none">
+            <div class="clearfix preview">
+                <div class="preview_box">
+                    <div class="fl-l">
+                        <img src="img/selfdesign/scimgc_1.jpg" alt="">
+                        <textarea name="" cols="30" rows="10" placeholder="请输入您的意见和想法..."></textarea>
+                        <div>
+                            <span class="font-fu">修改</span>
+                        </div>
+                    </div>
+                    <div class="fl-l">
+                        <img src="img/selfdesign/scimgc_1.jpg" alt="">
+                        <textarea name="" cols="30" rows="10" placeholder="请输入您的意见和想法..."></textarea>
+                        <div>
+                            <span class="font-fu">修改</span>
+                        </div>
+                    </div>
+                    <div class="fl-l">
+                        <img src="img/selfdesign/scimgc_1.jpg" alt="">
+                        <textarea name="" cols="30" rows="10" placeholder="请输入您的意见和想法..."></textarea>
+                        <div>
+                            <span class="font-fu">修改</span>
+                        </div>
+                    </div>
+                    <div class="fl-l">
+                        <img src="img/selfdesign/scimgc_1.jpg" alt="">
+                        <textarea name="" cols="30" rows="10" placeholder="请输入您的意见和想法..."></textarea>
+                        <div>
+                            <span class="font-fu">修改</span>
+                        </div>
+                    </div>
+                    <div class="fl-l">
+                        <img src="img/selfdesign/scimgc_1.jpg" alt="">
+                        <textarea name="" cols="30" rows="10" placeholder="请输入您的意见和想法..."></textarea>
+                        <div>
+                            <span class="font-fu">修改</span>
+                        </div>
+                    </div>
+                    <div class="fl-l">
+                        <img src="img/selfdesign/scimgc_1.jpg" alt="">
+                        <textarea name="" cols="30" rows="10" placeholder="请输入您的意见和想法..."></textarea>
+                        <div>
+                            <span class="font-fu">修改</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="editsketch">
+                <div class="">
+                    <a href="javascript:void(0)" class="save">
+                        <span class="sd_fourword">修改样衣</span>
+                    </a>
+                    <p>
+                        <span class="red-font tal font-fu">* 只限修改<i class="red-font">3</i>次</span>
+                    </p>
+                </div>
+            </div>
+            <div class="selfDesign_option">
+                <div class="selfClothDesign_color">
+                    <div class="clearfix">
+                        <span class="fl-l font-sx"><a href="javascript:void(0)" id="color_001">选择颜色</a></span>
+                        <div class="long_sline fl-l"></div>
+                    </div>
+                    <div class="selfClothDesign_colorList clearfix">
+                        <div class="colorList_fb1d1d fl-l">
+                            <span class="value"></span>
+                            <span class="word font-sx">红色</span>
+                        </div>
+                        <div class="colorList_fb901d fl-l">
+                            <span class="value"></span>
+                            <span class="word font-sx">橙色</span>
+                        </div>
+                        <div class="colorList_fbcf1d fl-l">
+                            <span class="value"></span>
+                            <span class="word font-sx">黄色</span>
+                        </div>
+                        <div class="colorList_aafb1d fl-l">
+                            <span class="value"></span>
+                            <span class="word font-sx">绿色</span>
+                        </div>
+                        <div class="colorList_1dfbaf fl-l">
+                            <span class="value"></span>
+                            <span class="word font-sx">青色</span>
+                        </div>
+                        <div class="colorList_1d66fb fl-l">
+                            <span class="value"></span>
+                            <span class="word font-sx">蓝色</span>
+                        </div>
+                        <div class="colorList_a51dfb fl-l">
+                            <span class="value"></span>
+                            <span class="word font-sx">紫色</span>
+                        </div>
+                        <div class="colorList_fb1d1d fl-l">
+                            <span class="value"></span>
+                            <span class="word font-sx">红色</span>
+                        </div>
+                        <div class="colorList_fb901d fl-l">
+                            <span class="value"></span>
+                            <span class="word font-sx">橙色</span>
+                        </div>
+                        <div class="colorList_fbcf1d fl-l">
+                            <span class="value"></span>
+                            <span class="word font-sx">黄色</span>
+                        </div>
+                        <div class="colorList_aafb1d fl-l">
+                            <span class="value"></span>
+                            <span class="word font-sx">绿色</span>
+                        </div>
+                        <div class="colorList_1dfbaf fl-l">
+                            <span class="value"></span>
+                            <span class="word font-sx">青色</span>
+                        </div>
+                        <div class="colorList_1d66fb fl-l">
+                            <span class="value"></span>
+                            <span class="word font-sx">蓝色</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="selfClothDesign_materials">
+                    <div class="clearfix">
+                        <span class="fl-l font-sx">面料</span>
+                        <div class="long_sline fl-l"></div>
+                    </div>
+                    <div class="selfClothDesign_materialsList">
+                        <div class="clearfix">
+                            <span class="">棉型织物</span>
+                            <span>麻型织物</span>
+                            <span>丝型织物</span>
+                            <span>毛型织物</span>
+                            <span>纯化纤织物</span>
+                            <span>棉布</span>
+                            <span>棉布</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="selfClothDesign_size">
+                    <div class="clearfix">
+                        <span class="fl-l font-sx">尺码</span>
+                        <div class="long_sline fl-l"></div>
+                    </div>
+                    <div class="selfClothDesignSize_info sizeCharacter">
+                        <div class="clearfix">
+                            <span class="">尺码</span>
+                            <span>型号</span>
+                            <span>肩宽</span>
+                            <span>胸围</span>
+                            <span>衣长</span>
+                            <span>袖长</span>
+                            <span>腰围</span>
+                            <span>袖长</span>
+                        </div>
+                    </div>
+                    <div class="selfClothDesignSize_detailinfo">
+                        <div class="selfClothDesignSize_info active">
+                            <div class="clearfix">
+                                <span class="">S</span>
+                                <span>155/80A</span>
+                                <span>39</span>
+                                <span>100</span>
+                                <span>60</span>
+                                <span>58</span>
+                                <span>76</span>
+                                <span>袖长</span>
+                            </div>
+                        </div>
+                        <div class="selfClothDesignSize_info">
+                            <div class="clearfix">
+                                <span class="">M</span>
+                                <span>160/84A</span>
+                                <span>40</span>
+                                <span>104</span>
+                                <span>61</span>
+                                <span>60</span>
+                                <span>80</span>
+                                <span>袖长</span>
+                            </div>
+                        </div>
+                        <div class="selfClothDesignSize_info">
+                            <div class="clearfix">
+                                <span class="">L</span>
+                                <span>165/88A</span>
+                                <span>41</span>
+                                <span>110</span>
+                                <span>62</span>
+                                <span>62</span>
+                                <span>84</span>
+                                <span>袖长</span>
+                            </div>
+                        </div>
+                        <div class="selfClothDesignSize_info">
+                            <div class="clearfix">
+                                <span class="">S</span>
+                                <span>155/80A</span>
+                                <span>39</span>
+                                <span>100</span>
+                                <span>60</span>
+                                <span>58</span>
+                                <span>76</span>
+                                <span>袖长</span>
+                            </div>
+                        </div>
+                        <div class="selfClothDesignSize_info">
+                            <div class="clearfix">
+                                <span class="">XL</span>
+                                <span>170/92A</span>
+                                <span>42</span>
+                                <span>116</span>
+                                <span>63</span>
+                                <span>64</span>
+                                <span>88</span>
+                                <span>袖长</span>
+                            </div>
+                        </div>
+                        <div class="selfClothDesignSize_info">
+                            <div class="clearfix">
+                                <span class="">XXL</span>
+                                <span>175/96A</span>
+                                <span>43</span>
+                                <span>122</span>
+                                <span>64</span>
+                                <span>66</span>
+                                <span>92</span>
+                                <span>袖长</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="selfClothDesign_num">
+                    <div class="clearfix" style="margin-bottom:48px;">
+                        <span class="fl-l font-sx">数量</span>
+                        <div class="long_sline fl-l"></div>
+                    </div>
+                    <div class="addcolor_material">
+                        <span><a href="#color_001" class="e52 font-sx"> + 添加新的颜色和面料</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fl-r selfClothPlate sq" style="display:none">
+        <div class="selfrequires_nav_layer clearfix">
+            <div class="long-line fl-l"></div>
+            <span class="fl-l font-sx">样衣打板</span>
+            <div class="long-line fl-r"></div>
+        </div>
+        <div class="clearfix preview" style="display:block;">
+            <div class="preview_box">
+                <div class="fl-l">
+                    <img src="img/selfdesign/plate/plate01.jpg" alt="">
+                    <textarea name="" cols="30" rows="10" placeholder="请输入您的意见和想法..."></textarea>
+                    <div>
+                        <span class="font-fu">修改</span>
+                    </div>
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/plate/plate02.jpg" alt="">
+                    <textarea name="" cols="30" rows="10" placeholder="请输入您的意见和想法..."></textarea>
+                    <div>
+                        <span class="font-fu">修改</span>
+                    </div>
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/plate/plate03.jpg" alt="">
+                    <textarea name="" cols="30" rows="10" placeholder="请输入您的意见和想法..."></textarea>
+                    <div>
+                        <span class="font-fu">修改</span>
+                    </div>
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/plate/plate04.jpg" alt="">
+                    <textarea name="" cols="30" rows="10" placeholder="请输入您的意见和想法..."></textarea>
+                    <div>
+                        <span class="font-fu">修改</span>
+                    </div>
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/plate/plate05.jpg" alt="">
+                    <textarea name="" cols="30" rows="10" placeholder="请输入您的意见和想法..."></textarea>
+                    <div>
+                        <span class="font-fu">修改</span>
+                    </div>
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/plate/plate06.jpg" alt="">
+                    <textarea name="" cols="30" rows="10" placeholder="请输入您的意见和想法..."></textarea>
+                    <div>
+                        <span class="font-fu">修改</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p><span class="red-font font-24">￥1499</span></p>
+            <div class="clearfix editpay">
+                <div class="fl-l">
+                    <a href="javascript:void(0)" class="save">
+                        <span class="sd_fourword">修改样衣</span>
+                    </a>
+                    <p class="red-font tal font-fu">* 只限修改<i class="red-font">2</i>次</p>
+                </div>
+                <div class="fl-l">
+                    <a href="javascript:void(0)" class="save">
+                        <span class="sd_twoword">付款</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fl-r selfDesigned sq" style="display:none">
+        <div class="selfrequires_nav_layer clearfix">
+            <div class="long-line fl-l"></div>
+            <span class="fl-l font-sx">完成定制</span>
+            <div class="long-line fl-r"></div>
+        </div>
+        <div class="selfClothDesign_area" style="display:block">
+            <img src="img/selfdesign/logo.jpg" alt="">
+            <p class="font-sx">亲爱的，我们正在加紧制定你的需求</p>
+            <p class="font-sx">赶紧去<a href="javascript:void(0)" class="red-font font-sx">我的定制</a>看进度吧</p>
+        </div>
+        <div class="" style="display:none">
+            <div class="sst">
+                <div class="tt"><i class="trangle"></i><span class="large-word font-sx">收货地址</span></div>
+            </div>
+            <div class="selfDesigned_box">
+                <div class="selfDesigned_largebox clearfix">
+                    <div class="selfDesigned_location fl-l">
+                        <div class="big-child">
+                            <P class="">
+                                <input class="name" placeholder="username">
+                                <input class="phoneNum" placeholder="phonenum">
+                                <a href="javascript:void(0)" class=""><i class="setasDefault"></i></a>
+                            </P>
+                            <p class="selfDesigned_dividline">
+
+                            </p>
+                            <P class="selfDesigned_adress">
+                                <input class="" placeholder="河南省郑州市金水区华润大厦">
+                            </P>
+                            <p class="cd-edit clearfix">
+                                <span class="fl-l">修改</span><img class="ww fl-r" src="img/personal-center/pm/3.png"
+                                                                 alt="">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="selfDesigned_location fl-l">
+                        <div class="big-child">
+                            <P class="">
+                                <input class="name" placeholder="username">
+                                <input class="phoneNum" placeholder="phonenum">
+                                <a href="javascript:void(0)" class=""><i class="setasDefault"></i></a>
+                            </P>
+                            <p class="selfDesigned_dividline">
+
+                            </p>
+                            <P class="selfDesigned_adress">
+                                <input class="" placeholder="河南省郑州市金水区华润大厦">
+                            </P>
+                            <p class="cd-edit clearfix">
+                                <span class="fl-l">修改</span><img class="ww fl-r" src="img/personal-center/pm/3.png"
+                                                                 alt="">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="selfDesigned_add">
+                    <a href="javascript:void(0);"><img id="tp" class="bw"
+                                                       src="img/personal-center/pm/2.png"
+                                                       alt=""><span class="font-sx">添加地址</span></a>
+                </div>
+                <div class="selfDesigned_defaultdir">
+                    <a href="javascript:void(0)" class="save">
+                        <span class="sd_twoword">确认</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="lay-out" style="display:none"></div>
+    <div id="tp-box" style="display:none">
+        <form>
+            <div class="ptop clearfix">
+                <div class="fl-l">添加地址</div>
+                <div class="close-cancle fl-r" id="close"><img src="img/common/cancle-img_03.png"
+                                                               alt=""></div>
+            </div>
+            <div class="spar">
+                <div>
+                    <div class="selet"><span>收货地址</span>
+                        <div id="proname"><span value="0">省份</span></div>
+                        <ul class="pro"></ul>
+                        <div id="cityname"><span value="0">市辖区</span></div>
+                        <ul class="city"></ul>
+                        <div id="areaname"><span value="">区/县</span></div>
+                        <ul class="area"></ul>
+                    </div>
+                    <div class="mt"><span>详细地址</span><input type="text" class="dp" placeholder="详细地址你来填，送货到家哦"></div>
+                    <div class="mt contact"><span>联系人</span><input type="text" class="ln"
+                                                                   placeholder="你的名字"><span>联系电话</span><input
+                            type="text" class="lp" placeholder="你的电话"></div>
+                    <div class="defaup">
+                        <div class="checkboxFive">
+                            <input type="checkbox" value="1" id="checkboxFiveInput" style="margin-top:-5px;" name="">
+                            <label for="checkboxFiveInput"></label>
+                            <span class="mry">设为默认地址</span>
+                        </div>
+                    </div>
+                    <div style="text-align:right;margin-top:66px;"><a href="javascript:void(0)"><span id="p-cle"
+                                                                                                      class="btc">取消</span></a><a
+                            href="javascript:void(0)"><span id="p-cure" class="btc active">保存</span></a></div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="my_design" style="display:none">
+    <div class="mydesign_index" style="display:block">
+        <div class="indexcontent_even">
+            <div class="shadowline"></div>
+            <div class="main-content">
+                <div class="leftIndex">1</div>
+            </div>
+            <div class="main-content mydesign clearfix">
+                <div class="dtWarea fl-l">
+                    <p>
+                        <span class="font-eg">王晨龙</span>
+                    </p>
+                    <p>
+                        <span class="menu_phonenum font-eg">12345678901</span>
+                        <span class="menu_time font-eg">3月15日</span>
+                    </p>
+                    <div class="clearfix mydesign_pro">
+                        <div class="fl-l clearfix mydesign_proInfo">
+                            <div class="fl-l">
+                                颜色 : <span>黄色</span>
+                            </div>
+                            <div class="fl-l mydesign_material">
+                                布料 : <span>亚麻布</span>
+                            </div>
+                            <div class="fl-l">
+                                数量 : <span>2件</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix mydesign_comment">
+                        <p class="fl-l font-sx">
+                            我是一个身形比较胖的人，我希望在设计的时候能以欧美风格的身材来设计，我个人比较喜欢修身的，这样显起来好看
+                            ，十分感谢你能跟我合作，希望以后的日子里能跟你交个朋友。
+                        </p>
+                    </div>
+                    <div class="mydesign_progressbar clearfix">
+                        <div class="mydesign_requires fl-l">
+                            定制需求
+                        </div>
+                        <div class="mydesign_sketch fl-l">
+                            草图设计
+                        </div>
+                        <div class="mydesign_plate fl-l">
+                            样衣打板
+                        </div>
+                        <div class="mydesign_completed fl-l">
+                            完成定制
+                            <div style="display:none">
+                                <div class="mydesign_greyword">
+                                    <p class="font-eg">我们正在加紧</p>
+                                    <p class="font-eg">定制您亲爱的衣服</p>
+                                </div>
+                                <div class="mydesign_arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mydesign_distribution fl-l">
+                            配送中
+                            <div style="display:none">
+                                <div class="mydesign_shiping">
+                                    <p class="font-eg fff-font">赶紧去个人中心查看吧</p>
+                                </div>
+                                <div class="mydesignship_arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mydesign_imgbar clearfix fl-r">
+                    <div class="selfdesignCloth"><img src="img/selfdesign/plate/plate01.jpg" alt=""></div>
+                    <div class="selfbrand"><a href="javascript:void(0)"><img src="img/brandlogo.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="indexcontent_odd">
+            <div class="shadowline"></div>
+            <div class="main-content">
+                <div class="rightIndex">2</div>
+            </div>
+            <div class="main-content mydesign clearfix">
+                <div class="dtWarea fl-r">
+                    <p class="tar">
+                        <span class="font-eg">王晨龙</span>
+                    </p>
+                    <p class="tar">
+                        <span class="menu_phonenum font-eg">12345678901</span>
+                        <span class="menu_time font-eg">3月15日</span>
+                    </p>
+                    <div class="clearfix mydesign_pro">
+                        <div class="fl-r clearfix mydesign_proInfo">
+                            <div class="fl-l">
+                                颜色 : <span>黄色</span>
+                            </div>
+                            <div class="fl-l mydesign_material">
+                                布料 : <span>亚麻布</span>
+                            </div>
+                            <div class="fl-l">
+                                数量 : <span>2件</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix mydesign_comment">
+                        <p class="fl-l font-sx">
+                            我是一个身形比较胖的人，我希望在设计的时候能以欧美风格的身材来设计，我个人比较喜欢修身的，这样显起来好看
+                            ，十分感谢你能跟我合作，希望以后的日子里能跟你交个朋友。
+                        </p>
+                    </div>
+                    <div class="mydesign_progressbar clearfix">
+                        <div class="mydesign_requires fl-l">
+                            定制需求
+                        </div>
+                        <div class="mydesign_sketch fl-l">
+                            草图设计
+                        </div>
+                        <div class="mydesign_plate fl-l">
+                            样衣打板
+                        </div>
+                        <div class="mydesign_completed fl-l">
+                            完成定制
+                            <div style="display:none">
+                                <div class="mydesign_greyword">
+                                    <p class="font-eg">我们正在加紧</p>
+                                    <p class="font-eg">定制您亲爱的衣服</p>
+                                </div>
+                                <div class="mydesign_arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mydesign_distribution fl-l">
+                            配送中
+                            <div style="display:none">
+                                <div class="mydesign_shiping">
+                                    <p class="font-eg fff-font">赶紧去个人中心查看吧</p>
+                                </div>
+                                <div class="mydesignship_arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mydesign_imgbar clearfix fl-l">
+                    <div class="selfdesignCloth"><img src="img/selfdesign/plate/plate01.jpg" alt=""></div>
+                    <div class="selfbrand"><a href="javascript:void(0)"><img src="img/brandlogo.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mydesignRequire" style="display:none">
+        <div class="main-content mydesign">
+            <div>
+                <a href="javascipt:void(0)" class="font-sx">ipik</a><a href="selfdesign.html"> >私人订制</a><a
+                    href="javascript:void(0)" class="mydesIgN"> >我的订制</a><a href="javascript:void(0)" class="red-font">
+                >定制需求</a>
+            </div>
+            <div class="mydesign_title clearfix">
+                <div class="fl-l titleline"></div>
+                <div class="fl-l title"><span class="font-eg">定制需求</span></div>
+                <div class="fl-l titleline"></div>
+            </div>
+            <div class="clearfix">
+                <span class="font-sx fl-l">男装( 外套 )</span>
+                <span class="font-sx fl-r files">录音</span>
+            </div>
+            <div class="clearfix mydesign_comment">
+                <p class="fl-l font-sx">
+                    我是一个身形比较胖的人，我希望在设计的时候能以欧美风格的身材来设计，我个人比较喜欢修身的，这样显起来好看
+                    ，十分感谢你能跟我合作，希望以后的日子里能跟你交个朋友。
+                </p>
+                <p class="fl-r"><span class="font-sx">孙菲 / </span> <span class="font-sx">莱姿</span></p>
+            </div>
+            <div class="clearfix mydesign_pro">
+                <div class="fl-l clearfix mydesign_proInfo">
+                    <div class="fl-l">
+                        颜色 : <span>黄色</span>
+                    </div>
+                    <div class="fl-l mydesign_material">
+                        布料 : <span>亚麻布</span>
+                    </div>
+                    <div class="fl-l">
+                        数量 : <span>2件</span>
+                    </div>
+                </div>
+                <div class="fl-l clearfix mydesign_proInfo">
+                    <div class="fl-l">
+                        颜色 : <span>黄色</span>
+                    </div>
+                    <div class="fl-l mydesign_material">
+                        布料 : <span>亚麻布</span>
+                    </div>
+                    <div class="fl-l">
+                        数量 : <span>2件</span>
+                    </div>
+                </div>
+                <div class="fl-l clearfix mydesign_proInfo">
+                    <div class="fl-l">
+                        颜色 : <span>黄色</span>
+                    </div>
+                    <div class="fl-l mydesign_material">
+                        布料 : <span>亚麻布</span>
+                    </div>
+                    <div class="fl-l">
+                        数量 : <span>2件</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mydesign_imgbar clearfix">
+                <div class="fl-l">
+                    <img src="img/selfdesign/mydesign/1.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/mydesign/2.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/mydesign/3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mydesignPlate" style="display:none">
+        <div class="main-content mydesign">
+            <div>
+                <a href="javascipt:void(0)" class="font-sx">ipik</a><a href="selfdesign.html"> >私人订制</a><a
+                    href="javascript:void(0)" class="mydesIgN"> >我的订制</a><a href="javascript:void(0)" class="red-font">
+                >设计草图</a>
+            </div>
+            <div class="mydesign_title clearfix">
+                <div class="fl-l titleline"></div>
+                <div class="fl-l title"><span class="font-eg">样衣打板</span></div>
+                <div class="fl-l titleline"></div>
+            </div>
+            <div class="mydesign_imgbar clearfix">
+                <div class="fl-l">
+                    <img src="img/selfdesign/plate/plate01.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/plate/plate02.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/plate/plate03.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/plate/plate04.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/plate/plate05.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/plate/plate06.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/plate/plate01.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/plate/plate02.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/plate/plate03.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/plate/plate04.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/plate/plate05.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/plate/plate06.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mydesignDesign" style="display:none">
+        <div class="main-content mydesign">
+            <div>
+                <a href="javascipt:void(0)" class="font-sx">ipik</a><a href="selfdesign.html"> >私人订制</a><a
+                    href="javascript:void(0)" class="mydesIgN"> >我的订制</a><a href="javascript:void(0)" class="red-font">
+                >服装设计图</a>
+            </div>
+            <div class="mydesign_title clearfix">
+                <div class="fl-l titleline"></div>
+                <div class="fl-l title"><span class="font-eg">服装设计图</span></div>
+                <div class="fl-l titleline"></div>
+            </div>
+            <div class="mydesign_imgbar clearfix">
+                <div class="fl-l">
+                    <img src="img/selfdesign/1.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/1.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/1.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/1.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/1.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/1.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/1.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/1.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/1.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/1.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/1.jpg" alt="">
+                </div>
+                <div class="fl-l">
+                    <img src="img/selfdesign/1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom-base border-hidden">
+    <div class="main-content bottom-base-area">
+        <p class="callme">
+            <a href="">关于我们</a><span class="shu-line"></span><a href="">服务条款</a><span class="shu-line"></span><a
+                href="">用戶服務協議</a><span class="shu-line"></span><a href="">廣告服務</a><span class="shu-line"></span><a
+                href="">客服中心</a><span class="shu-line"></span><a href="" style="border:none; ">網站導航</a>
+        </p>
+        <p>
+            Copyright Rojrover 2014 all rights reserved 粤ICP备05013919号
+        </p>
+        <p>
+            莱姿公司 版权所有
+        </p>
+    </div>
+</div>
+</body>
+</html>

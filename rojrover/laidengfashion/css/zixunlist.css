@@ -1,0 +1,121 @@
+.polarzx .save span {
+    width: 90px;
+}
+
+.polarzx .save {
+    padding-top: 0;
+    margin: 0;
+}
+.polarzx .share {
+    width: 240px;
+    height: 72px;
+    padding-top:14px;
+    padding-left:14px;
+    box-sizing:border-box;
+    background: rgba(0, 0, 0, .2);
+}
+.share span, .share i {
+    color: #fff;
+    text-align:center;
+}
+
+.work, .fan, .notice {
+    width: 28px;
+    font-size: 14px;
+}
+.polarzx .fan{
+    width: 58px;
+}
+.polarzx .notice{
+    width: 26px;
+}
+.polarzx .shu-line {
+    margin: 0 16px;
+    background: #f7f7f7;
+}
+
+.column-host {
+    height: 200px;
+    padding: 40px 20px 40px 60px;
+    margin-bottom:32px;
+    box-sizing: border-box;
+    background:url(../img/zixun/zixunlist/zlhbd.png) no-repeat center;
+}
+.colhoster img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:5px solid rgba(255,255,255,.4);
+}
+.colhost{
+
+}
+.colhosterinf{
+     margin-left:20px;
+ }
+/*四个字加宽*/
+.fwlarge{
+   width:56px;
+    display:block;
+}
+.twlarge{
+    width:42px;
+    display:block;
+}
+.hoster-img img{
+    width:32px;
+    height:32px;
+    border-radius: 50%;
+    background:#000;
+    border: none;
+    margin-top: -9px;
+}
+.article-list{
+    padding:0 40px;
+    margin-bottom:20px;
+}
+.article-inf{
+    width:786px;
+    margin-left:22px;
+    box-sizing:border-box;
+}
+.article-inf .font-sx{
+    margin-top:14px;
+    margin-bottom:30px;
+    line-height:26px;
+}
+.article-inf .font-24{
+    margin-top:12px;
+}
+.zxconart{
+    margin-bottom:20px;
+    padding-bottom:20px;
+    box-sizing:border-box;
+}
+#hoster{
+    margin-left:10px;
+}
+.zxlheadbar{
+    position:relative;
+    margin-bottom:30px;
+}
+.zxlheadbar .fff-font{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%); 	/* IE 9 */
+    -moz-transform:translate(-50%,-50%); 	/* Firefox */
+    -webkit-transform:translate(-50%,-50%); /* Safari 和 Chrome */
+    -o-transform:translate(-50%,-50%); 	/* Opera */
+    width:220px;
+    height:38px;
+    line-height:38px;
+}
+.popularzx.save span{
+    height:32px;
+    line-height:32px;
+}
+.popularzx.save{
+    margin-top:14px;
+}

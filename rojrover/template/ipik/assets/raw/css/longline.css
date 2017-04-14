@@ -1,0 +1,15 @@
+.long-line{
+    display:inline-block;
+    width:368px;
+    border-top:1px solid #b2b2b2;
+    vertical-align:4px;
+}
+.long-title{
+    margin-bottom:32px;
+}
+.long-title .large{
+    margin:0 40px;
+}
+.long-title .small{
+    margin:0 24px;
+}

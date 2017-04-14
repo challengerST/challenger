@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="一个可以让您找到一件只属于您的设计师平台"/>
+    <meta name="keywords" content="designer,DESIGNER,设计师，设计"/>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <title>ipik</title>
+    <link rel="stylesheet" href="css/common/clear.css"/>
+    <link rel="stylesheet" href="css/common/common.css"/>
+    <link rel="stylesheet" href="css/index/firstpage.css"/>
+    <link rel="icon" href="img/ico/ipik.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/ico/ipik.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="css/index/layout-page.css">
+    <link rel="stylesheet" href="css/links/link.css">
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+<div class="big-box down-border background-fff">
+    <div class="banner-list main-content clearfix">
+        <div class="fl-l logo">
+            <a href="javascript:;"><img class="animated infinite swing" src="img/common/logo.png" alt=""></a>
+        </div>
+        <ol class="first-page-list-left fl-l">
+            <li id="firstpage" class="tab"><a href="index.html"><span>首页</span></a></li>
+            <li id="womenpage" class="tab"><a href="women-cloth.html"><span>女装</span></a></li>
+            <li id="manpage" class="tab"><a href="women-cloth.html"><span>男装</span></a></li>
+            <li id="childrenpage" class="tab"><a href="women-cloth.html" onclick="alert('is building!')"><span>童装</span></a>
+            </li>
+            <li id="clothpage" class="tab"><a href="chengy.html" onclick=""><span>成衣系列</span></a>
+            </li>
+            <li id="private-order" class="tab"><a href="selfdesign.html"><span>私人定制</span></a></li>
+            <li id="fashion-information" class="tab"><a
+                    href="zixun.html"><span>潮流资讯</span></a></li>
+        </ol>
+        <ul class="first-page-list-right fl-r" id="lgs">
+            <li class="login" id="sign-in"><span class="font-fu">登录</span></li>
+            <li class="shopcar"><a href="purchase-car.html">
+                <img src="img/index/shop.png" alt="">
+                <span class="font-fu">购物车</span></a></li>
+            <li class="search" id="searchoption">
+                <img src="img/common/serach.png">
+            </li>
+        </ul>
+    </div>
+</div>
+<div style="display:none">
+    <div class="lay-out" id="lay-out"></div>
+    <div class="login-box" id="login-box">
+        <form>
+            <div class="close-cancle" id="close">
+                <img src="img/common/cancle-img_03.png" alt=""/>
+            </div>
+            <div class="clearfix">
+                <span class="sign-in red-line" id="login">登录</span> <span class="shu-line jubu-edit"></span> <span
+                    class="sign-up" id="sign-Up">注册账号</span>
+            </div>
+            <div id="ncg1" style="display:block">
+                <div style="text-align:center;">
+                    <div class="vertify">
+                        <h1>用户名</h1>
+                        <input id="username" class="font-te" type="text" placeholder="昵称/手机号"/>
+                        <p class="errors">
+                            <i class="caveat"></i><span style="font-size:14px;">请输入正确的格式</span>
+                        </p>
+                        <h1>密码</h1><input id="setpassword" class="font-te" type="password" placeholder="请输入密码">
+                        <p class="errors"><i class="caveat"></i><span
+                                style="font-size:14px;">请输入正确的密码</span>
+                        </p>
+                    </div>
+                    <div class="clearfix" style="margin-top:10px;width:320px;display:inline-block;"><span
+                            style="float:left;font-size:14px;"> <input type="checkbox" checked="checked"
+                                                                       class="fuxuankuang"
+                                                                       id="rmme"/>记住我 </span> <span
+                            style="float:right;font-size:14px;">忘记密码 </span> <input id="submit" type="button"
+                                                                                    class="rightnow-login"
+                                                                                    value="立即登录"/>
+                    </div>
+                    <div class="title-line"><i class="title-line-left"></i><span class="fenqu">使用合作账号登陆</span><i
+                            class="title-line-left"></i></div>
+                </div>
+                <div class="society"><a href=""><img src="img/society/wechat.png" alt=""></a> <a href=""><img
+                        src="img/society/tencent.png" alt=""></a> <a href=""><img
+                        src="img/society/room.png" alt=""></a><a href=""><img
+                        src="img/society/weibo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="register" id="ncg2" style="display:none">
+                <div style="text-align:center;">
+                    <div>
+                        <p>手机号</p>
+                        <input id="form-phone" name="lphone" class="lg-length" type="text" placeholder="手机号码"
+                               autocomplete="off" maxlength="11" default="完后验证后，你可以通过登录该手机登录和找回密码">
+                        <div class="errors">
+                            <i class="caveat"></i><span class="font-fu">请输入正确的邮箱或者手机号</span>
+                        </div>
+                    </div>
+                    <div><p>验证码</p>
+                        <div class="clearfix" style="display:inline-block">
+                            <input id="code_input" class="lg-length fl-l" type="text" placeholder="验证码">
+                            <div id="v_container" class="fl-l"></div>
+                        </div>
+                        <div class="errors">
+                            <i class="caveat"></i><span class="font-fu">验证失败</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>密码</p>
+                        <input name="lpassword" class="lg-length" type="text" placeholder="6-18位">
+                        <div class="errors">
+                            <i class="caveat"></i><span class="font-fu">请输入6-18密码</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>确认密码</p>
+                        <input id="r2" class="lg-length" type="text" placeholder="前后输入一致">
+                        <div class="errors">
+                            <i class="caveat"></i><span class="font-fu">请确保前后输入一致</span>
+                        </div>
+                    </div>
+                    <div>
+                        <input class="submit signin" type="button" value="立即注册">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="wrap" class="">
+    <ul class="big-img clearfix" id="pic1">
+        <li class="fl-l item" id="wows1_0"><a href="women-cloth.html"></a></li>
+        <li class="fl-l item" id="wows1_1"><a href="women-cloth.html"></a></li>
+        <li class="fl-l item" id="wows1_2"><a href="women-cloth.html"></a></li>
+        <li class="fl-l item" id="wows1_3"><a href="women-cloth.html"></a></li>
+    </ul>
+    <div class="prev-btn1">
+        <div class="prev1" id="prev1"></div>
+    </div>
+    <div class="next-btn1">
+        <div class="next1" id="next1"></div>
+    </div>
+    <div class="main-content" id="search-content">
+        <div class="word-decoration">
+            <h1>同设计师一起探讨时尚</h1>
+        </div>
+        <div class="am-g main pagewidth">
+            <div class="am-u-sm-9 info am-padding-lg showMi">
+                <div style="height: 38px;">
+                    <div id="search"></div>
+                </div>
+                <template id="pre-search">
+                    <div class="wos-search-basic">
+                        <input type="text" placeholder="大鱼海棠" v-model="keywords" v-on:click="searchShow(1)"
+                               v-on:blur="searchShow(0)">
+                        <button type="button" class="am-btn am-btn-primary am-fr">搜索</button>
+                        <a href="#" class="am-fr chart"></a>
+                    </div>
+                    <div class="wos-pre-search" v-show="preShow">
+                        <div v-if="keywords.length">
+                            <div class="wos-pre-search-title" v-show="sb">
+                                <div class="am-fl">搜索关键词：{{keywords}}</div>
+                                <div class="am-fr"><a href="#">清空</a></div>
+                            </div>
+                            <ul>
+                                <li v-show="sb" v-on:click="searchUrl(item.url)"
+                                    v-for="item of cacheKeywords | filterBy keywords in 'words' " @click="search()">
+                                    {{ item.words }}
+                                </li>
+                            </ul>
+                        </div>
+                        <div v-else v-show="preShow">
+                            <div class="wos-pre-search-title" v-show="sb">
+                                <div class="am-fl">历史搜索:</div>
+                                <div class="am-fr"><a href="#">清空</a></div>
+                            </div>
+                            <ul>
+                                <li v-show="sb" v-on:click="searchLocal(item)"
+                                    v-for="item of historyData | limitBy historyDataNum">
+                                    {{ item }}
+                                </li>
+                                <hr>
+                                <li v-show="sb" v-on:click="searchUrl(item.url)"
+                                    v-for="item of recommend | limitBy recommendNum" @click="search()"
+                                    class="wos-ol wos-ol-{{ $index+1 }}">
+                                    <span>{{ $index+1 }}. </span>{{ item.words }}
+                                </li>
+                                <div v-show="sb" class="am-fr wos-search-more">
+                                    <a href="#" class="am-fr chart">
+                                        <i class="am-icon-bar-chart"></i> 今日热搜
+                                    </a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </template>
+                <script>
+                    historyData = ['榴莲', '百香果', '泰国芒果', '山东大苹果', '广德鸭梨', '新疆葡萄干', '海南椰子'];
+                    recommend = [
+                        {words: '阿根廷红虾2kg/包 ￥158', url: 'search.html?k=关键词或产品链接'},
+                        {words: '加拿大AAA级西冷牛排250g ￥75', url: 'search.html?k=关键词或产品链接'},
+                        {words: '越南草虾(16-20只）400g ￥35', url: 'search.html?k=关键词或产品链接'},
+                        {words: '澳洲草饲西冷牛排500g*2 牛扒 ￥138', url: 'search.html?k=关键词或产品链接'},
+                        {words: '乌拉圭牛尾切片500g*2 牛肉 ￥92', url: 'search.html?k=关键词或产品链接'},
+                        {words: '厄瓜多尔白虾2kg(50-60只/kg) 白虾 ￥149', url: 'search.html?k=关键词或产品链接'}
+                    ];
+                    cacheKeywords = [
+                        {words: '虾米', url: 'search.html?k=关键词或产品链接'},
+                        {words: '金锣优养冰鲜带筋猪蹄', url: 'search.html?k=关键词或产品链接'},
+                        {words: '金锣优养冰鲜汤排', url: 'search.html?k=关键词或产品链接'},
+                        {words: '易家菜园苍山山药', url: 'search.html?k=关键词或产品链接'},
+                        {words: '潮香村黑椒牛排', url: 'search.html?k=关键词或产品链接'},
+                        {words: '蔬氏意式沙拉', url: 'search.html?k=关键词或产品链接'},
+                        {words: '美威欧式三文鱼排', url: 'search.html?k=关键词或产品链接'},
+                        {words: '澳洲草饲西冷牛排', url: 'search.html?k=关键词或产品链接'},
+                        {words: '阿根廷红虾', url: 'search.html?k=关键词或产品链接'},
+                        {words: '西冷牛排', url: 'search.html?k=关键词或产品链接'},
+                        {words: '越南草虾', url: 'search.html?k=关键词或产品链接'},
+                        {words: '澳洲草饲西冷牛排', url: 'search.html?k=关键词或产品链接'},
+                        {words: '乌拉圭牛尾切片', url: 'search.html?k=关键词或产品链接'},
+                        {words: '厄瓜多尔白虾', url: 'search.html?k=关键词或产品链接'},
+                        {words: '山东甜玉米', url: 'search.html?k=关键词或产品链接'},
+                        {words: '昆明黄秋葵 ', url: 'search.html?k=关键词或产品链接'},
+                        {words: '精选胡萝卜', url: 'search.html?k=关键词或产品链接'},
+                        {words: '大蛤蜊肉', url: 'search.html?k=关键词或产品链接'},
+                        {words: '优质香菇', url: 'search.html?k=关键词或产品链接'},
+                        {words: '厄瓜多尔白虾', url: 'search.html?k=关键词或产品链接'},
+                        {words: '金锣优养冰鲜汤排', url: 'search.html?k=关键词或产品链接'},
+                        {words: '精选甜玉米', url: 'search.html?k=关键词或产品链接'},
+                        {words: '新鲜本地甘蓝', url: 'search.html?k=关键词或产品链接'},
+                        {words: '易家菜园西湖莼菜', url: 'search.html?k=关键词或产品链接'},
+                        {words: '黄瓜', url: 'search.html?k=关键词或产品链接'},
+                        {words: '越南草虾仁', url: 'search.html?k=关键词或产品链接'}
+                    ];
+                    var vm = new Vue({
+                        el: '#search',
+                        data: {
+                            message: 'Hello Vue.js!',
+                            mainWidth: "500px",
+                            sb: true,
+                            historyData: historyData,
+                            historyDataNum: 5,//历史数据读取数量
+                            recommend: recommend,
+                            recommendNum: 5,//推荐数据读取数量
+                            keywords: '',
+                            cacheKeywords: cacheKeywords,
+                            preShow: false
+                        },
+                        template: "#pre-search",
+                        methods: {
+                            searchShow: function (n) {
+                                if (n == 1) {
+                                    this.preShow = true
+                                } else {
+                                    setTimeout(function () {
+                                        vm.preShow = false;
+                                    }, 500)
+
+                                }
+                            },
+                            searchLocal: function (keywords) {
+                                window.open("search.html?k=" + keywords);
+                            },
+                            searchUrl: function (url) {
+                                window.open(url);
+                            }
+                        }
+                    })
+                </script>
+                <style>
+                    .wos-search-basic {
+                        padding: 5px 0px 0px 10px;
+                        border: 1px solid #e6e6e6;
+                        height: 39px;
+                        color: #f7f7f7;
+                        overflow: hidden;
+                        background-color: rgba(0, 0, 0, .4);
+                        position: absolute;
+                        z-index: 9;
+                        width: 400px;
+                        left: 50%;
+                        top: 278px;
+                        transform: translateX(-50%);
+                    }
+
+                    .wos-search-basic input {
+                        border: 0px;
+                        margin-top: 5px;
+                        outline: none;
+                        width: 70%;
+                        background-color: rgba(0, 0, 0, 0);
+                        margin-left: -46px;
+                    }
+
+                    .wos-search-basic button {
+                        margin: -5px -2px 0 0;
+                    }
+
+                    .chart {
+                        padding-right: 10px;
+                    }
+
+                    .wos-pre-search {
+                        border: 1px solid #0e90d2;
+                        border-top: 0px;
+                        position: absolute;
+                        background-color: #ffffff;
+                        /*filter:alpha(opacity=90);*/
+                        /*-moz-opacity:0.9;*/
+                        /*opacity:0.9;*/
+                        /*margin-top: 38px;*/
+                        width: 400px;
+                        left: 50%;
+                        top: 316px;
+                        transform: translateX(-50%);
+                    }
+
+                    .wos-pre-search-title {
+                        font-size: 75%;
+                        width: 100%;
+                        color: #c1c1c1;
+                        padding: 5px 10px;
+                        clear: both;
+                        overflow: hidden;
+                    }
+
+                    #wrap .wos-pre-search ul {
+                        text-align: left;
+                        width: 400px;
+                        clear: both;
+                        position: absolute;
+                        background: rgba(0, 0, 0, .6);
+                    }
+
+                    .wos-pre-search li {
+                        list-style-type: none;
+                        padding: 5px 10px;
+                        cursor: pointer;
+                        font-size: 75%;
+                        color: #fff;
+                    }
+
+                    .wos-pre-search li:hover {
+                        background-color: #ff3250;
+                    }
+
+                    .wos-pre-search ul hr {
+                        margin: 0;
+                    }
+
+                    .wos-ol span {
+                        font-weight: bold
+                    }
+
+                    .wos-ol-1 span {
+                        color: #ff6600
+                    }
+
+                    .wos-ol-2 span {
+                        color: #fd7317
+                    }
+
+                    .wos-ol-3 span {
+                        color: #fd8433
+                    }
+
+                    .wos-search-more {
+                        color: #ff6600;
+                        margin-top: -22px;
+                        padding-bottom: 10px;
+                    }
+
+                    .wos-pre-search a {
+                        color: #000;
+                    }
+
+                    .wos-search-more a {
+                        color: #ff6600;
+                        font-size: 75%;
+                    }
+                </style>
+            </div>
+        </div>
+        <ol class="flat mt" id="list">
+            <li class="active"></li>
+            <li class=""></li>
+            <li class=""></li>
+            <li class=""></li>
+        </ol>
+    </div>
+
+    <div class="main-content bot clearfix">
+        <div class="fl-l tt clearfix">
+            <div class="tubiao-1 fl-l"><i></i></div>
+            <div class="fl-l pinpai">
+                <p class="f-24">设计师自创品牌</p>
+                <p class="r-yi">快告诉设计师你想要什么</p>
+            </div>
+        </div>
+        <div class="fl-l tt clearfix ss">
+            <div class="tubiao-2 fl-l"><i></i></div>
+            <div class="fl-l pinpai">
+                <p class="f-24">设计师自创品牌</p>
+                <p class="r-yi">快告诉设计师你想要什么</p>
+            </div>
+        </div>
+        <div class="fl-r tt st clearfix">
+            <div class="tubiao-3 fl-l"><i></i></div>
+            <div class="fl-l pinpai">
+                <p class="f-24">设计师自创品牌</p>
+                <p class="r-yi">快告诉设计师你想要什么</p>
+            </div>
+        </div>
+    </div>
+    <div class="shadow">
+    </div>
+</div>
+<!--</div>-->
+<div class="scene main-content clearfix">
+    <div class="meet fl-l">
+        <img src="img/scene/1.png" alt="">
+        <div class="sma_boreder curtain">
+            <div class="twolink clearfix">
+                <a href="" class="mr-20">同学会</a>
+                <a href="">同事会</a>
+                <a href="" class="mr-20">下午茶</a>
+                <a href="">家庭聚会</a>
+            </div>
+        </div>
+        <div class="sense_bottom">
+            <img src="img/scene/meet.png" alt="">
+            <span>聚会</span>
+        </div>
+    </div>
+    <div class="business fl-l">
+        <img src="img/scene/2.png" alt="">
+        <div class="sma_boreder">
+            <div class="twolink solve">
+                <div class="shorten clearfix">
+                    <a href="" class="mr-30">上班</a>
+                    <a href="">开会</a>
+                    <a href="" class="mr-30">洽谈</a>
+                    <a href="">面试</a>
+                </div>
+            </div>
+        </div>
+        <div class="sense_bottom">
+            <img src="img/scene/business.png" alt="">
+            <span>商务</span>
+        </div>
+    </div>
+    <div class="leisure fl-l">
+        <img src="img/scene/3.png" alt="">
+        <div class="sma_boreder">
+            <div class="threelink clearfix">
+                <a href="">逛街</a>
+                <a href="">走亲戚</a>
+                <a href="">娱乐</a>
+                <a href="">画展</a>
+                <a href="">博物馆</a>
+            </div>
+        </div>
+        <div class="sense_bottom">
+            <img src="img/scene/leisure.png" alt="">
+            <span>休闲</span>
+        </div>
+    </div>
+    <div class="sport fl-l">
+        <img src="img/scene/4.png" alt="">
+        <div class="sma_boreder">
+            <div class="twolink solvethreeWord">
+                <div class="shorten clearfix">
+                    <a href="" class="mr-40">高尔夫</a>
+                    <a href="">保龄球</a>
+                    <a href="">马术</a>
+                </div>
+            </div>
+        </div>
+        <div class="sense_bottom">
+            <img src="img/scene/sports.png" alt="">
+            <span>运动</span>
+        </div>
+    </div>
+    <div class="travel fl-l">
+        <img src="img/scene/5.png" alt="">
+        <div class="sma_boreder">
+            <div class="twolink solve">
+                <div class="shorten clearfix">
+                    <a href="" class="mr-30">海边</a>
+                    <a href="">登山</a>
+                    <a href="">城市旅游</a>
+                </div>
+            </div>
+        </div>
+        <div class="sense_bottom">
+            <img src="img/scene/travel.png" alt="">
+            <span>旅行</span>
+        </div>
+    </div>
+    <div class="banquet fl-l">
+        <img src="img/scene/6.jpg" alt="">
+        <div class="sma_boreder">
+            <div class="threelink clearfix">
+                <a href="">旗袍</a>
+                <a href="">礼服</a>
+                <a href="">婚礼</a>
+                <a href="">寿宴</a>
+                <a href="">年会</a>
+                <a href="">晚礼服</a>
+            </div>
+        </div>
+        <div class="sense_bottom">
+            <img src="img/scene/panic.png" alt="">
+            <span>宴会</span>
+        </div>
+    </div>
+</div>
+
+
+<div style="position:relative;height:650px;">
+    <div class="designer main-content clearfix">
+        <div class="title-line">
+            <i class="title-line-left"></i><span class="fenqu">设计师</span><i class="title-line-left"></i>
+        </div>
+
+        <div class="content" id="wrap2">
+            <div id="rm_wrap">
+                <ul class="clearfix fscoll" id="pic2">
+                    <li class="tl">
+                        <a href="designer-personal-cloth.html"><img src="img/index/designer/1.jpg" alt=""></a>
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <a href="designer-personal-cloth.html"><img src="img/index/designer/1.jpg" alt=""></a>
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <a href="designer-personal-cloth.html"><img src="img/index/designer/1.jpg" alt=""></a>
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <a href="designer-personal-cloth.html"><img src="img/index/designer/1.jpg" alt=""></a>
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <a href="designer-personal-cloth.html"><img src="img/index/designer/2.jpg" alt=""></a>
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <a href="designer-personal-cloth.html"><img src="img/index/designer/2.jpg" alt=""></a>
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <a href="designer-personal-cloth.html"><img src="img/index/designer/2.jpg" alt=""></a>
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <a href="designer-personal-cloth.html"><img src="img/index/designer/3.jpg" alt=""></a>
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <a href="designer-personal-cloth.html"><img src="img/index/designer/3.jpg" alt=""></a>
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <a href="designer-personal-cloth.html"><img src="img/index/designer/1.jpg" alt=""></a>
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <a href="designer-personal-cloth.html"><img src="img/index/designer/3.jpg" alt=""></a>
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl">
+                        <a href="designer-personal-cloth.html"><img src="img/index/designer/3.jpg" alt=""></a>
+                        <div class="clearfix bottom">
+                            <div class="fl-l sh-logo"><span></span></div>
+                            <div class="fl-l fenge"><span></span></div>
+                            <div class="fl-l deco">
+                                <p>设计师xx</p>
+                                <p>作品 <i class="mun">66</i></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="prev-btn2">
+                <div class="prev2" id="prev2"><img src="img/index/top/prev.png" alt=""></div>
+            </div>
+            <div class="next-btn2">
+                <div class="next2" id="next2"><img src="img/index/top/next.png" alt=""></div>
+            </div>
+            <!--左右箭头-->
+            <!--<div class="rm_nav">-->
+            <!--<a id="rm_next" href="#" class="rm_next"></a>-->
+            <!--<a id="rm_prev" href="#" class="rm_prev"></a>-->
+            <!--</div>-->
+            <ol class="flat" id="list2">
+                <li class="active"></li>
+                <li class=""></li>
+                <li class=""></li>
+            </ol>
+        </div>
+    </div>
+    <div class="shiyijian-log">
+        <ul>
+            <li style="background:url(img/index/shiyijian/shiyijian.jpg) no-repeat center">
+                <div class="shiyijian main-content">
+                    <div class="title-line">
+                        <i class="title-line-left"></i><span class="fenqu white-word">3D试衣间</span><i
+                            class="title-line-left"></i>
+                        <p class="shiyijian-bigword">再也不用来回跑试衣间了...</p>
+                        <p class="shiyijian-kuang"><a href="">马上试衣服 > </a></p>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="title-line popzixun">
+            <i class="title-line-left"></i><a href="zixun.html"><span class="fenqu">潮流资讯</span></a><i
+                class="title-line-left"></i>
+        </div>
+
+        <ul class="zhuanlan-file" id="column-file">
+            <li id="column" class=""><a href="zixun.html" class="cfilename white-red">KOL专栏</a></li>
+            <li id="fashion-inf" class="zuoyou"><a href="zixunlist.html" class="cfilename">時尚资讯</a></li>
+            <li id="trend-forecase"><a href="zixunlist.html" class="cfilename">趋势预测</a></li>
+        </ul>
+        <div class="mr-twe clearfix zh_lan">
+            <div class="fl-l" style="width:762px;height:392px;">
+                <div id="main" data-am-widget="slider" class="am-slider am-slider-c1"
+                     data-am-slider='{&quot;directionNav&quot;:false}'>
+                    <ul id="pic3" class="clearfix am-slides">
+                        <li class="fl-l">
+                            <a href="zixuncontent.html"><img src="img/index/top/firstpage-lunbo-img-01.jpg" alt=""></a>
+                            <div class="am-slider-desc">
+                                <p><a href="zixuncontent.html" style="width:100%;height:100%;"><span
+                                        class="fff-font font-28">欧美街头最美50件毛衣</span></a></p>
+                                <h1><a href="zixuncontent.html" style="width:100%;height:100%;"><span
+                                        class="fff-font font-eg">今年冬天流行款式全部介绍给你~</span></a></h1>
+                            </div>
+                        </li>
+                        <li class="fl-l">
+                            <a href="zixuncontent.html"><img src="img/index/top/firstpage-lunbo-img-02.jpg" alt=""></a>
+                            <div class="am-slider-desc">
+                                <p><a href="zixuncontent.html" style="width:100%;height:100%;"><span
+                                        class="fff-font font-28">欧美街头最美50件毛衣</span></a></p>
+                                <h1><a href="zixuncontent.html" style="width:100%;height:100%;"><span
+                                        class="fff-font font-eg">今年冬天流行款式全部介绍给你~</span></a></h1>
+                            </div>
+                        </li>
+                        <li class="fl-l">
+                            <a href="zixuncontent.html"><img src="img/index/top/firstpage-lunbo-img-03.jpg" alt=""></a>
+                            <div class="am-slider-desc">
+                                <p><a href="zixuncontent.html" style="width:100%;height:100%;"><span
+                                        class="fff-font font-28">欧美街头最美50件毛衣</span></a></p>
+                                <h1><a href="zixuncontent.html" style="width:100%;height:100%;"><span
+                                        class="fff-font font-eg">今年冬天流行款式全部介绍给你~</span></a></h1>
+                            </div>
+                        </li>
+                        <li class="fl-l">
+                            <a href="zixuncontent.html"><img src="img/index/top/firstpage-lunbo-img-04.jpg" alt=""></a>
+                            <div class="am-slider-desc">
+                                <p><a href="zixuncontent.html" style="width:100%;height:100%;"><span
+                                        class="fff-font font-28">欧美街头最美50件毛衣</span></a></p>
+                                <h1><a href="zixuncontent.html" style="width:100%;height:100%;"><span
+                                        class="fff-font font-eg">今年冬天流行款式全部介绍给你~</span></a></h1>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="fl-l link-textfall">
+                <ul class="zhuanlan-fenqu">
+                    <li class="shaoda"><p class="shaoda-li">KOL专栏</p>
+                        <a href="zixun.html" style="display:block;margin-top:8px;"><p class="font-fourteen" style="padding-bottom:2px;">
+                            不聊Gigi聊她妹 大话贝拉式时髦</p></a>
+                        <p class="xuxian padding-top-two"
+                           style="background: url(img/line-bottom.png) no-repeat center;padding-bottom:40px;"></p>
+                    </li>
+                    <li><a href="zixun.html" data-dummy="不聊Gigi聊她妹 大话贝拉式时髦"><span class="font-fourteen">不聊Gigi聊她妹 大话贝拉式时髦</span></a>
+                        <p class="xuxian" style="background: url(img/line-bottom.png) no-repeat center;"></p>
+                    </li>
+                    <li><a href="zixun.html" data-dummy="不聊Gigi聊她妹 大话贝拉式时髦"><span class="font-fourteen">不聊Gigi聊她妹 大话贝拉式时髦</span></a>
+                        <p class="xuxian" style="background: url(img/line-bottom.png) no-repeat center;"></p>
+                    </li>
+                    <li><a href="zixun.html" data-dummy="不聊Gigi聊她妹 大话贝拉式时髦"><span class="font-fourteen">不聊Gigi聊她妹 大话贝拉式时髦</span></a>
+                        <p class="xuxian" style="background: url(img/line-bottom.png) no-repeat center;"></p>
+                    </li>
+                    <li><a href="zixun.html" data-dummy="不聊Gigi聊她妹 大话贝拉式时髦"><span class="font-fourteen">不聊Gigi聊她妹 大话贝拉式时髦</span></a>
+                        <p class="xuxian" style="background: url(img/line-bottom.png) no-repeat center;"></p>
+                    </li>
+                    <li><a href="zixun.html" data-dummy="不聊Gigi聊她妹 大话贝拉式时髦"><span class="font-fourteen">不聊Gigi聊她妹 大话贝拉式时髦</span></a>
+                        <p class="xuxian" style="background: url(img/line-bottom.png) no-repeat center;"></p>
+                    </li>
+                    <li></li>
+                </ul>
+            </section>
+        </div>
+
+
+    </div>
+    <div class="bottom-base">
+        <div class="main-content bottom-base-area">
+            <p class="callme">
+                <a href="">关于我们</a><span class="shu-line"></span><a href="">服务条款</a><span class="shu-line"></span><a
+                    href="">用户服务协议</a><span class="shu-line"></span><a href="">广告服务</a><span class="shu-line"></span><a
+                    href="">客服中心</a><span class="shu-line"></span><a href="" style="border:none; ">网站导航</a>
+            </p>
+            <p>
+                Copyright Rojrover 2014 all rights reserved 粤ICP备05013919号
+            </p>
+            <p>
+                莱姿公司 版权所有
+            </p>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/common/common.js"></script>
+<!--<script src="js/index/firstpage.js"></script>-->
+<script src="js/index/information.js"></script>
+<script src="js/common/login.js"></script>
+<script src="js/common/layout.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<script>
+    $('.sense_bottom').hover(function () {
+        $('.sma_boreder').each(function () {
+            $(this).removeClass('curtain');
+        });
+        var index = $(this).index();
+        $(this).prev().addClass('curtain');
+    })
+
+</script>
+<script>
+    $(function () {
+        $('.am-slider').flexslider({
+            // options
+        });
+        var timer;
+        timer = setInterval(vert_1, 30);
+        function vert_1() {
+            $('.am-control-nav li a').each(function () {
+                var index = $(this).index;
+                if ($(this).attr('class') == "am-active") {
+                    $(this).parent().css('vertical-align', '-1px').siblings().removeAttr("style");
+                }
+            })
+        }
+    });
+    $.get('http://localhost:8080/api/pets',{'bhost':'123'},function(resp){
+        alert(resp[0].bhost);
+    })
+</script>
+<script>
+    $(function () {
+        var move=-36;
+        var zoom = 1.2;
+        $(".tl").each(function () {
+            var that = this;
+            $(that).bind({
+                mouseenter: function () {
+                    item4Timer = setTimeout(function () {
+                        width = $(that).width() * zoom;
+                        height = $(that).height() * zoom;
+                        $(that).find('img').animate({
+                            'width': width,
+                            'height': height,
+                            'top':move,
+                            'left':move
+                        }, 1200);
+                    }, 200);
+                },
+                mouseleave: function () {
+                    clearTimeout(item4Timer);
+                    $(that).find('img').animate({
+                        'width': $(that).width(),
+                        'height':$(that).height(),
+                        'top':0,
+                        'left':0
+                    }, 1200);
+                }
+            });
+        })
+    });
+</script>
+<script src="js/common/gVerify.js"></script>
+<script>
+    var verifyCode = new GVerify("v_container");
+    $("#code_input").on({
+        focus:function(){
+            $(this).css('borderColor','#e6e6e6').parent().next().hide();
+            $(this).val('');
+            console.log(1);
+        },
+        blur:function(){
+            var res = verifyCode.validate($('#code_input').val());
+            if(res){
+                $(this).css('borderColor','#e6e6e6').parent().next().hide();
+                $(this).val('');
+                console.log(2);
+            }else{
+                $(this).css('borderColor','#ff3250').parent().next().show();
+                console.log(3);
+            }
+        }
+
+    })
+</script>
+</body>
+</html>

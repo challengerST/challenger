@@ -1,0 +1,220 @@
+#login-box {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.big-box {
+  width: 100%; }
+
+.first-page-list-left {
+  width: 850px; }
+
+.fl-l, .first-page-list-left li,
+.first-page-list-right li, .share-column ul li, .sign-in,
+.sign-up {
+  float: left; }
+
+.fl-r {
+  float: right; }
+
+.banner-list .active span {
+  color: #fff; }
+
+#login-box {
+  position: fixed; }
+
+.main-content {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden; }
+
+.rightnow-login {
+  background: #ff3250; }
+
+.big-box.down-border {
+  background: #fff; }
+
+.font-te {
+  font-size: 13px; }
+
+.first-page-list-left li:not(.logo), .banner-list-other li, .share-column, #login-box .fenqu, .vertify h1 {
+  font-size: 14px; }
+
+.sign-in,
+.sign-up, .rightnow-login {
+  font-size: 16px; }
+
+.first-page-list-left li:not(.logo), .logo img, .share-column i, .share-column ul li i, .sign-in,
+.sign-up, .vertify input {
+  display: inline-block; }
+
+.banner-list, .login,
+.search,
+.shopcar, .close-cancle, .sign-in,
+.sign-up, .vertify h1, .vertify input {
+  box-sizing: border-box; }
+
+.vertify h1 {
+  text-align: left; }
+
+.sign-in,
+.sign-up {
+  text-align: center; }
+
+.share-column, .close-cancle {
+  text-align: right; }
+
+.login,
+.search,
+.shopcar, #login-box {
+  border: 1px solid #ccc; }
+
+.first-page-list-left li:not(.logo) {
+  padding-top: 9px;
+  padding-right: 20px;
+  padding-bottom: 9px;
+  padding-left: 20px; }
+
+.logo img {
+  width: 102px;
+  height: 30px;
+  padding-top: 3px;
+  padding-right: 20x; }
+
+.down-border {
+  border-bottom-width: 1px;
+  border-bottom-color: #ff3250;
+  border-bottom-style: solid; }
+
+.banner-list {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-left: 0; }
+  .banner-list .active {
+    background: #ff3250;
+    border-width: 100px;
+    border-color: #ff3250;
+    border-style: dotted; }
+
+.first-page-list-left {
+  padding-top: 1px; }
+
+.first-page-list-right {
+  padding-top: 6px; }
+
+.banner-list-other li {
+  padding-top: 14px; }
+
+.share-column i {
+  width: 28px;
+  height: 28px;
+  padding-left: 2px; }
+
+.share-column span {
+  vertical-align: 11px; }
+
+.share-column .wechat i {
+  background: url(../../img/society/wechat.png) no-repeat center; }
+
+.share-column .weibo i {
+  background: url(../../img/society/weibo.png) no-repeat center; }
+
+.share-column .qq i {
+  background: url(../../img/society/tencent.png) no-repeat center; }
+
+.share-column .qzone i {
+  background: url(../../img/society/room.png) no-repeat center; }
+
+.login,
+.search,
+.shopcar {
+  height: 28px;
+  padding-left: 10px; }
+  .login:hover,
+  .search:hover,
+  .shopcar:hover {
+    border-color: #ff3250; }
+    .login:hover span,
+    .search:hover span,
+    .shopcar:hover span {
+      color: #ff3250; }
+
+#login-box {
+  background: #fff;
+  width: 488px; }
+  #login-box .red-line {
+    border-bottom-width: 2px;
+    border-bottom-color: #ff3250;
+    border-bottom-style: solid; }
+  #login-box .title-line i {
+    vertical-align: -1px; }
+
+.close-cancle {
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 4px;
+  padding-left: 4px; }
+
+.sign-in,
+.sign-up {
+  padding-bottom: 12px;
+  border-bottom-width: 2px;
+  border-bottom-color: #f1eaeb;
+  border-bottom-style: solid;
+  width: 50%; }
+
+.rightnow-login {
+  padding-top: 20px;
+  color: #fff;
+  width: 320px;
+  height: 46px; }
+
+.vertify h1 {
+  padding-top: 16px;
+  padding-right: 0;
+  padding-bottom: 6px;
+  padding-left: 84px; }
+.vertify input {
+  width: 320px;
+  height: 48px;
+  padding-left: 8px;
+  border-width: 1px;
+  border-color: #f1eaeb;
+  border-style: solid; }
+
+.vertify input {
+  border-radius: 2px;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 320px;
+  height: 48px;
+  padding-left: 8px;
+  border: 1px solid #f1eaeb; }
+
+.shu-line.jubu-edit {
+  height: 16px;
+  position: absolute;
+  top: 30px;
+  left: 239px;
+  z-index: 1200;
+  background: #f1eaeb; }
+
+.fuxuankuang {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ccc; }
+
+.fuxuankuang {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ccc; }
+
+.caveat {
+  vertical-align: -5px;
+  width: 18px;
+  height: 18px;
+  background: url(../../img/common/caveat.png) no-repeat center; }
+
+/*# sourceMappingURL=commonverion2.css.map */

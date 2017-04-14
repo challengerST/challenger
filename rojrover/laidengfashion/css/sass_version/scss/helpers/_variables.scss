@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+//common number variable
+$b1:1px;
+$p2:2px;
+$p4:4px;
+$p10:10px;
+$p20:10px;
+$p100:100px;
+
+//common color variable
+$fff:#fff;
+$f325:#ff3250;
+$e6:#e6e6e6;
+$f7:#f7f7f7;
+$ccc:#ccc;
+$ooo:#000;
+$link-color;
+$hover-color;
+
+//common background variable
+$bgc:$fff $f325 $ooo $f7;
+$header-background;
+$content-background;
+
+//common border variable
+$b1e6:1px solid #e6e6e6;
+$b2f3:2px solid #ff3250;

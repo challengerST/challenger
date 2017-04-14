@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <link rel="stylesheet" href="css/common/clear.css"/>
+    <link rel="stylesheet" href="css/common/common.css"/>
+    <link rel="stylesheet" href="css/return.css"/>
+</head>
+<body>
+<div class="big-box down-border background-fff">
+    <div class="banner-list main-content clearfix">
+        <div class="fl-l logo">
+            <a href="javascript:;"><img src="img/common/logo.png" alt=""></a>
+        </div>
+        <ol class="first-page-list-left fl-l">
+            <li id="firstpage" class="tab"><a href="index.html"><span>首页</span></a></li>
+            <li id="womenpage" class="tab"><a href="women-cloth.html"><span>女装</span></a></li>
+            <li id="manpage" class="tab"><a href="women-cloth.html"><span>男装</span></a></li>
+            <li id="childrenpage" class="tab"><a href="women-cloth.html" onclick="alert('is building!')"><span>童装</span></a></li>
+            <li id="clothpage" class="tab"><a href="chengy.html" onclick=""><span>成衣系列</span></a>
+            </li>
+            <li id="private-order" class="tab"><a href=""
+                                                  onclick="javascript:alert('is building!')"><span>私人定制</span></a></li>
+            <li id="fashion-information" class="tab"><a
+                    href="zixun.html"><span>潮流资讯</span></a></li>
+        </ol>
+        <ul class="first-page-list-right fl-r" id="lgs">
+            <li class="login" id="sign-in"><span>登录</span></li>
+            <li class="shopcar"><a href="purchase-car.html"><i
+                    style="background: url(img/sprit-img.png) no-repeat -7px -11px;"></i>
+                <span>购物车</span></a></li>
+            <li class="search" onclick="javascript:alert('efforts are being made to build');"><img
+                    src="img/common/serach.png"></li>
+        </ul>
+    </div>
+</div>
+<div style="background:#f7f7f7">
+    <div class="main-content">
+        <div class="navgiation">
+            <a href="index.html"><span>i.Pik</span></a><i class="grey-arrow"> </i> <a href=""><span class="design-name">个人中心</span></a><i
+                class="grey-arrow"></i> <a href=""><span>我的订单</span></a><i class="grey-arrow"> </i>
+            <a href=""><span>订单详情</span></a>
+        </div>
+        <div class="ordernum background-fff">
+            <div class="clearfix">
+                <span class="fl-l font-fu">订单号码 : </span><span class="fl-l font-fu">168888888</span>
+                <div class="fl-r">
+                    <span class="font-fu">订单状态 : </span><span class="font-fu orderstatus">已完成</span>
+                </div>
+            </div>
+            <div class="rtordsts-content clearfix">
+                <div class="rtordst fl-l">
+                    <a href="">
+                        <p>
+                            <span class="rtorder-circle font-fu active">
+                            1
+                        </span>
+                        </p>
+                        <p class="font-fu">
+                            申请退货
+                        </p>
+                        <p class="font-tw">
+                            当前日期
+                        </p>
+                        <p class="font-tw">
+                            当前时间
+                        </p>
+                    </a>
+                </div>
+                <div class="fl-l">
+                    <img src="img/return/red.png" alt="">
+                </div>
+                <div class="rtordst fl-l">
+                    <a href="">
+                        <p>
+                            <span class="rtorder-circle font-fu">
+                            2
+                        </span>
+                        </p>
+                        <p class="font-fu">
+                            退货审核
+                        </p>
+                        <p class="font-tw">
+                            当前日期
+                        </p>
+                        <p class="font-tw">
+                            当前时间
+                        </p>
+                    </a>
+                </div>
+                <div class="fl-l">
+                    <img src="img/return/red.png" alt="">
+                </div>
+                <div class="rtordst fl-l">
+                    <a href="">
+                        <p>
+                            <span class="rtorder-circle font-fu">
+                            3
+                        </span>
+                        </p>
+                        <p class="font-fu">
+                            退货中
+                        </p>
+                        <p class="font-tw">
+                            当前日期
+                        </p>
+                        <p class="font-tw">
+                            当前时间
+                        </p>
+                    </a>
+                </div>
+                <div class="fl-l">
+                    <img src="img/return/hui.png" alt="">
+                </div>
+                <div class="rtordst fl-l">
+                    <a href="">
+                        <p>
+                            <span class="rtorder-circle font-fu">
+                                4
+                        </span>
+                        </p>
+                        <p class="font-fu">
+                            已完成退货
+                        </p>
+                        <p class="font-tw">
+                            当前日期
+                        </p>
+                        <p class="font-tw">
+                            当前时间
+                        </p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="ordernum background-fff">
+            <div class="mr-32">
+                <span class="ff3-circle"><a href="" class="font-eg spesymbol red-font">✔</a></span><span
+                    class="font-eg red-font">退货成功</span>
+            </div>
+            <p class="font-sx mr-32">已将退款金额<i class="red-font font-sx">499</i>元成功退回到您的支付宝</p>
+        </div>
+        <div class="main-content sst ty ordernum background-fff clearfix">
+            <div class="tt"><i class="trangle"></i><span class="font-fu">退货商品</span></div>
+            <div class="returnpage header one-pxsolid">
+                <table id="cartTable">
+                    <thead>
+                    <tr class="bo-onesolid">
+                        <th class="returnpage col-info">商品信息</th>
+                        <th class="returnpage col-price">单价</th>
+                        <th class="returnpage col-num">数量</th>
+                        <th class="returnpage col-total">合计</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="returnpage reproduct">
+                        <td class="returnpage goods col-info clearfix">
+                        <div class="fl-l">
+                            <a href="" class="cloth"><img src="img/sweat-cloth.jpg" alt=""></a>
+                        </div>
+                        <div class="fl-l pd">
+                            <a href=""><p class="font-tw">高领针织毛衣</p>
+                                <p class="b-c font-tw">驼色/M(160)</p></a>
+                        </div>
+                    </td>
+                        <td class="returnpage price col-price font-tw">money</td>
+                        <td class="returnpage count col-num">
+                            <div class="returnpage total-count">
+                                <span class="font-tw">1</span>
+                            </div>
+                        </td>
+                        <td class="returnpage subtotal col-total font-tw">499</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="ordernum retreason background-fff">
+            <div class="clearfix rereason">
+                <span class="fl-l font-tw">
+                <i style="color:#ff3250;" class="">*</i>退货原因</span>
+                <textarea type="text"
+                          class="pro-decoration fl-l"
+                          placeholder="填写退货原因"></textarea>
+            </div>
+            <div class="returnpage pIc clearfix pIc-t">
+                <div class="fl-l returnpage uppic">
+                    <i style="color:#ff3250;">*</i><span class="font-tw">上传图片</span>
+                </div>
+                <div class="fl-l imgBox">
+                    <div class="mainImg">
+                        <div class="mainImg-big clearfix">
+                            <div class="iMg fl-l">
+                                <img src="img/personal-center/addImg.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fl-l rephoto">
+                    <div class="">
+                        <!--<i style="color:#ff8e26;">*</i>-->
+                        <span class="font-tw">为了帮助您尽快解决问题，请上传相关图片。</span>
+                    </div>
+                    <div class="">
+                        <i style="color:#ff8e26;">*</i><span style="color:#ff8e26;" class="font-tw">图片支持 png,jpg,gif等格式，不超过 2M的图片</span>
+                    </div>
+                </div>
+            </div>
+            <div class="save">
+                <span class="font-fu">提交申请</span>
+            </div>
+        </div>
+        <div class="ordernum rbinf background-fff">
+            <div class="mrd-28">
+                <p class="font-fu">请于 <span id="rebacktime" class="red-font">2016-12-29</span> 日前将货物寄回 </p>
+            </div>
+            <div class="reback-location dotted-e6">
+                <p class="font-tw">邮寄地址 : <span id="rblocation">河南省郑州洛阳市</span></p>
+                <p class="font-tw mrl-12">收件人 : <span id="rbcontact">李老师收</span></p>
+                <p class="font-tw">手机号码 : <span id="rbphone">111111111111</span></p>
+            </div>
+            <div class="up-detail rbchinf on-clarify">
+                <div class="tal">
+                    <div class="arrow-box xilie mrLe"><span><i style="color:#ff3250;">*</i>物流公司 </span><i class="ba-arrow"></i><input type="text" placeholder="请选择物流公司">
+                    </div>
+                </div>
+                <div class="tal">
+                    <div class="arrow-box theme"><span><i style="color:#ff3250;">*</i>物流单号 </span><input type="text" placeholder="请选择退货原因">
+                    </div>
+                </div>
+            </div>
+            <div class="save">
+                <span class="font-fu">提交</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom-base">
+    <div class="main-content bottom-base-area">
+        <p class="callme">
+            <a href="">關於我們</a><span class="shu-line"></span><a href="">服務條款</a><span class="shu-line"></span><a
+                href="">用戶服務協議</a><span class="shu-line"></span><a href="">廣告服務</a><span class="shu-line"></span><a
+                href="">客服中心</a><span class="shu-line"></span><a href="" style="border:none; ">網站導航</a>
+        </p>
+        <p>
+            Copyright Rojrover 2014 all rights reserved 粤ICP备05013919号
+        </p>
+        <p>
+            莱姿公司 版权所有
+        </p>
+
+    </div>
+</div>
+</body>
+</html>

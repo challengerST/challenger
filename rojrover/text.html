@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+<!--<ul id="navigation">-->
+    <!--{% for item in navigation %}-->
+    <!--<li><a href="{{ item.href }}">{{ item.caption }}</a></li>-->
+    <!--{% endfor %}-->
+<!--</ul>-->
+require_once '/path/to/lib/Twig/Autoloader.php';
+Twig_Autoloader::register();
+
+$loader = new Twig_Loader_Filesystem('/path/to/templates');
+$twig = new Twig_Environment($loader, array(
+'cache' => '/path/to/compilation_cache',
+));
+<h1>My first test</h1>
+{{ a_variable}}
+{{ Hello }}
+{{ foo.bar }}
+{{ foo['bar'] }}
+{{ % set foo = 'foo' %}}
+{{ % set foo = [1,2] %}}
+{{ % set foo = {'foo':'bar'} %}}
+
+</body>
+</html>

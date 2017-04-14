@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+@import "less/z";
+@import "less/css3";
+@import "bl";
+
+.ordernum {
+  height: 258px;
+  border: @b1 solid @e6;
+  .bdb;
+  padding: 22px 24px;
+  margin-bottom: 20px;
+}
+.rtorder-circle {
+  @w:20px;
+  .wh(@w);
+  .border-radius(50%);
+  background: #d1d1d1;
+  line-height:@w;
+  color:@fff;
+  &.active{
+    background: @f325;
+  }
+}
+.rtordsts-content {
+ .dib();
+  margin-top: 60px;
+  line-height: 18px;
+  & .font-fu{
+    margin-bottom: 6px;
+  }
+  & img{
+    vertical-align: -4px;
+  }
+}
+.pd {
+  margin-left: 14px;
+}
+.rtordst {
+  width: 74px;
+}
+.rtordsts-content img {
+  vertical-align: -4px;
+}
+.ordernum.sst, .ordernum.retreason, .rbinf.ordernum {
+  .h100();
+}
+#cartTable{
+  & thead{
+    height: 50px;
+    line-height: 50px;
+  }
+  & .reproduct{
+    height: 130px;
+  }
+}
+.returnpage{
+  &.header{
+    width:1108px;
+    .bdb;
+    margin-left:22px;
+  }
+  &.pIc{
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+  }
+  &.uppic{
+    .bdb;
+    & span{
+      margin-top: 8px;
+      margin-right: 22px;
+      .bdb;
+    }
+  }
+  &.goods{
+    .bdb;
+    padding-left:34px;
+  }
+}
+.rereason{
+  .bdb;
+  padding-left:22px;
+  & span{
+    margin-top: 8px;
+    margin-right: 22px;
+    .bdb;
+  }
+  & textarea{
+    width: 1034px;
+    height: 102px;
+    .bdb;
+    border: @b1 solid @e6;
+    padding: 8px;
+    .font-s12();
+  }
+}
+.rephoto {
+  .tl();
+  margin-top: 40px;
+ .bdb;
+  line-height: 24px;
+}
+.reback-location {
+  .tl();
+  padding: 24px;
+  .bdb;
+  line-height: 24px;
+}
+.rbchinf .tal {
+  margin-top: 20px;
+  .bdb;
+}
+.main-content.sst.foot {
+  margin-bottom: 10px;
+  .tr();
+}
+.line {
+  width: 1px;
+  height: 144px;
+  background: @e6;
+  margin-left: 566px;
+  margin-top:-18px;
+}
+.sst .fl-l{
+  &.font-fu{
+    margin-top: 16px;
+    line-height: 22px;
+    margin-left:14px;
+  }
+  &.logoimg{
+    & img{
+      vertical-align: -34px;
+      margin-right: 20px;
+    }
+  }
+}
+.sst .fl-r.clearfix{
+  margin-top:16px;
+  margin-right:50px;
+}

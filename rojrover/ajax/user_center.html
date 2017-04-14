@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title> - 空白页</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content bguser">
+        <div class="row m-b-lg">
+                                    <div class="col-sm-4" style="float:left;"><img alt="image" class="img-circle" src="img/a2.jpg" style="width: 62px"></div>
+                                    <div class="col-sm-8" style="float:left; height:62px;">
+                                      <h3 id="user_id"></h3>
+                                      <p id="level_id"></p>
+                                      </div>
+                                </div>
+                                
+                                
+                                <div class="fund_info">
+                <div class="kv_tb_list clearfix">
+                    <div class="kv_item">
+                        <span id="totle_id" class="val"></span>
+                        <span class="key">总收入(元)</span>
+                    </div>
+                    <div class="kv_item">
+                        <span id="record_id" class="val"></span>
+                        <span class="key">我的提成(元)</span>
+                    </div>
+                    <div class="kv_item">
+                        <span id="dp_record_id" class="val"></span>
+                        <span class="key">下级提成(元)</span>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <a class="btn btn-primary btn-rounded btn-block" href="acc_info.html"><i class="fa fa-info-circle"></i>我的资料</a>
+    </div>
+    
+    
+    <div class="wx_cfb_entry_list">
+            <div class="space_5"></div>
+            <a class="entry_item entry_item_no_border clearfix">
+                <div class="entry_name">
+                   <span class="ui_ico_size_60 ui_entry_ico ui_entry_ico_2"></span>
+                    <span class="name">我的奖励</span>
+                </div>
+                <div class="entry_tips">
+                   <span class="ui_entry_arrow"></span>
+                   <span class="tips">可提现<em id="cash_id" class="num"></em>元</span>
+               </div>
+           </a>
+            <div class="space_10"></div>
+            <a href="acc_tree.html" class="entry_item entry_item_no_border clearfix">
+                <div class="entry_name">
+                    <span class="ui_ico_size_60 ui_entry_ico ui_entry_ico_5"></span>
+                    <span class="name">我的团队</span>
+                </div>
+                <div class="entry_tips">
+                    <span class="ui_entry_arrow"></span>
+                    <span class="tips">查看</span>
+                </div>
+            </a>
+            <div class="space_10"></div>
+                        <a href="login.html" class="entry_item entry_item_no_border clearfix">
+                <div class="entry_name">
+                    <span class="ui_ico_size_60 ui_entry_ico ui_entry_ico_6"></span>
+                    <span class="name">退出登陆</span>
+                </div>
+            </a>
+                    </div>
+                    
+                    <div class="wx_cfb_fixed_btn_wrap">
+        <div class="btn_box clearfix">
+            <a href="javascript:void(0)tel:400-000-000" class="btn tel_btn clearfix">
+                <em class="ico ui_ico_size_40 ui_tel_ico"></em><span class="txt">电话咨询</span>
+            </a>
+            <a href="javascript:void(0)javascript:;" class="btn book_btn clearfix" data-toggle="modal" data-target="#rsvForm">
+                <em class="ico ui_ico_size_40 ui_book_ico"></em><span class="txt">预约咨询</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>  
+    <script src="js/jquery.cookie.js?v=3.3.6"></script>  
+    <script type="text/javascript">
+        $(document).ready(function(){
+        	var daili = {
+        		"1": "A级代理商",
+        		"2": "B级代理商",
+        		"3": "C级代理商",
+        		"4": "D级代理商",
+        	}
+            $.ajax({
+                type: 'GET',
+                url: "http://127.0.0.1/action/userinfo",
+                data: {'mobile': $.cookie("mobile")},
+                dataType: "json",
+                success: function(data){
+                    $("#user_id").html(data.name)
+                    $("#totle_id").html(data.he)
+                    $("#record_id").html(data.record)
+                    $("#dp_record_id").html(data.dp_record)
+                    $("#cash_id").html(data.he)
+                    $('#level_id').html(daili[data.level])
+                    
+                }
+            })
+            
+        })
+    </script>  
+
+</body>
+
+</html>

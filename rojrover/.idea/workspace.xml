@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="221a6c0e-0cfb-4c64-b65a-f179604aa2a1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laidengfashion/img/selfdesign/border.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laidengfashion/img/selfdesign/completed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laidengfashion/img/selfdesign/completed/selfcloth_normal.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laidengfashion/img/selfdesign/completed/selfdesigned_normal.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laidengfashion/img/selfdesign/completed/selfplate_normal.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laidengfashion/img/selfdesign/completed/selfrequires_normal.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laidengfashion/img/selfdesign/completed/selfsektch_normal.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laidengfashion/js/common/gVerify.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/laidengfashion/img/model_03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/laidengfashion/img/selfdesign/plate/plate02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/laidengfashion/img/selfdesign/plate/plate03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/laidengfashion/img/selfdesign/plate/plate04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/laidengfashion/img/selfdesign/plate/plate05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/laidengfashion/img/selfdesign/plate/plate06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/laidengfashion/personal-center.html.orig" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/css/.sass-cache/e1ce614d057ec4c8437f59ace5d026a0e6cdb846/selfdesign.scssc" afterPath="$PROJECT_DIR$/laidengfashion/css/.sass-cache/e1ce614d057ec4c8437f59ace5d026a0e6cdb846/selfdesign.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/img/selfdesign/plate/plate01.jpg" afterPath="$PROJECT_DIR$/laidengfashion/img/selfdesign/plate/plate01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/css/assets/css/amazeui.min.css" afterPath="$PROJECT_DIR$/laidengfashion/css/assets/css/amazeui.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/css/common/common.css" afterPath="$PROJECT_DIR$/laidengfashion/css/common/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/css/index/firstpage.css" afterPath="$PROJECT_DIR$/laidengfashion/css/index/firstpage.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/css/personal-center.css" afterPath="$PROJECT_DIR$/laidengfashion/css/personal-center.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/css/purchase.css" afterPath="$PROJECT_DIR$/laidengfashion/css/purchase.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/css/selfdesign.css" afterPath="$PROJECT_DIR$/laidengfashion/css/selfdesign.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/css/selfdesign.css.map" afterPath="$PROJECT_DIR$/laidengfashion/css/selfdesign.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/css/selfdesign.scss" afterPath="$PROJECT_DIR$/laidengfashion/css/selfdesign.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/css/women/women-cloth.css" afterPath="$PROJECT_DIR$/laidengfashion/css/women/women-cloth.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/details-page.html" afterPath="$PROJECT_DIR$/laidengfashion/details-page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/index.html" afterPath="$PROJECT_DIR$/laidengfashion/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/js/common/layout.js" afterPath="$PROJECT_DIR$/laidengfashion/js/common/layout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/js/index/firstpage.js" afterPath="$PROJECT_DIR$/laidengfashion/js/index/firstpage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/js/index/information.js" afterPath="$PROJECT_DIR$/laidengfashion/js/index/information.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/js/personal-center/tp.js" afterPath="$PROJECT_DIR$/laidengfashion/js/personal-center/tp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/js/purchasecar.js" afterPath="$PROJECT_DIR$/laidengfashion/js/purchasecar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/js/selfDesign.js" afterPath="$PROJECT_DIR$/laidengfashion/js/selfDesign.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/js/zixun.js" afterPath="$PROJECT_DIR$/laidengfashion/js/zixun.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/personal-center.html" afterPath="$PROJECT_DIR$/laidengfashion/personal-center.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/purchase-car.html" afterPath="$PROJECT_DIR$/laidengfashion/purchase-car.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/selfdesign.html" afterPath="$PROJECT_DIR$/laidengfashion/selfdesign.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/women-cloth.html" afterPath="$PROJECT_DIR$/laidengfashion/women-cloth.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laidengfashion/zixun.html" afterPath="$PROJECT_DIR$/laidengfashion/zixun.html" />
+    </list>
+    <ignored path="rojrover-frontend.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="rojrover-frontend" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.35161963">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+          <file leaf-file-name="details-page.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/laidengfashion/details-page.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.5100118">
+                  <caret line="355" column="31" selection-start-line="355" selection-start-column="31" selection-end-line="355" selection-end-column="31" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <splitter split-orientation="horizontal" split-proportion="0.8074134">
+          <split-first>
+            <leaf>
+              <file leaf-file-name="selfdesign.scss" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/laidengfashion/css/selfdesign.scss">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="-3.0097086">
+                      <caret line="1031" column="23" selection-start-line="1031" selection-start-column="23" selection-end-line="1031" selection-end-column="23" />
+                      <folding>
+                        <element signature="e#15323#15510#0" expanded="false" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/抛物线计算/index.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="-19.82353">
+                      <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="index2.html" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/抛物线计算/index2.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.55948174">
+                      <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file leaf-file-name="parabola.js" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/抛物线计算/js/parabola.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="-4.9535675">
+                      <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../../ama/amazeui-ec/e/fun/selectNum.html" />
+        <option value="$PROJECT_DIR$/laidengfashion/js/vue.min.js" />
+        <option value="$PROJECT_DIR$/laidengfashion/chengy.html" />
+        <option value="$PROJECT_DIR$/laidengfashion/designer-personal-cloth.html" />
+        <option value="$PROJECT_DIR$/../../GUO/guoguo/idl/api/controllers/guoguo.js" />
+        <option value="$PROJECT_DIR$/../../GUO/guoguo/GuoGuoBiaoJu1/html/findPassword.html" />
+        <option value="$PROJECT_DIR$/../../123/challenger/轮播/触摸/index.html" />
+        <option value="$PROJECT_DIR$/laidengfashion/js/index/firstpage.js" />
+        <option value="$PROJECT_DIR$/../../123/challenger/轮播/多图/index.html" />
+        <option value="$PROJECT_DIR$/laidengfashion/js/common/gVerify.js" />
+        <option value="$PROJECT_DIR$/../../123/challenger/轮播/图形验证码/index.html" />
+        <option value="$PROJECT_DIR$/laidengfashion/js/common/layout.js" />
+        <option value="$PROJECT_DIR$/../../123/challenger/轮播/缩略图渐隐/js/jquery.touchwipe.min.js" />
+        <option value="$PROJECT_DIR$/../../123/challenger/轮播/缩略图渐隐/js/jquery.jcarousel.min.js" />
+        <option value="$PROJECT_DIR$/../../123/challenger/轮播/缩略图渐隐/index.html" />
+        <option value="$PROJECT_DIR$/laidengfashion/css/personal-center.css" />
+        <option value="$PROJECT_DIR$/laidengfashion/js/personal-center/tp.js" />
+        <option value="$PROJECT_DIR$/../../123/challenger/轮播/淡入淡出/style/loginDialog.css" />
+        <option value="$PROJECT_DIR$/laidengfashion/css/assets/css/amazeui.min.css" />
+        <option value="$PROJECT_DIR$/../../123/challenger/轮播/缩略图突突突/index.html" />
+        <option value="$PROJECT_DIR$/../../123/challenger/轮播/qq音乐/index.html" />
+        <option value="$PROJECT_DIR$/laidengfashion/women-cloth.html" />
+        <option value="$PROJECT_DIR$/laidengfashion/css/women/women-cloth.css" />
+        <option value="$PROJECT_DIR$/../../123/challenger/jquery_exercise/jquery_exercise_01/remove.html" />
+        <option value="$PROJECT_DIR$/../../123/challenger/轮播/自动补全/dist/autocomplete.js" />
+        <option value="$PROJECT_DIR$/../../123/challenger/轮播/自动补全/index.html" />
+        <option value="$PROJECT_DIR$/laidengfashion/index.html" />
+        <option value="$PROJECT_DIR$/laidengfashion/css/index/firstpage.css" />
+        <option value="$PROJECT_DIR$/laidengfashion/js/index/information.js" />
+        <option value="$PROJECT_DIR$/../../201410281459/js/modernizr.custom.js" />
+        <option value="$PROJECT_DIR$/../../201410281459/index.html" />
+        <option value="$PROJECT_DIR$/../../123/challenger/轮播/缩略图渐隐/js/jquery.pikachoose.min.js" />
+        <option value="$PROJECT_DIR$/laidengfashion/js/zixun.js" />
+        <option value="$PROJECT_DIR$/laidengfashion/css/purchase.css" />
+        <option value="$PROJECT_DIR$/laidengfashion/purchase-car.html" />
+        <option value="$PROJECT_DIR$/laidengfashion/zixun.html" />
+        <option value="$PROJECT_DIR$/laidengfashion/js/purchasecar.js" />
+        <option value="$PROJECT_DIR$/../../123/challenger/轮播/点赞/index.html" />
+        <option value="$PROJECT_DIR$/laidengfashion/personal-center.html" />
+        <option value="$PROJECT_DIR$/laidengfashion/css/common/common.css" />
+        <option value="$PROJECT_DIR$/../../123/challenger/轮播/点赞/css/style.css" />
+        <option value="$PROJECT_DIR$/laidengfashion/css/selfdesign.css" />
+        <option value="$PROJECT_DIR$/laidengfashion/js/selfDesign.js" />
+        <option value="$PROJECT_DIR$/laidengfashion/selfdesign.html" />
+        <option value="$PROJECT_DIR$/laidengfashion/css/selfdesign.scss" />
+        <option value="$PROJECT_DIR$/../../123/challenger/轮播/抛物线计算/index.html" />
+        <option value="$PROJECT_DIR$/laidengfashion/details-page.html" />
+        <option value="$PROJECT_DIR$/../../123/challenger/轮播/抛物线计算/index2.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-9" />
+    <option name="width" value="1932" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="223" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="249" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="251" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1147" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="223" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="249" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="251" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1147" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="221a6c0e-0cfb-4c64-b65a-f179604aa2a1" name="Default" comment="" />
+      <created>1489648410676</created>
+      <option name="number" value="Default" />
+      <updated>1489648410676</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="0" width="1932" height="1048" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17943338" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/laidengfashion/personal-center.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="155" column="50" selection-start-line="155" selection-start-column="50" selection-end-line="155" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/css/common/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1428" column="12" selection-start-line="1428" selection-start-column="12" selection-end-line="1428" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/点赞/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/js/purchasecar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/淡入淡出/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5625744">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/web-forms2.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="603" column="16" selection-start-line="603" selection-start-column="16" selection-end-line="603" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/缩略图突突突/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.794117">
+          <caret line="291" column="6" selection-start-line="291" selection-start-column="6" selection-end-line="291" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/img/selfdesign/mydesign/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://E:/file/js/时间/倒计时计数器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.874851">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/file/js/时间/倒计时计数器2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.9284863">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/file/js/时间/时间表.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.3444577">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/file/js/13-jquery/3-时间/01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.51966625">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/js/women/carousel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/qq音乐/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55831265">
+          <caret line="129" column="22" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/css/women/women-cloth.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.029412">
+          <caret line="421" column="10" selection-start-line="421" selection-start-column="10" selection-end-line="421" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/jquery_exercise/jquery_exercise_01/remove.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7909091">
+          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/women-cloth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5673421">
+          <caret line="974" column="7" selection-start-line="974" selection-start-column="7" selection-end-line="974" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/jquery_exercise/jquery_exercise_01/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/index_backup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8421673">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/占位符动画/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7750294">
+          <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/自动补全/dist/autocomplete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/自动补全/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7232038">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/自动补全/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0895171">
+          <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/自动伸缩搜索栏/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7941176">
+          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/自动补全/dist/autocomplete.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/js/index/information.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/选择多张图片动画效果/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.0588236">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/选择多张图片动画效果/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/缩略图渐隐/js/jquery.pikachoose.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2948403">
+          <caret line="91" column="66" selection-start-line="91" selection-start-column="66" selection-end-line="91" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/缩略图渐隐/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6183746">
+          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/js/zixun.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/css/purchase.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/zixun.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61955243">
+          <caret line="206" column="47" selection-start-line="206" selection-start-column="47" selection-end-line="206" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/js/purchasecar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="137" column="42" selection-start-line="137" selection-start-column="42" selection-end-line="137" selection-end-column="42" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/点赞/css/normalize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/点赞/css/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="152.23529">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/purchase-car.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5100118">
+          <caret line="137" column="91" selection-start-line="137" selection-start-column="91" selection-end-line="137" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/css/index/firstpage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2932862">
+          <caret line="1050" column="23" selection-start-line="1050" selection-start-column="23" selection-end-line="1050" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/点赞/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6772674">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/personal-center.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.029446408">
+          <caret line="155" column="50" selection-start-line="155" selection-start-column="50" selection-end-line="155" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/css/common/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.029446408">
+          <caret line="1428" column="12" selection-start-line="1428" selection-start-column="12" selection-end-line="1428" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/点赞/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.90459365">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/js/selfDesign.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="230" column="83" selection-start-line="230" selection-start-column="83" selection-end-line="230" selection-end-column="83" />
+          <folding>
+            <marker date="1491551585504" expanded="true" signature="5184:5750" placeholder="..." />
+            <marker date="1491551585504" expanded="true" signature="5252:5475" placeholder="..." />
+            <marker date="1491551585504" expanded="false" signature="5352:5392" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/selfdesign.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0794872">
+          <caret line="767" column="39" selection-start-line="767" selection-start-column="39" selection-end-line="767" selection-end-column="39" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#p#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#p#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#2;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/css/selfdesign.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0097086">
+          <caret line="1031" column="23" selection-start-line="1031" selection-start-column="23" selection-end-line="1031" selection-end-column="23" />
+          <folding>
+            <element signature="e#15323#15510#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/抛物线计算/js/parabola.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.9535675">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/抛物线计算/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.82353">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/css/selfdesign.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.558823">
+          <caret line="781" column="0" selection-start-line="781" selection-start-column="0" selection-end-line="781" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laidengfashion/details-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5100118">
+          <caret line="355" column="31" selection-start-line="355" selection-start-column="31" selection-end-line="355" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../123/challenger/轮播/抛物线计算/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55948174">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

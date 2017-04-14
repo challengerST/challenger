@@ -1,0 +1,215 @@
+@charset "utf-8";
+.bdb {
+  box-sizing: border-box;
+}
+.sheng,
+.shi,
+.qu,
+.location {
+  width: 22%;
+}
+.phoneNum,
+.name {
+  width: 44%;
+}
+.column {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 1120px;
+}
+.large-word {
+  font-size: 18px;
+}
+.big-box-con {
+  margin-top: 20px;
+  text-align: center;
+  width: 300px;
+  height: 188px;
+  background: url(../img/border.jpg) no-repeat center;
+}
+.big-child {
+  width: 266px;
+  font-size: 14px;
+  text-align: left;
+  padding: 18px;
+}
+.big-child input {
+  color: #000000;
+}
+.lon {
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  display: inline-block;
+  padding-bottom: 16px;
+  margin-bottom: 8px;
+}
+.edit {
+  padding-top: 20px;
+}
+.edit i {
+  width: 24px;
+  height: 24px;
+  background: url(../img/sprit-img.png) no-repeat 0px 0px;
+}
+#cartTable .jia .goods.col-info {
+  padding-left: 50px;
+}
+.wechat {
+  margin-left: 10px;
+}
+.alipay,
+.wechat {
+  width: 238px;
+  height: 60px;
+  border: 1px solid #e6e6e6;
+  padding: 10px 0;
+  margin-top: 20px;
+  text-align: center;
+}
+.col-info.jiakuan {
+  width: 520px;
+}
+.footer {
+  margin-top: 10px;
+}
+.footer p {
+  text-align: right;
+  line-height: 1.5;
+}
+.total {
+  display: inline-block;
+  width: 40px;
+}
+.closing.active {
+  background: #ff3250;
+  color: #fff;
+}
+.pd {
+  padding-top: 32px;
+  box-sizing: border-box;
+  padding-left: 16px;
+}
+.mt {
+  margin-top: 14px;
+  margin-bottom: 16px;
+}
+.mt.tm {
+  margin-top: 54px;
+}
+.mt.contact {
+  padding-left: 13px;
+  box-sizing: border-box;
+}
+/*与个人中心的收货地址公共部分*/
+.spar {
+  margin-top: 30px;
+  box-sizing: border-box;
+  padding: 0 40px;
+}
+.spar span {
+  font-size: 14px;
+}
+.spar .btc {
+  text-align: center;
+  width: 118px;
+  height: 38px;
+  border: 1px solid #e6e6e6;
+  font-size: 16px;
+  line-height: 38px;
+  margin-right: 10px;
+}
+.spar .active {
+  height: 40px;
+  border: none;
+  width: 120px;
+  line-height: 40px;
+  background: #ff3250;
+  color: #ffffff;
+}
+.selet {
+  position: relative;
+}
+.selet > div {
+  width: 175px;
+  height: 42px;
+  line-height: 38px;
+  font-size: 18px;
+  border: 1px solid #e6e6e6;
+  display: inline-block;
+  padding-left: 10px;
+  box-sizing: border-box;
+  margin-left: 12px;
+}
+.selet > div > span {
+  box-sizing: border-box;
+  height: 23px;
+  width: 100px;
+}
+.ln,
+.lp {
+  width: 200px;
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+.ln {
+  margin-left: 12px;
+  margin-right: 18px;
+}
+.lp {
+  margin-left: 12px;
+}
+.pro,
+.city,
+.area {
+  position: absolute;
+  list-style: none;
+  z-index: 100;
+  background: white;
+  width: 148px;
+  display: none;
+}
+.pro {
+  top: -160px;
+  left: 160px;
+}
+.city {
+  top: 10px;
+  left: 336px;
+}
+.area {
+  top: -120px;
+  left: 510px;
+}
+.pro > li,
+.city > li,
+.area > li {
+  text-align: center;
+  margin-top: 2px;
+}
+.pro > li:hover,
+.city > li:hover,
+.area > li:hover {
+  color: #ff3250;
+}
+.dp {
+  width: 490px;
+  height: 42px;
+  border: 1px solid #e6e6e6;
+  margin-left: 12px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+#tp-box input {
+  font-size: 12px;
+}
+.defaup {
+  box-sizing: border-box;
+  padding-left: 63px;
+}
+.defaup .mry {
+  margin-left: 6px;
+}

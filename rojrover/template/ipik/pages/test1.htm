@@ -1,0 +1,38 @@
+title = "test1"
+url = "/test1"
+is_hidden = 0
+==
+<?php
+
+<!-- $loader = new Twig_Loader_Filesystem('views'); -->
+$twig = new Twig_Environment($loader);
+$twig->render('test1',array(
+    'name' => 'challerngerYt',
+    'age' =>'52'
+    
+    ))
+?>
+==
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <title>My Webpage</title>  
+    </head>  
+    <body>  
+        <ul id="navigation">  
+        {% for item in navigation %}  
+            <li><a href="{{ item.href }}">{{ item.caption }}</a></li>  
+        {% endfor %}  
+        </ul>  
+  <h1>Hello,{{ name }}! You are {{ age }} years old!</h1>
+        <h1>My Webpage</h1>  
+        {{ Hello }}
+        
+        {{ a_variable }}  
+{% for i in range(0, 3) %}  
+    {{ i }},  
+{% endfor %}  
+ {# output will be HELLO #}  
+{{ "hello"|upper }} 
+    </body>  
+</html>

@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+@import "less/z";
+@import "less/css3";
+@import "bl";
+
+.share, .user, .other {
+  .font-s16();
+}
+.user, .share {
+  margin-left: 9px;
+}
+.forward i, .comment i, .Praise i {
+  width: 20px;
+  height: 20px;
+  vertical-align: -4px;
+  margin-right: 6px;
+}
+.small-head {
+  .db();
+  width: @100p/2;
+  height: @100p/2;
+  .border-radius(50%);
+}
+.clock{
+  .font-s12();
+}
+.user {
+  color:@f325;
+}
+.share{
+  color:#686868;
+}
+.txt {
+  .tl();
+  .font-s14();
+  padding:2*@10p 0;
+}
+.ppd {
+  .bdb;
+  padding: 3*@4p 0;
+  .tr();
+  & .shu-line{
+    margin: 0 2*@10p;
+    background: @e6;
+  }
+}
+.forward i {
+  background: url(../img/spirit/forward.png) no-repeat center;
+}
+.comment i {
+  background: url(../img/spirit/comment.png) no-repeat center;
+}
+.Praise i {
+  background: url(../img/spirit/praise.png) no-repeat center;
+}

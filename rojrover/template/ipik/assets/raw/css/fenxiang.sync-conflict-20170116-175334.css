@@ -1,0 +1,54 @@
+.small-head {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.share, .user, .other {
+    font-size: 16px;
+}
+.clock{
+    font-size:12px;
+}
+.user {
+    color: #ff3250;
+}
+.share{
+    color:#686868;
+}
+.user, .share {
+    margin-left: 9px;
+}
+.txt {
+    text-align: left;
+    font-size: 14px;
+    padding: 20px 0;
+}
+.ppd {
+    box-sizing: border-box;
+    padding: 12px 0;
+    text-align: right;
+}
+
+.ppd .shu-line {
+    margin: 0 20px;
+    background: #e6e6e6;
+}
+.forward i, .comment i, .Praise i {
+    width: 20px;
+    height: 20px;
+    vertical-align: -4px;
+    margin-right: 6px;
+    /*margin:20px 10px;*/
+}
+.forward i {
+    background: url(../img/spirit/forward.png) no-repeat center;
+}
+
+.comment i {
+    background: url(../img/spirit/comment.png) no-repeat center;
+}
+
+.Praise i {
+    background: url(../img/spirit/praise.png) no-repeat center;
+}

@@ -1,0 +1,123 @@
+title = "v-medu"
+url = "/v-medu"
+layout = "vm"
+description = "确认订单"
+is_hidden = 0
+==
+<link rel="stylesheet" href="{{ 'assets/raw/css/purchase.css'|theme }}"/>
+<link rel="stylesheet" href="{{ 'assets/raw/css/vertifymenu.css'|theme }}"/>
+<div class="big-box down-border background-fff">
+    <div class="banner-list main-content clearfix">
+        <div class="fl-l logo">
+            <a href="javascript:;"><img src="{{ 'assets/img/common/logo.png'|theme }}" alt=""></a>
+        </div>
+        <ol class="first-page-list-left fl-l">
+            <li id="firstpage" class="tab"><a href="Home"><span>首页</span></a></li>
+            <li id="womenpage" class="tab"><a href="wmc"><span>女装</span></a></li>
+            <li id="manpage" class="tab"><a href="wmc"><span>男装</span></a></li>
+            <li id="childrenpage" class="tab"><a href="" onclick="alert('is building!')"><span>童装</span></a></li>
+            <li id="clothpage" class="tab"><a href="" onclick="javascript:alert('is building!')"><span>成衣系列</span></a></li>
+            <li id="private-order" class="tab"><a href="" onclick="javascript:alert('is building!')"><span>私人定制</span></a></li>
+            <li id="fashion-information" class="tab"><a href="zixun"><span>潮流资讯</span></a></li>
+        </ol>
+        <ul class="first-page-list-right fl-r" id="lgs">
+            <li class="login" id="sign-in"><span>登录</span></li>
+            <li class="shopcar"><a href="pcar"><i style="background: url({{ 'assets/img/sprit-img.png'|theme }}) no-repeat -7px -11px;"></i>
+                <span>购物车</span></a></li>
+            <li class="search" onclick="javascript:alert('efforts are being made to build');"><img
+                    src="{{ 'assets/img/common/serach.png'|theme }}"></li>
+        </ul>
+    </div>
+</div>
+<div class="main-content">
+    <div class="title-line">
+        <i class="title-line-left"></i><span class="fenqu">确认订单</span><i class="title-line-left"></i>
+    </div>
+</div>
+<div class="main-content sst">
+    <div><i class="trangle"></i><span class="large-word">收获地址</span></div>
+    <div class="column" id="p-clu">
+         <div class="big-box-con">
+             <div class="big-child">
+                 <P class="lon"><input class="name" placeholder="username"> <input class="phoneNum" placeholder="phonenum"></P>
+                 <P><input class="sheng" placeholder="province"> <input placeholder="city" class="shi"> <input class="qu" placeholder="area"> <input class="location" placeholder="location"></P>
+                 <p class="edit-position"><a href=""><span>修改地址</span></a></p>
+             </div>
+         </div>
+        <div class="big-box-con">
+            <div class="big-child">
+                <P class="lon"><input class="name" placeholder="username"> <input class="phoneNum" placeholder="phonenum"></P>
+                <P><input class="sheng" placeholder="province"> <input placeholder="city" class="shi"> <input class="qu" placeholder="area"> <input class="location" placeholder="location"></P>
+                <p class="edit-position"><a href=""><span>修改地址</span></a></p>
+            </div>
+        </div>
+        <div class="big-box-con">
+            <div class="big-child">
+                <P class="lon"><input class="name" placeholder="username"> <input class="phoneNum" placeholder="phonenum"></P>
+                <P><input class="sheng" placeholder="province"> <input placeholder="city" class="shi"> <input class="qu" placeholder="area"> <input class="location" placeholder="location"></P>
+                <p class="edit-position"><a href=""><span>修改地址</span></a></p>
+            </div>
+        </div>
+        <div class="big-box-con">
+            <div class="big-child">
+                <P class="lon"><input class="name" placeholder="username"> <input class="phoneNum" placeholder="phonenum"></P>
+                <P><input class="sheng" placeholder="province"> <input placeholder="city" class="shi"> <input class="qu" placeholder="area"> <input class="location" placeholder="location"></P>
+                <p class="edit-position"><a href=""><span>修改地址</span></a></p>
+            </div>
+        </div>
+    </div>
+    <div class="edit" id="edit">
+        <i></i><a href="" onclick="add();"><span>添加地址</span></a>
+    </div>
+</div>
+<div class="main-content sst ty">
+    <div class="tt"><i class="trangle"></i><span class="large-word">商品清单</span></div>
+    <div class="header">
+        <table id="cartTable">
+            <thead>
+            <tr class="jia">
+                <th class="col-info jiakuan">商品信息</th>
+                <th class="col-price">单价</th>
+                <th class="col-num">数量</th>
+                <th class="col-total">合计</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="jia">
+                <td class="goods col-info"><img src="{{ 'assets/img/sweat-cloth.jpg'|theme }}" alt=""><span></span></td>
+                <td class="price col-price">money</td>
+                <td class="count col-num">
+                    <div class="total-count">
+                        <span class="reduce">-</span>
+                        <input class="count-input" type="text" value="1">
+                        <span class="add">+</span>
+                    </div>
+                </td>
+                <td class="subtotal col-total">499</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="main-content sst ty">
+    <div><i class="trangle"></i><span class="large-word">支付方式</span></div>
+    <a class="alipay" href=""><img src="{{ 'assets/img/alipay.jpg'|theme }}" alt=""></a>
+    <a class="wechat" href=""><img src="{{ 'assets/img/wechat.jpg'|theme }}" alt=""></a>
+</div>
+<div class="main-content sst footer ty">
+    <p>商品金额：￥<span class="product-money">money</span></p>
+    <p>运费：￥<span class="yunfei">money</span></p>
+    <p>应付金额：￥<span class="yingfu-money">money</span></p>
+</div>
+<div class="main-content sst pp ty">金额:￥<span class="total">5000000</span><span class="tt closing active">结算</span>
+</div>
+<div class="main-content pagenum">
+    <ul class="clearfix">
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</div>
+<script src="{{ 'assets/raw/js/vmu/page.js'|theme }}"></script>
+<script src="{{ 'assets/raw/js/vmu/wx.js'|theme }}"></script>

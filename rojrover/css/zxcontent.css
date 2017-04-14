@@ -1,0 +1,135 @@
+.leftmain {
+    width: 858px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.rightbar {
+    width: 322px;
+}
+
+.hoster {
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.hoster .down-dote6 {
+    box-sizing: border-box;
+    padding-bottom: 14px;
+}
+
+.imghoster img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.infhoster {
+    width: 200px;
+    margin-left: 20px;
+    line-height: 16px;
+}
+#hostername{
+    margin-bottom:10px;
+}
+/*与zxlist中类名相同*/
+.fwlarge {
+    width: 56px;
+    display: block;
+}
+
+.twlarge {
+    width: 42px;
+    display: block;
+}
+
+.hoster .save span {
+    width: 90px;
+    vertical-align: 10px;
+}
+
+.hoster .save {
+    padding-top: 0;
+    margin-top: -8px;
+}
+
+.hoster .share {
+    width: 340px;
+    padding-top: 14px;
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+
+.share span, .share i {
+    text-align: center;
+}
+
+.work, .fan, .notice {
+    width: 28px;
+    font-size: 14px;
+}
+
+.hoster .fan {
+    width: 58px;
+}
+
+.hoster .notice {
+    width: 26px;
+}
+
+.hoster .shu-line {
+    margin: 0 20px;
+    background: #ccc;
+}
+
+/*end*/
+.zxarticle{
+    padding: 0 18px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+.hotarticle span{
+    width:216px;
+    height:40px;
+    line-height:40px;
+    background:#000000;
+}
+.zxarticle p{
+    box-sizing:border-box;
+    padding: 16px 0;
+}
+.conmain{
+    position:relative;
+    padding-top:20px;
+    box-sizing:border-box;
+    margin-left:28px;
+}
+.conmain p{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    width:720px;
+    padding:36px;
+    box-sizing:border-box;
+    text-indent:2em;
+    line-height:26px;
+}
+.leftmain .down-dote6{
+    margin-bottom: 20px;
+    padding-bottom:12px;
+}
+.mcheader{
+    margin-bottom:20px;
+}
+.hotarticle{
+    margin-bottom:10px;
+}
+.shu-line.hide{
+    background:#f7f7f7;
+    margin-right:30px;
+}
+.popularzx.save span{
+    height:32px;
+    line-height:32px;
+}

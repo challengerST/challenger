@@ -1,0 +1,353 @@
+//Variable declaration
+$borsolid: solid;
+$bordotted: dotted;
+$ff3: #ff3250;
+$fff:#fff;
+//placeholder
+%acenter{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+%wid100 {
+  width: 100%;
+}
+%wid850 {
+  width: 850px;
+}
+%fll {
+  float: left;
+}
+%flr {
+  float: right;
+}
+%wcw {
+  color: #fff;
+}
+%pfixed{
+  position: fixed;
+}
+%prelative{
+  position: relative;
+}
+%pabsolute{
+  position: absolute;
+}
+%maincontent {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+%ofh{
+  overflow: hidden;
+}
+%bgdff3{
+  background: $ff3;
+}
+%bgdfff{
+  background: $fff;
+}
+%font13 {
+  font-size: 13px;
+}
+%font14 {
+  font-size: 14px;
+}
+%font16{
+  font-size: 16px;
+}
+%inlineblock {
+  display: inline-block;
+}
+%boxsize{
+  box-sizing: border-box;
+}
+%tal{
+text-align:left;
+}
+%tac{
+  text-align:center;
+}
+%tar{
+  text-align:right;
+}
+%bor1c{
+  border:1px solid #ccc;
+}
+//mixin
+@mixin width($value) {
+  width: $value;
+}
+@mixin height($value) {
+  height: $value;
+}
+@mixin bdpro($width,$style,$borcolor) {
+  width: $width;
+  color: $borcolor;
+  style: $style;
+}
+@mixin vtc($value) {
+  vertical-align: $value;
+}
+@mixin margin($top, $right,$bottom,$left) {
+  margin: {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+  }
+}
+@mixin padding($top, $right,$bottom,$left) {
+  padding: {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+  }
+}
+@mixin bgdcolor($bgdcolor) {
+  background:$bgdcolor;
+}
+@mixin bordius($bordius) {
+  border-radius:$bordius;
+}
+//#{}
+$properties: (margin, padding);
+@mixin set-mpvalue($side, $value) {
+  @each $prop in $properties {
+    #{$prop}-#{$side}: $value;
+  }
+}
+$properties: (margin);
+@mixin set-mpvalue($side, $value) {
+  @each $prop in $properties {
+    #{$prop}-#{$side}: $value;
+  }
+}
+$properties: (padding);
+@mixin set-pavalue($side, $value) {
+  @each $prop in $properties {
+    #{$prop}-#{$side}: $value;
+  }
+}
+//common className
+.fl-l {
+  @extend %fll;
+}
+.fl-r {
+  @extend %flr;
+}
+//inherit content
+
+//common header
+.big-box {
+  @extend %wid100;
+}
+.first-page-list-left li,
+.first-page-list-right li{
+  @extend %fll;
+}
+//common header left
+.first-page-list-left li:not(.logo){
+  @include padding(9px,20px,9px,20px);
+  @extend %font14;
+  @extend %inlineblock;
+}
+.logo img {
+  @extend %inlineblock;
+  @include width(102px);
+  @include height(30px);
+  @include set-mpvalue(top,3px);
+  @include set-mpvalue(right,20x);
+}
+.big-box.down-border {
+ @extend %bgdfff;
+}
+.down-border{
+border-bottom:{
+  @include bdpro(1px,solid,$ff3);
+}
+}
+.main-content {
+  @extend %maincontent;
+}
+.banner-list{
+  @extend %boxsize;
+  @include padding(10px,10px,0,0);
+  .active {
+    @include bgdcolor(#ff3250);
+    border: {
+      @include bdpro(100px, $bordotted, $ff3);
+    }
+    span {
+      @extend %wcw;
+    }
+  }
+}
+.first-page-list-left {
+  @extend %wid850;
+  @include set-mpvalue(top,1px);
+}
+.first-page-list-right{
+  @include set-mpvalue(top,6px);
+}
+.banner-list-other {
+  li {
+    @extend %font14;
+    @include set-mpvalue(top, 14px);
+  }
+}
+//detailpage share part
+.share-column i {
+  @extend %inlineblock;
+  @include width(28px);
+  @include height(28px);
+  @include set-mpvalue(left,2px);
+}
+.share-column {
+  @extend %font14;
+  @extend %tar;
+  span {
+    @include vtc(11px);
+  }
+  ul {
+
+    li {
+      @extend %fll;
+      i {
+      @extend %inlineblock
+      }
+    }
+  ;
+  }
+}
+.share-column .wechat i {
+  background: url(../../img/society/wechat.png) no-repeat center;
+}
+.share-column .weibo i {
+  background: url(../../img/society/weibo.png) no-repeat center;
+}
+.share-column .qq i {
+  background: url(../../img/society/tencent.png) no-repeat center;
+}
+.share-column .qzone i {
+  background: url(../../img/society/room.png) no-repeat center;
+}
+.login,
+.search,
+.shopcar{
+  @include height(28px);
+  @include set-mpvalue(left,10px);
+  @extend %boxsize;
+  @extend %bor1c;
+  &:hover{
+    border-color:$ff3;
+    & span{
+      color:$ff3;
+    }
+  }
+}
+//common login
+#login-box {
+  background: $fff;
+  @include width(488px);
+  @extend %pfixed;
+  @extend %acenter;
+  @extend %bor1c;
+  .red-line {
+    border-bottom: {
+      @include bdpro(2px, $borsolid, $ff3);
+    }
+  }
+  .fenqu {
+    @extend %font14;
+  }
+  .title-line i{
+    @include vtc(-1px);
+  }
+}
+
+.close-cancle {
+  @extend %tar;
+  @include padding(8px,16px,4px,4px);
+  @extend %boxsize;
+}
+
+.sign-in,
+.sign-up {
+  @extend %fll;
+  @include set-pavalue(bottom,12px);
+  @extend %inlineblock;
+  border-bottom: {
+    @include bdpro(2px, $borsolid, #f1eaeb);
+  }
+  @extend %font16;
+  @include width(50%);
+  @extend %tac;
+  @extend %boxsize;
+}
+.rightnow-login {
+  @include set-mpvalue(top,20px);
+  @extend %font16;
+  color:$fff;
+  @include width(320px);
+  @include height(46px);
+  @extend %bgdff3;
+}
+.font-te {
+  @extend %font13;
+}
+.vertify{
+  h1{
+    @extend %boxsize;
+    @include padding(16px,0,6px,84px);
+    @extend %tal;
+    @extend %font14;
+  }
+  input{
+    @extend %boxsize;
+    @extend %inlineblock;
+    @include width(320px);
+    @include height(48px);
+    @include set-pavalue(left,8px);
+    border: {
+      @include bdpro(1px, $borsolid, #f1eaeb);
+    }
+  }
+}
+.vertify input {
+  border-radius: 2px;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 320px;
+  height: 48px;
+  padding-left: 8px;
+  border: 1px solid #f1eaeb;
+}
+.shu-line.jubu-edit {
+  height: 16px;
+  position: absolute;
+  top: 30px;
+  left: 239px;
+  z-index: 1200;
+  background: #f1eaeb;
+}
+.fuxuankuang {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ccc;
+}
+
+.fuxuankuang {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ccc;
+}
+
+.caveat {
+  vertical-align: -5px;
+  width: 18px;
+  height: 18px;
+  background: url(../../img/common/caveat.png) no-repeat center;
+}

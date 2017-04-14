@@ -1,0 +1,36 @@
+@charset "utf-8";
+.bdb {
+  box-sizing: border-box;
+}
+.common-longline {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  border-top: 1px solid #b2b2b2;
+  vertical-align: 4px;
+}
+.shortline {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  border-top: 1px solid #b2b2b2;
+  vertical-align: 4px;
+  width: 388px;
+}
+.longline {
+  width: 360px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  border-top: 1px solid #b2b2b2;
+  vertical-align: 4px;
+}
+.longtitle {
+  margin-bottom: 32px;
+}
+.longtitle .large {
+  margin: 0 40px;
+}
+.longtitle.small {
+  margin: 0 24px;
+}

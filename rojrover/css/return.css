@@ -1,0 +1,153 @@
+.ordernum {
+    height: 258px;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    padding: 22px 24px;
+    margin-bottom: 20px;
+}
+
+.rtorder-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #d1d1d1;
+    line-height: 20px;
+    color: #fff;
+}
+
+.rtorder-circle.active {
+    background: #ff3250;
+}
+
+.rtordsts-content {
+    display: inline-block;
+    margin-top: 60px;
+    line-height: 18px;
+}
+
+.rtordsts-content .font-fu {
+    margin-bottom: 6px;
+}
+
+.pd {
+     margin-left: 14px;
+ }
+
+.rtordsts-content img {
+    vertical-align: -4px;
+}
+
+.rtordst {
+    width: 74px;
+}
+
+.ordernum.sst, .ordernum.retreason, .rbinf.ordernum {
+    height: 100%;
+}
+
+#cartTable thead {
+    height: 50px;
+    line-height: 50px;
+}
+
+#cartTable .reproduct{
+    height: 130px;
+}
+
+.returnpage.pIc{
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.returnpage.header{
+    box-sizing: border-box;
+    margin-left: 22px;
+}
+
+.returnpage.header{
+    width: 1108px;
+}
+
+.rereason {
+    box-sizing: border-box;
+    padding-left: 22px;
+}
+
+.rereason span, .returnpage.uppic span {
+    margin-top: 8px;
+    margin-right: 22px;
+    box-sizing: border-box;
+}
+
+.rereason textarea {
+    width: 1034px;
+    height: 102px;
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+    padding: 8px;
+    font-size: 12px;
+}
+
+.rephoto {
+    text-align: left;
+    margin-top: 40px;
+    box-sizing: border-box;
+    line-height: 24px;
+}
+
+.returnpage.pIc {
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.returnpage.uppic {
+    box-sizing: border-box;
+
+}
+
+.returnpage.goods {
+    box-sizing: border-box;
+    padding-left: 34px;
+}
+
+.reback-location {
+    text-align: left;
+    padding: 24px;
+    box-sizing: border-box;
+    line-height: 24px;
+    /*font-weight:bold;*/
+}
+
+.rbchinf .tal {
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.main-content.sst.foot {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.line {
+    width: 1px;
+    height: 144px;
+    background: #e6e6e6;
+    margin-left: 566px;
+    margin-top:-18px;
+}
+
+.sst .fl-l.font-fu {
+    margin-top: 16px;
+    line-height: 22px;
+    margin-left:14px;
+}
+
+.sst .fl-l.logoimg img {
+    vertical-align: -34px;
+    margin-right: 20px;
+}
+.sst .fl-r.clearfix{
+    margin-top:16px;
+    margin-right:50px;
+}

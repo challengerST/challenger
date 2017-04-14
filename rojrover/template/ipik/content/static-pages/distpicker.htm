@@ -1,0 +1,244 @@
+[viewBag]
+title = "distpicker"
+url = "/distpicker"
+is_hidden = 0
+navigation_hidden = 0
+==
+<pre>(function (factory) {
+&nbsp; if (typeof define === 'function' &amp;&amp; define.amd) {
+&nbsp; &nbsp; // AMD. Register as anonymous module.
+&nbsp; &nbsp; define(['jquery', 'ChineseDistricts'], factory);
+&nbsp; } else if (typeof exports === 'object') {
+&nbsp; &nbsp; // Node / CommonJS
+&nbsp; &nbsp; factory(require('jquery'), require('ChineseDistricts'));
+&nbsp; } else {
+&nbsp; &nbsp; // Browser globals.
+&nbsp; &nbsp; factory(jQuery, ChineseDistricts);
+&nbsp; }
+})(function ($, ChineseDistricts) {
+
+&nbsp; 'use strict';
+
+&nbsp; if (typeof ChineseDistricts === 'undefined') {
+&nbsp; &nbsp; throw new Error('The file "distpicker.data.js" must be included first!');
+&nbsp; }
+
+&nbsp; var NAMESPACE = 'distpicker';
+&nbsp; var EVENT_CHANGE = 'change.' + NAMESPACE;
+&nbsp; var PROVINCE = 'province';
+&nbsp; var CIRY = 'city';
+&nbsp; var DISTRICT = 'district';
+
+&nbsp; function Distpicker(element, options) {
+&nbsp; &nbsp; this.$element = $(element);
+&nbsp; &nbsp; this.options = $.extend({}, Distpicker.DEFAULTS, $.isPlainObject(options) &amp;&amp; options);
+&nbsp; &nbsp; this.placeholders = $.extend({}, Distpicker.DEFAULTS);
+&nbsp; &nbsp; this.active = false;
+&nbsp; &nbsp; this.init();
+&nbsp; }
+
+&nbsp; Distpicker.prototype = {
+&nbsp; &nbsp; constructor: Distpicker,
+
+&nbsp; &nbsp; init: function () {
+&nbsp; &nbsp; &nbsp; var options = this.options;
+&nbsp; &nbsp; &nbsp; var $select = this.$element.find('select');
+&nbsp; &nbsp; &nbsp; var length = $select.length;
+&nbsp; &nbsp; &nbsp; var data = {};
+
+&nbsp; &nbsp; &nbsp; $select.each(function () {
+&nbsp; &nbsp; &nbsp; &nbsp; $.extend(data, $(this).data());
+&nbsp; &nbsp; &nbsp; });
+
+&nbsp; &nbsp; &nbsp; $.each([PROVINCE, CIRY, DISTRICT], $.proxy(function (i, type) {
+&nbsp; &nbsp; &nbsp; &nbsp; if (data[type]) {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; options[type] = data[type];
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; this['$' + type] = $select.filter('[data-' + type + ']');
+&nbsp; &nbsp; &nbsp; &nbsp; } else {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; this['$' + type] = length &gt; i ? $select.eq(i) : null;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; }, this));
+
+&nbsp; &nbsp; &nbsp; this.bind();
+
+&nbsp; &nbsp; &nbsp; // Reset all the selects (after event binding)
+&nbsp; &nbsp; &nbsp; this.reset();
+
+&nbsp; &nbsp; &nbsp; this.active = true;
+&nbsp; &nbsp; },
+
+&nbsp; &nbsp; bind: function () {
+&nbsp; &nbsp; &nbsp; if (this.$province) {
+&nbsp; &nbsp; &nbsp; &nbsp; this.$province.on(EVENT_CHANGE, (this._changeProvince = $.proxy(function () {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; this.output(CIRY);
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; this.output(DISTRICT);
+&nbsp; &nbsp; &nbsp; &nbsp; }, this)));
+&nbsp; &nbsp; &nbsp; }
+
+&nbsp; &nbsp; &nbsp; if (this.$city) {
+&nbsp; &nbsp; &nbsp; &nbsp; this.$city.on(EVENT_CHANGE, (this._changeCity = $.proxy(function () {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; this.output(DISTRICT);
+&nbsp; &nbsp; &nbsp; &nbsp; }, this)));
+&nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; },
+
+&nbsp; &nbsp; unbind: function () {
+&nbsp; &nbsp; &nbsp; if (this.$province) {
+&nbsp; &nbsp; &nbsp; &nbsp; this.$province.off(EVENT_CHANGE, this._changeProvince);
+&nbsp; &nbsp; &nbsp; }
+
+&nbsp; &nbsp; &nbsp; if (this.$city) {
+&nbsp; &nbsp; &nbsp; &nbsp; this.$city.off(EVENT_CHANGE, this._changeCity);
+&nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; },
+
+&nbsp; &nbsp; output: function (type) {
+&nbsp; &nbsp; &nbsp; var options = this.options;
+&nbsp; &nbsp; &nbsp; var placeholders = this.placeholders;
+&nbsp; &nbsp; &nbsp; var $select = this['$' + type];
+&nbsp; &nbsp; &nbsp; var districts = {};
+&nbsp; &nbsp; &nbsp; var data = [];
+&nbsp; &nbsp; &nbsp; var code;
+&nbsp; &nbsp; &nbsp; var matched;
+&nbsp; &nbsp; &nbsp; var value;
+
+&nbsp; &nbsp; &nbsp; if (!$select || !$select.length) {
+&nbsp; &nbsp; &nbsp; &nbsp; return;
+&nbsp; &nbsp; &nbsp; }
+
+&nbsp; &nbsp; &nbsp; value = options[type];
+
+&nbsp; &nbsp; &nbsp; code = (
+&nbsp; &nbsp; &nbsp; &nbsp; type === PROVINCE ? 86 :
+&nbsp; &nbsp; &nbsp; &nbsp; type === CIRY ? this.$province &amp;&amp; this.$province.find(':selected').data('code') :
+&nbsp; &nbsp; &nbsp; &nbsp; type === DISTRICT ? this.$city &amp;&amp; this.$city.find(':selected').data('code') : code
+&nbsp; &nbsp; &nbsp; );
+
+&nbsp; &nbsp; &nbsp; districts = $.isNumeric(code) ? ChineseDistricts[code] : null;
+
+&nbsp; &nbsp; &nbsp; if ($.isPlainObject(districts)) {
+&nbsp; &nbsp; &nbsp; &nbsp; $.each(districts, function (code, address) {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; var selected = address === value;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (selected) {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; matched = true;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; data.push({
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; code: code,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; address: address,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; selected: selected
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; });
+&nbsp; &nbsp; &nbsp; &nbsp; });
+&nbsp; &nbsp; &nbsp; }
+
+&nbsp; &nbsp; &nbsp; if (!matched) {
+&nbsp; &nbsp; &nbsp; &nbsp; if (data.length &amp;&amp; (options.autoSelect || options.autoselect)) {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; data[0].selected = true;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+&nbsp; &nbsp; &nbsp; &nbsp; // Save the unmatched value as a placeholder at the first output
+&nbsp; &nbsp; &nbsp; &nbsp; if (!this.active &amp;&amp; value) {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; placeholders[type] = value;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; }
+
+&nbsp; &nbsp; &nbsp; // Add placeholder option
+&nbsp; &nbsp; &nbsp; if (options.placeholder) {
+&nbsp; &nbsp; &nbsp; &nbsp; data.unshift({
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; code: '',
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; address: placeholders[type],
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; selected: false
+&nbsp; &nbsp; &nbsp; &nbsp; });
+&nbsp; &nbsp; &nbsp; }
+
+&nbsp; &nbsp; &nbsp; $select.html(this.getList(data));
+&nbsp; &nbsp; },
+
+&nbsp; &nbsp; getList: function (data) {
+&nbsp; &nbsp; &nbsp; var list = [];
+
+&nbsp; &nbsp; &nbsp; $.each(data, function (i, n) {
+&nbsp; &nbsp; &nbsp; &nbsp; list.push(
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; '&lt;option' +
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ' value="' + (n.address &amp;&amp; n.code ? n.address : '') + '"' +
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ' data-code="' + (n.code || '') + '"' +
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (n.selected ? ' selected' : '') +
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; '&gt;' +
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (n.address || '') +
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; '&lt;/option&gt;'
+&nbsp; &nbsp; &nbsp; &nbsp; );
+&nbsp; &nbsp; &nbsp; });
+
+&nbsp; &nbsp; &nbsp; return list.join('');
+&nbsp; &nbsp; },
+
+&nbsp; &nbsp; reset: function (deep) {
+&nbsp; &nbsp; &nbsp; if (!deep) {
+&nbsp; &nbsp; &nbsp; &nbsp; this.output(PROVINCE);
+&nbsp; &nbsp; &nbsp; &nbsp; this.output(CIRY);
+&nbsp; &nbsp; &nbsp; &nbsp; this.output(DISTRICT);
+&nbsp; &nbsp; &nbsp; } else if (this.$province) {
+&nbsp; &nbsp; &nbsp; &nbsp; this.$province.find(':first').prop('selected', true).trigger(EVENT_CHANGE);
+&nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; },
+
+&nbsp; &nbsp; destroy: function () {
+&nbsp; &nbsp; &nbsp; this.unbind();
+&nbsp; &nbsp; &nbsp; this.$element.removeData(NAMESPACE);
+&nbsp; &nbsp; }
+&nbsp; };
+
+&nbsp; Distpicker.DEFAULTS = {
+&nbsp; &nbsp; autoSelect: true,
+&nbsp; &nbsp; placeholder: true,
+&nbsp; &nbsp; province: '—— 省 ——',
+&nbsp; &nbsp; city: '—— 市 ——',
+&nbsp; &nbsp; district: '—— 区 ——'
+&nbsp; };
+
+&nbsp; Distpicker.setDefaults = function (options) {
+&nbsp; &nbsp; $.extend(Distpicker.DEFAULTS, options);
+&nbsp; };
+
+&nbsp; // Save the other distpicker
+&nbsp; Distpicker.other = $.fn.distpicker;
+
+&nbsp; // Register as jQuery plugin
+&nbsp; $.fn.distpicker = function (option) {
+&nbsp; &nbsp; var args = [].slice.call(arguments, 1);
+
+&nbsp; &nbsp; return this.each(function () {
+&nbsp; &nbsp; &nbsp; var $this = $(this);
+&nbsp; &nbsp; &nbsp; var data = $this.data(NAMESPACE);
+&nbsp; &nbsp; &nbsp; var options;
+&nbsp; &nbsp; &nbsp; var fn;
+
+&nbsp; &nbsp; &nbsp; if (!data) {
+&nbsp; &nbsp; &nbsp; &nbsp; if (/destroy/.test(option)) {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+&nbsp; &nbsp; &nbsp; &nbsp; options = $.extend({}, $this.data(), $.isPlainObject(option) &amp;&amp; option);
+&nbsp; &nbsp; &nbsp; &nbsp; $this.data(NAMESPACE, (data = new Distpicker(this, options)));
+&nbsp; &nbsp; &nbsp; }
+
+&nbsp; &nbsp; &nbsp; if (typeof option === 'string' &amp;&amp; $.isFunction(fn = data[option])) {
+&nbsp; &nbsp; &nbsp; &nbsp; fn.apply(data, args);
+&nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; });
+&nbsp; };
+
+&nbsp; $.fn.distpicker.Constructor = Distpicker;
+&nbsp; $.fn.distpicker.setDefaults = Distpicker.setDefaults;
+
+&nbsp; // No conflict
+&nbsp; $.fn.distpicker.noConflict = function () {
+&nbsp; &nbsp; $.fn.distpicker = Distpicker.other;
+&nbsp; &nbsp; return this;
+&nbsp; };
+
+&nbsp; $(function () {
+&nbsp; &nbsp; $('[data-toggle="distpicker"]').distpicker();
+&nbsp; });
+});</pre>

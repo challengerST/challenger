@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <link rel="stylesheet" href="css/common/clear.css"/>
+    <link rel="stylesheet" href="css/common/common.css"/>
+    <link rel="stylesheet" href="css/purchase.css"/>
+    <link rel="stylesheet" href="css/vertifymenu.css"/>
+    <link rel="stylesheet" href="css/assets/css/amazeui.min.css"/>
+    <link rel="stylesheet" href="css/assets/css/amazeui.address.min.css"/>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/common/common.js"></script>
+    <script src="js/common/layout.js"></script>
+    <script src="js/vmu/page.js"></script>
+    <script src="js/vmu/wx.js"></script>
+    <script src="css/assets/js/amazeui.min.js"></script>
+    <script src="css/assets/js/iscroll.min.js"></script>
+    <script src="css/assets/js/address.min.js"></script>
+</head>
+<body>
+<div class="big-box down-border background-fff">
+    <div class="banner-list main-content clearfix">
+        <div class="fl-l logo">
+            <a href="javascript:;"><img src="img/common/logo.png" alt=""></a>
+        </div>
+        <ol class="first-page-list-left fl-l">
+            <li id="firstpage" class="tab"><a href="index.html"><span>首页</span></a></li>
+            <li id="womenpage" class="tab"><a href="women-cloth.html"><span>女装</span></a></li>
+            <li id="manpage" class="tab"><a href="women-cloth.html"><span>男装</span></a></li>
+            <li id="childrenpage" class="tab"><a href="women-cloth.html" onclick="alert('is building!')"><span>童装</span></a>
+            </li>
+            <li id="clothpage" class="tab"><a href="chengy.html" onclick=""><span>成衣系列</span></a>
+            </li>
+            <li id="private-order" class="tab"><a href=""
+                                                  onclick="javascript:alert('is building!')"><span>私人定制</span></a></li>
+            <li id="fashion-information" class="tab"><a
+                    href="zixun.html"><span>潮流资讯</span></a></li>
+        </ol>
+        <ul class="first-page-list-right fl-r" id="lgs">
+            <li class="login" id="sign-in"><span>登录</span></li>
+            <li class="shopcar"><a href="purchase-car.html"><i
+                    style="background: url(img/sprit-img.png) no-repeat -7px -11px;"></i>
+                <span class="font-tw">购物车</span></a></li>
+            <li class="search" onclick="javascript:alert('efforts are being made to build');"><img
+                    src="img/common/serach.png"></li>
+        </ul>
+    </div>
+</div>
+<div class="main-content">
+    <div class="title-line">
+        <i class="title-line-left"></i><span class="fenqu">确认订单</span><i class="title-line-left"></i>
+    </div>
+</div>
+<div class="main-content sst">
+    <div><i class="trangle"></i><span class="large-word font-tw">收获地址</span></div>
+    <div class="spar">
+        <div>
+            <form action="" class="am-form" id="shipAdress">
+                <div class="selet am-form-group am-input-group clearfix" id="address2">
+                    <span class="am-input-group-lable fl-l"><span class="am-padding-horizontal-xs">收货地址</span></span>
+                    <input readonly="" type="text" name="nickname" class="am-form-field am-radius" placeholder="请选择地址"
+                           required="" value="">
+                </div>
+            </form>
+            <div class="mt">
+                <span class="font-tw">详细地址</span>
+                <input type="text" class="dp font-tw" placeholder="详细地址你来填，送货到家哦">
+            </div>
+            <div class="mt contact">
+                <span class="font-tw">联系人</span>
+                <input type="text" class="ln font-tw" placeholder="你的名字">
+                <span class="font-tw">联系电话</span>
+                <input type="text" class="lp font-tw" placeholder="你的电话"></div>
+            <div style="text-align:left;margin-top:28px;margin-left:66px;">
+                <a href=""><span id="p-cure" class="btc active">保存</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-content sst ty">
+    <div class="tt"><i class="trangle"></i><span class="large-word font-tw">商品清单</span></div>
+    <div class="header">
+        <table id="cartTable">
+            <thead>
+            <tr class="jia">
+                <th class="col-info jiakuan font-tw">商品信息</th>
+                <th class="col-price font-tw">单价</th>
+                <th class="col-num font-tw">数量</th>
+                <th class="col-total font-tw">合计</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="jia">
+                <td class="goods col-info clearfix">
+                    <div class="fl-l"><a href="javascript:void(0)" class="cloth"><img src="img/sweat-cloth.jpg" alt=""></a>
+                    </div>
+                    <div class="fl-l pd">
+                        <a href="javascript:void(0)"><p>高领针织毛衣</p>
+                            <p class="b-c">驼色/M(160)</p></a></div>
+                </td>
+                <td class="price col-price font-tw">money</td>
+                <td class="count col-num">
+                    <div class="total-count">
+                        <span class="reduce font-tw">-</span>
+                        <input class="count-input" type="text" value="1">
+                        <span class="add font-tw">+</span>
+                    </div>
+                </td>
+                <td class="subtotal col-total font-tw">499</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="main-content sst ty">
+    <div><i class="trangle"></i><span class="large-word font-tw">支付方式</span></div>
+    <a class="alipay" href=""><img src="img/alipay.jpg" alt=""></a>
+    <a class="wechat" href=""><img src="img/wechat.jpg" alt=""></a>
+</div>
+<div class="main-content sst footer ty">
+    <p class="font-fu">商品金额：￥<span class="product-money font-fu">money</span></p>
+    <p class="font-fu">运费：￥<span class="yunfei font-fu">money</span></p>
+    <p class="font-fu">应付金额：￥<span class="yingfu-money font-fu">money</span></p>
+</div>
+<div class="main-content sst pp ty font-fu">金额:￥<span class="total font-fu">5000000</span><span
+        class="tt closing active font-fu">结算</span>
+</div>
+<div class="main-content pagenum">
+    <ul class="clearfix">
+        <li class="active font-tw">1</li>
+        <li class="font-tw">2</li>
+        <li class="font-tw">3</li>
+        <li class="font-tw">4</li>
+    </ul>
+</div>
+<div class="bottom-base">
+    <div class="main-content bottom-base-area">
+        <p class="callme">
+            <a href="">關於我們</a><span class="shu-line"></span><a href="">服務條款</a><span class="shu-line"></span><a
+                href="">用戶服務協議</a><span class="shu-line"></span><a href="">廣告服務</a><span class="shu-line"></span><a
+                href="">客服中心</a><span class="shu-line"></span><a href="" style="border:none; ">網站導航</a>
+        </p>
+        <p>
+            Copyright Rojrover 2014 all rights reserved 粤ICP备05013919号
+        </p>
+        <p>
+            莱姿公司 版权所有
+        </p>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('#address2').address();
+    });
+</script>
+<div class="am-popup am-address-popup am-modal-active" id="1040731379205" style="display:none;">
+    <div class="am-popup-inner">
+        <div class="am-popup-hd"><h4 class="am-popup-title">请选择地址</h4><span data-am-modal-close=""
+                                                                            class="am-close">×</span></div>
+        <div class="am-popup-bd">
+            <div class="am-address-list am-address-list-footer">
+                <div class="am-u-sm-4 am-address-prov">
+                    <ul class="am-list am-list-static"
+                        style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, -956px) translateZ(0px);">
+                        <li>辽宁省</li>
+                        <li>湖北省</li>
+                        <li>山西省</li>
+                        <li>福建省</li>
+                        <li>青海省</li>
+                        <li>江西省</li>
+                        <li>河南省</li>
+                        <li>宁夏回族自治区</li>
+                        <li>澳门特别行政区</li>
+                        <li>浙江省</li>
+                        <li>新疆维吾尔自治区</li>
+                        <li>吉林省</li>
+                        <li>安徽省</li>
+                        <li>内蒙古自治区</li>
+                        <li>台湾</li>
+                        <li>海南省</li>
+                        <li>香港特别行政区</li>
+                        <li>云南省</li>
+                        <li>贵州省</li>
+                        <li>江苏省</li>
+                        <li>西藏自治区</li>
+                        <li>北京</li>
+                        <li>四川省</li>
+                        <li>黑龙江省</li>
+                        <li>广西壮族自治区</li>
+                        <li>陕西省</li>
+                        <li>天津</li>
+                        <li class="am-active">广东省</li>
+                        <li>重庆</li>
+                        <li>河北省</li>
+                        <li>湖南省</li>
+                        <li>甘肃省</li>
+                        <li>山东省</li>
+                        <li>海外</li>
+                        <li>上海</li>
+                    </ul>
+                </div>
+                <div class="am-u-sm-4 am-address-city">
+                    <ul class="am-list am-list-static"
+                        style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, -239px) translateZ(0px);">
+                        <li>云浮市</li>
+                        <li>揭阳市</li>
+                        <li>潮州市</li>
+                        <li>广州市</li>
+                        <li>深圳市</li>
+                        <li>韶关市</li>
+                        <li>中山市</li>
+                        <li>东莞市</li>
+                        <li>汕尾市</li>
+                        <li>梅州市</li>
+                        <li class="am-active">清远市</li>
+                        <li>阳江市</li>
+                        <li>河源市</li>
+                        <li>茂名市</li>
+                        <li>惠州市</li>
+                        <li>肇庆市</li>
+                        <li>汕头市</li>
+                        <li>珠海市</li>
+                        <li>湛江市</li>
+                        <li>佛山市</li>
+                        <li>江门市</li>
+                    </ul>
+                </div>
+                <div class="am-u-sm-4 am-address-district">
+                    <ul class="am-list am-list-static"
+                        style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+                        <li>英德市</li>
+                        <li>连州市</li>
+                        <li>其它区</li>
+                        <li>清城区</li>
+                        <li class="am-active">阳山县</li>
+                        <li>佛冈县</li>
+                        <li>连山壮族瑶族自治县</li>
+                        <li>连南瑶族自治县</li>
+                        <li>清新区</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="am-modal-footer am-address-footer"><span class="am-modal-btn am-address-cancel">取消</span><span
+                    class="am-modal-btn am-address-confirm">确定</span></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

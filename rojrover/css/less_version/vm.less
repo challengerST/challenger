@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+@import "less/z";
+@import "less/css3";
+@import "bl";
+
+.sheng,.shi,.qu,.location{
+  width:22%;
+}
+.phoneNum,.name{
+  width:44%;
+}
+.column {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 1120px;
+}
+.large-word {
+  font-size: 18px;
+}
+
+.big-box-con {
+  margin-top: 20px;
+  text-align: center;
+  width: 300px;
+  height: 188px;
+  background: url(../img/border.jpg) no-repeat center;
+}
+.big-child{
+  width: 266px;
+  .font-s14();
+  .tl();
+  padding: 18px;
+  & input{
+    color:@000;
+  }
+}
+.lon {
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  .dib();
+  padding-bottom: 16px;
+  margin-bottom: 8px;
+}
+.edit{
+  padding-top: 20px;
+  & i{
+    .wh(24px);
+    background: url(../img/sprit-img.png) no-repeat 0px 0px;
+  }
+}
+#cartTable .jia .goods.col-info{
+  padding-left:50px;
+}
+.wechat{
+  margin-left: 10px;
+}
+.alipay, .wechat {
+  width: 238px;
+  height: 60px;
+  border: 1px solid #e6e6e6;
+  padding: 10px 0;
+  margin-top: 20px;
+  .tc();
+}
+.col-info.jiakuan {
+  width: 520px;
+}
+.footer {
+  margin-top: 10px;
+  & p{
+    .tr();
+    line-height: 1.5;
+  }
+}
+.total {
+  .dib();
+  width: 40px;
+}
+.closing.active{
+  background:#ff3250;
+  color:#fff;
+}
+.pd {
+  padding-top: 32px;
+  box-sizing: border-box;
+  padding-left: 16px;
+}
+.mt{
+  margin-top: 14px;
+  margin-bottom: 16px;
+  &.tm{
+    margin-top: 54px;
+  }
+  &.contact{
+    padding-left: 13px;
+    .bdb;
+  }
+}
+/*与个人中心的收货地址公共部分*/
+.spar {
+  margin-top: 30px;
+  box-sizing: border-box;
+  padding: 0 40px;
+ & span{
+   .font-s14();
+ }
+  & .btc{
+    .tc();
+    width: 118px;
+    height: 38px;
+    border: 1px solid #e6e6e6;
+    font-size: 16px;
+    line-height: 38px;
+    margin-right: 10px;
+  }
+  & .active{
+    height: 40px;
+    border: none;
+    width: 120px;
+    line-height: 40px;
+    background:@f325;
+    color:@fff;
+  }
+}
+.selet{
+  .rel();
+  &>div{
+    width: 175px;
+    height: 42px;
+    line-height: 38px;
+    font-size: 18px;
+    border: 1px solid #e6e6e6;
+    .dib();
+    padding-left: 10px;
+    .bdb;
+    margin-left: 12px;
+    &>span{
+      .bdb;
+      height: 23px;
+      width: 100px;
+    }
+  }
+}
+.ln, .lp {
+  width: 200px;
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+.ln {
+  margin-left: 12px;
+  margin-right: 18px;
+}
+.lp {
+  margin-left: 12px;
+}
+//drop down box
+.pro, .city, .area {
+  position: absolute;
+  list-style: none;
+  z-index: 100;
+  background: white;
+  width: 148px;
+  display: none;
+}
+.pro {
+  top: -160px;
+  left: 160px;
+}
+.city {
+  top: 10px;
+  left: 336px;
+}
+.area {
+  top: -120px;
+  left: 510px;
+}
+.pro > li, .city > li, .area > li {
+  .tc;
+  margin-top: 2px;
+}
+
+.pro > li:hover, .city > li:hover, .area > li:hover {
+  color: @f325;
+}
+.dp {
+  width: 490px;
+  height: 42px;
+  border: 1px solid #e6e6e6;
+  margin-left: 12px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+#tp-box input {
+  font-size: 12px;
+}
+.defaup {
+  box-sizing: border-box;
+  padding-left: 63px;
+ & .mry{
+   margin-left: 6px;
+ }
+}
