@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>金融链</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navlist.css">
+  <link rel="stylesheet" href="css/common.css"></head>
+<body>
+  <div class="jrl_layout">
+    <!--搜索-->
+    <header class="jrl_header">
+      <div class="jrl_header_box">
+        <!-- 头部logo图片 -->
+        <a href="index.html" class="icon_logo"></a>
+        <!--是为了在移动端能调用我们的小键盘 把enter键变为搜索-->
+        <form action="">
+          <span class="icon_search"></span>
+          <input class="search" type="search"/>
+          <input class="btn" type="button" value="发需求"></form>
+        <a href="my.html" class="my">我的</a>
+      </div>
+    </header>
+    <nav class="jrl_navlist_nav">
+      <div class="jrl_nav_box">
+        <input type="button" value="综合">
+        <input class="nav_icon" type="button" value="时间 ">
+        <span></span>
+        <input type="button" value="访问量">
+        <input type="button" value="筛选"></div>
+    </nav>
+    <div class="jrl-main clearfix">
+      <div class="jrl-main-header">
+        <span>业务列表</span>
+        <a href="#">今日更新2条</a>
+      </div>
+      <div class="jrl-main-content">
+        <div class="contents">
+          <div class="top">
+            <span>有150多亩土地，贷款100万左右</span>
+            <div class="top-right">
+              <a href="#" class="red">顶</a>
+              <a href="#" class="blue">荐</a>
+            </div>
+          </div>
+          <div class="bottom">
+            <span>杨鹏兴 1234567890</span>
+            <a href="#">2016-08-18</a>
+          </div>
+        </div>
+        <div class="contents">
+          <div class="top">
+            <span>有150多亩土地，贷款100万左右</span>
+            <div class="top-right">
+              <a href="#" class="red">顶</a>
+              <a href="#" class="blue">荐</a>
+            </div>
+          </div>
+          <div class="bottom">
+            <span>杨鹏兴 12345678912</span>
+            <a href="#">2016-08-18</a>
+          </div>
+        </div>
+        <div class="contents">
+          <div class="top">
+            <span>有150多亩土地，贷款100万左右</span>
+            <div class="top-right">
+              <a class="red" href="#">顶</a>
+              <a class="blue" href="#">荐</a>
+            </div>
+          </div>
+          <div class="bottom">
+            <span>杨鹏兴 12345678912</span>
+            <a href="#">2016-08-18</a>
+          </div>
+        </div>
+        <div class="contents">
+          <div class="top">
+            <span>有150多亩土地，贷款100万左右</span>
+            <div class="top-right">
+              <a class="red" href="#">顶</a>
+            </div>
+          </div>
+          <div class="bottom">
+            <span>杨鹏兴 12345678912</span>
+            <a href="#">2016-08-18</a>
+          </div>
+        </div>
+        <div class="contents">
+          <div class="top">
+            <span>有150多亩土地，贷款100万左右</span>
+            <div class="top-right"></div>
+          </div>
+          <div class="bottom">
+            <span>杨鹏兴 12345678912</span>
+            <a href="#">2016-08-18</a>
+          </div>
+        </div>
+        <div class="contents">
+          <div class="top">
+            <span>有150多亩土地，贷款100万左右</span>
+            <div class="top-right">
+              <a class="red" href="#">顶</a>
+              <a class="yellow" href="#">急</a>
+            </div>
+          </div>
+          <div class="bottom">
+            <span>杨鹏兴 12345678912</span>
+            <a href="#">2016-08-18</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-footer">
+      <p>没有更多数据了</p>
+    </div>
+  </div>
+</body>
+  <script>
+  //获取滚动条当前的位置
+function getScrollTop() {
+var scrollTop = 0;
+if (document.documentElement && document.documentElement.scrollTop) {
+scrollTop = document.documentElement.scrollTop;
+}
+else if (document.body) {
+scrollTop = document.body.scrollTop;
+}
+return scrollTop;
+}
+
+//获取当前可是范围的高度
+function getClientHeight() {
+var clientHeight = 0;
+if (document.body.clientHeight && document.documentElement.clientHeight) {
+clientHeight = Math.min(document.body.clientHeight, document.documentElement.clientHeight);
+}
+else {
+clientHeight = Math.max(document.body.clientHeight, document.documentElement.clientHeight);
+}
+return clientHeight;
+}
+
+//获取文档完整的高度
+function getScrollHeight() {
+return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+}
+
+// 3，在html页面底部增加代码：
+
+
+window.onscroll = function () {
+if (getScrollTop() + getClientHeight() == getScrollHeight()) {
+// alert("到达底部");
+var newnode = document.createElement("a");
+newnode.setAttribute("href", "#");
+newnode.innerHTML = "new item";
+document.body.appendChild(newnode);
+var newline = document.createElement("br");
+document.body.appendChild(newline);
+}
+}
+
+
+
+window.onscroll = function () {
+if (getScrollTop() + getClientHeight() == getScrollHeight()) {
+var xmlHttpReq = null;
+//IE浏览器使用ActiveX
+if (window.ActiveXObject) {
+xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+}
+//其它浏览器使用window的子对象XMLHttpRequest
+else if (window.XMLHttpRequest) {
+xmlHttpReq = new XMLHttpRequest();
+}
+
+if (xmlHttpReq != null) {
+//设置请求（没有真正打开），true：表示异步
+xmlHttpReq.open("GET", "/ajaxtest", true);
+//设置回调，当请求的状态发生变化时，就会被调用，传递参数xmlHttpReq
+xmlHttpReq.onreadystatechange = function () { onajaxtest(xmlHttpReq); };
+//提交请求
+xmlHttpReq.send(null);
+}
+}
+}
+
+function onajaxtest(req) {
+var newnode = document.createElement("a");
+newnode.setAttribute("href", "#");
+newnode.innerHTML = req.readyState + " " + req.status + " " + req.responseText;
+document.body.appendChild(newnode);
+var newline = document.createElement("br");
+document.body.appendChild(newline);
+}
+
+
+
+
+
+
+
+// var json = {
+//    "list":[
+// {
+// "content": "贷款一百万，年利率高达两百万",
+// "username": '杨鹏兴，1234567',
+// "status":"顶",
+// "data":"567896789"
+// }
+// {
+// "content": "贷款一百万，年利率高达两百万",
+// "username": '杨鹏兴，1234567',
+// "status":"顶",
+// "data":"567896789"
+// }
+//    ]
+// }
+</script>
+</html>

@@ -1,0 +1,22 @@
+<MKM version="2.0" imageFileUrl="file:///C:/Users/ruijie/Desktop/financechain/%e9%87%91%e8%9e%8d%e9%93%be/%e9%a6%96%e9%a1%b5.jpg">
+  <Marks>
+    <ColorMark x="245" y="95" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <LengthMark x="696" y="137" color="16711680" length="20" direction="3"/>
+    <LengthMark x="720" y="136" color="16711680" length="20" direction="3"/>
+    <LengthMark x="692" y="183" color="16711680" length="20" direction="12"/>
+    <LengthMark x="694" y="116" color="16711680" length="26" direction="12"/>
+    <LengthMark x="900" y="134" color="16711680" length="60" direction="12"/>
+    <LengthMark x="252" y="159" color="16711680" length="34" direction="12"/>
+    <ColorMark x="865" y="184" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <ColorMark x="635" y="1034" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <ColorMark x="474" y="1325" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <LengthMark x="401" y="1278" color="16711680" length="120" direction="3"/>
+    <LengthMark x="46" y="1324" color="16711680" length="472" direction="12"/>
+    <LengthMark x="762" y="1422" color="16711680" length="58" direction="3"/>
+    <ColorMark x="657" y="1456" color="16711680" offsetX="1" offsetY="0" defaultDirection="6" colorSystem="hex"/>
+    <LengthMark x="876" y="1710" color="16711680" length="60" direction="12"/>
+    <LengthMark x="948" y="1684" color="16711680" length="58" direction="3"/>
+    <ColorMark x="984" y="1738" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <ColorMark x="558" y="1609" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+  </Marks>
+</MKM>
