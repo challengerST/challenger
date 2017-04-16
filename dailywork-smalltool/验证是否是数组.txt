@@ -1,0 +1,4 @@
+arr=[1,2,3,4];
+
+一种是直接$.isArray();
+二是arr instanceof array
