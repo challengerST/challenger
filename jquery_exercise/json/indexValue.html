@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>on事件</title>
+</head>
+<body>
+
+<button class="on">oko</button>
+<div>
+
+</div>
+<script src="../ajax/jquery.min.js"></script>
+<script>
+    $('button').click(function(){
+        $('div').html(function(index,value){
+            return value+1;
+        })
+    })
+</script>
+</body>
+</html>
